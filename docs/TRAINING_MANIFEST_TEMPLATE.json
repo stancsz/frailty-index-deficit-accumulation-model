@@ -1,0 +1,190 @@
+{
+  "manifest_version": "1",
+  "status": "template",
+  "created_at": "2026-08-27",
+  "purpose": "Template for a reproducible development or approval-bound survival-training extract. This file is not a dataset, a clinical approval, or a production configuration.",
+  "population": {
+    "target_description": "Adults eligible for the selected continuous-NHANES examination and mortality-linkage files; confirm cycle-specific eligibility from each codebook.",
+    "analysis_unit": "one NHANES participant identified by SEQN",
+    "cycles": [
+      "1999-2000",
+      "2001-2002",
+      "2003-2004"
+    ],
+    "age_rule": "Record the source-coded age rule used for the analysis. Do not assume that BIA eligibility is identical across cycles."
+  },
+  "sources": [
+    {
+      "id": "nhanes-bix-1999-2000",
+      "role": "bia_xpt",
+      "cycle": "1999-2000",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/BIX.XPT",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1999/DataFiles/BIX.htm",
+      "sha256": "RECORD_AFTER_DOWNLOAD",
+      "retrieved_at": "YYYY-MM-DD"
+    },
+    {
+      "id": "nhanes-bix-2001-2002",
+      "role": "bia_xpt",
+      "cycle": "2001-2002",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2001/DataFiles/BIX_B.XPT",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2001/DataFiles/BIX_B.htm",
+      "sha256": "RECORD_AFTER_DOWNLOAD",
+      "retrieved_at": "YYYY-MM-DD"
+    },
+    {
+      "id": "nhanes-bix-2003-2004",
+      "role": "bia_xpt",
+      "cycle": "2003-2004",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/BIX_C.XPT",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/BIX_C.htm",
+      "sha256": "RECORD_AFTER_DOWNLOAD",
+      "retrieved_at": "YYYY-MM-DD"
+    },
+    {
+      "id": "nhanes-mortality-1999-2000-2019-public",
+      "role": "linked_mortality_fixed_width",
+      "cycle": "1999-2000",
+      "url": "https://ftp.cdc.gov/pub/health_statistics/NCHS/datalinkage/linked_mortality/NHANES_1999_2000_MORT_2019_PUBLIC.dat",
+      "documentation_url": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+      "sha256": "RECORD_AFTER_DOWNLOAD",
+      "retrieved_at": "YYYY-MM-DD"
+    },
+    {
+      "id": "nhanes-mortality-2001-2002-2019-public",
+      "role": "linked_mortality_fixed_width",
+      "cycle": "2001-2002",
+      "url": "https://ftp.cdc.gov/pub/health_statistics/NCHS/datalinkage/linked_mortality/NHANES_2001_2002_MORT_2019_PUBLIC.dat",
+      "documentation_url": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+      "sha256": "RECORD_AFTER_DOWNLOAD",
+      "retrieved_at": "YYYY-MM-DD"
+    },
+    {
+      "id": "nhanes-mortality-2003-2004-2019-public",
+      "role": "linked_mortality_fixed_width",
+      "cycle": "2003-2004",
+      "url": "https://ftp.cdc.gov/pub/health_statistics/NCHS/datalinkage/linked_mortality/NHANES_2003_2004_MORT_2019_PUBLIC.dat",
+      "documentation_url": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+      "sha256": "RECORD_AFTER_DOWNLOAD",
+      "retrieved_at": "YYYY-MM-DD"
+    }
+  ],
+  "linkage": {
+    "join_key": "SEQN",
+    "mortality_release": "2019 public-use linked mortality",
+    "eligibility_field": "ELIGSTAT",
+    "eligible_value": 1,
+    "vital_status_field": "MORTSTAT",
+    "event_mapping": {
+      "1": 1,
+      "0": 0
+    },
+    "duration_source_field": "PERMTH_EXM",
+    "duration_unit_in_source": "months",
+    "duration_unit_for_model": "years",
+    "duration_semantics": "Use the MEC follow-up field because BIA is collected in the mobile examination center; document the choice in the analysis record.",
+    "disclosure_control_review": "Required: public-use follow-up or cause-of-death values may be perturbed; document whether the selected endpoint remains appropriate."
+  },
+  "eligibility": {
+    "training_anchor_features": [
+      "age",
+      "sex",
+      "bmi"
+    ],
+    "required_survival_fields": [
+      "duration",
+      "event",
+      "patient_id"
+    ],
+    "inclusion_rules": [
+      "Link to an eligible mortality record (ELIGSTAT=1).",
+      "Retain censored observations with valid positive follow-up.",
+      "Apply the cycle-reviewed BIA examination-status and fit-quality rules recorded below."
+    ],
+    "exclusion_rules": [
+      "Duplicate SEQN or failed source-key integrity check.",
+      "Invalid or non-positive duration, non-binary event, or non-finite measured value.",
+      "Rows excluded by the approved cycle-specific examination, pregnancy, device, or quality protocol."
+    ],
+    "optional_feature_policy": "Keep optional missing values as native NaN for XGBoost; do not impute or select complete cases silently.",
+    "inference_boundary": "This training anchor contract does not weaken the assessment MVV enforced by the API."
+  },
+  "measurement_and_derivation": {
+    "column_map_policy": "Provide an explicit NHANESColumnMap per cycle and keep the reviewed map with the frozen manifest.",
+    "missing_value_policy": "List every cycle-specific sentinel and recoding decision here before mapping; unlisted codes must fail review rather than be guessed.",
+    "unit_audit": "Record source units, canonical units, conversion formula, reviewer, and evidence for every mapped measurement.",
+    "derived_fields": [
+      "phase_angle from mapped 50-kHz resistance/reactance when available",
+      "ecw_tbw from mapped extracellular fluid and total body water",
+      "ffmi from mapped fat-free mass and height",
+      "fib_4 from age, AST, ALT, and platelets"
+    ],
+    "bia_quality": {
+      "fit_field": "BIDFIT",
+      "accepted_codes": null,
+      "decision_status": "REVIEW_AND_RECORD_CYCLE_SPECIFIC_CODES",
+      "source_note": "The CDC BIX codebook describes fit-quality categories; the accepted set is an analysis decision, not silently assumed by this template."
+    }
+  },
+  "survey_design": {
+    "schema_version": "1",
+    "weight_field": null,
+    "weight_kind": "not_provided",
+    "strata_field": null,
+    "psu_field": null,
+    "replicate_pattern": [],
+    "design_reviewed": false,
+    "weight_selection_rule": "Select and record the cycle-appropriate MEC/BIA analytic weight from the NHANES analytic guidelines; do not copy a weight name across cycles without review.",
+    "adapter_weight_semantics": "Only when weight_kind=case_weight and standardized sample_weight values are supplied for every row, the current adapter passes positive weights as XGBoost DMatrix case weights and uses them for its profile-likelihood mapper calibration; replicate and stratum declarations are metadata only.",
+    "variance_method": "NOT_IMPLEMENTED_BY_THIS_ADAPTER",
+    "variance_plan": "Record the survey strata, PSU, variance estimator, replicate/jackknife method, and software used for any inferential or population estimate."
+  },
+  "training_recipe": {
+    "model": "xgboost survival:cox",
+    "feature_names_source": "frailty_engine.pipeline.MODEL_VECTOR_FEATURE_NAMES",
+    "feature_count": 36,
+    "parameters": {
+      "objective": "survival:cox",
+      "eval_metric": "cox-nloglik",
+      "max_depth": 3,
+      "eta": 0.03,
+      "subsample": 0.85,
+      "colsample_bytree": 0.85,
+      "lambda": 1.0,
+      "seed": 42,
+      "nthread": 1
+    },
+    "num_boost_round": 300,
+    "python_and_dependency_versions": "RECORD_EXACT_LOCKFILE_OR_ENVIRONMENT",
+    "mapper_policy": "Record whether Gompertz parameters were supplied or fitted in-sample; the artifact persists the resulting mapper and provenance.",
+    "artifact_sha256": "RECORD_AFTER_FIT"
+  },
+  "split_and_sensitivity": {
+    "internal_split_strategy": "RECORD_PATIENT_LEVEL_OR_PRE_SPECIFIED_TIME_SPLIT",
+    "random_seed": null,
+    "tuning_data_boundary": "RECORD_WHICH_ROWS_ARE_ALLOWED_FOR_TUNING_AND_FINAL_FIT",
+    "required_sensitivity_runs": [
+      "native missing-value handling versus a prespecified complete-case analysis",
+      "FI denominator and measurement-completeness strata",
+      "unweighted versus approved survey-weight analysis",
+      "censoring-aware horizon calibration"
+    ],
+    "external_cohort": "RECORD_HELD_OUT_CLSA_OR_EQUIVALENT_COHORT_AND_ACCESS_APPROVAL"
+  },
+  "reference_panel": {
+    "panel_id": "RECORD_APPROVED_SECA_PANEL_ID",
+    "source_and_license": "RECORD_PUBLISHED_OR_LICENSED_SECA_TABLES_AND_PERMITTED_USE",
+    "device_and_protocol": "RECORD_DEVICE_FIRMWARE_AND_MEASUREMENT_PROTOCOL",
+    "age_sex_bands_and_units": "RECORD_EXACT_PANEL_BANDS_AND_CANONICAL_UNITS",
+    "sha256": "RECORD_AFTER_PANEL_FILE_IS_FROZEN",
+    "production_ready": false
+  },
+  "approval": {
+    "status": "not_submitted",
+    "approved_by": null,
+    "approved_at": null,
+    "evidence_refs": [],
+    "production_ready": false,
+    "note": "A populated manifest is still not clinical approval; E-005 requires external validation, cutoff review, uncertainty review, reference-panel approval, and human sign-off."
+  }
+}

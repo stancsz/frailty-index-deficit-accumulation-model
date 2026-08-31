@@ -1,0 +1,3776 @@
+{
+  "schema_version": "0.1",
+  "generated_by": "scripts/build_demo_data.py",
+  "privacy_note": "Synthetic examples only; no patient export is embedded.",
+  "examples": [
+    {
+      "id": "balanced",
+      "label": "Balanced baseline",
+      "description": "Synthetic complete profile with a broad but not exhaustive measurement set.",
+      "payload": {
+        "patient_id": "demo-balanced",
+        "measurements": {
+          "fasting_glucose": 92,
+          "hba1c": 5.3,
+          "hs_crp": 0.7,
+          "albumin": 4.2,
+          "egfr": 98,
+          "wbc": 6.0,
+          "hypertension": 0,
+          "t2d": 0,
+          "osteoarthritis": 0,
+          "sleep_apnea": 0,
+          "age": 45,
+          "sex": "female",
+          "bmi": 23.4,
+          "phase_angle": 6.1,
+          "ecw_tbw": 0.39
+        }
+      },
+      "result": {
+        "patient_id": "demo-balanced",
+        "data_quality": {
+          "variables_measured": 15,
+          "fi_variables_measured": 13,
+          "mvv_passed": true,
+          "blood_variables_measured": 6,
+          "history_variables_measured": 4,
+          "reference_panel_id": "seca-development-fixture",
+          "reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662",
+          "reference_panel_production_ready": false,
+          "reference_panel_fixture_only": true,
+          "reference_panel_readiness": "development_fixture_only",
+          "fi_denominator_strength": "low",
+          "reference_panel_band_count": 1,
+          "reference_panel_band_span_years_for_age": 102.0
+        },
+        "metrics": {
+          "chronological_age": 45.0,
+          "biological_age": {
+            "point_estimate": 42.9,
+            "ci_95": null,
+            "uncertainty_method": "fixed_log_hazard_sensitivity",
+            "uncertainty_construction": "none_withheld",
+            "uncertainty_validated": false,
+            "interpretation": "Age-equivalent wellness estimate; not a lifespan, diagnostic, or treatment-effect prediction."
+          },
+          "current_deficit_load_fi": 0.0,
+          "current_deficit_load_fi_details": {
+            "numerator": 0.0,
+            "denominator": 13,
+            "valid_variables": [
+              "bmi",
+              "phase_angle",
+              "ecw_tbw",
+              "fasting_glucose",
+              "hba1c",
+              "hs_crp",
+              "albumin",
+              "egfr",
+              "wbc",
+              "hypertension",
+              "t2d",
+              "osteoarthritis",
+              "sleep_apnea"
+            ],
+            "denominator_strength": "low",
+            "denominator_strength_caveat": "Engineering label based on the count of FI-eligible items in this single assessment; it is not a clinical adequacy claim."
+          }
+        },
+        "trajectory": {
+          "homeostatic_deviation_score": -0.0467,
+          "score_ci_95": null,
+          "uncertainty_construction": "none_withheld"
+        },
+        "top_interventions": [],
+        "wellness_report": {
+          "summary": {
+            "status": "on_track",
+            "measured_features": 13,
+            "missing_features": 20,
+            "focus_areas": 0,
+            "interpretation": "This is a development wellness view of measured values. It does not estimate the effect of an action on biological age."
+          },
+          "ranges": [
+            {
+              "feature": "bmi",
+              "biomarker": "Body Mass Index",
+              "current_value": 23.4,
+              "unit": "kg/m\u00b2",
+              "target_range": {
+                "low": 18.5,
+                "high": 24.9,
+                "label": "18.5\u201324.9"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "WHO BMI classification; engineering target pending cohort review",
+              "recommendation": "Discuss sustainable nutrition, activity, and body-composition goals rather than pursuing a single number."
+            },
+            {
+              "feature": "phase_angle",
+              "biomarker": "Phase Angle",
+              "current_value": 6.1,
+              "unit": "degrees",
+              "target_range": {
+                "low": 5.6,
+                "high": 7.4,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "lifestyle",
+              "z_score": -0.4444,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            },
+            {
+              "feature": "ecw_tbw",
+              "biomarker": "ECW/TBW",
+              "current_value": 0.39,
+              "unit": "ratio",
+              "target_range": {
+                "low": 0.375,
+                "high": 0.425,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": -0.4,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "fasting_glucose",
+              "biomarker": "Fasting glucose",
+              "current_value": 92.0,
+              "unit": "mg/dL",
+              "target_range": {
+                "low": 70.0,
+                "high": 99.0,
+                "label": "70\u201399"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA diagnostic thresholds; wellness display band is not a diagnosis",
+              "recommendation": "Review the result, fasting conditions, and trend with a qualified clinician if outside the display band."
+            },
+            {
+              "feature": "hba1c",
+              "biomarker": "HbA1c",
+              "current_value": 5.3,
+              "unit": "%",
+              "target_range": {
+                "low": 4.0,
+                "high": 5.6,
+                "label": "4\u20135.6"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA Standards of Care; wellness display band is not a diagnosis",
+              "recommendation": "Review the result and trend with a qualified clinician; do not infer a diagnosis from this report."
+            },
+            {
+              "feature": "hs_crp",
+              "biomarker": "hs-CRP",
+              "current_value": 0.7,
+              "unit": "mg/L",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.0,
+                "label": "0\u20131"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Cardiovascular reference band; target-cohort review required",
+              "recommendation": "Consider recent infection, injury, and measurement context before acting on an isolated result."
+            },
+            {
+              "feature": "albumin",
+              "biomarker": "Albumin",
+              "current_value": 4.2,
+              "unit": "g/dL",
+              "target_range": {
+                "low": 3.5,
+                "high": 5.0,
+                "label": "3.5\u20135"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common clinical reference boundary; target-cohort review required",
+              "recommendation": "Review nutrition, hydration, liver, kidney, and inflammatory context with a qualified clinician."
+            },
+            {
+              "feature": "egfr",
+              "biomarker": "eGFR",
+              "current_value": 98.0,
+              "unit": "mL/min/1.73m\u00b2",
+              "target_range": {
+                "low": 90.0,
+                "label": "\u2265 90"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "KDIGO CKD G-category thresholds; wellness display is not a diagnosis",
+              "recommendation": "Interpret kidney markers with a qualified clinician and the person\u2019s longitudinal trend."
+            },
+            {
+              "feature": "wbc",
+              "biomarker": "White blood cell count",
+              "current_value": 6.0,
+              "unit": "10\u2079/L",
+              "target_range": {
+                "low": 4.0,
+                "high": 10.0,
+                "label": "4\u201310"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Interpret with symptoms, recent illness, medications, and the reporting laboratory's interval."
+            },
+            {
+              "feature": "hypertension",
+              "biomarker": "Hypertension history",
+              "current_value": 0,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "t2d",
+              "biomarker": "Type 2 diabetes history",
+              "current_value": 0,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "osteoarthritis",
+              "biomarker": "Osteoarthritis history",
+              "current_value": 0,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "sleep_apnea",
+              "biomarker": "Sleep-apnea history",
+              "current_value": 0,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            }
+          ],
+          "focus_areas": [],
+          "missing_features": [
+            "systolic_bp",
+            "diastolic_bp",
+            "resting_hr",
+            "waist_circumference",
+            "ffmi",
+            "skeletal_muscle_mass",
+            "visceral_fat",
+            "creatinine",
+            "alp",
+            "rdw",
+            "fib_4",
+            "cvd",
+            "copd",
+            "cancer",
+            "depression",
+            "grip_strength",
+            "chair_rise_time",
+            "smoking_status",
+            "alcohol_heavy_use",
+            "sleep_hours"
+          ],
+          "fi_context": {
+            "score": 0.0,
+            "denominator": 13,
+            "caveat": "FI denominator is the count of valid FI-eligible health variables; missing values are not imputed.",
+            "denominator_strength": "low",
+            "denominator_strength_caveat": "Engineering label based on the count of FI-eligible items in this single assessment; it is not a clinical adequacy claim."
+          },
+          "action_effect_estimated": false,
+          "clinical_or_lifespan_claim": false,
+          "disclaimer": "Ranges are engineering or development reference bands, not individualized medical targets. Discuss persistent or concerning results with a qualified professional."
+        },
+        "model_metadata": {
+          "model_id": "development-surrogate-v1",
+          "production_ready": false
+        },
+        "quality_notes": [
+          "FI denominator is the count of valid FI-eligible health variables; missing values are not imputed.",
+          "No missing value was fabricated; XGBoost may receive NaN for absent features.",
+          "homeostatic_deviation_score is normalized as (biological age - chronological age) / chronological age; it is not a hazard ratio.",
+          "Synthetic values for software tests only; replace with licensed/published panel tables before deployment.",
+          "Development surrogate only; no approved trained model was supplied. Uncertainty is not validated; ci_95 is intentionally null rather than a calibrated clinical confidence interval."
+        ]
+      },
+      "progress": {
+        "previous_assessed_at": "2026-01-15",
+        "current_assessed_at": "2026-08-15",
+        "report": {
+          "format": "wellness-progress-report-v1",
+          "comparison_basis": "same_model_and_reference_panel",
+          "patient_id": "demo-balanced",
+          "previous_assessed_at": "2026-01-15",
+          "current_assessed_at": "2026-08-15",
+          "readout_changes": [
+            {
+              "metric": "biological_age.point_estimate",
+              "previous": 46.3,
+              "current": 42.9,
+              "delta": -3.4,
+              "movement": "lower"
+            },
+            {
+              "metric": "current_deficit_load_fi",
+              "previous": 0.1154,
+              "current": 0.0,
+              "delta": -0.1154,
+              "movement": "lower"
+            },
+            {
+              "metric": "homeostatic_deviation_score",
+              "previous": 0.0289,
+              "current": -0.0467,
+              "delta": -0.0756,
+              "movement": "lower"
+            }
+          ],
+          "range_changes": [
+            {
+              "feature": "albumin",
+              "biomarker": "Albumin",
+              "previous_value": 4.2,
+              "current_value": 4.2,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 3.5,
+                "high": 5.0,
+                "label": "3.5\u20135"
+              },
+              "unit": "g/dL",
+              "recommendation": "Review nutrition, hydration, liver, kidney, and inflammatory context with a qualified clinician."
+            },
+            {
+              "feature": "bmi",
+              "biomarker": "Body Mass Index",
+              "previous_value": 26.1,
+              "current_value": 23.4,
+              "value_delta": -2.7,
+              "value_change": "lower",
+              "previous_status": "above_target",
+              "current_status": "in_range",
+              "status_transition": "moved_into_range",
+              "target_range": {
+                "low": 18.5,
+                "high": 24.9,
+                "label": "18.5\u201324.9"
+              },
+              "unit": "kg/m\u00b2",
+              "recommendation": "Discuss sustainable nutrition, activity, and body-composition goals rather than pursuing a single number."
+            },
+            {
+              "feature": "ecw_tbw",
+              "biomarker": "ECW/TBW",
+              "previous_value": 0.44,
+              "current_value": 0.39,
+              "value_delta": -0.05,
+              "value_change": "lower",
+              "previous_status": "attention",
+              "current_status": "in_range",
+              "status_transition": "moved_into_range",
+              "target_range": {
+                "low": 0.375,
+                "high": 0.425,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "ratio",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "egfr",
+              "biomarker": "eGFR",
+              "previous_value": 98.0,
+              "current_value": 98.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 90.0,
+                "label": "\u2265 90"
+              },
+              "unit": "mL/min/1.73m\u00b2",
+              "recommendation": "Interpret kidney markers with a qualified clinician and the person\u2019s longitudinal trend."
+            },
+            {
+              "feature": "fasting_glucose",
+              "biomarker": "Fasting glucose",
+              "previous_value": 92.0,
+              "current_value": 92.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 70.0,
+                "high": 99.0,
+                "label": "70\u201399"
+              },
+              "unit": "mg/dL",
+              "recommendation": "Review the result, fasting conditions, and trend with a qualified clinician if outside the display band."
+            },
+            {
+              "feature": "hba1c",
+              "biomarker": "HbA1c",
+              "previous_value": 5.3,
+              "current_value": 5.3,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 4.0,
+                "high": 5.6,
+                "label": "4\u20135.6"
+              },
+              "unit": "%",
+              "recommendation": "Review the result and trend with a qualified clinician; do not infer a diagnosis from this report."
+            },
+            {
+              "feature": "hs_crp",
+              "biomarker": "hs-CRP",
+              "previous_value": 0.7,
+              "current_value": 0.7,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.0,
+                "label": "0\u20131"
+              },
+              "unit": "mg/L",
+              "recommendation": "Consider recent infection, injury, and measurement context before acting on an isolated result."
+            },
+            {
+              "feature": "hypertension",
+              "biomarker": "Hypertension history",
+              "previous_value": 0,
+              "current_value": 0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "osteoarthritis",
+              "biomarker": "Osteoarthritis history",
+              "previous_value": 0,
+              "current_value": 0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "phase_angle",
+              "biomarker": "Phase Angle",
+              "previous_value": 5.2,
+              "current_value": 6.1,
+              "value_delta": 0.9,
+              "value_change": "higher",
+              "previous_status": "attention",
+              "current_status": "in_range",
+              "status_transition": "moved_into_range",
+              "target_range": {
+                "low": 5.6,
+                "high": 7.4,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "degrees",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            },
+            {
+              "feature": "sleep_apnea",
+              "biomarker": "Sleep-apnea history",
+              "previous_value": 0,
+              "current_value": 0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "t2d",
+              "biomarker": "Type 2 diabetes history",
+              "previous_value": 0,
+              "current_value": 0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "wbc",
+              "biomarker": "White blood cell count",
+              "previous_value": 6.0,
+              "current_value": 6.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 4.0,
+                "high": 10.0,
+                "label": "4\u201310"
+              },
+              "unit": "10\u2079/L",
+              "recommendation": "Interpret with symptoms, recent illness, medications, and the reporting laboratory's interval."
+            }
+          ],
+          "summary": {
+            "changed_features": 3,
+            "moved_into_reference_range": 3,
+            "moved_out_of_reference_range": 0,
+            "new_focus_areas": [],
+            "resolved_focus_areas": [
+              "Body Mass Index",
+              "ECW/TBW",
+              "Phase Angle"
+            ],
+            "current_focus_areas": 0,
+            "previous_missing_features": 20,
+            "current_missing_features": 20,
+            "interpretation": "Descriptive change between two assessments. A change in a readout or reference-band status does not establish that an action caused it or that it will change health, biological age, or lifespan."
+          },
+          "current_focus_areas": [],
+          "model_boundary": {
+            "previous_model_id": "development-surrogate-v1",
+            "current_model_id": "development-surrogate-v1",
+            "previous_production_ready": false,
+            "current_production_ready": false,
+            "previous_reference_panel_id": "seca-development-fixture",
+            "current_reference_panel_id": "seca-development-fixture",
+            "previous_reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662",
+            "current_reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662"
+          },
+          "action_effect_estimated": false,
+          "clinical_or_lifespan_claim": false,
+          "disclaimer": "This report compares measured engine outputs and development/reference bands only. It is not a treatment-effect estimate, clinical target, diagnosis, or lifespan prediction."
+        }
+      }
+    },
+    {
+      "id": "support",
+      "label": "More focus areas",
+      "description": "Synthetic profile with several values outside the development display bands.",
+      "payload": {
+        "patient_id": "demo-support",
+        "measurements": {
+          "fasting_glucose": 128,
+          "hba1c": 6.8,
+          "hs_crp": 4.0,
+          "albumin": 3.4,
+          "egfr": 55,
+          "wbc": 11,
+          "hypertension": 1,
+          "t2d": 1,
+          "osteoarthritis": 1,
+          "sleep_apnea": 1,
+          "age": 62,
+          "sex": "male",
+          "bmi": 31.2,
+          "systolic_bp": 146,
+          "diastolic_bp": 92,
+          "resting_hr": 96,
+          "waist_circumference": 107,
+          "phase_angle": 4.8,
+          "ecw_tbw": 0.46,
+          "ffmi": 16.5,
+          "skeletal_muscle_mass": 30.0,
+          "visceral_fat": 18.0,
+          "creatinine": 1.3,
+          "alp": 180,
+          "rdw": 16.8,
+          "fib_4": 2.8,
+          "grip_strength": 21,
+          "chair_rise_time": 16,
+          "smoking_status": "current",
+          "alcohol_heavy_use": 1,
+          "sleep_hours": 5.5
+        }
+      },
+      "result": {
+        "patient_id": "demo-support",
+        "data_quality": {
+          "variables_measured": 31,
+          "fi_variables_measured": 29,
+          "mvv_passed": true,
+          "blood_variables_measured": 10,
+          "history_variables_measured": 4,
+          "reference_panel_id": "seca-development-fixture",
+          "reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662",
+          "reference_panel_production_ready": false,
+          "reference_panel_fixture_only": true,
+          "reference_panel_readiness": "development_fixture_only",
+          "fi_denominator_strength": "high",
+          "reference_panel_band_count": 1,
+          "reference_panel_band_span_years_for_age": 102.0
+        },
+        "metrics": {
+          "chronological_age": 62.0,
+          "biological_age": {
+            "point_estimate": 73.4,
+            "ci_95": null,
+            "uncertainty_method": "fixed_log_hazard_sensitivity",
+            "uncertainty_construction": "none_withheld",
+            "uncertainty_validated": false,
+            "interpretation": "Age-equivalent wellness estimate; not a lifespan, diagnostic, or treatment-effect prediction."
+          },
+          "current_deficit_load_fi": 0.8276,
+          "current_deficit_load_fi_details": {
+            "numerator": 24.0,
+            "denominator": 29,
+            "valid_variables": [
+              "bmi",
+              "systolic_bp",
+              "diastolic_bp",
+              "resting_hr",
+              "waist_circumference",
+              "phase_angle",
+              "ecw_tbw",
+              "ffmi",
+              "skeletal_muscle_mass",
+              "visceral_fat",
+              "fasting_glucose",
+              "hba1c",
+              "hs_crp",
+              "albumin",
+              "creatinine",
+              "egfr",
+              "alp",
+              "wbc",
+              "rdw",
+              "fib_4",
+              "hypertension",
+              "t2d",
+              "osteoarthritis",
+              "sleep_apnea",
+              "grip_strength",
+              "chair_rise_time",
+              "smoking_status",
+              "alcohol_heavy_use",
+              "sleep_hours"
+            ],
+            "denominator_strength": "high",
+            "denominator_strength_caveat": "Engineering label based on the count of FI-eligible items in this single assessment; it is not a clinical adequacy claim."
+          }
+        },
+        "trajectory": {
+          "homeostatic_deviation_score": 0.1839,
+          "score_ci_95": null,
+          "uncertainty_construction": "none_withheld"
+        },
+        "top_interventions": [
+          {
+            "feature": "ecw_tbw",
+            "biomarker": "ECW/TBW",
+            "current_value": 0.46,
+            "z_score": 2.8,
+            "action_type": "review",
+            "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional.",
+            "unit": "ratio",
+            "direction": "above",
+            "target_range_label": "within \u00b11 development reference SD",
+            "source": "synthetic-development-fixture; development reference band, not a clinical cutoff"
+          },
+          {
+            "feature": "phase_angle",
+            "biomarker": "Phase Angle",
+            "current_value": 4.8,
+            "z_score": -2.2,
+            "action_type": "lifestyle",
+            "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional.",
+            "unit": "degrees",
+            "direction": "below",
+            "target_range_label": "within \u00b11 development reference SD",
+            "source": "synthetic-development-fixture; development reference band, not a clinical cutoff"
+          },
+          {
+            "feature": "visceral_fat",
+            "biomarker": "Visceral adipose tissue",
+            "current_value": 18.0,
+            "z_score": 1.3333,
+            "action_type": "lifestyle",
+            "recommendation": "Track the trend under consistent scan conditions and discuss sustainable body-composition goals.",
+            "unit": "L",
+            "direction": "above",
+            "target_range_label": "0\u201310",
+            "source": "SECA reference-panel measurement; threshold approval remains external"
+          }
+        ],
+        "wellness_report": {
+          "summary": {
+            "status": "focus_areas",
+            "measured_features": 29,
+            "missing_features": 4,
+            "focus_areas": 27,
+            "interpretation": "This is a development wellness view of measured values. It does not estimate the effect of an action on biological age."
+          },
+          "ranges": [
+            {
+              "feature": "bmi",
+              "biomarker": "Body Mass Index",
+              "current_value": 31.2,
+              "unit": "kg/m\u00b2",
+              "target_range": {
+                "low": 18.5,
+                "high": 24.9,
+                "label": "18.5\u201324.9"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "WHO BMI classification; engineering target pending cohort review",
+              "recommendation": "Discuss sustainable nutrition, activity, and body-composition goals rather than pursuing a single number."
+            },
+            {
+              "feature": "systolic_bp",
+              "biomarker": "Systolic blood pressure",
+              "current_value": 146.0,
+              "unit": "mmHg",
+              "target_range": {
+                "low": 90.0,
+                "high": 129.0,
+                "label": "90\u2013129"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "2017 ACC/AHA adult blood pressure guideline; engineering target",
+              "recommendation": "Repeat under consistent conditions and review persistent readings with a qualified clinician."
+            },
+            {
+              "feature": "diastolic_bp",
+              "biomarker": "Diastolic blood pressure",
+              "current_value": 92.0,
+              "unit": "mmHg",
+              "target_range": {
+                "low": 60.0,
+                "high": 79.0,
+                "label": "60\u201379"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "2017 ACC/AHA adult blood pressure guideline; engineering target",
+              "recommendation": "Repeat under consistent conditions and review persistent readings with a qualified clinician."
+            },
+            {
+              "feature": "resting_hr",
+              "biomarker": "Resting heart rate",
+              "current_value": 96.0,
+              "unit": "bpm",
+              "target_range": {
+                "low": 50.0,
+                "high": 90.0,
+                "label": "50\u201390"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Engineering screening band; target-cohort review required",
+              "recommendation": "Compare with a consistent resting measurement and discuss persistent outliers in context."
+            },
+            {
+              "feature": "waist_circumference",
+              "biomarker": "Waist circumference",
+              "current_value": 107.0,
+              "unit": "cm",
+              "target_range": {
+                "low": 0.0,
+                "high": 94.0,
+                "label": "< 94"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "IDF metabolic-syndrome definition; sex-stratified engineering target",
+              "recommendation": "Use repeatable measurement technique and focus on sustainable activity, nutrition, and sleep habits."
+            },
+            {
+              "feature": "phase_angle",
+              "biomarker": "Phase Angle",
+              "current_value": 4.8,
+              "unit": "degrees",
+              "target_range": {
+                "low": 6.0,
+                "high": 8.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "below_target",
+              "direction": "below",
+              "priority": "priority",
+              "action_type": "lifestyle",
+              "z_score": -2.2,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            },
+            {
+              "feature": "ecw_tbw",
+              "biomarker": "ECW/TBW",
+              "current_value": 0.46,
+              "unit": "ratio",
+              "target_range": {
+                "low": 0.365,
+                "high": 0.415,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": 2.8,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "ffmi",
+              "biomarker": "FFMI",
+              "current_value": 16.5,
+              "unit": "kg/m\u00b2",
+              "target_range": {
+                "low": 16.0,
+                "high": 22.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "lifestyle",
+              "z_score": -0.8333,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Discuss a safe resistance-training and nutrition plan appropriate to the person's goals and context."
+            },
+            {
+              "feature": "skeletal_muscle_mass",
+              "biomarker": "Skeletal Muscle Mass",
+              "current_value": 30.0,
+              "unit": "kg",
+              "target_range": {
+                "low": 27.0,
+                "high": 43.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "lifestyle",
+              "z_score": -0.625,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Track the trend under consistent scan conditions and discuss progressive strength work."
+            },
+            {
+              "feature": "visceral_fat",
+              "biomarker": "Visceral adipose tissue",
+              "current_value": 18.0,
+              "unit": "L",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "SECA reference-panel measurement; threshold approval remains external",
+              "recommendation": "Track the trend under consistent scan conditions and discuss sustainable body-composition goals."
+            },
+            {
+              "feature": "fasting_glucose",
+              "biomarker": "Fasting glucose",
+              "current_value": 128.0,
+              "unit": "mg/dL",
+              "target_range": {
+                "low": 70.0,
+                "high": 99.0,
+                "label": "70\u201399"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA diagnostic thresholds; wellness display band is not a diagnosis",
+              "recommendation": "Review the result, fasting conditions, and trend with a qualified clinician if outside the display band."
+            },
+            {
+              "feature": "hba1c",
+              "biomarker": "HbA1c",
+              "current_value": 6.8,
+              "unit": "%",
+              "target_range": {
+                "low": 4.0,
+                "high": 5.6,
+                "label": "4\u20135.6"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA Standards of Care; wellness display band is not a diagnosis",
+              "recommendation": "Review the result and trend with a qualified clinician; do not infer a diagnosis from this report."
+            },
+            {
+              "feature": "hs_crp",
+              "biomarker": "hs-CRP",
+              "current_value": 4.0,
+              "unit": "mg/L",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.0,
+                "label": "0\u20131"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Cardiovascular reference band; target-cohort review required",
+              "recommendation": "Consider recent infection, injury, and measurement context before acting on an isolated result."
+            },
+            {
+              "feature": "albumin",
+              "biomarker": "Albumin",
+              "current_value": 3.4,
+              "unit": "g/dL",
+              "target_range": {
+                "low": 3.5,
+                "high": 5.0,
+                "label": "3.5\u20135"
+              },
+              "status": "below_target",
+              "direction": "below",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common clinical reference boundary; target-cohort review required",
+              "recommendation": "Review nutrition, hydration, liver, kidney, and inflammatory context with a qualified clinician."
+            },
+            {
+              "feature": "creatinine",
+              "biomarker": "Creatinine",
+              "current_value": 1.3,
+              "unit": "mg/dL",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.2,
+                "label": "\u2264 1.2"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common clinical reference boundary; sex and laboratory stratification required",
+              "recommendation": "Interpret alongside eGFR and longitudinal context with a qualified clinician."
+            },
+            {
+              "feature": "egfr",
+              "biomarker": "eGFR",
+              "current_value": 55.0,
+              "unit": "mL/min/1.73m\u00b2",
+              "target_range": {
+                "low": 90.0,
+                "label": "\u2265 90"
+              },
+              "status": "below_target",
+              "direction": "below",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "KDIGO CKD G-category thresholds; wellness display is not a diagnosis",
+              "recommendation": "Interpret kidney markers with a qualified clinician and the person\u2019s longitudinal trend."
+            },
+            {
+              "feature": "alp",
+              "biomarker": "Alkaline phosphatase",
+              "current_value": 180.0,
+              "unit": "U/L",
+              "target_range": {
+                "low": 44.0,
+                "high": 147.0,
+                "label": "44\u2013147"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Check the reporting laboratory's interval and review persistent differences with a qualified clinician."
+            },
+            {
+              "feature": "wbc",
+              "biomarker": "White blood cell count",
+              "current_value": 11.0,
+              "unit": "10\u2079/L",
+              "target_range": {
+                "low": 4.0,
+                "high": 10.0,
+                "label": "4\u201310"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Interpret with symptoms, recent illness, medications, and the reporting laboratory's interval."
+            },
+            {
+              "feature": "rdw",
+              "biomarker": "RDW",
+              "current_value": 16.8,
+              "unit": "%",
+              "target_range": {
+                "low": 11.5,
+                "high": 14.5,
+                "label": "11.5\u201314.5"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Review alongside the complete blood count and clinical context with a qualified clinician."
+            },
+            {
+              "feature": "fib_4",
+              "biomarker": "FIB-4",
+              "current_value": 2.8,
+              "unit": "index",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.3,
+                "label": "0\u20131.3"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "review",
+              "z_score": null,
+              "source": "FIB-4 published risk thresholds; wellness display is not a diagnosis",
+              "recommendation": "Review the underlying AST, ALT, platelet count, age, and trend with a qualified clinician."
+            },
+            {
+              "feature": "hypertension",
+              "biomarker": "Hypertension history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "flagged",
+              "direction": "flagged",
+              "priority": "review",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "t2d",
+              "biomarker": "Type 2 diabetes history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "flagged",
+              "direction": "flagged",
+              "priority": "review",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "osteoarthritis",
+              "biomarker": "Osteoarthritis history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "flagged",
+              "direction": "flagged",
+              "priority": "review",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "sleep_apnea",
+              "biomarker": "Sleep-apnea history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "flagged",
+              "direction": "flagged",
+              "priority": "review",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "grip_strength",
+              "biomarker": "Grip strength",
+              "current_value": 21.0,
+              "unit": "kg",
+              "target_range": {
+                "low": 30.0,
+                "label": "\u2265 30"
+              },
+              "status": "below_target",
+              "direction": "below",
+              "priority": "priority",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "EWGSOP2 low-strength guidance; sex-stratified engineering target",
+              "recommendation": "Track repeatable measurements and consider supervised strength and balance work appropriate to the person."
+            },
+            {
+              "feature": "chair_rise_time",
+              "biomarker": "Chair-rise time",
+              "current_value": 16.0,
+              "unit": "seconds",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "status": "above_target",
+              "direction": "above",
+              "priority": "priority",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "Short Physical Performance Battery convention; engineering target",
+              "recommendation": "Consider supervised lower-body strength, balance, and mobility work."
+            },
+            {
+              "feature": "smoking_status",
+              "biomarker": "Smoking status",
+              "current_value": "current",
+              "unit": null,
+              "target_range": {
+                "label": "never / former",
+                "kind": "wellness_target"
+              },
+              "status": "flagged",
+              "direction": "flagged",
+              "priority": "review",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "Ordinal lifestyle field; self-reported",
+              "recommendation": "If currently smoking, offer evidence-based cessation support and a patient-chosen next step."
+            },
+            {
+              "feature": "alcohol_heavy_use",
+              "biomarker": "Heavy alcohol-use flag",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "flagged",
+              "direction": "flagged",
+              "priority": "review",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "sleep_hours",
+              "biomarker": "Sleep duration",
+              "current_value": 5.5,
+              "unit": "hours",
+              "target_range": {
+                "low": 7.0,
+                "high": 9.0,
+                "label": "7\u20139"
+              },
+              "status": "below_target",
+              "direction": "below",
+              "priority": "priority",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "Engineering sleep-duration band; target-cohort review required",
+              "recommendation": "Work toward a consistent sleep schedule and review persistent sleep concerns professionally."
+            }
+          ],
+          "focus_areas": [
+            {
+              "feature": "albumin",
+              "focus": "Albumin",
+              "current_value": 3.4,
+              "unit": "g/dL",
+              "target_range": {
+                "low": 3.5,
+                "high": 5.0,
+                "label": "3.5\u20135"
+              },
+              "target_range_label": "3.5\u20135",
+              "direction": "below",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common clinical reference boundary; target-cohort review required",
+              "recommendation": "Review nutrition, hydration, liver, kidney, and inflammatory context with a qualified clinician."
+            },
+            {
+              "feature": "alp",
+              "focus": "Alkaline phosphatase",
+              "current_value": 180.0,
+              "unit": "U/L",
+              "target_range": {
+                "low": 44.0,
+                "high": 147.0,
+                "label": "44\u2013147"
+              },
+              "target_range_label": "44\u2013147",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Check the reporting laboratory's interval and review persistent differences with a qualified clinician."
+            },
+            {
+              "feature": "bmi",
+              "focus": "Body Mass Index",
+              "current_value": 31.2,
+              "unit": "kg/m\u00b2",
+              "target_range": {
+                "low": 18.5,
+                "high": 24.9,
+                "label": "18.5\u201324.9"
+              },
+              "target_range_label": "18.5\u201324.9",
+              "direction": "above",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "WHO BMI classification; engineering target pending cohort review",
+              "recommendation": "Discuss sustainable nutrition, activity, and body-composition goals rather than pursuing a single number."
+            },
+            {
+              "feature": "chair_rise_time",
+              "focus": "Chair-rise time",
+              "current_value": 16.0,
+              "unit": "seconds",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "target_range_label": "0\u201310",
+              "direction": "above",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "Short Physical Performance Battery convention; engineering target",
+              "recommendation": "Consider supervised lower-body strength, balance, and mobility work."
+            },
+            {
+              "feature": "creatinine",
+              "focus": "Creatinine",
+              "current_value": 1.3,
+              "unit": "mg/dL",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.2,
+                "label": "\u2264 1.2"
+              },
+              "target_range_label": "\u2264 1.2",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common clinical reference boundary; sex and laboratory stratification required",
+              "recommendation": "Interpret alongside eGFR and longitudinal context with a qualified clinician."
+            },
+            {
+              "feature": "diastolic_bp",
+              "focus": "Diastolic blood pressure",
+              "current_value": 92.0,
+              "unit": "mmHg",
+              "target_range": {
+                "low": 60.0,
+                "high": 79.0,
+                "label": "60\u201379"
+              },
+              "target_range_label": "60\u201379",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "2017 ACC/AHA adult blood pressure guideline; engineering target",
+              "recommendation": "Repeat under consistent conditions and review persistent readings with a qualified clinician."
+            },
+            {
+              "feature": "ecw_tbw",
+              "focus": "ECW/TBW",
+              "current_value": 0.46,
+              "unit": "ratio",
+              "target_range": {
+                "low": 0.365,
+                "high": 0.415,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "target_range_label": "within \u00b11 development reference SD",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": 2.8,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "fib_4",
+              "focus": "FIB-4",
+              "current_value": 2.8,
+              "unit": "index",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.3,
+                "label": "0\u20131.3"
+              },
+              "target_range_label": "0\u20131.3",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "FIB-4 published risk thresholds; wellness display is not a diagnosis",
+              "recommendation": "Review the underlying AST, ALT, platelet count, age, and trend with a qualified clinician."
+            },
+            {
+              "feature": "fasting_glucose",
+              "focus": "Fasting glucose",
+              "current_value": 128.0,
+              "unit": "mg/dL",
+              "target_range": {
+                "low": 70.0,
+                "high": 99.0,
+                "label": "70\u201399"
+              },
+              "target_range_label": "70\u201399",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA diagnostic thresholds; wellness display band is not a diagnosis",
+              "recommendation": "Review the result, fasting conditions, and trend with a qualified clinician if outside the display band."
+            },
+            {
+              "feature": "grip_strength",
+              "focus": "Grip strength",
+              "current_value": 21.0,
+              "unit": "kg",
+              "target_range": {
+                "low": 30.0,
+                "label": "\u2265 30"
+              },
+              "target_range_label": "\u2265 30",
+              "direction": "below",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "EWGSOP2 low-strength guidance; sex-stratified engineering target",
+              "recommendation": "Track repeatable measurements and consider supervised strength and balance work appropriate to the person."
+            },
+            {
+              "feature": "hba1c",
+              "focus": "HbA1c",
+              "current_value": 6.8,
+              "unit": "%",
+              "target_range": {
+                "low": 4.0,
+                "high": 5.6,
+                "label": "4\u20135.6"
+              },
+              "target_range_label": "4\u20135.6",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA Standards of Care; wellness display band is not a diagnosis",
+              "recommendation": "Review the result and trend with a qualified clinician; do not infer a diagnosis from this report."
+            },
+            {
+              "feature": "phase_angle",
+              "focus": "Phase Angle",
+              "current_value": 4.8,
+              "unit": "degrees",
+              "target_range": {
+                "low": 6.0,
+                "high": 8.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "target_range_label": "within \u00b11 development reference SD",
+              "direction": "below",
+              "action_type": "lifestyle",
+              "z_score": -2.2,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            },
+            {
+              "feature": "rdw",
+              "focus": "RDW",
+              "current_value": 16.8,
+              "unit": "%",
+              "target_range": {
+                "low": 11.5,
+                "high": 14.5,
+                "label": "11.5\u201314.5"
+              },
+              "target_range_label": "11.5\u201314.5",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Review alongside the complete blood count and clinical context with a qualified clinician."
+            },
+            {
+              "feature": "resting_hr",
+              "focus": "Resting heart rate",
+              "current_value": 96.0,
+              "unit": "bpm",
+              "target_range": {
+                "low": 50.0,
+                "high": 90.0,
+                "label": "50\u201390"
+              },
+              "target_range_label": "50\u201390",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Engineering screening band; target-cohort review required",
+              "recommendation": "Compare with a consistent resting measurement and discuss persistent outliers in context."
+            },
+            {
+              "feature": "sleep_hours",
+              "focus": "Sleep duration",
+              "current_value": 5.5,
+              "unit": "hours",
+              "target_range": {
+                "low": 7.0,
+                "high": 9.0,
+                "label": "7\u20139"
+              },
+              "target_range_label": "7\u20139",
+              "direction": "below",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "Engineering sleep-duration band; target-cohort review required",
+              "recommendation": "Work toward a consistent sleep schedule and review persistent sleep concerns professionally."
+            },
+            {
+              "feature": "systolic_bp",
+              "focus": "Systolic blood pressure",
+              "current_value": 146.0,
+              "unit": "mmHg",
+              "target_range": {
+                "low": 90.0,
+                "high": 129.0,
+                "label": "90\u2013129"
+              },
+              "target_range_label": "90\u2013129",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "2017 ACC/AHA adult blood pressure guideline; engineering target",
+              "recommendation": "Repeat under consistent conditions and review persistent readings with a qualified clinician."
+            },
+            {
+              "feature": "visceral_fat",
+              "focus": "Visceral adipose tissue",
+              "current_value": 18.0,
+              "unit": "L",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "target_range_label": "0\u201310",
+              "direction": "above",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "SECA reference-panel measurement; threshold approval remains external",
+              "recommendation": "Track the trend under consistent scan conditions and discuss sustainable body-composition goals."
+            },
+            {
+              "feature": "waist_circumference",
+              "focus": "Waist circumference",
+              "current_value": 107.0,
+              "unit": "cm",
+              "target_range": {
+                "low": 0.0,
+                "high": 94.0,
+                "label": "< 94"
+              },
+              "target_range_label": "< 94",
+              "direction": "above",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "IDF metabolic-syndrome definition; sex-stratified engineering target",
+              "recommendation": "Use repeatable measurement technique and focus on sustainable activity, nutrition, and sleep habits."
+            },
+            {
+              "feature": "wbc",
+              "focus": "White blood cell count",
+              "current_value": 11.0,
+              "unit": "10\u2079/L",
+              "target_range": {
+                "low": 4.0,
+                "high": 10.0,
+                "label": "4\u201310"
+              },
+              "target_range_label": "4\u201310",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Interpret with symptoms, recent illness, medications, and the reporting laboratory's interval."
+            },
+            {
+              "feature": "egfr",
+              "focus": "eGFR",
+              "current_value": 55.0,
+              "unit": "mL/min/1.73m\u00b2",
+              "target_range": {
+                "low": 90.0,
+                "label": "\u2265 90"
+              },
+              "target_range_label": "\u2265 90",
+              "direction": "below",
+              "action_type": "review",
+              "z_score": null,
+              "source": "KDIGO CKD G-category thresholds; wellness display is not a diagnosis",
+              "recommendation": "Interpret kidney markers with a qualified clinician and the person\u2019s longitudinal trend."
+            },
+            {
+              "feature": "hs_crp",
+              "focus": "hs-CRP",
+              "current_value": 4.0,
+              "unit": "mg/L",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.0,
+                "label": "0\u20131"
+              },
+              "target_range_label": "0\u20131",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Cardiovascular reference band; target-cohort review required",
+              "recommendation": "Consider recent infection, injury, and measurement context before acting on an isolated result."
+            },
+            {
+              "feature": "alcohol_heavy_use",
+              "focus": "Heavy alcohol-use flag",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "hypertension",
+              "focus": "Hypertension history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "osteoarthritis",
+              "focus": "Osteoarthritis history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "sleep_apnea",
+              "focus": "Sleep-apnea history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "smoking_status",
+              "focus": "Smoking status",
+              "current_value": "current",
+              "unit": null,
+              "target_range": {
+                "label": "never / former",
+                "kind": "wellness_target"
+              },
+              "target_range_label": "never / former",
+              "direction": "flagged",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "Ordinal lifestyle field; self-reported",
+              "recommendation": "If currently smoking, offer evidence-based cessation support and a patient-chosen next step."
+            },
+            {
+              "feature": "t2d",
+              "focus": "Type 2 diabetes history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            }
+          ],
+          "missing_features": [
+            "cvd",
+            "copd",
+            "cancer",
+            "depression"
+          ],
+          "fi_context": {
+            "score": 0.8276,
+            "denominator": 29,
+            "caveat": "FI denominator is the count of valid FI-eligible health variables; missing values are not imputed.",
+            "denominator_strength": "high",
+            "denominator_strength_caveat": "Engineering label based on the count of FI-eligible items in this single assessment; it is not a clinical adequacy claim."
+          },
+          "action_effect_estimated": false,
+          "clinical_or_lifespan_claim": false,
+          "disclaimer": "Ranges are engineering or development reference bands, not individualized medical targets. Discuss persistent or concerning results with a qualified professional."
+        },
+        "model_metadata": {
+          "model_id": "development-surrogate-v1",
+          "production_ready": false
+        },
+        "quality_notes": [
+          "FI denominator is the count of valid FI-eligible health variables; missing values are not imputed.",
+          "No missing value was fabricated; XGBoost may receive NaN for absent features.",
+          "homeostatic_deviation_score is normalized as (biological age - chronological age) / chronological age; it is not a hazard ratio.",
+          "Synthetic values for software tests only; replace with licensed/published panel tables before deployment.",
+          "Development surrogate only; no approved trained model was supplied. Uncertainty is not validated; ci_95 is intentionally null rather than a calibrated clinical confidence interval."
+        ]
+      },
+      "progress": {
+        "previous_assessed_at": "2026-01-15",
+        "current_assessed_at": "2026-08-15",
+        "report": {
+          "format": "wellness-progress-report-v1",
+          "comparison_basis": "same_model_and_reference_panel",
+          "patient_id": "demo-support",
+          "previous_assessed_at": "2026-01-15",
+          "current_assessed_at": "2026-08-15",
+          "readout_changes": [
+            {
+              "metric": "biological_age.point_estimate",
+              "previous": 73.7,
+              "current": 73.4,
+              "delta": -0.3,
+              "movement": "lower"
+            },
+            {
+              "metric": "current_deficit_load_fi",
+              "previous": 0.8276,
+              "current": 0.8276,
+              "delta": 0.0,
+              "movement": "unchanged"
+            },
+            {
+              "metric": "homeostatic_deviation_score",
+              "previous": 0.1887,
+              "current": 0.1839,
+              "delta": -0.0048,
+              "movement": "lower"
+            }
+          ],
+          "range_changes": [
+            {
+              "feature": "albumin",
+              "biomarker": "Albumin",
+              "previous_value": 3.4,
+              "current_value": 3.4,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "below_target",
+              "current_status": "below_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 3.5,
+                "high": 5.0,
+                "label": "3.5\u20135"
+              },
+              "unit": "g/dL",
+              "recommendation": "Review nutrition, hydration, liver, kidney, and inflammatory context with a qualified clinician."
+            },
+            {
+              "feature": "alcohol_heavy_use",
+              "biomarker": "Heavy alcohol-use flag",
+              "previous_value": 1,
+              "current_value": 1,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "flagged",
+              "current_status": "flagged",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "alp",
+              "biomarker": "Alkaline phosphatase",
+              "previous_value": 180.0,
+              "current_value": 180.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 44.0,
+                "high": 147.0,
+                "label": "44\u2013147"
+              },
+              "unit": "U/L",
+              "recommendation": "Check the reporting laboratory's interval and review persistent differences with a qualified clinician."
+            },
+            {
+              "feature": "bmi",
+              "biomarker": "Body Mass Index",
+              "previous_value": 33.0,
+              "current_value": 31.2,
+              "value_delta": -1.8,
+              "value_change": "lower",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 18.5,
+                "high": 24.9,
+                "label": "18.5\u201324.9"
+              },
+              "unit": "kg/m\u00b2",
+              "recommendation": "Discuss sustainable nutrition, activity, and body-composition goals rather than pursuing a single number."
+            },
+            {
+              "feature": "chair_rise_time",
+              "biomarker": "Chair-rise time",
+              "previous_value": 16.0,
+              "current_value": 16.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "unit": "seconds",
+              "recommendation": "Consider supervised lower-body strength, balance, and mobility work."
+            },
+            {
+              "feature": "creatinine",
+              "biomarker": "Creatinine",
+              "previous_value": 1.3,
+              "current_value": 1.3,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.2,
+                "label": "\u2264 1.2"
+              },
+              "unit": "mg/dL",
+              "recommendation": "Interpret alongside eGFR and longitudinal context with a qualified clinician."
+            },
+            {
+              "feature": "diastolic_bp",
+              "biomarker": "Diastolic blood pressure",
+              "previous_value": 92.0,
+              "current_value": 92.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 60.0,
+                "high": 79.0,
+                "label": "60\u201379"
+              },
+              "unit": "mmHg",
+              "recommendation": "Repeat under consistent conditions and review persistent readings with a qualified clinician."
+            },
+            {
+              "feature": "ecw_tbw",
+              "biomarker": "ECW/TBW",
+              "previous_value": 0.48,
+              "current_value": 0.46,
+              "value_delta": -0.02,
+              "value_change": "lower",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.365,
+                "high": 0.415,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "ratio",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "egfr",
+              "biomarker": "eGFR",
+              "previous_value": 55.0,
+              "current_value": 55.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "below_target",
+              "current_status": "below_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 90.0,
+                "label": "\u2265 90"
+              },
+              "unit": "mL/min/1.73m\u00b2",
+              "recommendation": "Interpret kidney markers with a qualified clinician and the person\u2019s longitudinal trend."
+            },
+            {
+              "feature": "fasting_glucose",
+              "biomarker": "Fasting glucose",
+              "previous_value": 128.0,
+              "current_value": 128.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 70.0,
+                "high": 99.0,
+                "label": "70\u201399"
+              },
+              "unit": "mg/dL",
+              "recommendation": "Review the result, fasting conditions, and trend with a qualified clinician if outside the display band."
+            },
+            {
+              "feature": "ffmi",
+              "biomarker": "FFMI",
+              "previous_value": 16.5,
+              "current_value": 16.5,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 16.0,
+                "high": 22.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "kg/m\u00b2",
+              "recommendation": "Discuss a safe resistance-training and nutrition plan appropriate to the person's goals and context."
+            },
+            {
+              "feature": "fib_4",
+              "biomarker": "FIB-4",
+              "previous_value": 2.8,
+              "current_value": 2.8,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.3,
+                "label": "0\u20131.3"
+              },
+              "unit": "index",
+              "recommendation": "Review the underlying AST, ALT, platelet count, age, and trend with a qualified clinician."
+            },
+            {
+              "feature": "grip_strength",
+              "biomarker": "Grip strength",
+              "previous_value": 21.0,
+              "current_value": 21.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "below_target",
+              "current_status": "below_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 30.0,
+                "label": "\u2265 30"
+              },
+              "unit": "kg",
+              "recommendation": "Track repeatable measurements and consider supervised strength and balance work appropriate to the person."
+            },
+            {
+              "feature": "hba1c",
+              "biomarker": "HbA1c",
+              "previous_value": 6.8,
+              "current_value": 6.8,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 4.0,
+                "high": 5.6,
+                "label": "4\u20135.6"
+              },
+              "unit": "%",
+              "recommendation": "Review the result and trend with a qualified clinician; do not infer a diagnosis from this report."
+            },
+            {
+              "feature": "hs_crp",
+              "biomarker": "hs-CRP",
+              "previous_value": 4.0,
+              "current_value": 4.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.0,
+                "label": "0\u20131"
+              },
+              "unit": "mg/L",
+              "recommendation": "Consider recent infection, injury, and measurement context before acting on an isolated result."
+            },
+            {
+              "feature": "hypertension",
+              "biomarker": "Hypertension history",
+              "previous_value": 1,
+              "current_value": 1,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "flagged",
+              "current_status": "flagged",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "osteoarthritis",
+              "biomarker": "Osteoarthritis history",
+              "previous_value": 1,
+              "current_value": 1,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "flagged",
+              "current_status": "flagged",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "phase_angle",
+              "biomarker": "Phase Angle",
+              "previous_value": 4.5,
+              "current_value": 4.8,
+              "value_delta": 0.3,
+              "value_change": "higher",
+              "previous_status": "below_target",
+              "current_status": "below_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 6.0,
+                "high": 8.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "degrees",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            },
+            {
+              "feature": "rdw",
+              "biomarker": "RDW",
+              "previous_value": 16.8,
+              "current_value": 16.8,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 11.5,
+                "high": 14.5,
+                "label": "11.5\u201314.5"
+              },
+              "unit": "%",
+              "recommendation": "Review alongside the complete blood count and clinical context with a qualified clinician."
+            },
+            {
+              "feature": "resting_hr",
+              "biomarker": "Resting heart rate",
+              "previous_value": 96.0,
+              "current_value": 96.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 50.0,
+                "high": 90.0,
+                "label": "50\u201390"
+              },
+              "unit": "bpm",
+              "recommendation": "Compare with a consistent resting measurement and discuss persistent outliers in context."
+            },
+            {
+              "feature": "skeletal_muscle_mass",
+              "biomarker": "Skeletal Muscle Mass",
+              "previous_value": 30.0,
+              "current_value": 30.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 27.0,
+                "high": 43.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "kg",
+              "recommendation": "Track the trend under consistent scan conditions and discuss progressive strength work."
+            },
+            {
+              "feature": "sleep_apnea",
+              "biomarker": "Sleep-apnea history",
+              "previous_value": 1,
+              "current_value": 1,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "flagged",
+              "current_status": "flagged",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "sleep_hours",
+              "biomarker": "Sleep duration",
+              "previous_value": 5.5,
+              "current_value": 5.5,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "below_target",
+              "current_status": "below_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 7.0,
+                "high": 9.0,
+                "label": "7\u20139"
+              },
+              "unit": "hours",
+              "recommendation": "Work toward a consistent sleep schedule and review persistent sleep concerns professionally."
+            },
+            {
+              "feature": "smoking_status",
+              "biomarker": "Smoking status",
+              "previous_value": "current",
+              "current_value": "current",
+              "value_delta": null,
+              "value_change": "unchanged",
+              "previous_status": "flagged",
+              "current_status": "flagged",
+              "status_transition": "unchanged",
+              "target_range": {
+                "label": "never / former",
+                "kind": "wellness_target"
+              },
+              "unit": null,
+              "recommendation": "If currently smoking, offer evidence-based cessation support and a patient-chosen next step."
+            },
+            {
+              "feature": "systolic_bp",
+              "biomarker": "Systolic blood pressure",
+              "previous_value": 154.0,
+              "current_value": 146.0,
+              "value_delta": -8.0,
+              "value_change": "lower",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 90.0,
+                "high": 129.0,
+                "label": "90\u2013129"
+              },
+              "unit": "mmHg",
+              "recommendation": "Repeat under consistent conditions and review persistent readings with a qualified clinician."
+            },
+            {
+              "feature": "t2d",
+              "biomarker": "Type 2 diabetes history",
+              "previous_value": 1,
+              "current_value": 1,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "flagged",
+              "current_status": "flagged",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "visceral_fat",
+              "biomarker": "Visceral adipose tissue",
+              "previous_value": 18.0,
+              "current_value": 18.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "unit": "L",
+              "recommendation": "Track the trend under consistent scan conditions and discuss sustainable body-composition goals."
+            },
+            {
+              "feature": "waist_circumference",
+              "biomarker": "Waist circumference",
+              "previous_value": 107.0,
+              "current_value": 107.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.0,
+                "high": 94.0,
+                "label": "< 94"
+              },
+              "unit": "cm",
+              "recommendation": "Use repeatable measurement technique and focus on sustainable activity, nutrition, and sleep habits."
+            },
+            {
+              "feature": "wbc",
+              "biomarker": "White blood cell count",
+              "previous_value": 11.0,
+              "current_value": 11.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "above_target",
+              "current_status": "above_target",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 4.0,
+                "high": 10.0,
+                "label": "4\u201310"
+              },
+              "unit": "10\u2079/L",
+              "recommendation": "Interpret with symptoms, recent illness, medications, and the reporting laboratory's interval."
+            }
+          ],
+          "summary": {
+            "changed_features": 4,
+            "moved_into_reference_range": 0,
+            "moved_out_of_reference_range": 0,
+            "new_focus_areas": [],
+            "resolved_focus_areas": [],
+            "current_focus_areas": 27,
+            "previous_missing_features": 4,
+            "current_missing_features": 4,
+            "interpretation": "Descriptive change between two assessments. A change in a readout or reference-band status does not establish that an action caused it or that it will change health, biological age, or lifespan."
+          },
+          "current_focus_areas": [
+            {
+              "feature": "albumin",
+              "focus": "Albumin",
+              "current_value": 3.4,
+              "unit": "g/dL",
+              "target_range": {
+                "low": 3.5,
+                "high": 5.0,
+                "label": "3.5\u20135"
+              },
+              "target_range_label": "3.5\u20135",
+              "direction": "below",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common clinical reference boundary; target-cohort review required",
+              "recommendation": "Review nutrition, hydration, liver, kidney, and inflammatory context with a qualified clinician."
+            },
+            {
+              "feature": "alp",
+              "focus": "Alkaline phosphatase",
+              "current_value": 180.0,
+              "unit": "U/L",
+              "target_range": {
+                "low": 44.0,
+                "high": 147.0,
+                "label": "44\u2013147"
+              },
+              "target_range_label": "44\u2013147",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Check the reporting laboratory's interval and review persistent differences with a qualified clinician."
+            },
+            {
+              "feature": "bmi",
+              "focus": "Body Mass Index",
+              "current_value": 31.2,
+              "unit": "kg/m\u00b2",
+              "target_range": {
+                "low": 18.5,
+                "high": 24.9,
+                "label": "18.5\u201324.9"
+              },
+              "target_range_label": "18.5\u201324.9",
+              "direction": "above",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "WHO BMI classification; engineering target pending cohort review",
+              "recommendation": "Discuss sustainable nutrition, activity, and body-composition goals rather than pursuing a single number."
+            },
+            {
+              "feature": "chair_rise_time",
+              "focus": "Chair-rise time",
+              "current_value": 16.0,
+              "unit": "seconds",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "target_range_label": "0\u201310",
+              "direction": "above",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "Short Physical Performance Battery convention; engineering target",
+              "recommendation": "Consider supervised lower-body strength, balance, and mobility work."
+            },
+            {
+              "feature": "creatinine",
+              "focus": "Creatinine",
+              "current_value": 1.3,
+              "unit": "mg/dL",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.2,
+                "label": "\u2264 1.2"
+              },
+              "target_range_label": "\u2264 1.2",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common clinical reference boundary; sex and laboratory stratification required",
+              "recommendation": "Interpret alongside eGFR and longitudinal context with a qualified clinician."
+            },
+            {
+              "feature": "diastolic_bp",
+              "focus": "Diastolic blood pressure",
+              "current_value": 92.0,
+              "unit": "mmHg",
+              "target_range": {
+                "low": 60.0,
+                "high": 79.0,
+                "label": "60\u201379"
+              },
+              "target_range_label": "60\u201379",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "2017 ACC/AHA adult blood pressure guideline; engineering target",
+              "recommendation": "Repeat under consistent conditions and review persistent readings with a qualified clinician."
+            },
+            {
+              "feature": "ecw_tbw",
+              "focus": "ECW/TBW",
+              "current_value": 0.46,
+              "unit": "ratio",
+              "target_range": {
+                "low": 0.365,
+                "high": 0.415,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "target_range_label": "within \u00b11 development reference SD",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": 2.8,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "fib_4",
+              "focus": "FIB-4",
+              "current_value": 2.8,
+              "unit": "index",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.3,
+                "label": "0\u20131.3"
+              },
+              "target_range_label": "0\u20131.3",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "FIB-4 published risk thresholds; wellness display is not a diagnosis",
+              "recommendation": "Review the underlying AST, ALT, platelet count, age, and trend with a qualified clinician."
+            },
+            {
+              "feature": "fasting_glucose",
+              "focus": "Fasting glucose",
+              "current_value": 128.0,
+              "unit": "mg/dL",
+              "target_range": {
+                "low": 70.0,
+                "high": 99.0,
+                "label": "70\u201399"
+              },
+              "target_range_label": "70\u201399",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA diagnostic thresholds; wellness display band is not a diagnosis",
+              "recommendation": "Review the result, fasting conditions, and trend with a qualified clinician if outside the display band."
+            },
+            {
+              "feature": "grip_strength",
+              "focus": "Grip strength",
+              "current_value": 21.0,
+              "unit": "kg",
+              "target_range": {
+                "low": 30.0,
+                "label": "\u2265 30"
+              },
+              "target_range_label": "\u2265 30",
+              "direction": "below",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "EWGSOP2 low-strength guidance; sex-stratified engineering target",
+              "recommendation": "Track repeatable measurements and consider supervised strength and balance work appropriate to the person."
+            },
+            {
+              "feature": "hba1c",
+              "focus": "HbA1c",
+              "current_value": 6.8,
+              "unit": "%",
+              "target_range": {
+                "low": 4.0,
+                "high": 5.6,
+                "label": "4\u20135.6"
+              },
+              "target_range_label": "4\u20135.6",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA Standards of Care; wellness display band is not a diagnosis",
+              "recommendation": "Review the result and trend with a qualified clinician; do not infer a diagnosis from this report."
+            },
+            {
+              "feature": "phase_angle",
+              "focus": "Phase Angle",
+              "current_value": 4.8,
+              "unit": "degrees",
+              "target_range": {
+                "low": 6.0,
+                "high": 8.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "target_range_label": "within \u00b11 development reference SD",
+              "direction": "below",
+              "action_type": "lifestyle",
+              "z_score": -2.2,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            },
+            {
+              "feature": "rdw",
+              "focus": "RDW",
+              "current_value": 16.8,
+              "unit": "%",
+              "target_range": {
+                "low": 11.5,
+                "high": 14.5,
+                "label": "11.5\u201314.5"
+              },
+              "target_range_label": "11.5\u201314.5",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Review alongside the complete blood count and clinical context with a qualified clinician."
+            },
+            {
+              "feature": "resting_hr",
+              "focus": "Resting heart rate",
+              "current_value": 96.0,
+              "unit": "bpm",
+              "target_range": {
+                "low": 50.0,
+                "high": 90.0,
+                "label": "50\u201390"
+              },
+              "target_range_label": "50\u201390",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Engineering screening band; target-cohort review required",
+              "recommendation": "Compare with a consistent resting measurement and discuss persistent outliers in context."
+            },
+            {
+              "feature": "sleep_hours",
+              "focus": "Sleep duration",
+              "current_value": 5.5,
+              "unit": "hours",
+              "target_range": {
+                "low": 7.0,
+                "high": 9.0,
+                "label": "7\u20139"
+              },
+              "target_range_label": "7\u20139",
+              "direction": "below",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "Engineering sleep-duration band; target-cohort review required",
+              "recommendation": "Work toward a consistent sleep schedule and review persistent sleep concerns professionally."
+            },
+            {
+              "feature": "systolic_bp",
+              "focus": "Systolic blood pressure",
+              "current_value": 146.0,
+              "unit": "mmHg",
+              "target_range": {
+                "low": 90.0,
+                "high": 129.0,
+                "label": "90\u2013129"
+              },
+              "target_range_label": "90\u2013129",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "2017 ACC/AHA adult blood pressure guideline; engineering target",
+              "recommendation": "Repeat under consistent conditions and review persistent readings with a qualified clinician."
+            },
+            {
+              "feature": "visceral_fat",
+              "focus": "Visceral adipose tissue",
+              "current_value": 18.0,
+              "unit": "L",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "target_range_label": "0\u201310",
+              "direction": "above",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "SECA reference-panel measurement; threshold approval remains external",
+              "recommendation": "Track the trend under consistent scan conditions and discuss sustainable body-composition goals."
+            },
+            {
+              "feature": "waist_circumference",
+              "focus": "Waist circumference",
+              "current_value": 107.0,
+              "unit": "cm",
+              "target_range": {
+                "low": 0.0,
+                "high": 94.0,
+                "label": "< 94"
+              },
+              "target_range_label": "< 94",
+              "direction": "above",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "IDF metabolic-syndrome definition; sex-stratified engineering target",
+              "recommendation": "Use repeatable measurement technique and focus on sustainable activity, nutrition, and sleep habits."
+            },
+            {
+              "feature": "wbc",
+              "focus": "White blood cell count",
+              "current_value": 11.0,
+              "unit": "10\u2079/L",
+              "target_range": {
+                "low": 4.0,
+                "high": 10.0,
+                "label": "4\u201310"
+              },
+              "target_range_label": "4\u201310",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Interpret with symptoms, recent illness, medications, and the reporting laboratory's interval."
+            },
+            {
+              "feature": "egfr",
+              "focus": "eGFR",
+              "current_value": 55.0,
+              "unit": "mL/min/1.73m\u00b2",
+              "target_range": {
+                "low": 90.0,
+                "label": "\u2265 90"
+              },
+              "target_range_label": "\u2265 90",
+              "direction": "below",
+              "action_type": "review",
+              "z_score": null,
+              "source": "KDIGO CKD G-category thresholds; wellness display is not a diagnosis",
+              "recommendation": "Interpret kidney markers with a qualified clinician and the person\u2019s longitudinal trend."
+            },
+            {
+              "feature": "hs_crp",
+              "focus": "hs-CRP",
+              "current_value": 4.0,
+              "unit": "mg/L",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.0,
+                "label": "0\u20131"
+              },
+              "target_range_label": "0\u20131",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Cardiovascular reference band; target-cohort review required",
+              "recommendation": "Consider recent infection, injury, and measurement context before acting on an isolated result."
+            },
+            {
+              "feature": "alcohol_heavy_use",
+              "focus": "Heavy alcohol-use flag",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "hypertension",
+              "focus": "Hypertension history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "osteoarthritis",
+              "focus": "Osteoarthritis history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "sleep_apnea",
+              "focus": "Sleep-apnea history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "smoking_status",
+              "focus": "Smoking status",
+              "current_value": "current",
+              "unit": null,
+              "target_range": {
+                "label": "never / former",
+                "kind": "wellness_target"
+              },
+              "target_range_label": "never / former",
+              "direction": "flagged",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "Ordinal lifestyle field; self-reported",
+              "recommendation": "If currently smoking, offer evidence-based cessation support and a patient-chosen next step."
+            },
+            {
+              "feature": "t2d",
+              "focus": "Type 2 diabetes history",
+              "current_value": 1,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "target_range_label": "0 = no reported history",
+              "direction": "flagged",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            }
+          ],
+          "model_boundary": {
+            "previous_model_id": "development-surrogate-v1",
+            "current_model_id": "development-surrogate-v1",
+            "previous_production_ready": false,
+            "current_production_ready": false,
+            "previous_reference_panel_id": "seca-development-fixture",
+            "current_reference_panel_id": "seca-development-fixture",
+            "previous_reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662",
+            "current_reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662"
+          },
+          "action_effect_estimated": false,
+          "clinical_or_lifespan_claim": false,
+          "disclaimer": "This report compares measured engine outputs and development/reference bands only. It is not a treatment-effect estimate, clinical target, diagnosis, or lifespan prediction."
+        }
+      }
+    },
+    {
+      "id": "seca-style",
+      "label": "SECA-informed BIA example",
+      "description": "Synthetic BIA values informed by the SECA field set; this profile is intentionally separate from any local equipment export.",
+      "payload": {
+        "patient_id": "demo-seca-style",
+        "measurements": {
+          "fasting_glucose": 92,
+          "hba1c": 5.3,
+          "hs_crp": 0.7,
+          "albumin": 4.2,
+          "egfr": 98,
+          "wbc": 6.0,
+          "hypertension": 0,
+          "t2d": 0,
+          "osteoarthritis": 0,
+          "sleep_apnea": 0,
+          "age": 51,
+          "sex": "male",
+          "bmi": 24.1,
+          "phase_angle": 5.7,
+          "ecw_tbw": 0.42,
+          "ffmi": 21.2,
+          "skeletal_muscle_mass": 31.6,
+          "visceral_fat": 6.8
+        }
+      },
+      "result": {
+        "patient_id": "demo-seca-style",
+        "data_quality": {
+          "variables_measured": 18,
+          "fi_variables_measured": 16,
+          "mvv_passed": true,
+          "blood_variables_measured": 6,
+          "history_variables_measured": 4,
+          "reference_panel_id": "seca-development-fixture",
+          "reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662",
+          "reference_panel_production_ready": false,
+          "reference_panel_fixture_only": true,
+          "reference_panel_readiness": "development_fixture_only",
+          "fi_denominator_strength": "low",
+          "reference_panel_band_count": 1,
+          "reference_panel_band_span_years_for_age": 102.0
+        },
+        "metrics": {
+          "chronological_age": 51.0,
+          "biological_age": {
+            "point_estimate": 50.2,
+            "ci_95": null,
+            "uncertainty_method": "fixed_log_hazard_sensitivity",
+            "uncertainty_construction": "none_withheld",
+            "uncertainty_validated": false,
+            "interpretation": "Age-equivalent wellness estimate; not a lifespan, diagnostic, or treatment-effect prediction."
+          },
+          "current_deficit_load_fi": 0.0625,
+          "current_deficit_load_fi_details": {
+            "numerator": 1.0,
+            "denominator": 16,
+            "valid_variables": [
+              "bmi",
+              "phase_angle",
+              "ecw_tbw",
+              "ffmi",
+              "skeletal_muscle_mass",
+              "visceral_fat",
+              "fasting_glucose",
+              "hba1c",
+              "hs_crp",
+              "albumin",
+              "egfr",
+              "wbc",
+              "hypertension",
+              "t2d",
+              "osteoarthritis",
+              "sleep_apnea"
+            ],
+            "denominator_strength": "low",
+            "denominator_strength_caveat": "Engineering label based on the count of FI-eligible items in this single assessment; it is not a clinical adequacy claim."
+          }
+        },
+        "trajectory": {
+          "homeostatic_deviation_score": -0.0157,
+          "score_ci_95": null,
+          "uncertainty_construction": "none_withheld"
+        },
+        "top_interventions": [
+          {
+            "feature": "phase_angle",
+            "biomarker": "Phase Angle",
+            "current_value": 5.7,
+            "z_score": -1.3,
+            "action_type": "lifestyle",
+            "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional.",
+            "unit": "degrees",
+            "direction": "below",
+            "target_range_label": "within \u00b11 development reference SD",
+            "source": "synthetic-development-fixture; development reference band, not a clinical cutoff"
+          },
+          {
+            "feature": "ecw_tbw",
+            "biomarker": "ECW/TBW",
+            "current_value": 0.42,
+            "z_score": 1.2,
+            "action_type": "review",
+            "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional.",
+            "unit": "ratio",
+            "direction": "above",
+            "target_range_label": "within \u00b11 development reference SD",
+            "source": "synthetic-development-fixture; development reference band, not a clinical cutoff"
+          }
+        ],
+        "wellness_report": {
+          "summary": {
+            "status": "focus_areas",
+            "measured_features": 16,
+            "missing_features": 17,
+            "focus_areas": 2,
+            "interpretation": "This is a development wellness view of measured values. It does not estimate the effect of an action on biological age."
+          },
+          "ranges": [
+            {
+              "feature": "bmi",
+              "biomarker": "Body Mass Index",
+              "current_value": 24.1,
+              "unit": "kg/m\u00b2",
+              "target_range": {
+                "low": 18.5,
+                "high": 24.9,
+                "label": "18.5\u201324.9"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "WHO BMI classification; engineering target pending cohort review",
+              "recommendation": "Discuss sustainable nutrition, activity, and body-composition goals rather than pursuing a single number."
+            },
+            {
+              "feature": "phase_angle",
+              "biomarker": "Phase Angle",
+              "current_value": 5.7,
+              "unit": "degrees",
+              "target_range": {
+                "low": 6.0,
+                "high": 8.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "attention",
+              "direction": "below",
+              "priority": "review",
+              "action_type": "lifestyle",
+              "z_score": -1.3,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            },
+            {
+              "feature": "ecw_tbw",
+              "biomarker": "ECW/TBW",
+              "current_value": 0.42,
+              "unit": "ratio",
+              "target_range": {
+                "low": 0.365,
+                "high": 0.415,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "attention",
+              "direction": "above",
+              "priority": "review",
+              "action_type": "review",
+              "z_score": 1.2,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "ffmi",
+              "biomarker": "FFMI",
+              "current_value": 21.2,
+              "unit": "kg/m\u00b2",
+              "target_range": {
+                "low": 16.0,
+                "high": 22.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "lifestyle",
+              "z_score": 0.7333,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Discuss a safe resistance-training and nutrition plan appropriate to the person's goals and context."
+            },
+            {
+              "feature": "skeletal_muscle_mass",
+              "biomarker": "Skeletal Muscle Mass",
+              "current_value": 31.6,
+              "unit": "kg",
+              "target_range": {
+                "low": 27.0,
+                "high": 43.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "lifestyle",
+              "z_score": -0.425,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Track the trend under consistent scan conditions and discuss progressive strength work."
+            },
+            {
+              "feature": "visceral_fat",
+              "biomarker": "Visceral adipose tissue",
+              "current_value": 6.8,
+              "unit": "L",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "lifestyle",
+              "z_score": null,
+              "source": "SECA reference-panel measurement; threshold approval remains external",
+              "recommendation": "Track the trend under consistent scan conditions and discuss sustainable body-composition goals."
+            },
+            {
+              "feature": "fasting_glucose",
+              "biomarker": "Fasting glucose",
+              "current_value": 92.0,
+              "unit": "mg/dL",
+              "target_range": {
+                "low": 70.0,
+                "high": 99.0,
+                "label": "70\u201399"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA diagnostic thresholds; wellness display band is not a diagnosis",
+              "recommendation": "Review the result, fasting conditions, and trend with a qualified clinician if outside the display band."
+            },
+            {
+              "feature": "hba1c",
+              "biomarker": "HbA1c",
+              "current_value": 5.3,
+              "unit": "%",
+              "target_range": {
+                "low": 4.0,
+                "high": 5.6,
+                "label": "4\u20135.6"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "ADA Standards of Care; wellness display band is not a diagnosis",
+              "recommendation": "Review the result and trend with a qualified clinician; do not infer a diagnosis from this report."
+            },
+            {
+              "feature": "hs_crp",
+              "biomarker": "hs-CRP",
+              "current_value": 0.7,
+              "unit": "mg/L",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.0,
+                "label": "0\u20131"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Cardiovascular reference band; target-cohort review required",
+              "recommendation": "Consider recent infection, injury, and measurement context before acting on an isolated result."
+            },
+            {
+              "feature": "albumin",
+              "biomarker": "Albumin",
+              "current_value": 4.2,
+              "unit": "g/dL",
+              "target_range": {
+                "low": 3.5,
+                "high": 5.0,
+                "label": "3.5\u20135"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common clinical reference boundary; target-cohort review required",
+              "recommendation": "Review nutrition, hydration, liver, kidney, and inflammatory context with a qualified clinician."
+            },
+            {
+              "feature": "egfr",
+              "biomarker": "eGFR",
+              "current_value": 98.0,
+              "unit": "mL/min/1.73m\u00b2",
+              "target_range": {
+                "low": 90.0,
+                "label": "\u2265 90"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "KDIGO CKD G-category thresholds; wellness display is not a diagnosis",
+              "recommendation": "Interpret kidney markers with a qualified clinician and the person\u2019s longitudinal trend."
+            },
+            {
+              "feature": "wbc",
+              "biomarker": "White blood cell count",
+              "current_value": 6.0,
+              "unit": "10\u2079/L",
+              "target_range": {
+                "low": 4.0,
+                "high": 10.0,
+                "label": "4\u201310"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Common adult laboratory reference interval; laboratory review required",
+              "recommendation": "Interpret with symptoms, recent illness, medications, and the reporting laboratory's interval."
+            },
+            {
+              "feature": "hypertension",
+              "biomarker": "Hypertension history",
+              "current_value": 0,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "t2d",
+              "biomarker": "Type 2 diabetes history",
+              "current_value": 0,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "osteoarthritis",
+              "biomarker": "Osteoarthritis history",
+              "current_value": 0,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "sleep_apnea",
+              "biomarker": "Sleep-apnea history",
+              "current_value": 0,
+              "unit": null,
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "status": "in_range",
+              "direction": "within_range",
+              "priority": "maintain",
+              "action_type": "review",
+              "z_score": null,
+              "source": "Binary history field; not independently verified",
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            }
+          ],
+          "focus_areas": [
+            {
+              "feature": "ecw_tbw",
+              "focus": "ECW/TBW",
+              "current_value": 0.42,
+              "unit": "ratio",
+              "target_range": {
+                "low": 0.365,
+                "high": 0.415,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "target_range_label": "within \u00b11 development reference SD",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": 1.2,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "phase_angle",
+              "focus": "Phase Angle",
+              "current_value": 5.7,
+              "unit": "degrees",
+              "target_range": {
+                "low": 6.0,
+                "high": 8.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "target_range_label": "within \u00b11 development reference SD",
+              "direction": "below",
+              "action_type": "lifestyle",
+              "z_score": -1.3,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            }
+          ],
+          "missing_features": [
+            "systolic_bp",
+            "diastolic_bp",
+            "resting_hr",
+            "waist_circumference",
+            "creatinine",
+            "alp",
+            "rdw",
+            "fib_4",
+            "cvd",
+            "copd",
+            "cancer",
+            "depression",
+            "grip_strength",
+            "chair_rise_time",
+            "smoking_status",
+            "alcohol_heavy_use",
+            "sleep_hours"
+          ],
+          "fi_context": {
+            "score": 0.0625,
+            "denominator": 16,
+            "caveat": "FI denominator is the count of valid FI-eligible health variables; missing values are not imputed.",
+            "denominator_strength": "low",
+            "denominator_strength_caveat": "Engineering label based on the count of FI-eligible items in this single assessment; it is not a clinical adequacy claim."
+          },
+          "action_effect_estimated": false,
+          "clinical_or_lifespan_claim": false,
+          "disclaimer": "Ranges are engineering or development reference bands, not individualized medical targets. Discuss persistent or concerning results with a qualified professional."
+        },
+        "model_metadata": {
+          "model_id": "development-surrogate-v1",
+          "production_ready": false
+        },
+        "quality_notes": [
+          "FI denominator is the count of valid FI-eligible health variables; missing values are not imputed.",
+          "No missing value was fabricated; XGBoost may receive NaN for absent features.",
+          "homeostatic_deviation_score is normalized as (biological age - chronological age) / chronological age; it is not a hazard ratio.",
+          "Synthetic values for software tests only; replace with licensed/published panel tables before deployment.",
+          "Development surrogate only; no approved trained model was supplied. Uncertainty is not validated; ci_95 is intentionally null rather than a calibrated clinical confidence interval."
+        ]
+      },
+      "progress": {
+        "previous_assessed_at": "2026-01-15",
+        "current_assessed_at": "2026-08-15",
+        "report": {
+          "format": "wellness-progress-report-v1",
+          "comparison_basis": "same_model_and_reference_panel",
+          "patient_id": "demo-seca-style",
+          "previous_assessed_at": "2026-01-15",
+          "current_assessed_at": "2026-08-15",
+          "readout_changes": [
+            {
+              "metric": "biological_age.point_estimate",
+              "previous": 50.6,
+              "current": 50.2,
+              "delta": -0.4,
+              "movement": "lower"
+            },
+            {
+              "metric": "current_deficit_load_fi",
+              "previous": 0.0625,
+              "current": 0.0625,
+              "delta": 0.0,
+              "movement": "unchanged"
+            },
+            {
+              "metric": "homeostatic_deviation_score",
+              "previous": -0.0078,
+              "current": -0.0157,
+              "delta": -0.0079,
+              "movement": "lower"
+            }
+          ],
+          "range_changes": [
+            {
+              "feature": "albumin",
+              "biomarker": "Albumin",
+              "previous_value": 4.2,
+              "current_value": 4.2,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 3.5,
+                "high": 5.0,
+                "label": "3.5\u20135"
+              },
+              "unit": "g/dL",
+              "recommendation": "Review nutrition, hydration, liver, kidney, and inflammatory context with a qualified clinician."
+            },
+            {
+              "feature": "bmi",
+              "biomarker": "Body Mass Index",
+              "previous_value": 24.1,
+              "current_value": 24.1,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 18.5,
+                "high": 24.9,
+                "label": "18.5\u201324.9"
+              },
+              "unit": "kg/m\u00b2",
+              "recommendation": "Discuss sustainable nutrition, activity, and body-composition goals rather than pursuing a single number."
+            },
+            {
+              "feature": "ecw_tbw",
+              "biomarker": "ECW/TBW",
+              "previous_value": 0.44,
+              "current_value": 0.42,
+              "value_delta": -0.02,
+              "value_change": "lower",
+              "previous_status": "attention",
+              "current_status": "attention",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.365,
+                "high": 0.415,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "ratio",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "egfr",
+              "biomarker": "eGFR",
+              "previous_value": 98.0,
+              "current_value": 98.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 90.0,
+                "label": "\u2265 90"
+              },
+              "unit": "mL/min/1.73m\u00b2",
+              "recommendation": "Interpret kidney markers with a qualified clinician and the person\u2019s longitudinal trend."
+            },
+            {
+              "feature": "fasting_glucose",
+              "biomarker": "Fasting glucose",
+              "previous_value": 92.0,
+              "current_value": 92.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 70.0,
+                "high": 99.0,
+                "label": "70\u201399"
+              },
+              "unit": "mg/dL",
+              "recommendation": "Review the result, fasting conditions, and trend with a qualified clinician if outside the display band."
+            },
+            {
+              "feature": "ffmi",
+              "biomarker": "FFMI",
+              "previous_value": 20.7,
+              "current_value": 21.2,
+              "value_delta": 0.5,
+              "value_change": "higher",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 16.0,
+                "high": 22.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "kg/m\u00b2",
+              "recommendation": "Discuss a safe resistance-training and nutrition plan appropriate to the person's goals and context."
+            },
+            {
+              "feature": "hba1c",
+              "biomarker": "HbA1c",
+              "previous_value": 5.3,
+              "current_value": 5.3,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 4.0,
+                "high": 5.6,
+                "label": "4\u20135.6"
+              },
+              "unit": "%",
+              "recommendation": "Review the result and trend with a qualified clinician; do not infer a diagnosis from this report."
+            },
+            {
+              "feature": "hs_crp",
+              "biomarker": "hs-CRP",
+              "previous_value": 0.7,
+              "current_value": 0.7,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.0,
+                "high": 1.0,
+                "label": "0\u20131"
+              },
+              "unit": "mg/L",
+              "recommendation": "Consider recent infection, injury, and measurement context before acting on an isolated result."
+            },
+            {
+              "feature": "hypertension",
+              "biomarker": "Hypertension history",
+              "previous_value": 0,
+              "current_value": 0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "osteoarthritis",
+              "biomarker": "Osteoarthritis history",
+              "previous_value": 0,
+              "current_value": 0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "phase_angle",
+              "biomarker": "Phase Angle",
+              "previous_value": 5.35,
+              "current_value": 5.7,
+              "value_delta": 0.35,
+              "value_change": "higher",
+              "previous_status": "attention",
+              "current_status": "attention",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 6.0,
+                "high": 8.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "degrees",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            },
+            {
+              "feature": "skeletal_muscle_mass",
+              "biomarker": "Skeletal Muscle Mass",
+              "previous_value": 30.4,
+              "current_value": 31.6,
+              "value_delta": 1.2,
+              "value_change": "higher",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 27.0,
+                "high": 43.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "unit": "kg",
+              "recommendation": "Track the trend under consistent scan conditions and discuss progressive strength work."
+            },
+            {
+              "feature": "sleep_apnea",
+              "biomarker": "Sleep-apnea history",
+              "previous_value": 0,
+              "current_value": 0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "t2d",
+              "biomarker": "Type 2 diabetes history",
+              "previous_value": 0,
+              "current_value": 0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0,
+                "high": 0,
+                "label": "0 = no reported history"
+              },
+              "unit": null,
+              "recommendation": "Discuss the reported history and routine follow-up with the person's care team; this report does not diagnose or clear a condition."
+            },
+            {
+              "feature": "visceral_fat",
+              "biomarker": "Visceral adipose tissue",
+              "previous_value": 8.2,
+              "current_value": 6.8,
+              "value_delta": -1.4,
+              "value_change": "lower",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 0.0,
+                "high": 10.0,
+                "label": "0\u201310"
+              },
+              "unit": "L",
+              "recommendation": "Track the trend under consistent scan conditions and discuss sustainable body-composition goals."
+            },
+            {
+              "feature": "wbc",
+              "biomarker": "White blood cell count",
+              "previous_value": 6.0,
+              "current_value": 6.0,
+              "value_delta": 0.0,
+              "value_change": "unchanged",
+              "previous_status": "in_range",
+              "current_status": "in_range",
+              "status_transition": "unchanged",
+              "target_range": {
+                "low": 4.0,
+                "high": 10.0,
+                "label": "4\u201310"
+              },
+              "unit": "10\u2079/L",
+              "recommendation": "Interpret with symptoms, recent illness, medications, and the reporting laboratory's interval."
+            }
+          ],
+          "summary": {
+            "changed_features": 5,
+            "moved_into_reference_range": 0,
+            "moved_out_of_reference_range": 0,
+            "new_focus_areas": [],
+            "resolved_focus_areas": [],
+            "current_focus_areas": 2,
+            "previous_missing_features": 17,
+            "current_missing_features": 17,
+            "interpretation": "Descriptive change between two assessments. A change in a readout or reference-band status does not establish that an action caused it or that it will change health, biological age, or lifespan."
+          },
+          "current_focus_areas": [
+            {
+              "feature": "ecw_tbw",
+              "focus": "ECW/TBW",
+              "current_value": 0.42,
+              "unit": "ratio",
+              "target_range": {
+                "low": 0.365,
+                "high": 0.415,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "target_range_label": "within \u00b11 development reference SD",
+              "direction": "above",
+              "action_type": "review",
+              "z_score": 1.2,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Review hydration context, recent illness, and measurement conditions with a qualified professional."
+            },
+            {
+              "feature": "phase_angle",
+              "focus": "Phase Angle",
+              "current_value": 5.7,
+              "unit": "degrees",
+              "target_range": {
+                "low": 6.0,
+                "high": 8.0,
+                "label": "within \u00b11 development reference SD",
+                "kind": "development_reference_band"
+              },
+              "target_range_label": "within \u00b11 development reference SD",
+              "direction": "below",
+              "action_type": "lifestyle",
+              "z_score": -1.3,
+              "source": "synthetic-development-fixture; development reference band, not a clinical cutoff",
+              "recommendation": "Discuss progressive resistance training, adequate nutrition, and recovery with a qualified professional."
+            }
+          ],
+          "model_boundary": {
+            "previous_model_id": "development-surrogate-v1",
+            "current_model_id": "development-surrogate-v1",
+            "previous_production_ready": false,
+            "current_production_ready": false,
+            "previous_reference_panel_id": "seca-development-fixture",
+            "current_reference_panel_id": "seca-development-fixture",
+            "previous_reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662",
+            "current_reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662"
+          },
+          "action_effect_estimated": false,
+          "clinical_or_lifespan_claim": false,
+          "disclaimer": "This report compares measured engine outputs and development/reference bands only. It is not a treatment-effect estimate, clinical target, diagnosis, or lifespan prediction."
+        }
+      }
+    }
+  ]
+}

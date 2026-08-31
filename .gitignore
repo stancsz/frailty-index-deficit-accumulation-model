@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+.wheel-smoke/
+.wheel-smoke-*/
+dist/
+build/
+*.egg-info/
+models/
+data/raw/
+.build-check/
+.ableton-mcp/

@@ -1,0 +1,984 @@
+{
+  "clinical_status": "requires_e005_external_validation_and_clinical_review",
+  "fixture_provenance": {
+    "clinical_use": "forbidden",
+    "fixture_path": "examples/external_validation_synthetic.json",
+    "fixture_sha256": "a4c73d643e9c4bd5fef71224769b2a4f2f0fabbcf31376be3020abadb7f604de",
+    "kind": "synthetic"
+  },
+  "generated_by": "scripts/run_external_validation_report.py",
+  "report": {
+    "blockers": [
+      "predictor is not marked production_ready",
+      "reference panel is not marked production_ready"
+    ],
+    "calibration": {
+      "biological_age_bins": [
+        {
+          "bin": 1,
+          "mean_age_delta": -2.043333,
+          "mean_biological_age": 26.456667,
+          "mean_chronological_age": 28.5,
+          "n": 60,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 2,
+          "mean_age_delta": -2.018333,
+          "mean_biological_age": 41.481667,
+          "mean_chronological_age": 43.5,
+          "n": 60,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 3,
+          "mean_age_delta": -1.733333,
+          "mean_biological_age": 58.266667,
+          "mean_chronological_age": 60.0,
+          "n": 60,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 4,
+          "mean_age_delta": -1.485,
+          "mean_biological_age": 74.515,
+          "mean_chronological_age": 76.0,
+          "n": 60,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 5,
+          "mean_age_delta": -1.461667,
+          "mean_biological_age": 89.538333,
+          "mean_chronological_age": 91.0,
+          "n": 60,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        }
+      ],
+      "calibration_rows": 300,
+      "censored_before_horizon_rows": 0,
+      "eligible_rows": 300,
+      "homeostatic_deviation_bins": [
+        {
+          "bin": 1,
+          "censoring_adjusted_event_rate": 0.666667,
+          "mean_predicted_homeostatic_deviation": -0.074857,
+          "n": 60,
+          "observed_event_rate": 0.666667,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 2,
+          "censoring_adjusted_event_rate": 0.683333,
+          "mean_predicted_homeostatic_deviation": -0.047026,
+          "n": 60,
+          "observed_event_rate": 0.683333,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 3,
+          "censoring_adjusted_event_rate": 0.633333,
+          "mean_predicted_homeostatic_deviation": -0.029883,
+          "n": 60,
+          "observed_event_rate": 0.633333,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 4,
+          "censoring_adjusted_event_rate": 0.666667,
+          "mean_predicted_homeostatic_deviation": -0.019599,
+          "n": 60,
+          "observed_event_rate": 0.666667,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 5,
+          "censoring_adjusted_event_rate": 0.683333,
+          "mean_predicted_homeostatic_deviation": -0.014579,
+          "n": 60,
+          "observed_event_rate": 0.683333,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        }
+      ],
+      "horizon_years": 10.0,
+      "method": "kaplan_meier_horizon_event_probability",
+      "probability_bins": [
+        {
+          "bin": 1,
+          "censoring_adjusted_event_rate": 0.666667,
+          "mean_predicted_probability": 0.012852,
+          "n": 60,
+          "observed_event_rate": 0.666667,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 2,
+          "censoring_adjusted_event_rate": 0.666667,
+          "mean_predicted_probability": 0.046455,
+          "n": 60,
+          "observed_event_rate": 0.666667,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 3,
+          "censoring_adjusted_event_rate": 0.683333,
+          "mean_predicted_probability": 0.174982,
+          "n": 60,
+          "observed_event_rate": 0.683333,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 4,
+          "censoring_adjusted_event_rate": 0.65,
+          "mean_predicted_probability": 0.519789,
+          "n": 60,
+          "observed_event_rate": 0.65,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        {
+          "bin": 5,
+          "censoring_adjusted_event_rate": 0.666667,
+          "mean_predicted_probability": 0.898205,
+          "n": 60,
+          "observed_event_rate": 0.666667,
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        }
+      ],
+      "survey_design": {
+        "design_reviewed": false,
+        "psu": null,
+        "replicate_pattern": [],
+        "schema_version": "1",
+        "strata": [],
+        "weight_kind": "not_provided",
+        "weight_name": null,
+        "weighting_applied": false
+      }
+    },
+    "cohort_name": "synthetic-external-validation-engineering-fixture",
+    "concordance_ci_95": [
+      0.435639,
+      0.535101
+    ],
+    "concordance_ci_construction": "bootstrap_percentile",
+    "concordance_ci_requested_replicates": 200,
+    "concordance_ci_status": "emitted",
+    "concordance_ci_valid_replicates": 200,
+    "concordance_comparable_pairs": 37140,
+    "concordance_index": 0.493538,
+    "external": true,
+    "model_artifact_sha256": null,
+    "model_id": "development-surrogate-v1",
+    "model_production_ready": false,
+    "model_uncertainty_validated": false,
+    "outcome_metric_status": {
+      "brier_score": {
+        "construction": "none_withheld",
+        "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+        "review_gate": "E-005",
+        "status": "not_implemented_pending_sap",
+        "value": null
+      },
+      "calibration_in_the_large": {
+        "construction": "none_withheld",
+        "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+        "review_gate": "E-005",
+        "status": "not_implemented_pending_sap",
+        "value": null
+      },
+      "calibration_slope": {
+        "construction": "none_withheld",
+        "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+        "review_gate": "E-005",
+        "status": "not_implemented_pending_sap",
+        "value": null
+      },
+      "decision_curve_net_benefit": {
+        "construction": "none_withheld",
+        "reason": "requires a prespecified clinical decision and threshold range",
+        "review_gate": "E-005",
+        "status": "not_implemented_pending_sap",
+        "value": null
+      },
+      "integrated_calibration_index": {
+        "construction": "none_withheld",
+        "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+        "review_gate": "E-005",
+        "status": "not_implemented_pending_sap",
+        "value": null
+      }
+    },
+    "quality_flags": {
+      "design_reviewed": false,
+      "survey_design_declared": false,
+      "weighting_applied": false
+    },
+    "reference_panel_fixture_only": true,
+    "reference_panel_id": "seca-development-fixture",
+    "reference_panel_production_ready": false,
+    "reference_panel_sha256": "4a08b89976747925bb87cf9719224d59e0507a67a2187e3818102bf89cff9662",
+    "row_exclusion_counts": {},
+    "rows_evaluated": 300,
+    "rows_excluded": 0,
+    "rows_received": 300,
+    "status": "blocked",
+    "subgroup_metrics": {
+      "age_band": {
+        "18-39": {
+          "censored_count": 25,
+          "concordance_ci_95": [
+            0.40513,
+            0.59238
+          ],
+          "concordance_ci_construction": "bootstrap_percentile",
+          "concordance_ci_requested_replicates": 200,
+          "concordance_ci_status": "emitted",
+          "concordance_ci_valid_replicates": 200,
+          "concordance_comparable_pairs": 2320,
+          "concordance_index": 0.48125,
+          "event_count": 50,
+          "event_fraction": 0.666667,
+          "mean_biological_age": 27.776,
+          "mean_chronological_age": 29.8,
+          "mean_fi": 0.0,
+          "mean_follow_up_years": 8.546667,
+          "n": 75,
+          "outcome_metric_status": {
+            "brier_score": {
+              "construction": "none_withheld",
+              "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_in_the_large": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_slope": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "decision_curve_net_benefit": {
+              "construction": "none_withheld",
+              "reason": "requires a prespecified clinical decision and threshold range",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "integrated_calibration_index": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            }
+          },
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        "40-59": {
+          "censored_count": 25,
+          "concordance_ci_95": [
+            0.388182,
+            0.55389
+          ],
+          "concordance_ci_construction": "bootstrap_percentile",
+          "concordance_ci_requested_replicates": 200,
+          "concordance_ci_status": "emitted",
+          "concordance_ci_valid_replicates": 200,
+          "concordance_comparable_pairs": 2320,
+          "concordance_index": 0.474784,
+          "event_count": 50,
+          "event_fraction": 0.666667,
+          "mean_biological_age": 47.764,
+          "mean_chronological_age": 49.8,
+          "mean_fi": 0.0,
+          "mean_follow_up_years": 8.813333,
+          "n": 75,
+          "outcome_metric_status": {
+            "brier_score": {
+              "construction": "none_withheld",
+              "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_in_the_large": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_slope": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "decision_curve_net_benefit": {
+              "construction": "none_withheld",
+              "reason": "requires a prespecified clinical decision and threshold range",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "integrated_calibration_index": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            }
+          },
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        "60-79": {
+          "censored_count": 25,
+          "concordance_ci_95": [
+            0.41366,
+            0.612803
+          ],
+          "concordance_ci_construction": "bootstrap_percentile",
+          "concordance_ci_requested_replicates": 200,
+          "concordance_ci_status": "emitted",
+          "concordance_ci_valid_replicates": 200,
+          "concordance_comparable_pairs": 2320,
+          "concordance_index": 0.505388,
+          "event_count": 50,
+          "event_fraction": 0.666667,
+          "mean_biological_age": 68.34,
+          "mean_chronological_age": 69.8,
+          "mean_fi": 0.0385,
+          "mean_follow_up_years": 8.52,
+          "n": 75,
+          "outcome_metric_status": {
+            "brier_score": {
+              "construction": "none_withheld",
+              "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_in_the_large": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_slope": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "decision_curve_net_benefit": {
+              "construction": "none_withheld",
+              "reason": "requires a prespecified clinical decision and threshold range",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "integrated_calibration_index": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            }
+          },
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        "80+": {
+          "censored_count": 25,
+          "concordance_ci_95": [
+            0.41624,
+            0.599837
+          ],
+          "concordance_ci_construction": "bootstrap_percentile",
+          "concordance_ci_requested_replicates": 200,
+          "concordance_ci_status": "emitted",
+          "concordance_ci_valid_replicates": 200,
+          "concordance_comparable_pairs": 2320,
+          "concordance_index": 0.50625,
+          "event_count": 50,
+          "event_fraction": 0.666667,
+          "mean_biological_age": 88.326667,
+          "mean_chronological_age": 89.8,
+          "mean_fi": 0.0385,
+          "mean_follow_up_years": 8.666667,
+          "n": 75,
+          "outcome_metric_status": {
+            "brier_score": {
+              "construction": "none_withheld",
+              "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_in_the_large": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_slope": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "decision_curve_net_benefit": {
+              "construction": "none_withheld",
+              "reason": "requires a prespecified clinical decision and threshold range",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "integrated_calibration_index": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            }
+          },
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        }
+      },
+      "ethnicity": {
+        "synthetic-group-a": {
+          "censored_count": 38,
+          "concordance_ci_95": [
+            0.372839,
+            0.538998
+          ],
+          "concordance_ci_construction": "bootstrap_percentile",
+          "concordance_ci_requested_replicates": 200,
+          "concordance_ci_status": "emitted",
+          "concordance_ci_valid_replicates": 200,
+          "concordance_comparable_pairs": 4003,
+          "concordance_index": 0.455034,
+          "event_count": 62,
+          "event_fraction": 0.62,
+          "mean_biological_age": 58.052,
+          "mean_chronological_age": 59.8,
+          "mean_fi": 0.01925,
+          "mean_follow_up_years": 8.62,
+          "n": 100,
+          "outcome_metric_status": {
+            "brier_score": {
+              "construction": "none_withheld",
+              "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_in_the_large": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_slope": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "decision_curve_net_benefit": {
+              "construction": "none_withheld",
+              "reason": "requires a prespecified clinical decision and threshold range",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "integrated_calibration_index": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            }
+          },
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        "synthetic-group-b": {
+          "censored_count": 25,
+          "concordance_ci_95": [
+            0.433882,
+            0.577738
+          ],
+          "concordance_ci_construction": "bootstrap_percentile",
+          "concordance_ci_requested_replicates": 200,
+          "concordance_ci_status": "emitted",
+          "concordance_ci_valid_replicates": 200,
+          "concordance_comparable_pairs": 4284,
+          "concordance_index": 0.494514,
+          "event_count": 75,
+          "event_fraction": 0.75,
+          "mean_biological_age": 58.051,
+          "mean_chronological_age": 59.8,
+          "mean_fi": 0.01925,
+          "mean_follow_up_years": 8.01,
+          "n": 100,
+          "outcome_metric_status": {
+            "brier_score": {
+              "construction": "none_withheld",
+              "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_in_the_large": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_slope": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "decision_curve_net_benefit": {
+              "construction": "none_withheld",
+              "reason": "requires a prespecified clinical decision and threshold range",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "integrated_calibration_index": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            }
+          },
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        "synthetic-group-c": {
+          "censored_count": 37,
+          "concordance_ci_95": [
+            0.427068,
+            0.602923
+          ],
+          "concordance_ci_construction": "bootstrap_percentile",
+          "concordance_ci_requested_replicates": 200,
+          "concordance_ci_status": "emitted",
+          "concordance_ci_valid_replicates": 200,
+          "concordance_comparable_pairs": 4031,
+          "concordance_index": 0.519226,
+          "event_count": 63,
+          "event_fraction": 0.63,
+          "mean_biological_age": 58.052,
+          "mean_chronological_age": 59.8,
+          "mean_fi": 0.01925,
+          "mean_follow_up_years": 9.28,
+          "n": 100,
+          "outcome_metric_status": {
+            "brier_score": {
+              "construction": "none_withheld",
+              "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_in_the_large": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_slope": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "decision_curve_net_benefit": {
+              "construction": "none_withheld",
+              "reason": "requires a prespecified clinical decision and threshold range",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "integrated_calibration_index": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            }
+          },
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        }
+      },
+      "sex": {
+        "female": {
+          "censored_count": 52,
+          "concordance_ci_95": [
+            0.428208,
+            0.553527
+          ],
+          "concordance_ci_construction": "bootstrap_percentile",
+          "concordance_ci_requested_replicates": 200,
+          "concordance_ci_status": "emitted",
+          "concordance_ci_valid_replicates": 200,
+          "concordance_comparable_pairs": 10041,
+          "concordance_index": 0.495718,
+          "event_count": 104,
+          "event_fraction": 0.666667,
+          "mean_biological_age": 57.683974,
+          "mean_chronological_age": 59.615385,
+          "mean_fi": 0.01925,
+          "mean_follow_up_years": 8.544872,
+          "n": 156,
+          "outcome_metric_status": {
+            "brier_score": {
+              "construction": "none_withheld",
+              "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_in_the_large": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_slope": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "decision_curve_net_benefit": {
+              "construction": "none_withheld",
+              "reason": "requires a prespecified clinical decision and threshold range",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "integrated_calibration_index": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            }
+          },
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        },
+        "male": {
+          "censored_count": 48,
+          "concordance_ci_95": [
+            0.423249,
+            0.553479
+          ],
+          "concordance_ci_construction": "bootstrap_percentile",
+          "concordance_ci_requested_replicates": 200,
+          "concordance_ci_status": "emitted",
+          "concordance_ci_valid_replicates": 200,
+          "concordance_comparable_pairs": 8555,
+          "concordance_index": 0.487142,
+          "event_count": 96,
+          "event_fraction": 0.666667,
+          "mean_biological_age": 58.45,
+          "mean_chronological_age": 60.0,
+          "mean_fi": 0.01925,
+          "mean_follow_up_years": 8.736111,
+          "n": 144,
+          "outcome_metric_status": {
+            "brier_score": {
+              "construction": "none_withheld",
+              "reason": "requires an approved survival analogue and prespecified SAP for right-censored endpoints",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_in_the_large": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "calibration_slope": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified recalibration estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "decision_curve_net_benefit": {
+              "construction": "none_withheld",
+              "reason": "requires a prespecified clinical decision and threshold range",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            },
+            "integrated_calibration_index": {
+              "construction": "none_withheld",
+              "reason": "requires an approved endpoint definition and prespecified censoring-aware estimator",
+              "review_gate": "E-005",
+              "status": "not_implemented_pending_sap",
+              "value": null
+            }
+          },
+          "survey_design": {
+            "design_reviewed": false,
+            "psu": null,
+            "replicate_pattern": [],
+            "schema_version": "1",
+            "strata": [],
+            "weight_kind": "not_provided",
+            "weight_name": null,
+            "weighting_applied": false
+          }
+        }
+      }
+    },
+    "subgroup_support_warnings": [],
+    "survey_design": {
+      "design_reviewed": false,
+      "psu": null,
+      "replicate_pattern": [],
+      "schema_version": "1",
+      "strata": [],
+      "weight_kind": "not_provided",
+      "weight_name": null,
+      "weighting_applied": false
+    }
+  },
+  "schema_version": "1"
+}

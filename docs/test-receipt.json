@@ -1,0 +1,8 @@
+{
+  "generated_by": "scripts/build_test_receipt.py",
+  "node_command": "node --test --test-reporter=tap tests/site_parser.test.cjs",
+  "node_tests_collected": 23,
+  "python_command": "uv run python -m pytest --collect-only -q",
+  "python_tests_collected": 120,
+  "schema_version": 1
+}

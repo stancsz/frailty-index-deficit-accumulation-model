@@ -1,0 +1,23 @@
+{
+  "format": "frailty-engine-assessment-overlay-v1",
+  "source_format": "SECA TableView CSV",
+  "measured_at": "Jan 2, 2025, 8:00 AM",
+  "patient_id": "demo-overlay",
+  "measurements": {
+    "age": 45,
+    "sex": "female",
+    "phase_angle": 6.1,
+    "ecw_tbw": 0.39,
+    "fasting_glucose": 92,
+    "hba1c": 5.3,
+    "hs_crp": 0.7,
+    "albumin": 4.2,
+    "egfr": 98,
+    "wbc": 6.0,
+    "hypertension": 0,
+    "t2d": 0,
+    "osteoarthritis": 0,
+    "sleep_apnea": 0
+  },
+  "privacy_note": "Synthetic fixture for local software tests only. No scan or measurement data was uploaded."
+}

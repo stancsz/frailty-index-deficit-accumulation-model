@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frailty Engine"
+  short_description: "Operate and validate the healthspan engine safely"
+  default_prompt: "Use $frailty-engine to run or change the repository's assessment, training, serving, or external-validation workflow with explicit evidence boundaries."
