@@ -62,10 +62,11 @@ real-person longevity decisions.
 
 ### P1 — Make the software gate fully green
 
-The current local gate has one known cleanup failure: Ruff format reports that
-`scripts/verify_docs.py` would be reformatted. Fix that, regenerate/check the
-privacy-safe test and demo receipts, then rerun the complete gate from the
-locked environment. Do not call an isolated test rerun a full release result.
+The gate was previously blocked by a Ruff-format issue in
+`scripts/verify_docs.py`; that issue is now fixed. Keep the gate green,
+regenerate/check the privacy-safe test and demo receipts when inputs change,
+then rerun the complete gate from the locked environment. Do not call an
+isolated test rerun a full release result.
 
 Required command:
 
