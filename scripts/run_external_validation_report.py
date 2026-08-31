@@ -128,7 +128,7 @@ def main(argv: list[str] | None = None) -> int:
             print(f"synthetic validation report verified: {output_path}")
             return 0
         output_path.parent.mkdir(parents=True, exist_ok=True)
-        output_path.write_text(expected, encoding="utf-8")
+        output_path.write_text(expected, encoding="utf-8", newline="\n")
         write_sidecar(output_path, root=_sidecar_root(output_path))
         print(f"synthetic validation report written: {output_path}")
         return 0

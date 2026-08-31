@@ -3,7 +3,7 @@
   "fixture_provenance": {
     "clinical_use": "forbidden",
     "fixture_path": "examples/external_validation_synthetic.json",
-    "fixture_sha256": "a4c73d643e9c4bd5fef71224769b2a4f2f0fabbcf31376be3020abadb7f604de",
+    "fixture_sha256": "1225045454e851d18318f6afe32a6ba154a329456432aca571c27459342b3bf9",
     "kind": "synthetic"
   },
   "generated_by": "scripts/run_external_validation_report.py",

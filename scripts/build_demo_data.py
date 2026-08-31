@@ -214,7 +214,7 @@ def main(argv: list[str] | None = None) -> int:
         print("synthetic demo artifact is reproducible and up to date")
         return 0
 
-    destination.write_text(rendered, encoding="utf-8")
+    destination.write_text(rendered, encoding="utf-8", newline="\n")
     write_sidecar(destination, root=ROOT)
     print(f"synthetic demo artifact written: {destination}")
     return 0

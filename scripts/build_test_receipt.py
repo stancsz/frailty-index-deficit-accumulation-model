@@ -155,7 +155,9 @@ def main() -> int:
             )
             return 0
         path.write_text(
-            json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+            json.dumps(receipt, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+            newline="\n",
         )
         write_sidecar(path, root=root)
         print(

@@ -126,7 +126,7 @@ def main() -> int:
         print(f"synthetic external-validation fixture is reproducible: {args.output}")
     else:
         args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(serialized, encoding="utf-8")
+        args.output.write_text(serialized, encoding="utf-8", newline="\n")
         write_sidecar(args.output, root=args.output.parent.parent)
         print(f"wrote synthetic external-validation fixture: {args.output}")
     return 0

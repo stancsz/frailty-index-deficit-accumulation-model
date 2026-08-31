@@ -65,7 +65,9 @@ def write_sidecar(target: Path, *, root: Path | None = None) -> Path:
 
     sidecar = sidecar_path(target)
     sidecar.parent.mkdir(parents=True, exist_ok=True)
-    sidecar.write_text(render_sidecar(target, root=root), encoding="utf-8")
+    sidecar.write_text(
+        render_sidecar(target, root=root), encoding="utf-8", newline="\n"
+    )
     return sidecar
 
 
