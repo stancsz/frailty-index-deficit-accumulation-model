@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Clinical Healthspan Engine — Evidence-bounded documentation</title>
-  <meta name="description" content="Deficit-accumulation engine: 35-feature contract, deterministic FI, BIA transfer calibration, and a guarded biological-age interface. Development status, evidence status, and remaining approval gates." />
+  <meta name="description" content="Deficit-accumulation engine: 35-feature contract, deterministic FI, BIA transfer calibration, and a withheld biological-age development interface. Software evidence is complete; clinical validation (E-005) is not." />
   <meta name="robots" content="index,follow" />
   <meta name="color-scheme" content="light dark" />
   <link rel="stylesheet" href="site.css" />
@@ -20,10 +20,10 @@
         <span class="brand-sub">Deficit accumulation · 35-feature contract</span>
       </h1>
       <div class="dateline">
-        <span>Vol.&nbsp;0.1.0</span> · verification receipts in EVAL.md · repository documentation
+        <span data-build-meta>Build pending · synced from main branch · verification receipts in EVAL.md</span>
       </div>
-      <div class="dateline" aria-hidden="true">
-        <span>v0.1.0</span> · draft
+      <div class="dateline" aria-hidden="true" data-build-meta-mirror>
+        Repository documentation · not a clinical decision-support product
       </div>
     </div>
   </header>
@@ -37,7 +37,7 @@
       <span class="status-pill block">Reference panel: synthetic fixture</span>
       <span class="status-pill block">Predictor: development surrogate</span>
       <span class="status-pill ok">Software contract: deterministic</span>
-      <span class="status-pill ok">Tests: 120 / 120 passing</span>
+      <span class="status-pill ok" data-software-gate>Software gate: CI runs 142 Python + 25 Node tests before deployment</span>
     </div>
   </div>
 
@@ -69,13 +69,13 @@
       <section id="summary" class="intro" aria-labelledby="summary-h">
         <div>
           <p class="h-eyebrow">Summary</p>
-          <h2 id="summary-h">A deterministic scoring engine with a guarded biological-age model.</h2>
+          <h2 id="summary-h">A deterministic frailty engine with a withheld biological-age interface.</h2>
           <p class="lede">
             This repository implements a 35-variable input contract, an
             API-enforced Minimum Viable Vector (MVV), a deterministic
             Rockwood-style deficit-accumulation score, age/sex BIA
             z-score calibration, and a biological-age prediction
-            interface. It is a <em>wellness and healthspan prototype</em>,
+            interface that is currently <em>withheld from output</em>. It is a <em>wellness and healthspan prototype</em>,
             not a diagnostic device. The shipped predictor is a
             deterministic integration fixture; no trained mortality model
             is included in this checkout.
@@ -94,13 +94,13 @@
           <h4>At-a-glance</h4>
           <dl>
             <dt>Package</dt><dd>frailty-index-deficit-accumulation-model</dd>
-            <dt>Version</dt><dd>0.1.0</dd>
+            <dt>Build</dt><dd data-build-meta>pending first CI sync</dd>
             <dt>Variables</dt><dd>35 canonical · 36 in fitted matrix</dd>
             <dt>MVV</dt><dd>5 mandatory + ≥6 blood + ≥4 history</dd>
             <dt>Reference panel</dt><dd class="block">synthetic fixture</dd>
             <dt>Predictor</dt><dd class="block">development surrogate</dd>
-            <dt>Tests</dt><dd class="ok">120 / 120 passing</dd>
-            <dt>Wellness framing</dt><dd>engineering-only</dd>
+            <dt>Software gate</dt><dd class="ok" data-software-gate>CI runs 142 Python + 25 Node tests before deployment</dd>
+            <dt>Wellness framing</dt><dd class="block">non-clinical, non-diagnostic</dd>
             <dt>Diagnostic claim</dt><dd class="block">not supported</dd>
             <dt>Causal claim</dt><dd class="block">not supported</dd>
             <dt>Prognostic claim</dt><dd class="block">not supported</dd>
@@ -194,7 +194,7 @@
         <p class="h-eyebrow">Pipeline A</p>
         <h2 id="fi-h">Deterministic Frailty Index (FI)</h2>
         <p>
-          The FI follows the Rockwood accumulated-deficit construction:
+          The FI follows the Rockwood accumulated-deficit construction (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2573877/">Searle et&nbsp;al., 2008</a>):
           each measured variable is scored as <code>0</code>,
           <code>0.5</code>, or <code>1</code> against explicit,
           reviewable cutoffs; the score is the ratio of accumulated
@@ -569,9 +569,9 @@ uv run uvicorn frailty_engine.api:app</code></pre>
             <p class="print-only report-print-banner">Research-use-only — synthetic development output — not for clinical use, lifespan prediction, or treatment decisions.</p>
             <div class="readout-grid">
               <div class="readout-card readout-primary">
-                <span>Biological-age readout</span>
+                <span>Biological-age readout <span class="withheld-tag">development only · withheld</span></span>
                 <strong data-demo-biological-age>—</strong>
-                <small>development surrogate · uncertainty not validated</small>
+                <small>development surrogate · uncertainty not validated · ci_95: null</small>
                 <small data-demo-boundary>Action effects are not estimated · no clinical or lifespan claim</small>
               </div>
               <div class="readout-card">
@@ -608,6 +608,21 @@ uv run uvicorn frailty_engine.api:app</code></pre>
               </button>
             </div>
             <p class="field-note report-status" data-demo-report-status role="status" aria-live="polite"></p>
+            <details class="status-reveal" open>
+              <summary>Full-body category report</summary>
+              <p class="field-note">
+                Categories organize the measurements present in the current
+                contract. Skin and bone measurements are not currently collected.
+                Limited joint context is collected from osteoarthritis history
+                and chair-rise timing, but category ages are withheld until a
+                category-specific model, reference panel, uncertainty method,
+                and review record exist. Brain/cognitive testing and VO2-max
+                measurements are also outside the current contract. This is
+                measurement coverage, not a diagnosis or a clinical
+                body-system age claim.
+              </p>
+              <div class="category-grid" data-demo-categories></div>
+            </details>
             <h3>Areas to improve or review</h3>
             <p class="field-note" data-demo-focus-shown></p>
             <ul class="demo-focus" data-demo-focus></ul>
@@ -645,15 +660,25 @@ uv run uvicorn frailty_engine.api:app</code></pre>
 
       <!-- ============== 9. EVIDENCE STATUS (FILTER) ============== -->
       <section id="evidence" aria-labelledby="ev-h">
-        <p class="h-eyebrow">Receipts</p>
-        <h2 id="ev-h">Evidence status</h2>
+        <p class="h-eyebrow">Trust ledger</p>
+        <h2 id="ev-h">What this page can and cannot support</h2>
         <p>
-          The list below partitions what this checkout actually shows.
-          Filter by evidence category to see only measured repository
-          results, methodological anchors, unverified assumptions, or
-          approval obligations. Each bullet points back to a file,
-          a line, or a published source.
+          The software contract is testable. The biological-age and system-age
+          claims are not clinically validated. Start with these five facts;
+          open the full engineering register only if you need trace-level detail.
         </p>
+
+        <ul class="evidence-summary">
+          <li><strong>Verified here:</strong> deterministic FI, input validation, local-only SECA parsing, report rendering, and fail-closed release checks.</li>
+          <li><strong>Not verified:</strong> clinical validity, mortality prediction, lifespan prediction, treatment effect, or a numeric joint age.</li>
+          <li><strong>Public demo:</strong> synthetic data only; biological-age and homeostatic-deviation numbers are withheld from the published artifact.</li>
+          <li><strong>Main blocker:</strong> E-005 remains blocked pending an approved external cohort and qualified clinical and statistical review.</li>
+          <li><strong>Source trail:</strong> exact criteria live in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a>; citations and their limits live in <a href="SOURCES.md">SOURCES.md</a>.</li>
+        </ul>
+
+        <details class="status-reveal evidence-register">
+          <summary>Open the full engineering evidence register</summary>
+          <p class="field-note">Filter measured software behavior, cited methods, unverified assumptions, and approval obligations.</p>
 
         <fieldset class="filter-bar" data-filter-bar data-target="#receipts">
           <legend>Filter evidence by category</legend>
@@ -664,10 +689,11 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           <span class="filter-count" data-filter-count></span>
         </fieldset>
 
-        <div class="test-receipt" id="test-receipt">
-          <div><strong>Automated test receipt</strong><br><code>py -3 -m pytest</code></div>
-           <div><span class="receipt-value">120 passed</span><br><span class="field-note">Plus 23 Node Pages/parser tests · counts and commands: <a href="test-receipt.json">test-receipt.json</a> · source: EVAL.md E-001, E-003, E-006, E-007, E-010, E-011, E-012, E-013, E-014, E-015, E-016, E-017, E-018, E-019, E-020, E-021, E-022, E-024, E-026, E-027, E-029, E-030, E-031, E-032, E-033, E-034, E-035, E-036, E-037, E-038, E-039, E-040, E-041, E-042, E-043, E-044, E-045, E-046, E-047, E-048, E-049, E-050, E-051, E-052, E-053, E-054, E-055, E-056, E-057, E-058, E-059, E-060, E-061, E-062, E-063, E-064, E-065, E-066, E-067, E-068, E-069, E-070, E-071, E-072, E-073, E-074, E-075, E-076, E-077, E-078, E-079, E-080, E-081, E-082, E-083</span></div>
+        <div class="test-receipt" id="test-receipt" data-test-receipt>
+          <div><strong>Automated software gate</strong><br><code>py -3 -m pytest</code></div>
+          <div><span class="receipt-value" data-test-receipt-count>142 collected</span><br><span class="field-note" data-test-receipt-detail>Plus <span data-test-receipt-node-count>25 Node Pages/parser tests</span> · exact counts: <a href="test-receipt.json">test-receipt.json</a></span></div>
           <div><strong>Static checks</strong><br><span class="field-note">Ruff · byte compilation · wheel build · API smoke · XGBoost artifact round-trip · Node syntax/tests</span></div>
+          <p class="field-note">Full criterion index (E-001 … E-087) lives in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> and the status table below. This summary intentionally collapses the index to keep the front of the page scannable.</p>
         </div>
 
         <ul id="receipts" class="evidence-list">
@@ -907,7 +933,10 @@ uv run uvicorn frailty_engine.api:app</code></pre>
             The post-R-080 maturity audit is recorded as E-080: Codex independently rejected redundant artifact-round-trip and in-memory-digest proposals against the current strict serving evidence, then selected explicit subgroup support warnings as the next bounded improvement. E-005 remains unchanged.
             External-validation reports now serialize <code>subgroup_support_warnings</code> with the observed dimension, label, and concrete reasons <code>no_events</code>, <code>no_comparable_pairs</code>, or <code>insufficient_valid_replicates</code>. This makes incomplete engineering support visible without inventing clinical minimums or labeling a subgroup validated, fair, or safe — E-081. <strong>Confidence: high for tested software behavior; external clinical validation remains absent.</strong>
             Validation reports now also serialize <code>outcome_metric_status</code> overall and per subgroup. Future Brier/calibration/decision-curve metrics are explicitly marked <code>value: null</code>, <code>status: not_implemented_pending_sap</code>, and <code>construction: none_withheld</code> until the protocol and approved cohort exist. This prevents missing outcome evidence from being mistaken for zero or for a computed clinical result — E-082. <strong>Confidence: high for the tested withholding contract; E-005 remains blocked.</strong>
-            Operators and agents can run <code>uv run python scripts/verify_project.py</code> as one canonical software gate. It composes the documented checks, emits a bounded human or JSON receipt, and still reports <code>E-005 blocked</code> separately. This is workflow evidence, not clinical approval — E-083. <strong>Confidence: high for the observed 18/18 software checks.</strong>
+            Operators and agents can run <code>uv run python scripts/verify_project.py</code> as one canonical software gate. It composes the documented checks, emits a bounded human or JSON receipt, and still reports <code>E-005 blocked</code> separately. This is workflow evidence, not clinical approval — E-083. <strong>Confidence: high for the observed 19/19 software checks.</strong>
+            The API, installed skill, and Pages demo now expose deterministic full-body category reports with measured values, missing-measurement markers, measurement/reference provenance, forward-compatible system-card fields, and typed withheld age reports. Categories without supported inputs (currently skin, bone, and joint) are shown as unavailable; numeric category ages remain withheld pending category-specific validation — E-084. <strong>Confidence: high for tested software behavior; clinical approval remains absent.</strong>
+            The per-domain system-age manifest template is checked by <code>scripts/validate_system_age_manifest.py</code> and the canonical gate. It requires explicit construct, target, measurement, reference, uncertainty, validation, subgroup, and approval fields while keeping numeric output disabled and production readiness false — E-085. <strong>Confidence: high for the release-review shape; clinical approval remains absent.</strong>
+            Every system card now shows chronological-age context as supplied assessment metadata, including its source and the explicit fact that the current payload does not recompute age from date of birth — E-086. <strong>Confidence: high for tested presentation metadata; this is not clinical age validation.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
@@ -939,11 +968,11 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           </li>
           <li data-tags="method">
             <span class="marker method">Method</span>
-            BIA transfer calibration rationale: Peine et al. (SECA, 2013) listed at <a href="https://www.seca.com/en_er/products/body-composition-analysis/clinical-studies.html">seca clinical studies</a>; Bosy-Westphal et al., <em>EJCN</em> (2017) — <a href="https://doi.org/10.1038/ejcn.2017.27">doi:10.1038/ejcn.2017.27</a>. No published tables embedded. <strong>Confidence: high (citation).</strong>
+            BIA transfer calibration rationale: Peine et al. (SECA, 2013); Bosy-Westphal et al. (2013, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3607654/">PMC3607654</a>). No published tables are embedded and this is not a transportability validation. <strong>Evidence layer: citation only.</strong>
           </li>
           <li data-tags="method">
             <span class="marker method">Method</span>
-            Gompertz age-equivalent mapping: Levine &amp; Crimmins, <em>Demography</em> (2018) — <a href="https://doi.org/10.1007/s13524-017-0644-5">doi:10.1007/s13524-017-0644-5</a>. Engineering defaults in <code>GompertzMapper</code> are not a fitted baseline. <strong>Confidence: high (citation).</strong>
+            Gompertz age-equivalent mapping: Levine &amp; Crimmins, <em>Demography</em> (2018) — <a href="https://link.springer.com/article/10.1007/s13524-017-0644-5">DOI 10.1007/s13524-017-0644-5</a>. Engineering defaults in <code>GompertzMapper</code> are not a fitted baseline. <strong>Evidence layer: citation only.</strong>
           </li>
           <li data-tags="method">
             <span class="marker method">Method</span>
@@ -964,6 +993,26 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           <li data-tags="unverif">
             <span class="marker unverif">Unverified</span>
             That any <code>top_interventions</code> entry produces a causal health benefit — recommendations are lifestyle-strings, not outcomes. <strong>Confidence: high.</strong>
+          </li>
+          <li data-tags="unverif">
+            <span class="marker unverif">Unverified</span>
+            That the synthetic reference panel has suitable age and sex bands for any intended clinical population. It is a development fixture, not a published or approved reference population.
+          </li>
+          <li data-tags="unverif">
+            <span class="marker unverif">Unverified</span>
+            That <code>GompertzMapper</code> constants fit a real cohort. They are engineering defaults, not fitted mortality or biological-age parameters.
+          </li>
+          <li data-tags="unverif">
+            <span class="marker unverif">Unverified</span>
+            That all nine cutoffs marked for target-cohort validation have received per-cutoff clinical review. No review record is committed.
+          </li>
+          <li data-tags="unverif">
+            <span class="marker unverif">Unverified</span>
+            That the 35-feature contract performs equivalently by sex, ethnicity, age band, device, or clinic. No approved stratified reference population is committed.
+          </li>
+          <li data-tags="unverif">
+            <span class="marker unverif">Unverified</span>
+            Any numeric system age, including joint age. Joint context is limited to osteoarthritis history and chair-rise timing; the required joint-specific protocol, reference panel, model, uncertainty, validation, and approval do not exist here.
           </li>
           <li data-tags="oblig">
             <span class="marker oblig">Obligation</span>
@@ -990,6 +1039,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
             <strong>Wellness framing fence.</strong> <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/GOAL.md">GOAL.md</a> §4 strips prognostic mortality terminology; downstream material must not reintroduce it.
           </li>
         </ul>
+        </details>
       </section>
 
       <!-- ============== 10. APPROVAL GATES ============== -->
@@ -1031,7 +1081,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
         </div>
 
         <details class="status-reveal">
-           <summary>Full status table (from EVAL.md, E-001 – E-083)</summary>
+           <summary>Full status table (from EVAL.md, E-001 – E-086)</summary>
           <table>
             <thead><tr><th>Criterion</th><th>Area</th><th>Verdict</th></tr></thead>
             <tbody data-status-rows></tbody>
@@ -1067,7 +1117,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
         <ul>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/README.md">README.md</a> — quick start, safety boundary, training notes.</li>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/GOAL.md">GOAL.md</a> — feature contract, dual pipeline, output schema, validation requirements.</li>
-          <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> — the evidence contract this site reflects (E-001 … E-083).</li>
+          <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> — the evidence contract this site reflects (E-001 … E-086).</li>
           <li><a href="test-receipt.json">test-receipt.json</a> — deterministic Python/Node test-count receipt checked by CI and Pages.</li>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> — contribution, privacy, evidence, Pages, and release-receipt rules.</li>
           <li><a href="MODEL_CARD.md">MODEL_CARD.md</a> — intended use, limitations, evidence, and promotion gates.</li>
@@ -1081,7 +1131,9 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/scripts/verify_project.py">scripts/verify_project.py</a> — canonical non-writing software verification command for operators and agents.</li>
           <li><a href="TRAINING_MANIFEST_TEMPLATE.json">TRAINING_MANIFEST_TEMPLATE.json</a> — non-approval template for source, cohort, missingness, survey-design, split, and checksum provenance.</li>
           <li><a href="SOURCES.md">SOURCES.md</a> — citation boundary, deficit-accumulation, BIA calibration, NHANES, cutoffs, biological-age.</li>
-          <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/ROADMAP.md">ROADMAP.md</a> — R-001…R-083 outcomes, evidence gates, and statuses.</li>
+          <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/ROADMAP.md">ROADMAP.md</a> — ordered workstreams, evidence gates, and release statuses.</li>
+          <li><a href="SYSTEM_AGE_REPORT_SPEC.md">SYSTEM_AGE_REPORT_SPEC.md</a> — target system-card format, measurement map, and numeric-age evidence gate.</li>
+          <li><a href="SYSTEM_AGE_MODEL_MANIFEST_TEMPLATE.json">SYSTEM_AGE_MODEL_MANIFEST_TEMPLATE.json</a> — machine-readable per-domain release-review template; not an approval.</li>
           <li><code>src/frailty_engine/features.py</code> — canonical 35-feature matrix.</li>
           <li><code>src/frailty_engine/mvv.py</code> — minimum-viable-vector enforcement.</li>
           <li><code>src/frailty_engine/fi.py</code> — deterministic Rockwood-style calculator + <code>CUTOFF_SOURCES</code>.</li>
@@ -1090,6 +1142,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           <li><code>src/frailty_engine/nhanes.py</code> — explicit public-data manifest, mortality reader, and derivations.</li>
           <li><code>src/frailty_engine/seca.py</code> — local SECA TableView import, derivations, units, and trends.</li>
           <li><code>src/frailty_engine/wellness.py</code> — range/status/recommendation report with provenance.</li>
+          <li><code>src/frailty_engine/body_reports.py</code> — deterministic full-body category report construction and the category-age safety boundary.</li>
           <li><code>src/frailty_engine/progress.py</code> — stateless dated assessment comparison with reference-band transitions and no causal claims.</li>
           <li><code>src/frailty_engine/api.py</code>, <code>src/frailty_engine/release_provenance.py</code>, and <code>src/frailty_engine/release_receipt.py</code> — FastAPI gateway, structured error mapping, non-secret model/panel digests, installed-build/runtime identity, deterministic deployment fingerprint, and allow-listed runtime receipt reconciliation.</li>
           <li><code>scripts/validate_model_release.py</code> — model/panel/approval-sidecar release preflight with a separate clinical-review status.</li>
@@ -1106,8 +1159,8 @@ uv run uvicorn frailty_engine.api:app</code></pre>
   <!-- ============ FOOTER ============ -->
   <footer class="colophon" role="contentinfo">
     <div class="inner">
-      <div>
-        Clinical Healthspan Engine — v0.1.0 draft documentation.
+      <div data-build-meta>
+        Build pending · synced from main branch after each CI run.
         No remote fonts, no analytics, no CDN dependencies.
       </div>
       <div>
@@ -1117,8 +1170,8 @@ uv run uvicorn frailty_engine.api:app</code></pre>
   </footer>
 
   <!-- Bump the asset token when the static JS contract changes. -->
-  <script src="seca-parser.js?v=e084"></script>
-  <script src="intake-form.js?v=e084"></script>
-  <script src="site.js?v=e084"></script>
+  <script src="seca-parser.js?v=e088"></script>
+  <script src="intake-form.js?v=e088"></script>
+  <script src="site.js?v=e088"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 > repository to widely accepted clinical-ML reporting and governance
 > frameworks so a reviewer can find what is already evidenced, what is
 > only a template or deferred decision, and what is missing external
-> evidence. **It does not claim that E-005 is satisfied.** It does not
+> evidence. **It does not claim that E-005 is satisfied.** A subsequent documentation evidence row, E-087, narrows the public Pages presentation so software receipts and synthetic readouts are not read as clinical proof; E-087 is a presentation-only audit and does not satisfy E-005 either.
 > introduce new clinical evidence, regulatory conclusions, or numeric
 > thresholds.
 
@@ -27,7 +27,7 @@
   `production_ready: false`); they are specification skeletons, not
   evidence.
 - Status of the [EVAL](../EVAL.md) ledger as observed: **E-005 is
-  blocked**; E-001 through E-004 and E-006 through E-083 are software
+  blocked**; E-001 through E-004 and E-006 through E-086 are software
   passing.
 - The GitHub Pages publication path is a static documentation release;
   it does not deploy the assessment API or any model/patient artifact.
@@ -545,3 +545,5 @@ and the model-approval sidecar).
 When every box above can be checked against a populated version of the
 existing artifacts, E-005 is ready to be re-evaluated by the
 qualification process defined in `EVAL.md`, not by this crosswalk.
+
+

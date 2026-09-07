@@ -47,6 +47,10 @@ def build_checks(*, include_serving: bool) -> tuple[Check, ...]:
             _python("scripts/verify_project.py", "--syntax"),
         ),
         Check("python-tests", _python("-m", "pytest", "-q")),
+        Check(
+            "pages-metadata-unit",
+            _python("-m", "unittest", "tests.test_pages_metadata"),
+        ),
         Check("pages-seca-syntax", ("node", "--check", "docs/seca-parser.js")),
         Check("pages-intake-syntax", ("node", "--check", "docs/intake-form.js")),
         Check("pages-site-syntax", ("node", "--check", "docs/site.js")),
@@ -74,6 +78,13 @@ def build_checks(*, include_serving: bool) -> tuple[Check, ...]:
             _python(
                 "scripts/validate_training_manifest.py",
                 "docs/TRAINING_MANIFEST_TEMPLATE.json",
+            ),
+        ),
+        Check(
+            "system-age-manifest",
+            _python(
+                "scripts/validate_system_age_manifest.py",
+                "docs/SYSTEM_AGE_MODEL_MANIFEST_TEMPLATE.json",
             ),
         ),
         Check(

@@ -1,12 +1,13 @@
 /* Clinical Healthspan Engine — site.js
    Progressive enhancement. No frameworks, no CDN, no analytics.
-   Six small, accessible features:
+   Seven small, accessible features:
      1. Evidence-section filter (chip toggles, multi-select, no-JS fallback).
      2. Copy-to-clipboard on every <pre data-copyable> block.
    3. Populated status table from EVAL.md criteria + a print-friendly verdict.
    4. Static example assessments with a privacy-safe progress report.
    5. Local-only SECA TableView parsing and normalized downloads.
-   6. A copyable, privacy-safe focus-list handoff. */
+   6. A copyable, privacy-safe focus-list handoff.
+   7. A full-body category measurement report. */
 
 (function () {
   "use strict";
@@ -126,7 +127,7 @@
   }
 
   // ---------------------------------------------------------------
-  // 3) Status table — sourced from EVAL.md (E-001..E-083). Kept in
+  // 3) Status table — sourced from EVAL.md (E-001..E-086). Kept in
   //    the JS so the table reflects the source of truth exactly.
   // ---------------------------------------------------------------
   var STATUS_ROWS = [
@@ -213,6 +214,10 @@
     { id: "E-081", verdict: "passing", area: "External-validation subgroup support warnings" },
     { id: "E-082", verdict: "passing", area: "Typed withholding for future outcome metrics" },
     { id: "E-083", verdict: "passing", area: "Canonical software verification gate" },
+    { id: "E-084", verdict: "passing", area: "Full-body category reports with withheld category ages" },
+    { id: "E-085", verdict: "passing", area: "Fail-closed system-age model manifest shape" },
+    { id: "E-086", verdict: "passing", area: "Chronological-age context on every category card" },
+    { id: "E-087", verdict: "passing", area: "Bounded Pages trust presentation and build metadata" },
   ];
 
   function initStatusTable() {
@@ -227,6 +232,41 @@
             + '<td><span class="verdict ' + v + '">' + label + '</span></td></tr>';
     });
     tbody.innerHTML = rows;
+  }
+
+  // ---------------------------------------------------------------
+  // 3b) Build metadata: populated from window.__BUILD_META__ so the
+  //     public page never claims a hand-written version. Falls back
+  //     to a clearly labeled local-preview string when the CI step
+  //     has not yet injected the JSON.
+  // ---------------------------------------------------------------
+  function applyBuildMetadata() {
+    var fallback = {
+      commit: "unavailable",
+      short_commit: "unavailable",
+      built_at: "not available",
+      repository: "",
+      run_url: "",
+      source: "local",
+    };
+    var meta = (typeof window === "object" && window.__BUILD_META__) || fallback;
+    var commit = String(meta.short_commit || meta.commit || "unavailable");
+    var builtAt = String(meta.built_at || "not available");
+    var runUrl = String(meta.run_url || "");
+    var isSourceBuild = meta.source === "ci" && runUrl;
+    var label = isSourceBuild
+      ? "Source build " + commit + " \u00B7 " + builtAt + " \u00B7 " + runUrl
+      : "Local preview \u00B7 source-build metadata unavailable";
+    var placeholders = document.querySelectorAll("[data-build-meta]");
+    placeholders.forEach(function (node) {
+      if (node.tagName === "DT") {
+        node.textContent = "Build (" + commit + ")";
+      } else {
+        node.textContent = label;
+      }
+    });
+    var mirror = document.querySelector("[data-build-meta-mirror]");
+    if (mirror) mirror.textContent = label;
   }
 
   function escapeHtml(s) {
@@ -326,7 +366,11 @@
     var fiStrength = document.querySelector("[data-demo-fi-strength]");
     var deviationEl = document.querySelector("[data-demo-deviation]");
     var description = document.querySelector("#demo-description");
-    if (ageEl) ageEl.textContent = Number(age.point_estimate).toFixed(1) + " years";
+    if (ageEl) {
+      ageEl.textContent = age.point_estimate === null || age.point_estimate === undefined
+        ? "withheld"
+        : Number(age.point_estimate).toFixed(1) + " years";
+    }
     var boundary = document.querySelector("[data-demo-boundary]");
     if (boundary) {
       boundary.textContent = (report.action_effect_estimated ? "Action effects estimated" : "Action effects are not estimated")
@@ -337,7 +381,12 @@
     if (fiStrength) fiStrength.textContent = "Denominator band: "
       + humanize(metrics.current_deficit_load_fi_details.denominator_strength || "low")
       + " (engineering count label; not clinical adequacy)";
-    if (deviationEl) deviationEl.textContent = signedPercent(result.trajectory.homeostatic_deviation_score);
+    if (deviationEl) {
+      var deviation = result.trajectory.homeostatic_deviation_score;
+      deviationEl.textContent = deviation === null || deviation === undefined
+        ? "withheld"
+        : signedPercent(deviation);
+    }
     var deviationUncertainty = document.querySelector("[data-demo-deviation-uncertainty]");
     if (deviationUncertainty) {
       deviationUncertainty.textContent = Array.isArray(result.trajectory.score_ci_95)
@@ -420,6 +469,44 @@
           }
         }
       }
+    }
+    var categories = document.querySelector("[data-demo-categories]");
+    if (categories) {
+      categories.innerHTML = "";
+      (result.category_reports || []).forEach(function (category) {
+        var article = document.createElement("article");
+        article.className = "category-card";
+        var age = category.age_report || {};
+        var ageContext = category.chronological_age_context || {};
+        var ageText = age.point_estimate === null || age.point_estimate === undefined
+          ? humanize(age.status || "withheld_unvalidated")
+          : formatValue(age.point_estimate) + " years";
+        var ageContextText = ageContext.value === null || ageContext.value === undefined
+          ? "not supplied"
+          : formatValue(ageContext.value) + " years (supplied assessment age; not recalculated from date of birth)";
+        var measurements = (category.measurement_profile || category.measurements || []).map(function (item) {
+          return "<li><strong>" + escapeHtml(item.label) + "</strong>: "
+            + escapeHtml(formatValue(item.current_value))
+            + (item.unit ? " " + escapeHtml(item.unit) : "")
+            + " · " + escapeHtml(humanize(item.status)) + "</li>";
+        }).join("");
+        var missing = (category.missing_measurements || []).map(escapeHtml).join(", ");
+        var reference = category.reference_interpretation || {};
+        article.innerHTML = "<h4>" + escapeHtml(category.label) + "</h4>"
+          + "<p class=\"field-note\">" + escapeHtml(category.interpretation) + "</p>"
+          + "<p><strong>Coverage:</strong> " + escapeHtml(String(category.measured_count))
+          + " of " + escapeHtml(String(category.expected_count)) + " · <strong>Reference status:</strong> "
+          + escapeHtml(humanize(category.reference_status)) + "</p>"
+          + "<p><strong>Chronological age context:</strong> " + escapeHtml(ageContextText) + "</p>"
+          + "<p class=\"field-note\"><strong>Reference interpretation:</strong> "
+          + escapeHtml(humanize(reference.direction || category.reference_status)) + "</p>"
+          + "<p><strong>Category age report:</strong> " + escapeHtml(ageText) + "</p>"
+          + (measurements ? "<ul>" + measurements + "</ul>" : "<p>No supported measurements are available.</p>")
+          + (missing ? "<p class=\"field-note\"><strong>Not measured:</strong> " + missing + "</p>" : "")
+          + "<p class=\"field-note\"><strong>Next step:</strong> "
+          + escapeHtml(category.next_step || "Discuss the report with a qualified professional.") + "</p>";
+        categories.appendChild(article);
+      });
     }
     var ranges = document.querySelector("[data-demo-ranges]");
     if (ranges) {
@@ -510,6 +597,7 @@
       },
       top_interventions: result.top_interventions || [],
       wellness_report: report,
+      category_reports: result.category_reports || [],
       action_effect_estimated: false,
       clinical_or_lifespan_claim: false,
       progress_report: example.progress ? publicProgressReport(example.progress.report) : null,
@@ -565,6 +653,7 @@
       },
       focus_areas: publicFocusAreas(report),
       missing_features: report.missing_features || [],
+      category_reports: result.category_reports || [],
       disclaimer: report.disclaimer,
       privacy_note: "This handoff contains only the selected synthetic example. No patient identifier, raw CSV, or uploaded data is included."
     };
@@ -1119,6 +1208,7 @@
   ready(function () {
     initEvidenceFilter();
     initCopyButtons();
+    applyBuildMetadata();
     initStatusTable();
     initDemo();
     initSecaImport();

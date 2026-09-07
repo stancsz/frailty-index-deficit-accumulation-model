@@ -152,13 +152,18 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
         else ""
     )
     failures: list[str] = []
-    expected_count = f"{test_count} / {test_count}"
     expected_node_count = f"{node_test_count} Node Pages/parser tests"
-    if f"Tests: {expected_count} passing" not in html:
+    if (
+        f"Software gate: CI runs {test_count} Python + {node_test_count} Node tests"
+        not in html
+    ):
         failures.append("docs/index.html has a stale status-ribbon test count")
-    if f'<dt>Tests</dt><dd class="ok">{expected_count} passing</dd>' not in html:
-        failures.append("docs/index.html has a stale at-a-glance test count")
-    if f">{test_count} passed<" not in html:
+    if not re.search(
+        rf'<dt>Software gate</dt><dd class="ok"[^>]*>CI runs {test_count} Python \+ {node_test_count} Node tests',
+        html,
+    ):
+        failures.append("docs/index.html has a stale at-a-glance software-gate count")
+    if f">{test_count} collected<" not in html:
         failures.append("docs/index.html has a stale automated receipt")
     if f"`py -3 -m pytest`: {test_count} passed" not in evaluation:
         failures.append("EVAL.md has a stale pytest receipt")
@@ -230,6 +235,7 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
         "uv run python scripts/build_test_receipt.py --check",
         "node --check docs/intake-form.js",
         "node --test tests/site_parser.test.cjs",
+        "scripts/build_pages_metadata.py",
     ):
         if marker not in pages_workflow:
             failures.append(f"pages workflow is missing guard: {marker}")

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from copy import deepcopy
 import json
 from pathlib import Path
 import sys
@@ -143,6 +144,49 @@ def _previous_payload(example: dict[str, object]) -> dict[str, object]:
     return {"patient_id": payload["patient_id"], "measurements": measurements}
 
 
+def _public_result(result: dict[str, object]) -> dict[str, object]:
+    """Remove numeric biological-age outputs from the public synthetic artifact."""
+
+    public = deepcopy(result)
+    metrics = public["metrics"]
+    assert isinstance(metrics, dict)
+    biological_age = metrics["biological_age"]
+    assert isinstance(biological_age, dict)
+    biological_age["point_estimate"] = None
+    biological_age["interpretation"] = (
+        "Numeric biological-age output is withheld from the public Pages artifact "
+        "because the development predictor and uncertainty method are not validated."
+    )
+    trajectory = public["trajectory"]
+    assert isinstance(trajectory, dict)
+    trajectory["homeostatic_deviation_score"] = None
+    quality_notes = public.get("quality_notes")
+    if isinstance(quality_notes, list):
+        public["quality_notes"] = [
+            note
+            for note in quality_notes
+            if "homeostatic_deviation_score is normalized" not in str(note)
+        ]
+    return public
+
+
+def _public_progress(progress: dict[str, object]) -> dict[str, object]:
+    """Keep the progress report descriptive without publishing age deltas."""
+
+    public = deepcopy(progress)
+    report = public.get("report")
+    if isinstance(report, dict) and isinstance(report.get("readout_changes"), list):
+        report["readout_changes"] = [
+            item
+            for item in report["readout_changes"]
+            if not (
+                isinstance(item, dict)
+                and item.get("metric") == "biological_age.point_estimate"
+            )
+        ]
+    return public
+
+
 def _build_document() -> dict[str, object]:
     output = []
     for example in _examples():
@@ -158,12 +202,14 @@ def _build_document() -> dict[str, object]:
         output.append(
             {
                 **example,
-                "result": current_result,
-                "progress": {
-                    "previous_assessed_at": "2026-01-15",
-                    "current_assessed_at": "2026-08-15",
-                    "report": progress,
-                },
+                "result": _public_result(current_result),
+                "progress": _public_progress(
+                    {
+                        "previous_assessed_at": "2026-01-15",
+                        "current_assessed_at": "2026-08-15",
+                        "report": progress,
+                    }
+                ),
             }
         )
     return {

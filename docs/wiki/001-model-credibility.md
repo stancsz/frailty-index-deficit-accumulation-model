@@ -35,7 +35,7 @@ Until all four are satisfied, public-facing material must keep the `production_r
 - The public response schema carries `reference_panel_production_ready: bool`, `reference_panel_fixture_only: bool`, and `model_metadata.production_ready: bool` fields (`src/frailty_engine/schemas.py`), so callers can distinguish a synthetic panel from a merely unapproved panel without parsing identifiers — confidence: high
 - `ReferencePanel.from_mapping` requires explicit boolean values for `production_ready` and `fixture_only` when present, so malformed JSON cannot be truthiness-coerced into a readiness decision (`src/frailty_engine/calibration.py`). — confidence: high
 - The Pages SECA preview clears its prior detail rows on parse, read, size-limit, and synthetic-sample load failures, so an error state cannot retain measurements from a different file (`docs/site.js`). — confidence: high
-- `EVAL.md` rows E-001 through E-004 and E-006 through E-083 are marked **passing** with concrete observed evidence; E-005 remains **blocked** because clinical approval evidence is absent. — confidence: high
+- `EVAL.md` rows E-001 through E-004 and E-006 through E-086 are marked **passing** with concrete observed evidence; E-005 remains **blocked** because clinical approval evidence is absent. — confidence: high
 - `SurvivalTrainingFrame.quality` reports cohort-level and standard sex/age-band/ethnicity-slice row/event/censoring totals and per-model-feature missing counts/rates without retaining patient identifiers; fitted native artifacts carry the same JSON-safe summary as metadata. This is descriptive software evidence, not a subgroup fairness or clinical validation result. — confidence: high
 - `validate_external_cohort` also reports row/event/censoring support, event fraction, mean follow-up, concordance where estimable, and the effective comparable-pair denominator for each external sex, age-band, and ethnicity slice. It adds a deterministic support-aware percentile bootstrap interval with requested/valid replicate counts and withholds that interval when resampling support is sparse. These denominators and intervals expose evidence quality; they do not choose a clinically sufficient subgroup size, establish fairness, or create a clinical confidence interval. — confidence: high
 - The Python and browser SECA importers share strict timestamp and row-shape handling, normalize Unicode numeric signs, and expose the same estimated-height/FFMI derivation provenance; native training artifacts retain the fixed XGBoost recipe, mapper provenance, and case-weight mode. These are engineering controls, not clinical validation. — confidence: high
@@ -120,6 +120,9 @@ Until all four are satisfied, public-facing material must keep the `production_r
 - 2026-08-27: added a placeholder-only external-validation and clinical-review
   protocol template with explicit freeze, evidence, sign-off, and stop/rollback
   fields; E-005 remains blocked.
-- 2026-08-28: refreshed the snapshot and ledger coverage after R-084/E-083;
+- 2026-08-31: added the full-body category measurement/report contract as E-084; category ages remain withheld until separately validated.
+- 2026-08-31: added the fail-closed system-age manifest validator as E-085; the template cannot authorize numeric ages or production use.
+- 2026-08-31: added explicit chronological-age context to every category card as E-086; the current age is marked supplied and not recomputed from date of birth.
+- 2026-09-07: R-087/E-087 tightened the public Pages evidence presentation. CI now injects build provenance into the deployment artifact; the synthetic biological-age number is withheld from the public artifact; the long criterion list is linked rather than presented as a marketing wall; and joint context is explicitly not a joint-age estimate. E-005 remains blocked.
   the canonical software verifier is recorded as engineering evidence while
   E-005 remains blocked.

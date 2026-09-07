@@ -61,6 +61,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Inject build metadata into the Pages bundle
+        env:
+          BUILD_COMMIT: ${{ github.sha }}
+          BUILD_REPOSITORY: ${{ github.repository }}
+          BUILD_RUN_ID: ${{ github.run_id }}
+        run: |
+          python scripts/build_pages_metadata.py \
+            --commit "$BUILD_COMMIT" \
+            --built-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --repository "$BUILD_REPOSITORY" \
+            --run-id "$BUILD_RUN_ID"
       - uses: actions/upload-pages-artifact@v4
         with:
           path: docs

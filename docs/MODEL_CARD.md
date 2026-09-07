@@ -18,6 +18,11 @@ current deficit load and an age-equivalent model output for a supplied set of
 measurements. It is not a diagnostic device, a clinical decision by itself, or
 a substitute for professional judgment. The public API deliberately uses
 neutral language and does not expose prognostic endpoint terminology.
+There is no accepted universal biological-age test; system-specific outputs
+must remain named age-equivalent estimates tied to their measurement protocol,
+target, reference population, uncertainty, validation, and approval state. The
+finished profile contract is documented in
+[`SYSTEM_AGE_REPORT_SPEC.md`](SYSTEM_AGE_REPORT_SPEC.md).
 
 ## Model and data contract
 
@@ -128,7 +133,7 @@ confidence interval.
 | External-validation engineering smoke | 300-row reproducible synthetic fixture, all standard strata, calibration bins, support-aware concordance, and clinical-use-forbidden provenance | Software path verified; not external validation or a performance estimate |
 | Training split boundary | Seeded SHA-256 patient-level fit/holdout partition with event/censor stratification, duplicate rejection, and zero-overlap receipt | Leakage-control behavior verified; study split and tuning protocol remain unapproved |
 | Serving | FastAPI liveness/readiness endpoints, injected/configured dependencies, hash-bound non-secret model/panel release identity and deployment fingerprint, runtime-process provenance, allow-listed runtime receipt capture/check CLI, and installed-wheel loopback HTTP contract smoke | Verified development serving path and real HTTP boundary; production mode fails closed, including missing/malformed model or panel digests and incomplete installed provenance |
-| SECA import and wellness report | 120-test suite plus 23 Node Pages/parser tests (counts: [`test-receipt.json`](test-receipt.json)), local TableView-shaped fixture, downloadable/loadable synthetic sample, unmapped-row parity, static demo artifact, privacy-safe normalized-summary, wellness-improvement-report, focus-list handoffs, and versioned local MVV-gated assessment overlay with preview and typed CLI errors | Verified software behavior; device/clinical interpretation still requires review |
+| SECA import and wellness report | 142-test suite plus 25 Node Pages/parser tests (counts: [`test-receipt.json`](test-receipt.json)), local TableView-shaped fixture, downloadable/loadable synthetic sample, unmapped-row parity, static demo artifact, privacy-safe normalized-summary, wellness-improvement-report, full-body category report, focus-list handoffs, and versioned local MVV-gated assessment overlay with preview and typed CLI errors | Verified software behavior; device/clinical interpretation still requires review |
 | Model-release integrity preflight | Native artifact/feature-manifest load, approval-sidecar verification, panel file hash/id binding, production/uncertainty flags, and a non-zero blocked exit | Verified software gate; E-005 clinical approval remains absent |
 | Mapper provenance gate | Development fitting may use an in-sample Gompertz mapper, but production preflight requires explicit `training_config.mapper_source: supplied` and reports unknown/missing provenance as blocked | Verified software gate; mapper calibration and E-005 clinical evidence remain absent |
 | Typed interpretation boundary | Biological-age interpretation plus explicit `action_effect_estimated: false` and `clinical_or_lifespan_claim: false` fields in every assessment | Verified response-contract behavior; not a clinical claim |
@@ -265,3 +270,4 @@ The following must be present before anyone may label a release production-ready
   and [installed-wheel smoke](https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/scripts/verify_package_install.py)
 - [Public NHANES preparation](../README.md#public-nhanes-preparation)
 - [SECA import and wellness report](../README.md#seca-tableview-import-and-wellness-report)
+

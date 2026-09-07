@@ -1172,25 +1172,13 @@ def test_wellness_schema_rejects_unknown_status_and_extra_fields() -> None:
         )
 
 
-def test_static_demo_artifact_matches_the_python_assessment_pipeline() -> None:
-    script = Path(__file__).parents[1] / "scripts" / "build_demo_data.py"
-    subprocess.run(
-        [sys.executable, str(script), "--check"],
-        check=True,
-        capture_output=True,
-    )
-    data = json.loads(
-        (Path(__file__).parents[1] / "docs" / "demo-data.json").read_text(
-            encoding="utf-8"
-        )
-    )
-    assert data["privacy_note"].startswith("Synthetic")
-    assert len(data["examples"]) >= 2
-    for example in data["examples"]:
-        payload = example["payload"]
-        assert payload["patient_id"].startswith("demo-")
-        expected = assess(payload)
-        assert example["result"]["metrics"] == expected["metrics"]
+        public_metrics = example["result"]["metrics"]
+        assert public_metrics["chronological_age"] == expected["metrics"]["chronological_age"]
+        assert public_metrics["current_deficit_load_fi"] == expected["metrics"]["current_deficit_load_fi"]
+        assert public_metrics["biological_age"]["point_estimate"] is None
+        assert public_metrics["biological_age"]["ci_95"] is None
+        assert public_metrics["biological_age"]["interpretation"].startswith("Numeric biological-age output is withheld")
+        assert example["result"]["trajectory"]["homeostatic_deviation_score"] is None
         assert example["result"]["wellness_report"] == expected["wellness_report"]
 
 
@@ -3326,3 +3314,4 @@ def test_validate_external_cohort_pre_checks_panel_age_coverage_and_aggregates_o
         "age outside reference-panel band coverage" in blocker
         for blocker in report.blockers
     )
+

@@ -101,6 +101,9 @@ test("Pages keeps development and single-scan limits visible", () => {
     /Single scan only — trend comparison requires two dated scans\./,
   );
   assert.match(pageSource, /Biological-age readout/);
+  assert.match(pageSource, /data-build-meta/);
+  assert.match(pageSource, /data-test-receipt-count/);
+  assert.match(siteSource, /function applyBuildMetadata/);
   assert.match(pageSource, /uncertainty not validated/);
   assert.match(pageSource, /ci_95: null/);
   assert.match(pageSource, /Action effects are not estimated/);
@@ -111,9 +114,9 @@ test("Pages keeps development and single-scan limits visible", () => {
   assert.match(testReceipt.node_command, /--test-reporter=tap/);
   assert.match(pageSource, /test-receipt\.json/);
   assert.match(pagesWorkflow, /scripts\/build_test_receipt\.py --check/);
-  assert.match(pageSource, /seca-parser\.js\?v=e084/);
-  assert.match(pageSource, /intake-form\.js\?v=e084/);
-  assert.match(pageSource, /site\.js\?v=e084/);
+  assert.match(pageSource, /site\.js\?v=e088/);
+  assert.match(pageSource, /intake-form\.js\?v=e088/);
+  assert.match(pageSource, /seca-parser\.js\?v=e088/);
   assert.match(pageSource, /subgroup_support_warnings/);
   assert.match(pageSource, /support warning/);
   assert.match(pageSource, /outcome_metric_status/);
@@ -296,6 +299,44 @@ test("Pages exposes a privacy-safe wellness improvement report", () => {
     reportBeforeBoundary,
     /top_interventions: result\.top_interventions \|\| \[\],[\s\S]*wellness_report: report,[\s\S]*action_effect_estimated: false,[\s\S]*clinical_or_lifespan_claim: false,[\s\S]*progress_report:/,
   );
+});
+
+test("Pages renders the full-body category report with withheld category ages", () => {
+  assert.match(pageSource, /Full-body category report/);
+  assert.match(pageSource, /data-demo-categories/);
+  assert.ok(
+    pageSource.includes(
+      "Skin and bone measurements are not currently collected.",
+    ),
+  );
+  assert.ok(
+    pageSource.includes(
+      "osteoarthritis history and chair-rise timing",
+    ),
+  );
+  assert.ok(
+    pageSource.includes(
+      "category ages are withheld until a",
+    ),
+  );
+  assert.match(pageSource, /development only · withheld/);
+  assert.match(pageSource, /osteoarthritis history/);
+  assert.match(siteSource, /withheld_unvalidated/);
+  assert.match(siteSource, /function.*renderDemo/);
+  assert.match(siteSource, /result\.category_reports/);
+  assert.match(siteSource, /Chronological age context/);
+  assert.match(siteSource, /category\.measurement_profile \|\| category\.measurements/);
+  assert.match(siteSource, /category\.reference_interpretation/);
+  assert.match(siteSource, /category\.next_step/);
+  assert.match(pageSource, /category-specific model,\s+reference panel/);
+  for (const example of demoData.examples) {
+    const categories = example.result.category_reports;
+    assert.ok(Array.isArray(categories));
+    assert.ok(categories.some((item) => item.category === "muscle_health"));
+    assert.ok(categories.some((item) => item.category === "joint_health"));
+    assert.ok(categories.some((item) => item.category === "skin_health"));
+    assert.ok(categories.every((item) => item.age_report.point_estimate === null));
+  }
 });
 
 test("Pages status rows cover every EVAL criterion", () => {
@@ -607,4 +648,10 @@ test("Pages prefixes SECA and demo status messages with a sequence counter", () 
     siteSource,
     /sampleDownloadLink[\s\S]*?not your file; software fixture, not patient data/,
   );
+});
+test("Pages fronts evidence with a five-line trust summary and collapsed register", () => {
+  assert.match(pageSource, /What this page can and cannot support/);
+  assert.match(pageSource, /Open the full engineering evidence register/);
+  assert.match(pageSource, /verified here/i);
+  assert.match(pageSource, /Not verified/);
 });
