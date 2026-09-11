@@ -1,0 +1,224 @@
+{
+  "boundary": {
+    "clinical_use": false,
+    "e005_status": "blocked",
+    "measurements_emitted": false,
+    "participant_ids_emitted": false,
+    "raw_rows_emitted": false,
+    "values_removed": false
+  },
+  "candidate_special_codes": [
+    7,
+    9,
+    77,
+    99,
+    777,
+    999,
+    7777,
+    9999,
+    99999
+  ],
+  "categories": {
+    "liver_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LUAXSTAT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 6401,
+          "numeric_rows": 6401,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 6401
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 9,
+            "9": 12
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 9,
+            "9": 12
+          },
+          "field": "LUANMVGP",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 451,
+          "nonmissing_rows": 5950,
+          "numeric_rows": 5950,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 5950
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LUARXNC",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 5908,
+          "nonmissing_rows": 493,
+          "numeric_rows": 493,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 493
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LUARXND",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 6245,
+          "nonmissing_rows": 156,
+          "numeric_rows": 156,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 156
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LUARXIN",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 6143,
+          "nonmissing_rows": 258,
+          "numeric_rows": 258,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 258
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LUAPNME",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 6401,
+          "numeric_rows": 0,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 6401
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 2
+          },
+          "field": "LUANMTGP",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 6401,
+          "numeric_rows": 6401,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 6401
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LUATECH",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 6401,
+          "numeric_rows": 0,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 6401
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 46,
+            "9": 12
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 46,
+            "9": 12
+          },
+          "field": "LUXSMED",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 451,
+          "nonmissing_rows": 5950,
+          "numeric_rows": 5950,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 5950
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 1
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1
+          },
+          "field": "LUXSIQR",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 444,
+          "nonmissing_rows": 5957,
+          "numeric_rows": 5957,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 5957
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 43,
+            "9": 6
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 43,
+            "9": 6
+          },
+          "field": "LUXSIQRM",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 459,
+          "nonmissing_rows": 5942,
+          "numeric_rows": 5942,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 5942
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LUXCAPM",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 453,
+          "nonmissing_rows": 5948,
+          "numeric_rows": 5948,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 5948
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 13,
+            "77": 11,
+            "9": 18,
+            "99": 8
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 13,
+            "77": 11,
+            "9": 18,
+            "99": 8
+          },
+          "field": "LUXCPIQR",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 461,
+          "nonmissing_rows": 5940,
+          "numeric_rows": 5940,
+          "source": "LUX_J.XPT",
+          "source_rows": 6401,
+          "unique_participants_with_value": 5940
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    }
+  },
+  "cycle_scope": "NHANES_2017_2018",
+  "receipt_type": "nhanes-category-quality-audit-v1",
+  "schema_version": 1,
+  "scope": "2017_2018_liver"
+}

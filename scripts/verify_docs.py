@@ -30,6 +30,66 @@ def _load_test_receipt(root: Path) -> dict[str, Any]:
     return receipt
 
 
+def _gde_failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
+    """Check the durable authority chain without treating history as current."""
+
+    failures: list[str] = []
+    active_goals = sorted((root / "goals" / "active").glob("*/GOAL.md"))
+    if len(active_goals) != 1:
+        failures.append(
+            "GDE requires exactly one active goal, found " + str(len(active_goals))
+        )
+        return failures
+    active_goal = active_goals[0].read_text(encoding="utf-8")
+    root_goal = (root / "GOAL.md").read_text(encoding="utf-8")
+    product_intent = (root / "docs" / "product-specs" / "PRODUCT_INTENT.md").read_text(
+        encoding="utf-8"
+    )
+    architecture = (root / "ARCHITECTURE.md").read_text(encoding="utf-8")
+    catalog = (root / "docs" / "DOCUMENTATION_CATALOG.md").read_text(encoding="utf-8")
+    eval_doc = (root / "EVAL.md").read_text(encoding="utf-8")
+    wiki_index = (root / "docs" / "wiki" / "index.md").read_text(encoding="utf-8")
+    historical_t1 = (
+        root / "docs" / "wiki" / "016-trustworthy-research-showcase.md"
+    ).read_text(encoding="utf-8")
+    required_active = active_goals[0].relative_to(root).as_posix()
+    if required_active not in root_goal or "superseded history" not in root_goal:
+        failures.append("root GOAL does not identify DOCS-GDE-1 as the active contract")
+    if "Status: active" not in active_goal:
+        failures.append("active GDE goal is not marked active")
+    if "Acceptance criteria" not in active_goal or "Remaining gap" not in active_goal:
+        failures.append("active GDE goal is missing contract or execution sections")
+    if (
+        f"{test_count} Python tests" not in active_goal
+        or f"{node_test_count} Node tests" not in active_goal
+    ):
+        failures.append("active GDE goal has stale executed-test counts")
+    if (
+        "Primary users" not in product_intent
+        or "Evidence contract" not in product_intent
+    ):
+        failures.append("product intent is missing audience or evidence boundary")
+    if (
+        "Dependency direction" not in architecture
+        or "Durable invariants" not in architecture
+    ):
+        failures.append("architecture is missing dependency or invariant sections")
+    for text, label in (
+        (catalog, "documentation catalog"),
+        (wiki_index, "Wiki authority index"),
+    ):
+        if required_active not in text:
+            failures.append(f"{label} does not point to the active GDE goal")
+    if "E-005" not in eval_doc or "E-005" not in product_intent:
+        failures.append("evidence boundary is missing the E-005 blocker")
+    if (
+        not historical_t1.lower().startswith("# 016")
+        or "superseded historical goal" not in historical_t1
+    ):
+        failures.append("historical T1 Wiki entry is not labeled superseded")
+    return failures
+
+
 def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
     html = (root / "docs" / "index.html").read_text(encoding="utf-8")
     evaluation = (root / "EVAL.md").read_text(encoding="utf-8")
@@ -166,15 +226,61 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
         if nhanes_intake_script_path.is_file()
         else ""
     )
-    failures: list[str] = []
+    failures: list[str] = _gde_failures(root, test_count, node_test_count)
+    token_script = root / "scripts" / "build_token_value_receipt.py"
+    token_fixture = root / "examples" / "frontier_token_pairs_synthetic.json"
+    token_receipt = root / "docs" / "FRONTIER_TOKEN_VALUE_RECEIPT_2026-09-11.json"
+    token_measurement = root / "docs" / "FRONTIER_TOKEN_MEASUREMENT.md"
+    if not all(
+        path.is_file()
+        for path in (token_script, token_fixture, token_receipt, token_measurement)
+    ):
+        failures.append("frontier-token measurement package is incomplete")
+    else:
+        token_check = subprocess.run(
+            [
+                sys.executable,
+                str(token_script),
+                "--input",
+                str(token_fixture),
+                "--output",
+                str(token_receipt),
+                "--check",
+            ],
+            cwd=root,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if token_check.returncode:
+            failures.append(
+                "frontier-token receipt failed verification: "
+                + (token_check.stderr.strip() or token_check.stdout.strip())
+            )
+        else:
+            token_payload = json.loads(token_receipt.read_text(encoding="utf-8"))
+            if token_payload.get("real_paired_runs") is not False:
+                failures.append(
+                    "frontier-token receipt must remain explicitly unverified"
+                )
+            if "real_paired_runs: false" not in token_measurement.read_text(
+                encoding="utf-8"
+            ):
+                failures.append(
+                    "frontier-token measurement doc lacks the unverified boundary"
+                )
     expected_node_count = f"{node_test_count} Node Pages/parser tests"
-    if f"Local receipt: {test_count} Python + {node_test_count} Node tests" not in html:
-        failures.append("docs/index.html has a stale status-ribbon test count")
+    if f"Local receipt: {test_count} Python + {node_test_count} Node tests" in html:
+        failures.append(
+            "docs/index.html exposes a test-count billboard before the evidence journey"
+        )
     if not re.search(
-        rf'<dt>Software gate</dt><dd class="ok"[^>]*>Local software receipt: {test_count} Python \+ {node_test_count} Node tests',
+        r'<dt>Software gate</dt><dd class="ok"[^>]*>Canonical verifier receipt; clean publication pending</dd>',
         html,
     ):
-        failures.append("docs/index.html has a stale at-a-glance software-gate count")
+        failures.append(
+            "docs/index.html is missing the bounded at-a-glance software-gate label"
+        )
     if f">{test_count} collected<" not in html:
         failures.append("docs/index.html has a stale automated receipt")
     if (
@@ -917,7 +1023,17 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
                 or path.name == "verify_docs.py"
                 or path.suffix == ".pyc"
                 or path.suffix
-                in {".png", ".jpg", ".jpeg", ".gif", ".webp", ".ico", ".bmp", ".svgz"}
+                in {
+                    ".png",
+                    ".jpg",
+                    ".jpeg",
+                    ".gif",
+                    ".webp",
+                    ".ico",
+                    ".bmp",
+                    ".svgz",
+                    ".pdf",
+                }
             ):
                 continue
             text = path.read_text(encoding="utf-8")

@@ -4,9 +4,14 @@
 > repository to widely accepted clinical-ML reporting and governance
 > frameworks so a reviewer can find what is already evidenced, what is
 > only a template or deferred decision, and what is missing external
-> evidence. **It does not claim that E-005 is satisfied.** A subsequent documentation evidence row, E-087, narrows the public Pages presentation so software receipts and synthetic readouts are not read as clinical proof; E-087 is a presentation-only audit and does not satisfy E-005 either.
+> evidence. **It does not claim that E-005 is satisfied.** E-087 narrows the public Pages presentation so software receipts and synthetic readouts are not read as clinical proof; E-088 adds real source-coverage plumbing without creating clinical evidence; E-089 adds same-cycle participant-overlap evidence without cross-cycle joins; E-090 adds an official 2015-2016 source cycle with explicit absences; E-091 adds the 2017-2018 category cycle with a separate elastography boundary; E-092 adds the current 2021-2023 laboratory/questionnaire cycle with reduced-exam absences. None of these criteria satisfies E-005.
 > introduce new clinical evidence, regulatory conclusions, or numeric
 > thresholds.
+
+Documentation authority: This review artifact follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and the active evidence contract in
+[`GOAL.md`](../GOAL.md). It does not override them.
 
 ## Scope of this snapshot
 
@@ -545,5 +550,40 @@ and the model-approval sidecar).
 When every box above can be checked against a populated version of the
 existing artifacts, E-005 is ready to be re-evaluated by the
 qualification process defined in `EVAL.md`, not by this crosswalk.
+
+The recent-data evidence remains bounded: E-093 reports same-cycle
+participant intersections of 1,095, 873, and 1,360 for the 2015-2016,
+2017-2018, and 2021-2023 NHANES receipts. It emits no identifiers, raw
+rows, or measurements and performs no cross-cycle joins. This is joinability
+evidence only, not external validation or clinical approval.
+
+E-094 adds a privacy-safe category numeric coverage receipt showing at least
+one non-missing real numeric source field and positive unique-participant count
+for all 17 current categories. Sparse fields remain visible through
+per-category minimum and maximum counts. This is source coverage only and does
+not satisfy harmonization, external validation, or E-005 review.
+
+E-095 adds a cycle-separated category matrix. It shows 17/17 categories in
+the primary multi-cycle package, 15/17 in each of 2005-2006, 2015-2016, and
+2017-2018, 13/17 in 2007-2008, and 12/17 in 2021-2023, with declared absences and no cross-cycle joins. This
+is source coverage evidence only.
+E-096 adds aggregate missingness-rate ranges and candidate special-code counts
+for all 17 categories without filtering values. Observed sparse fields remain
+visible, and the summary does not establish data eligibility, clinical
+validity, or E-005 approval.
+E-097 adds an independently receipted 2005-2006 cycle with 15 categories and
+explicit cognitive and BIA-fluid absences. It expands source evidence only.
+E-098 adds an independently receipted 2007-2008 cycle with 13 categories and
+explicit bone, cognitive, BIA-fluid, and skin absences.
+E-099 propagates those present and absent states into the runtime category
+catalog, so missing cycle keys are no longer ambiguous. This remains source
+provenance metadata, not clinical validation.
+E-100 adds privacy-safe quantiles and participant counts for one representative
+real field in every category. Coded fields are retained as unfiltered source
+distributions and do not satisfy reference-band or clinical-validity review.
+E-101 links each runtime category to that receipt and representative field,
+and E-102 adds a privacy-safe frontier-token measurement mechanics receipt
+without claiming a live-provider savings result,
+while preserving the no-row and no-clinical-claim boundary.
 
 

@@ -1,0 +1,47 @@
+{
+  "candidate_sha": "5dd24112f6582c211b4c93b505db61c2c1e66b26",
+  "candidate_kind": "temporary local clean snapshot captured before final candidate-reference reconciliation, excluding this self-referential receipt and freeze manifest",
+  "clinical_gate": "E-005 blocked",
+  "date": "2026-09-10",
+  "environment": {
+    "install_command": "uv sync --locked --extra dev --extra ml",
+    "install_status": "passed",
+    "python": "3.13.11"
+  },
+  "platforms": {
+    "windows_local": {
+      "dependency_set_sha256": "6f11f6e6cf28e60e445288b13d56994055f68722d85e600dc49361bad23ff623",
+      "package_tree_sha256": "30f500d5fa127a484da4bb56f109a3296e4d30d504cfb60b90ab689d51ec1c83",
+      "status": "passed",
+      "verifier_status": "passed",
+      "wheel_http_smoke": {
+        "assessment": 200,
+        "clinical_use": "forbidden",
+        "comparison": 200,
+        "health": 200,
+        "invalid_assessment": 422,
+        "metrics": 200,
+        "production_readyz": 200,
+        "readyz": 503,
+        "status": "passed",
+        "wheel_sha256": "9c84c898f61762512628be1c0c02896ea0d92e11267bdab792fe392e8f338e44"
+      }
+    }
+  },
+  "source_baseline": "7fc8fcab408fa755c9367e04867de0a39f31d98c",
+  "verifier": {
+    "checks": 20,
+    "command": "uv run python scripts/verify_project.py --json",
+    "docs_command": "uv run python scripts/verify_docs.py",
+    "docs_status": "passed",
+    "node_tests": 28,
+    "python_tests": 146,
+    "status": "passed"
+  },
+  "limitations": [
+    "This candidate exists only in a temporary local clone and is not pushed.",
+    "Remote CI and Pages execution remain unverified for this candidate.",
+    "No live deployment identity or publication result was established.",
+    "This software evidence does not satisfy IR1, IR2 statistical review, IR3 human review, IR4-IR7, or E-005."
+  ]
+}

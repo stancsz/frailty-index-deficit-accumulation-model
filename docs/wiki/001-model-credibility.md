@@ -124,5 +124,36 @@ Until all four are satisfied, public-facing material must keep the `production_r
 - 2026-08-31: added the fail-closed system-age manifest validator as E-085; the template cannot authorize numeric ages or production use.
 - 2026-08-31: added explicit chronological-age context to every category card as E-086; the current age is marked supplied and not recomputed from date of birth.
 - 2026-09-07: R-087/E-087 tightened the public Pages evidence presentation. CI now injects build provenance into the deployment artifact; the synthetic biological-age number is withheld from the public artifact; the long criterion list is linked rather than presented as a marketing wall; and joint context is explicitly not a joint-age estimate. E-005 remains blocked.
-  the canonical software verifier is recorded as engineering evidence while
+ - 2026-09-11: E-088 added a real NHANES source-coverage catalog and privacy-safe aggregate category receipt for all 17 categories; E-089 added same-cycle participant-overlap evidence without cross-cycle joins; E-090 added an official 2015-2016 source cycle with explicit category absences; E-091 added the 2017-2018 category cycle with a separate elastography boundary; E-092 added the current 2021-2023 laboratory/questionnaire cycle with reduced-exam absences. Source availability and overlap are not patient measurement, clinical validity, or E-005 approval.
+ the canonical software verifier is recorded as engineering evidence while
   E-005 remains blocked.
+ - 2026-09-11: E-093 added privacy-safe same-cycle participant intersections
+   for the 2015-2016, 2017-2018, and 2021-2023 NHANES receipts: 1,095, 873,
+   and 1,360 participants respectively. No identifiers, raw rows, measurements,
+   or cross-cycle joins are emitted. This is joinability evidence only; E-005
+ remains blocked.
+ - 2026-09-11: E-094 added a privacy-safe numeric coverage receipt showing
+   non-missing real numeric source fields and positive unique-participant
+   counts for all 17 current categories. Sparse fields remain visible through
+   per-category minimum and maximum counts; this is source coverage only.
+ - 2026-09-11: E-095 added a cycle-separated category matrix: 17/17 in the
+   primary multi-cycle package, 15/17 in 2015-2016 and 2017-2018, and 12/17
+   in 2021-2023. Declared absences and the no-cross-cycle-join boundary remain
+   explicit.
+ - 2026-09-11: E-096 added aggregate missingness ranges and candidate
+   special-code counts for all 17 categories without filtering values. Sparse
+   and dirty fields remain visible as source-quality evidence only.
+ - 2026-09-11: E-097 added an independently receipted 2005-2006 cycle with
+   15 categories and explicit cognitive and BIA-fluid absences.
+ - 2026-09-11: E-098 added an independently receipted 2007-2008 cycle with
+   13 categories and explicit bone, cognitive, BIA-fluid, and skin absences.
+ - 2026-09-11: E-099 propagated explicit present and absent cycle states into
+   the runtime category catalog, preventing omitted keys from being mistaken
+   for unknown data.
+ - 2026-09-11: E-100 added privacy-safe representative distributions for all
+   17 categories, including quantiles and unique-participant counts. Coded
+   source fields remain explicitly non-clinical distributions.
+ - 2026-09-11: E-101 linked every runtime category to its representative
+   distribution evidence; E-102 added a mechanics-only frontier-token value
+   receipt with real paired runs still explicitly absent.
+   distribution receipt, source file, and field without embedding values.

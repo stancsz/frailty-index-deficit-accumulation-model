@@ -1,0 +1,600 @@
+{
+  "cycles": {
+    "NHANES_2013_2014": {
+      "all_mapped_categories_intersection_unique_participants": 0,
+      "categories": {
+        "blood_health": {
+          "unique_participants_with_any_mapped_field": 8544
+        },
+        "body_composition": {
+          "unique_participants_with_any_mapped_field": 9723
+        },
+        "bone_health": {
+          "unique_participants_with_any_mapped_field": 4992
+        },
+        "brain_cognitive_health": {
+          "unique_participants_with_any_mapped_field": 1686
+        },
+        "cardiorespiratory_health": {
+          "unique_participants_with_any_mapped_field": 7549
+        },
+        "cardiovascular_health": {
+          "unique_participants_with_any_mapped_field": 7549
+        },
+        "immune_inflammatory_health": {
+          "unique_participants_with_any_mapped_field": 8544
+        },
+        "joint_health": {
+          "unique_participants_with_any_mapped_field": 5769
+        },
+        "kidney_health": {
+          "unique_participants_with_any_mapped_field": 8052
+        },
+        "lifestyle_and_function": {
+          "unique_participants_with_any_mapped_field": 5769
+        },
+        "mental_health_history": {
+          "unique_participants_with_any_mapped_field": 5398
+        },
+        "metabolic_health": {
+          "unique_participants_with_any_mapped_field": 3172
+        },
+        "muscle_health": {
+          "unique_participants_with_any_mapped_field": 5348
+        },
+        "skin_health": {
+          "unique_participants_with_any_mapped_field": 3927
+        },
+        "sleep_and_recovery": {
+          "unique_participants_with_any_mapped_field": 6461
+        }
+      },
+      "category_count": 15,
+      "interpretation": "same-cycle public-use participant overlap only; no eligibility, survey-weight, clinical-validity, or harmonization claim",
+      "pairwise_overlap_unique_participants": {
+        "blood_health__body_composition": 8470,
+        "blood_health__bone_health": 4702,
+        "blood_health__brain_cognitive_health": 1637,
+        "blood_health__cardiorespiratory_health": 7125,
+        "blood_health__cardiovascular_health": 7125,
+        "blood_health__immune_inflammatory_health": 8544,
+        "blood_health__joint_health": 5394,
+        "blood_health__kidney_health": 7579,
+        "blood_health__lifestyle_and_function": 5394,
+        "blood_health__mental_health_history": 5226,
+        "blood_health__metabolic_health": 3169,
+        "blood_health__muscle_health": 5045,
+        "blood_health__skin_health": 3673,
+        "blood_health__sleep_and_recovery": 6000,
+        "body_composition__bone_health": 4981,
+        "body_composition__brain_cognitive_health": 1666,
+        "body_composition__cardiorespiratory_health": 7489,
+        "body_composition__cardiovascular_health": 7489,
+        "body_composition__immune_inflammatory_health": 8470,
+        "body_composition__joint_health": 5533,
+        "body_composition__kidney_health": 7997,
+        "body_composition__lifestyle_and_function": 5533,
+        "body_composition__mental_health_history": 5353,
+        "body_composition__metabolic_health": 3147,
+        "body_composition__muscle_health": 5337,
+        "body_composition__skin_health": 3773,
+        "body_composition__sleep_and_recovery": 6196,
+        "bone_health__brain_cognitive_health": 0,
+        "bone_health__cardiorespiratory_health": 4880,
+        "bone_health__cardiovascular_health": 4880,
+        "bone_health__immune_inflammatory_health": 4702,
+        "bone_health__joint_health": 3045,
+        "bone_health__kidney_health": 4950,
+        "bone_health__lifestyle_and_function": 3045,
+        "bone_health__mental_health_history": 3101,
+        "bone_health__metabolic_health": 1896,
+        "bone_health__muscle_health": 4981,
+        "bone_health__skin_health": 3045,
+        "bone_health__sleep_and_recovery": 3622,
+        "brain_cognitive_health__cardiorespiratory_health": 1631,
+        "brain_cognitive_health__cardiovascular_health": 1631,
+        "brain_cognitive_health__immune_inflammatory_health": 1637,
+        "brain_cognitive_health__joint_health": 1686,
+        "brain_cognitive_health__kidney_health": 1641,
+        "brain_cognitive_health__lifestyle_and_function": 1686,
+        "brain_cognitive_health__mental_health_history": 1633,
+        "brain_cognitive_health__metabolic_health": 809,
+        "brain_cognitive_health__muscle_health": 0,
+        "brain_cognitive_health__skin_health": 0,
+        "brain_cognitive_health__sleep_and_recovery": 1683,
+        "cardiorespiratory_health__cardiovascular_health": 7549,
+        "cardiorespiratory_health__immune_inflammatory_health": 7125,
+        "cardiorespiratory_health__joint_health": 5404,
+        "cardiorespiratory_health__kidney_health": 7385,
+        "cardiorespiratory_health__lifestyle_and_function": 5404,
+        "cardiorespiratory_health__mental_health_history": 5265,
+        "cardiorespiratory_health__metabolic_health": 3069,
+        "cardiorespiratory_health__muscle_health": 5230,
+        "cardiorespiratory_health__skin_health": 3686,
+        "cardiorespiratory_health__sleep_and_recovery": 6056,
+        "cardiovascular_health__immune_inflammatory_health": 7125,
+        "cardiovascular_health__joint_health": 5404,
+        "cardiovascular_health__kidney_health": 7385,
+        "cardiovascular_health__lifestyle_and_function": 5404,
+        "cardiovascular_health__mental_health_history": 5265,
+        "cardiovascular_health__metabolic_health": 3069,
+        "cardiovascular_health__muscle_health": 5230,
+        "cardiovascular_health__skin_health": 3686,
+        "cardiovascular_health__sleep_and_recovery": 6056,
+        "immune_inflammatory_health__joint_health": 5394,
+        "immune_inflammatory_health__kidney_health": 7579,
+        "immune_inflammatory_health__lifestyle_and_function": 5394,
+        "immune_inflammatory_health__mental_health_history": 5226,
+        "immune_inflammatory_health__metabolic_health": 3169,
+        "immune_inflammatory_health__muscle_health": 5045,
+        "immune_inflammatory_health__skin_health": 3673,
+        "immune_inflammatory_health__sleep_and_recovery": 6000,
+        "joint_health__kidney_health": 5468,
+        "joint_health__lifestyle_and_function": 5769,
+        "joint_health__mental_health_history": 5080,
+        "joint_health__metabolic_health": 2574,
+        "joint_health__muscle_health": 3344,
+        "joint_health__skin_health": 3927,
+        "joint_health__sleep_and_recovery": 5766,
+        "kidney_health__lifestyle_and_function": 5468,
+        "kidney_health__mental_health_history": 5320,
+        "kidney_health__metabolic_health": 3130,
+        "kidney_health__muscle_health": 5303,
+        "kidney_health__skin_health": 3743,
+        "kidney_health__sleep_and_recovery": 6122,
+        "lifestyle_and_function__mental_health_history": 5080,
+        "lifestyle_and_function__metabolic_health": 2574,
+        "lifestyle_and_function__muscle_health": 3344,
+        "lifestyle_and_function__skin_health": 3927,
+        "lifestyle_and_function__sleep_and_recovery": 5766,
+        "mental_health_history__metabolic_health": 2493,
+        "mental_health_history__muscle_health": 3392,
+        "mental_health_history__skin_health": 3420,
+        "mental_health_history__sleep_and_recovery": 5395,
+        "metabolic_health__muscle_health": 2070,
+        "metabolic_health__skin_health": 1729,
+        "metabolic_health__sleep_and_recovery": 2863,
+        "muscle_health__skin_health": 3343,
+        "muscle_health__sleep_and_recovery": 3950,
+        "skin_health__sleep_and_recovery": 3927
+      }
+    },
+    "NHANES_2015_2016": {
+      "all_mapped_categories_intersection_unique_participants": 1095,
+      "categories": {
+        "blood_health": {
+          "unique_participants_with_any_mapped_field": 8117
+        },
+        "body_composition": {
+          "unique_participants_with_any_mapped_field": 9445
+        },
+        "bone_health": {
+          "unique_participants_with_any_mapped_field": 4602
+        },
+        "cardiorespiratory_health": {
+          "unique_participants_with_any_mapped_field": 7376
+        },
+        "cardiovascular_health": {
+          "unique_participants_with_any_mapped_field": 7376
+        },
+        "immune_inflammatory_health": {
+          "unique_participants_with_any_mapped_field": 8117
+        },
+        "joint_health": {
+          "unique_participants_with_any_mapped_field": 5719
+        },
+        "kidney_health": {
+          "unique_participants_with_any_mapped_field": 8280
+        },
+        "lifestyle_and_function": {
+          "unique_participants_with_any_mapped_field": 5719
+        },
+        "liver_health": {
+          "unique_participants_with_any_mapped_field": 6256
+        },
+        "mental_health_history": {
+          "unique_participants_with_any_mapped_field": 5164
+        },
+        "metabolic_health": {
+          "unique_participants_with_any_mapped_field": 2972
+        },
+        "muscle_health": {
+          "unique_participants_with_any_mapped_field": 4985
+        },
+        "skin_health": {
+          "unique_participants_with_any_mapped_field": 3818
+        },
+        "sleep_and_recovery": {
+          "unique_participants_with_any_mapped_field": 6294
+        }
+      },
+      "category_count": 15,
+      "interpretation": "same-cycle public-use participant overlap only; no eligibility, survey-weight, clinical-validity, or harmonization claim",
+      "pairwise_overlap_unique_participants": {
+        "blood_health__body_composition": 8041,
+        "blood_health__bone_health": 4268,
+        "blood_health__cardiorespiratory_health": 6812,
+        "blood_health__cardiovascular_health": 6812,
+        "blood_health__immune_inflammatory_health": 8117,
+        "blood_health__joint_health": 5183,
+        "blood_health__kidney_health": 7586,
+        "blood_health__lifestyle_and_function": 5183,
+        "blood_health__liver_health": 6225,
+        "blood_health__mental_health_history": 4922,
+        "blood_health__metabolic_health": 2958,
+        "blood_health__muscle_health": 4627,
+        "blood_health__skin_health": 3458,
+        "blood_health__sleep_and_recovery": 5698,
+        "body_composition__bone_health": 4593,
+        "body_composition__cardiorespiratory_health": 7311,
+        "body_composition__cardiovascular_health": 7311,
+        "body_composition__immune_inflammatory_health": 8041,
+        "body_composition__joint_health": 5410,
+        "body_composition__kidney_health": 8214,
+        "body_composition__lifestyle_and_function": 5410,
+        "body_composition__liver_health": 6193,
+        "body_composition__mental_health_history": 5116,
+        "body_composition__metabolic_health": 2947,
+        "body_composition__muscle_health": 4976,
+        "body_composition__skin_health": 3636,
+        "body_composition__sleep_and_recovery": 5963,
+        "bone_health__cardiorespiratory_health": 4545,
+        "bone_health__cardiovascular_health": 4545,
+        "bone_health__immune_inflammatory_health": 4268,
+        "bone_health__joint_health": 2769,
+        "bone_health__kidney_health": 4547,
+        "bone_health__lifestyle_and_function": 2769,
+        "bone_health__liver_health": 3619,
+        "bone_health__mental_health_history": 2777,
+        "bone_health__metabolic_health": 1669,
+        "bone_health__muscle_health": 4574,
+        "bone_health__skin_health": 2769,
+        "bone_health__sleep_and_recovery": 3265,
+        "cardiorespiratory_health__cardiovascular_health": 7376,
+        "cardiorespiratory_health__immune_inflammatory_health": 6812,
+        "cardiorespiratory_health__joint_health": 5323,
+        "cardiorespiratory_health__kidney_health": 7188,
+        "cardiorespiratory_health__lifestyle_and_function": 5323,
+        "cardiorespiratory_health__liver_health": 6099,
+        "cardiorespiratory_health__mental_health_history": 5098,
+        "cardiorespiratory_health__metabolic_health": 2894,
+        "cardiorespiratory_health__muscle_health": 4921,
+        "cardiorespiratory_health__skin_health": 3542,
+        "cardiorespiratory_health__sleep_and_recovery": 5872,
+        "cardiovascular_health__immune_inflammatory_health": 6812,
+        "cardiovascular_health__joint_health": 5323,
+        "cardiovascular_health__kidney_health": 7188,
+        "cardiovascular_health__lifestyle_and_function": 5323,
+        "cardiovascular_health__liver_health": 6099,
+        "cardiovascular_health__mental_health_history": 5098,
+        "cardiovascular_health__metabolic_health": 2894,
+        "cardiovascular_health__muscle_health": 4921,
+        "cardiovascular_health__skin_health": 3542,
+        "cardiovascular_health__sleep_and_recovery": 5872,
+        "immune_inflammatory_health__joint_health": 5183,
+        "immune_inflammatory_health__kidney_health": 7586,
+        "immune_inflammatory_health__lifestyle_and_function": 5183,
+        "immune_inflammatory_health__liver_health": 6225,
+        "immune_inflammatory_health__mental_health_history": 4922,
+        "immune_inflammatory_health__metabolic_health": 2958,
+        "immune_inflammatory_health__muscle_health": 4627,
+        "immune_inflammatory_health__skin_health": 3458,
+        "immune_inflammatory_health__sleep_and_recovery": 5698,
+        "joint_health__kidney_health": 5347,
+        "joint_health__lifestyle_and_function": 5719,
+        "joint_health__liver_health": 5149,
+        "joint_health__mental_health_history": 4918,
+        "joint_health__metabolic_health": 2452,
+        "joint_health__muscle_health": 3077,
+        "joint_health__skin_health": 3818,
+        "joint_health__sleep_and_recovery": 5687,
+        "kidney_health__lifestyle_and_function": 5347,
+        "kidney_health__liver_health": 6166,
+        "kidney_health__mental_health_history": 5081,
+        "kidney_health__metabolic_health": 2932,
+        "kidney_health__muscle_health": 4928,
+        "kidney_health__skin_health": 3602,
+        "kidney_health__sleep_and_recovery": 5896,
+        "lifestyle_and_function__liver_health": 5149,
+        "lifestyle_and_function__mental_health_history": 4918,
+        "lifestyle_and_function__metabolic_health": 2452,
+        "lifestyle_and_function__muscle_health": 3077,
+        "lifestyle_and_function__skin_health": 3818,
+        "lifestyle_and_function__sleep_and_recovery": 5687,
+        "liver_health__mental_health_history": 4890,
+        "liver_health__metabolic_health": 2947,
+        "liver_health__muscle_health": 3958,
+        "liver_health__skin_health": 3443,
+        "liver_health__sleep_and_recovery": 5657,
+        "mental_health_history__metabolic_health": 2334,
+        "mental_health_history__muscle_health": 3080,
+        "mental_health_history__skin_health": 3234,
+        "mental_health_history__sleep_and_recovery": 5139,
+        "metabolic_health__muscle_health": 1841,
+        "metabolic_health__skin_health": 1594,
+        "metabolic_health__sleep_and_recovery": 2699,
+        "muscle_health__skin_health": 3077,
+        "muscle_health__sleep_and_recovery": 3599,
+        "skin_health__sleep_and_recovery": 3800
+      }
+    },
+    "NHANES_2017_2018": {
+      "all_mapped_categories_intersection_unique_participants": 873,
+      "categories": {
+        "blood_health": {
+          "unique_participants_with_any_mapped_field": 7528
+        },
+        "body_composition": {
+          "unique_participants_with_any_mapped_field": 8580
+        },
+        "bone_health": {
+          "unique_participants_with_any_mapped_field": 3569
+        },
+        "cardiorespiratory_health": {
+          "unique_participants_with_any_mapped_field": 6742
+        },
+        "cardiovascular_health": {
+          "unique_participants_with_any_mapped_field": 6742
+        },
+        "immune_inflammatory_health": {
+          "unique_participants_with_any_mapped_field": 7528
+        },
+        "joint_health": {
+          "unique_participants_with_any_mapped_field": 5569
+        },
+        "kidney_health": {
+          "unique_participants_with_any_mapped_field": 7632
+        },
+        "lifestyle_and_function": {
+          "unique_participants_with_any_mapped_field": 5856
+        },
+        "liver_health": {
+          "unique_participants_with_any_mapped_field": 5905
+        },
+        "mental_health_history": {
+          "unique_participants_with_any_mapped_field": 5094
+        },
+        "metabolic_health": {
+          "unique_participants_with_any_mapped_field": 2891
+        },
+        "muscle_health": {
+          "unique_participants_with_any_mapped_field": 4081
+        },
+        "skin_health": {
+          "unique_participants_with_any_mapped_field": 3418
+        },
+        "sleep_and_recovery": {
+          "unique_participants_with_any_mapped_field": 6113
+        }
+      },
+      "category_count": 15,
+      "interpretation": "same-cycle public-use participant overlap only; no eligibility, survey-weight, clinical-validity, or harmonization claim",
+      "pairwise_overlap_unique_participants": {
+        "blood_health__body_composition": 7426,
+        "blood_health__bone_health": 3344,
+        "blood_health__cardiorespiratory_health": 6323,
+        "blood_health__cardiovascular_health": 6323,
+        "blood_health__immune_inflammatory_health": 7528,
+        "blood_health__joint_health": 5028,
+        "blood_health__kidney_health": 7081,
+        "blood_health__lifestyle_and_function": 5271,
+        "blood_health__liver_health": 5902,
+        "blood_health__mental_health_history": 4890,
+        "blood_health__metabolic_health": 2891,
+        "blood_health__muscle_health": 3829,
+        "blood_health__skin_health": 3087,
+        "blood_health__sleep_and_recovery": 5508,
+        "body_composition__bone_health": 3561,
+        "body_composition__cardiorespiratory_health": 6672,
+        "body_composition__cardiovascular_health": 6672,
+        "body_composition__immune_inflammatory_health": 7426,
+        "body_composition__joint_health": 5185,
+        "body_composition__kidney_health": 7552,
+        "body_composition__lifestyle_and_function": 5444,
+        "body_composition__liver_health": 5822,
+        "body_composition__mental_health_history": 5042,
+        "body_composition__metabolic_health": 2844,
+        "body_composition__muscle_health": 4069,
+        "body_composition__skin_health": 3215,
+        "body_composition__sleep_and_recovery": 5695,
+        "bone_health__cardiorespiratory_health": 3443,
+        "bone_health__cardiovascular_health": 3443,
+        "bone_health__immune_inflammatory_health": 3344,
+        "bone_health__joint_health": 2131,
+        "bone_health__kidney_health": 3533,
+        "bone_health__lifestyle_and_function": 2328,
+        "bone_health__liver_health": 2777,
+        "bone_health__mental_health_history": 2212,
+        "bone_health__metabolic_health": 1341,
+        "bone_health__muscle_health": 3514,
+        "bone_health__skin_health": 2130,
+        "bone_health__sleep_and_recovery": 2534,
+        "cardiorespiratory_health__cardiovascular_health": 6742,
+        "cardiorespiratory_health__immune_inflammatory_health": 6323,
+        "cardiorespiratory_health__joint_health": 5017,
+        "cardiorespiratory_health__kidney_health": 6587,
+        "cardiorespiratory_health__lifestyle_and_function": 5269,
+        "cardiorespiratory_health__liver_health": 5629,
+        "cardiorespiratory_health__mental_health_history": 4930,
+        "cardiorespiratory_health__metabolic_health": 2756,
+        "cardiorespiratory_health__muscle_health": 3934,
+        "cardiorespiratory_health__skin_health": 3081,
+        "cardiorespiratory_health__sleep_and_recovery": 5507,
+        "cardiovascular_health__immune_inflammatory_health": 6323,
+        "cardiovascular_health__joint_health": 5017,
+        "cardiovascular_health__kidney_health": 6587,
+        "cardiovascular_health__lifestyle_and_function": 5269,
+        "cardiovascular_health__liver_health": 5629,
+        "cardiovascular_health__mental_health_history": 4930,
+        "cardiovascular_health__metabolic_health": 2756,
+        "cardiovascular_health__muscle_health": 3934,
+        "cardiovascular_health__skin_health": 3081,
+        "cardiovascular_health__sleep_and_recovery": 5507,
+        "immune_inflammatory_health__joint_health": 5028,
+        "immune_inflammatory_health__kidney_health": 7081,
+        "immune_inflammatory_health__lifestyle_and_function": 5271,
+        "immune_inflammatory_health__liver_health": 5902,
+        "immune_inflammatory_health__mental_health_history": 4890,
+        "immune_inflammatory_health__metabolic_health": 2891,
+        "immune_inflammatory_health__muscle_health": 3829,
+        "immune_inflammatory_health__skin_health": 3087,
+        "immune_inflammatory_health__sleep_and_recovery": 5508,
+        "joint_health__kidney_health": 5127,
+        "joint_health__lifestyle_and_function": 5569,
+        "joint_health__liver_health": 4917,
+        "joint_health__mental_health_history": 4850,
+        "joint_health__metabolic_health": 2435,
+        "joint_health__muscle_health": 2558,
+        "joint_health__skin_health": 3418,
+        "joint_health__sleep_and_recovery": 5522,
+        "kidney_health__lifestyle_and_function": 5387,
+        "kidney_health__liver_health": 5802,
+        "kidney_health__mental_health_history": 5004,
+        "kidney_health__metabolic_health": 2849,
+        "kidney_health__muscle_health": 4041,
+        "kidney_health__skin_health": 3184,
+        "kidney_health__sleep_and_recovery": 5638,
+        "lifestyle_and_function__liver_health": 5155,
+        "lifestyle_and_function__mental_health_history": 5094,
+        "lifestyle_and_function__metabolic_health": 2537,
+        "lifestyle_and_function__muscle_health": 2770,
+        "lifestyle_and_function__skin_health": 3418,
+        "lifestyle_and_function__sleep_and_recovery": 5809,
+        "liver_health__mental_health_history": 4786,
+        "liver_health__metabolic_health": 2827,
+        "liver_health__muscle_health": 3230,
+        "liver_health__skin_health": 3025,
+        "liver_health__sleep_and_recovery": 5382,
+        "mental_health_history__metabolic_health": 2352,
+        "mental_health_history__muscle_health": 2640,
+        "mental_health_history__skin_health": 3012,
+        "mental_health_history__sleep_and_recovery": 5058,
+        "metabolic_health__muscle_health": 1580,
+        "metabolic_health__skin_health": 1507,
+        "metabolic_health__sleep_and_recovery": 2639,
+        "muscle_health__skin_health": 2557,
+        "muscle_health__sleep_and_recovery": 3001,
+        "skin_health__sleep_and_recovery": 3396
+      }
+    },
+    "NHANES_2021_2023": {
+      "all_mapped_categories_intersection_unique_participants": 1360,
+      "categories": {
+        "blood_health": {
+          "unique_participants_with_any_mapped_field": 7593
+        },
+        "body_composition": {
+          "unique_participants_with_any_mapped_field": 8754
+        },
+        "cardiovascular_health": {
+          "unique_participants_with_any_mapped_field": 6890
+        },
+        "immune_inflammatory_health": {
+          "unique_participants_with_any_mapped_field": 7593
+        },
+        "joint_health": {
+          "unique_participants_with_any_mapped_field": 7807
+        },
+        "kidney_health": {
+          "unique_participants_with_any_mapped_field": 8153
+        },
+        "lifestyle_and_function": {
+          "unique_participants_with_any_mapped_field": 8135
+        },
+        "liver_health": {
+          "unique_participants_with_any_mapped_field": 6366
+        },
+        "mental_health_history": {
+          "unique_participants_with_any_mapped_field": 5519
+        },
+        "metabolic_health": {
+          "unique_participants_with_any_mapped_field": 3672
+        },
+        "skin_health": {
+          "unique_participants_with_any_mapped_field": 4302
+        },
+        "sleep_and_recovery": {
+          "unique_participants_with_any_mapped_field": 8388
+        }
+      },
+      "category_count": 12,
+      "interpretation": "same-cycle public-use participant overlap only; no eligibility, survey-weight, clinical-validity, or harmonization claim",
+      "pairwise_overlap_unique_participants": {
+        "blood_health__body_composition": 7511,
+        "blood_health__cardiovascular_health": 6863,
+        "blood_health__immune_inflammatory_health": 7593,
+        "blood_health__joint_health": 5767,
+        "blood_health__kidney_health": 7296,
+        "blood_health__lifestyle_and_function": 5997,
+        "blood_health__liver_health": 6340,
+        "blood_health__mental_health_history": 5254,
+        "blood_health__metabolic_health": 3657,
+        "blood_health__skin_health": 3121,
+        "blood_health__sleep_and_recovery": 6177,
+        "body_composition__cardiovascular_health": 6822,
+        "body_composition__immune_inflammatory_health": 7511,
+        "body_composition__joint_health": 5982,
+        "body_composition__kidney_health": 8090,
+        "body_composition__lifestyle_and_function": 6241,
+        "body_composition__liver_health": 6299,
+        "body_composition__mental_health_history": 5476,
+        "body_composition__metabolic_health": 3633,
+        "body_composition__skin_health": 3250,
+        "body_composition__sleep_and_recovery": 6464,
+        "cardiovascular_health__immune_inflammatory_health": 6863,
+        "cardiovascular_health__joint_health": 5497,
+        "cardiovascular_health__kidney_health": 6744,
+        "cardiovascular_health__lifestyle_and_function": 5710,
+        "cardiovascular_health__liver_health": 6365,
+        "cardiovascular_health__mental_health_history": 5013,
+        "cardiovascular_health__metabolic_health": 3519,
+        "cardiovascular_health__skin_health": 2980,
+        "cardiovascular_health__sleep_and_recovery": 5889,
+        "immune_inflammatory_health__joint_health": 5767,
+        "immune_inflammatory_health__kidney_health": 7296,
+        "immune_inflammatory_health__lifestyle_and_function": 5997,
+        "immune_inflammatory_health__liver_health": 6340,
+        "immune_inflammatory_health__mental_health_history": 5254,
+        "immune_inflammatory_health__metabolic_health": 3657,
+        "immune_inflammatory_health__skin_health": 3121,
+        "immune_inflammatory_health__sleep_and_recovery": 6177,
+        "joint_health__kidney_health": 5909,
+        "joint_health__lifestyle_and_function": 7794,
+        "joint_health__liver_health": 5477,
+        "joint_health__mental_health_history": 5273,
+        "joint_health__metabolic_health": 3209,
+        "joint_health__skin_health": 4302,
+        "joint_health__sleep_and_recovery": 7697,
+        "kidney_health__lifestyle_and_function": 6165,
+        "kidney_health__liver_health": 6241,
+        "kidney_health__mental_health_history": 5424,
+        "kidney_health__metabolic_health": 3600,
+        "kidney_health__skin_health": 3223,
+        "kidney_health__sleep_and_recovery": 6379,
+        "lifestyle_and_function__liver_health": 5688,
+        "lifestyle_and_function__mental_health_history": 5512,
+        "lifestyle_and_function__metabolic_health": 3325,
+        "lifestyle_and_function__skin_health": 4292,
+        "lifestyle_and_function__sleep_and_recovery": 8027,
+        "liver_health__mental_health_history": 4996,
+        "liver_health__metabolic_health": 3502,
+        "liver_health__skin_health": 2971,
+        "liver_health__sleep_and_recovery": 5865,
+        "mental_health_history__metabolic_health": 2894,
+        "mental_health_history__skin_health": 2835,
+        "mental_health_history__sleep_and_recovery": 5464,
+        "metabolic_health__skin_health": 1701,
+        "metabolic_health__sleep_and_recovery": 3417,
+        "skin_health__sleep_and_recovery": 4256
+      }
+    }
+  },
+  "privacy_boundary": {
+    "cross_cycle_joins_performed": false,
+    "measurements_emitted": false,
+    "participant_ids_emitted": false,
+    "raw_rows_emitted": false
+  },
+  "receipt_type": "nhanes-recent-category-participant-overlap-v1",
+  "schema_version": 1
+}

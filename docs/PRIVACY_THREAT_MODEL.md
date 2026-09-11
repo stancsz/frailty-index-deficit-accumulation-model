@@ -6,6 +6,11 @@ compliance attestation. Nothing here claims HIPAA, GDPR, ISO, NIST, or any
 equivalent conformance, and nothing here establishes clinical effectiveness,
 treatment benefit, or fitness for any particular use.
 
+Documentation authority: This security guidance follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and the active evidence contract in
+[`GOAL.md`](../GOAL.md). It does not override them.
+
 The repository is a wellness and healthspan prototype built around a
 35-variable input matrix, a minimum viable vector (MVV) enforced at the API
 gateway, a deterministic deficit-accumulation score (FI), a BIA reference

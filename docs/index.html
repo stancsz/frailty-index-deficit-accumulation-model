@@ -7,7 +7,7 @@
   <meta name="description" content="Deficit-accumulation engine: 35-feature contract, deterministic FI, BIA transfer calibration, and a withheld biological-age development interface. Local software checks pass in this checkout; clean publication and clinical validation (E-005) are not verified." />
   <meta name="robots" content="index,follow" />
   <meta name="color-scheme" content="light dark" />
-  <link rel="stylesheet" href="site.css?v=ir3-responsive-5" />
+  <link rel="stylesheet" href="site.css?v=ir3-t1-review-1" />
 
 <!-- ===== Trust / identity metadata (additive 2026-09-09) =====
      Additive only; preserves the trust-pass shell verbatim. Closes:
@@ -113,7 +113,7 @@
           <li><span class="trust-chip-k">Variables</span><span class="trust-chip-v">35 canonical</span></li>
           <li><span class="trust-chip-k">MVV</span><span class="trust-chip-v">5 mandatory + ≥6 blood + ≥4 history</span></li>
           <li><span class="trust-chip-k">Reference panel</span><span class="trust-chip-v">synthetic fixture</span></li>
-          <li><span class="trust-chip-k">Software gate</span><span class="trust-chip-v ok">Local receipt: 146 Python + 28 Node tests</span></li>
+          <li><span class="trust-chip-k">Software gate</span><span class="trust-chip-v ok">Canonical verifier receipt</span></li>
         </ul>
         <div class="standards-row" aria-label="Standards we report against">
           <p class="standards-row-lead">Standards we report against</p>
@@ -237,7 +237,7 @@
             <dt>MVV</dt><dd>5 mandatory + ≥6 blood + ≥4 history</dd>
             <dt>Reference panel</dt><dd class="block">synthetic fixture</dd>
             <dt>Predictor</dt><dd class="block">development surrogate</dd>
-            <dt>Software gate</dt><dd class="ok" data-software-gate>Local software receipt: 146 Python + 28 Node tests; clean publication pending</dd>
+            <dt>Software gate</dt><dd class="ok" data-software-gate>Canonical verifier receipt; clean publication pending</dd>
             <dt>Wellness framing</dt><dd class="block">non-clinical, non-diagnostic</dd>
             <dt>Diagnostic claim</dt><dd class="block">not supported</dd>
             <dt>Causal claim</dt><dd class="block">not supported</dd>
@@ -763,15 +763,15 @@ uv run uvicorn frailty_engine.api:app</code></pre>
             <details class="status-reveal" open>
               <summary>Full-body category report</summary>
               <p class="field-note">
-                Categories organize the measurements present in the current
-                contract. Skin and bone measurements are not currently collected.
-                Limited joint context is collected from osteoarthritis history
-                and chair-rise timing, but category ages are withheld until a
+                Categories organize participant measurements separately from
+                real public-data source coverage. The current intake catalog
+                has source fields or measured proxies for all 17 categories,
+                including DXA bone, cognitive testing, dermatology, and legacy
+                BIA. Those sources do not mean the current participant has
+                supplied the measurement. Category ages are withheld until a
                 category-specific model, reference panel, uncertainty method,
-                and review record exist. Brain/cognitive testing and VO2-max
-                measurements are also outside the current contract. This is
-                measurement coverage, not a diagnosis or a clinical
-                body-system age claim.
+                and review record exist. This is measurement coverage, not a
+                diagnosis or a clinical body-system age claim.
               </p>
               <div class="category-grid" data-demo-categories></div>
             </details>
@@ -827,7 +827,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           <li><strong>Not verified:</strong> clinical validity, mortality prediction, lifespan prediction, treatment effect, or a numeric joint age.</li>
           <li><strong>Public demo:</strong> synthetic data only; biological-age and homeostatic-deviation numbers are withheld from the published artifact.</li>
           <li><strong>Main blocker:</strong> E-005 remains blocked pending an approved external cohort and qualified clinical and statistical review.</li>
-          <li><strong>Source trail:</strong> the clinician-first narrative lives in <a href="RESEARCH_REPORT.md">RESEARCH_REPORT.md</a>; exact criteria live in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a>; citations and their limits live in <a href="SOURCES.md">SOURCES.md</a>.</li>
+          <li><strong>Source trail:</strong> the clinician-first narrative lives in <a href="RESEARCH_REPORT.md">RESEARCH_REPORT.md</a>; exact criteria live in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a>; citations and their limits live in <a href="SOURCES.md">SOURCES.md</a>; current public claims are indexed in <a href="CLAIM_INVENTORY_2026-09-10.md">the claim inventory</a>.</li>
         </ul>
 
         <details class="status-reveal evidence-register">
@@ -845,234 +845,234 @@ uv run uvicorn frailty_engine.api:app</code></pre>
 
         <div class="test-receipt" id="test-receipt" data-test-receipt>
           <div><strong>Automated software gate</strong><br><code>py -3 -m pytest</code></div>
-          <div><span class="receipt-value" data-test-receipt-count>146 collected</span><br><span class="field-note" data-test-receipt-detail>Plus <span data-test-receipt-node-count>28 Node Pages/parser tests</span> · exact counts: <a href="test-receipt.json">test-receipt.json</a></span></div>
+          <div><span class="receipt-value" data-test-receipt-count>176 collected</span><br><span class="field-note" data-test-receipt-detail>Plus <span data-test-receipt-node-count>28 Node Pages/parser tests</span> · receipt metadata only; execution status: <a href="test-receipt.json">test-receipt.json</a></span></div>
           <div><strong>Static checks</strong><br><span class="field-note">Ruff · byte compilation · wheel build · API smoke · XGBoost artifact round-trip · Node syntax/tests</span></div>
-          <p class="field-note">Full criterion index (E-001 … E-087) lives in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> and the status table below. This summary intentionally collapses the index to keep the front of the page scannable.</p>
+          <p class="field-note">Full criterion index (E-001 … E-102) lives in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> and the status table below. This summary intentionally collapses the index to keep the front of the page scannable.</p>
         </div>
 
         <ul id="receipts" class="evidence-list">
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The repository test suite passes; the exact command and observed count are recorded in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-001/E-003/E-006/E-007/E-010/E-011/E-012/E-013/E-015/E-016/E-026. <strong>Confidence: high.</strong>
+            The canonical project verifier records the current software-gate results, while the linked receipt keeps collected-test metadata separate from executed-check status — <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-001/E-003/E-006/E-007/E-010/E-011/E-012/E-013/E-015/E-016/E-026. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The training frame exposes cohort-level and standard sex/age-band/ethnicity-slice row, event, censoring, and per-feature missing-count/rate evidence; fitted native artifacts persist the same JSON-safe summary as metadata. External validation slices additionally expose row/event/censor support, event fraction, mean follow-up, concordance where estimable, and support-aware concordance uncertainty counts. Study-specific strata still require explicit extension — <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-012/E-026. <strong>Confidence: high for software behavior.</strong>
+            The training frame exposes cohort-level and standard sex/age-band/ethnicity-slice row, event, censoring, and per-feature missing-count/rate evidence; fitted native artifacts persist the same JSON-safe summary as metadata. External validation slices additionally expose row/event/censor support, event fraction, mean follow-up, concordance where estimable, and support-aware concordance uncertainty counts. Study-specific strata still require explicit extension — <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-012/E-026. <strong>Evidence class: software behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            External-validation calibration bins use only rows with observable follow-up at the requested horizon (or an event before it), use a Kaplan–Meier horizon event-probability estimator, and report early censoring separately; all-early-censored cohorts remain blocked and plots require estimable adjusted rates — <code>src/frailty_engine/validation.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-013. <strong>Confidence: high for software behavior; clinical calibration remains unverified.</strong>
+            External-validation calibration bins use only rows with observable follow-up at the requested horizon (or an event before it), use a Kaplan–Meier horizon event-probability estimator, and report early censoring separately; all-early-censored cohorts remain blocked and plots require estimable adjusted rates — <code>src/frailty_engine/validation.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-013. <strong>Evidence class: software behavior; clinical calibration remains unverified.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The Pages parser is shared with Node tests, strips a UTF-8 BOM, rejects invalid dated columns, and enforces a 5 MB local preview limit; the API checks configured keys before body consumption and exposes a binding-valid approval control — E-014. <strong>Confidence: high for boundary behavior.</strong>
+            The Pages parser is shared with Node tests, strips a UTF-8 BOM, rejects invalid dated columns, and enforces a 5 MB local preview limit; the API checks configured keys before body consumption and exposes a binding-valid approval control — E-014. <strong>Evidence class: boundary behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Python and browser SECA importers share a strict TableView timestamp contract, reject extra non-empty columns, normalize UTF-8 BOM/Unicode minus/NBSP numeric values, and expose identical estimated-height, FFMI, and derivation provenance; 56 Python tests and 10 Node Pages/parser tests pass — E-015. <strong>Confidence: high for software behavior.</strong>
+            Python and browser SECA importers share a strict TableView timestamp contract, reject extra non-empty columns, normalize UTF-8 BOM/Unicode minus/NBSP numeric values, and expose identical estimated-height, FFMI, and derivation provenance; the focused parser evidence is retained in E-015. <strong>Evidence class: software behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Native survival training rejects non-binary event labels and infinite features, preserves optional <code>NaN</code> values, records DMatrix case-weight semantics, persists the fixed XGBoost recipe/mapper provenance, and CI installs the ML extra — E-016. <strong>Confidence: high for engineering controls; not clinical validity.</strong>
+            Native survival training rejects non-binary event labels and infinite features, preserves optional <code>NaN</code> values, records DMatrix case-weight semantics, persists the fixed XGBoost recipe/mapper provenance, and CI installs the ML extra — E-016. <strong>Evidence class: engineering controls; not clinical validity.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Wellness attention states preserve the measured side of the development band, and the Pages table shows numeric bounds with the explanatory reference label; the synthetic SECA-informed example is regenerated from the corrected pipeline — E-017. <strong>Confidence: high for software behavior.</strong>
+            Wellness attention states preserve the measured side of the development band, and the Pages table shows numeric bounds with the explanatory reference label; the synthetic SECA-informed example is regenerated from the corrected pipeline — E-017. <strong>Evidence class: software behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The non-approval training-manifest template records source URLs and checksum placeholders, cycle-specific eligibility and BIA-quality decisions, explicit mortality linkage, native-missingness and DMatrix-weight limits, the fixed training recipe, sensitivity obligations, and reference-panel identity; its validator passes — E-018. <strong>Confidence: high for documentation and validator behavior; clinical approval remains unverified.</strong>
+            The non-approval training-manifest template records source URLs and checksum placeholders, cycle-specific eligibility and BIA-quality decisions, explicit mortality linkage, native-missingness and DMatrix-weight limits, the fixed training recipe, sensitivity obligations, and reference-panel identity; its validator passes — E-018. <strong>Evidence class: documentation and validator behavior; clinical approval remains unverified.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            CI resolves the project with the checked-in <code>uv.lock</code>, builds the wheel, and smoke-tests the installed wheel through health, valid-assessment, invalid-request, and SECA-import paths — E-019. <strong>Confidence: high for package-path engineering; deployment infrastructure remains operator-bound.</strong>
+            CI resolves the project with the checked-in <code>uv.lock</code>, builds the wheel, and smoke-tests the installed wheel through health, valid-assessment, invalid-request, and SECA-import paths — E-019. <strong>Evidence class: package-path engineering; deployment infrastructure remains operator-bound.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The local SECA workflow can download a normalized JSON summary containing mapped measurements, units, derivations, warnings, segments, and trend deltas without including the raw CSV or a patient identifier; browser testing used the supplied export and reported no upload — E-020. <strong>Confidence: high for local browser behavior; the artifact remains user-controlled and is not a clinical record.</strong>
+            The local SECA workflow can download a normalized JSON summary containing mapped measurements, units, derivations, warnings, segments, and trend deltas without including the raw CSV or a patient identifier; browser testing used the supplied export and reported no upload — E-020. <strong>Evidence class: local browser behavior; the artifact remains user-controlled and is not a clinical record.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The selected synthetic Pages example can download a local <code>wellness-improvement-report-v1-development.json</code> or open the browser print flow. The report includes the age-equivalent readout, FI context, numeric development ranges, focus areas, missing inputs, recommendations, the complete <code>top_interventions</code> list, model/readiness boundary, and explicit no-action-effect/no-clinical-claim flags without embedding the input payload — E-021/E-078. <strong>Confidence: high for the static artifact contract; clinical interpretation remains unverified.</strong>
+            The selected synthetic Pages example can download a local <code>wellness-improvement-report-v1-development.json</code> or open the browser print flow. The report includes the age-equivalent readout, FI context, numeric development ranges, focus areas, missing inputs, recommendations, the complete <code>top_interventions</code> list, model/readiness boundary, and explicit no-action-effect/no-clinical-claim flags without embedding the input payload — E-021/E-078. <strong>Evidence class: the static artifact contract; clinical interpretation remains unverified.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            A local SECA preview now states that the scan alone is not assessment-ready and lists the remaining MVV inputs: age/sex, any absent phase-angle or ECW/TBW scan fields, at least six blood values including glucose or HbA1c, and at least four history values. It provides a safe next-step note and never infers those fields — E-022. <strong>Confidence: high for the explicit readiness contract; clinical interpretation remains unverified.</strong>
+            A local SECA preview now states that the scan alone is not assessment-ready and lists the remaining MVV inputs: age/sex, any absent phase-angle or ECW/TBW scan fields, at least six blood values including glucose or HbA1c, and at least four history values. It provides a safe next-step note and never infers those fields — E-022. <strong>Evidence class: the explicit readiness contract; clinical interpretation remains unverified.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The operator handoff is documented in <a href="OPERATIONS.md"><code>docs/OPERATIONS.md</code></a>: development versus production startup, fail-closed readiness, release receipts, body-free observability, monitoring boundaries, immutable rollback, incident response, and the local SECA/wellness privacy boundary — E-023. <strong>Confidence: high for the documented engineering contract; deployment execution and clinical approval remain operator/reviewer responsibilities.</strong>
+            The operator handoff is documented in <a href="OPERATIONS.md"><code>docs/OPERATIONS.md</code></a>: development versus production startup, fail-closed readiness, release receipts, body-free observability, monitoring boundaries, immutable rollback, incident response, and the local SECA/wellness privacy boundary — E-023. <strong>Evidence class: the documented engineering contract; deployment execution and clinical approval remain operator/reviewer responsibilities.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            External validation slices expose row count, observed events, censored rows, event fraction, mean follow-up, concordance where estimable, and deterministic support-aware bootstrap replicate counts, making sparse support visible without declaring a fairness or clinical-sufficiency threshold — <code>src/frailty_engine/validation.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-024/E-026. <strong>Confidence: high for software behavior; external clinical validation remains unverified.</strong>
+            External validation slices expose row count, observed events, censored rows, event fraction, mean follow-up, concordance where estimable, and deterministic support-aware bootstrap replicate counts, making sparse support visible without declaring a fairness or clinical-sufficiency threshold — <code>src/frailty_engine/validation.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-024/E-026. <strong>Evidence class: software behavior; external clinical validation remains unverified.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The static Pages publication workflow runs the full Python suite, repository evidence verifier, and all browser-parser tests before uploading only <code>docs/</code> through the official Pages artifact/deploy actions; its deploy job is restricted to the <code>main</code> ref and the <code>github-pages</code> environment, and it does not deploy the API, model, or patient data — <code>.github/workflows/pages.yml</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-025. <strong>Confidence: high for workflow configuration; remote execution remains operator/Actions-bound.</strong>
+            The static Pages publication workflow runs the full Python suite, repository evidence verifier, and all browser-parser tests before uploading only <code>docs/</code> through the official Pages artifact/deploy actions; its deploy job is restricted to the <code>main</code> ref and the <code>github-pages</code> environment, and it does not deploy the API, model, or patient data — <code>.github/workflows/pages.yml</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-025. <strong>Evidence class: workflow configuration; remote execution remains operator/Actions-bound.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            External validation now emits a deterministic percentile bootstrap interval for concordance plus requested and valid replicate counts and the effective comparable-pair denominator for the cohort and each subgroup. Replicates without comparable event pairs are excluded, and sparse support withholds the interval; this remains an engineering review aid rather than a clinical confidence interval — <code>src/frailty_engine/validation.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-026. <strong>Confidence: high for software behavior; the statistical analysis plan and clinical interpretation remain unapproved.</strong>
+            External validation now emits a deterministic percentile bootstrap interval for concordance plus requested and valid replicate counts and the effective comparable-pair denominator for the cohort and each subgroup. Replicates without comparable event pairs are excluded, and sparse support withholds the interval; this remains an engineering review aid rather than a clinical confidence interval — <code>src/frailty_engine/validation.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-026. <strong>Evidence class: software behavior; the statistical analysis plan and clinical interpretation remain unapproved.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            CI verifies a byte-for-byte regenerated 300-row synthetic external-validation fixture, then runs it through row evaluation, all sex/age-band/ethnicity slices, calibration bins, and support-aware concordance. The fixture is explicitly clinical-use forbidden and cannot satisfy E-005; the serving health surface also identifies the default reference panel as fixture-only — <code>scripts/build_external_validation_fixture.py</code>, <code>scripts/run_external_validation_smoke.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-027. <strong>Confidence: high for engineering reproducibility; no clinical performance claim.</strong>
+            CI verifies a byte-for-byte regenerated 300-row synthetic external-validation fixture, then runs it through row evaluation, all sex/age-band/ethnicity slices, calibration bins, and support-aware concordance. The fixture is explicitly clinical-use forbidden and cannot satisfy E-005; the serving health surface also identifies the default reference panel as fixture-only — <code>scripts/build_external_validation_fixture.py</code>, <code>scripts/run_external_validation_smoke.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-027. <strong>Evidence class: engineering reproducibility; no clinical performance claim.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Training review now has a deterministic patient-level fit/holdout helper: seeded SHA-256 assignment, independent event/censor stratification, duplicate-identifier rejection, zero reported patient overlap, and serializable partition support. CI exercises it on the clinical-use-forbidden synthetic fixture; it is leakage-control engineering evidence, not a prespecified clinical split or validation result — <code>src/frailty_engine/training.py</code>, <code>scripts/run_training_split_smoke.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-028. <strong>Confidence: high for deterministic software behavior.</strong>
+            Training review now has a deterministic patient-level fit/holdout helper: seeded SHA-256 assignment, independent event/censor stratification, duplicate-identifier rejection, zero reported patient overlap, and serializable partition support. CI exercises it on the clinical-use-forbidden synthetic fixture; it is leakage-control engineering evidence, not a prespecified clinical split or validation result — <code>src/frailty_engine/training.py</code>, <code>scripts/run_training_split_smoke.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-028. <strong>Evidence class: deterministic software behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Serving health and readiness now expose a non-secret release identity: service version, model artifact SHA-256 when available, reference-panel SHA-256 when available, and a deterministic deployment fingerprint. The fingerprint is suitable for operator receipts and excludes API keys, request data, model parameters, and patient identifiers — <code>src/frailty_engine/api.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-029. <strong>Confidence: high for deterministic software behavior.</strong>
+            Serving health and readiness now expose a non-secret release identity: service version, model artifact SHA-256 when available, reference-panel SHA-256 when available, and a deterministic deployment fingerprint. The fingerprint is suitable for operator receipts and excludes API keys, request data, model parameters, and patient identifiers — <code>src/frailty_engine/api.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-029. <strong>Evidence class: deterministic software behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The runtime release tool captures an explicit, privacy-safe projection of <code>/health</code>, refuses accidental receipt overwrite, preserves a previous receipt under explicit force, and checks a stored receipt against fresh health metadata. Its receipt schema contains the deployment fingerprint, model/panel identity, readiness state, and safe controls without credentials, request data, endpoint URLs, or patient identifiers; a source-field-set hash makes schema drift fail reconciliation — <code>src/frailty_engine/release_receipt.py</code>, <code>scripts/capture_release_receipt.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-030. <strong>Confidence: high for tested software behavior.</strong>
+            The runtime release tool captures an explicit, privacy-safe projection of <code>/health</code>, refuses accidental receipt overwrite, preserves a previous receipt under explicit force, and checks a stored receipt against fresh health metadata. Its receipt schema contains the deployment fingerprint, model/panel identity, readiness state, and safe controls without credentials, request data, endpoint URLs, or patient identifiers; a source-field-set hash makes schema drift fail reconciliation — <code>src/frailty_engine/release_receipt.py</code>, <code>scripts/capture_release_receipt.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-030. <strong>Evidence class: tested software behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The model-release preflight loads the exact native artifact, verifies its persisted feature manifest and sidecar artifact binding, hashes the reference-panel file, checks the sidecar panel id/hash and production flags, and exits non-zero for blocked software state. Even a passing software gate retains an explicit E-005 clinical-review status — <code>scripts/validate_model_release.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-031. <strong>Confidence: high for tested software behavior; clinical approval remains absent.</strong>
+            The model-release preflight loads the exact native artifact, verifies its persisted feature manifest and sidecar artifact binding, hashes the reference-panel file, checks the sidecar panel id/hash and production flags, and exits non-zero for blocked software state. Even a passing software gate retains an explicit E-005 clinical-review status — <code>scripts/validate_model_release.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-031. <strong>Evidence class: tested software behavior; clinical approval remains absent.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The typed assessment contract carries an age-equivalent interpretation plus explicit <code>action_effect_estimated: false</code> and <code>clinical_or_lifespan_claim: false</code> wellness flags, so downstream clients can preserve the safety boundary without parsing prose — <code>src/frailty_engine/pipeline.py</code>, <code>src/frailty_engine/schemas.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-032. <strong>Confidence: high for tested response behavior.</strong>
+            The typed assessment contract carries an age-equivalent interpretation plus explicit <code>action_effect_estimated: false</code> and <code>clinical_or_lifespan_claim: false</code> wellness flags, so downstream clients can preserve the safety boundary without parsing prose — <code>src/frailty_engine/pipeline.py</code>, <code>src/frailty_engine/schemas.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-032. <strong>Evidence class: tested response behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The stateless comparison route and synthetic Pages artifact compare two dated same-person assessments with a versioned comparison context. They check FI item-set, coding, cutoff, unit, protocol, model, and panel identity; withhold aggregate readout deltas when eligibility is incomplete; show matched-item coverage and reference-band transitions; exclude the raw input payload; and retain false action-effect/no-clinical-claim flags — <code>src/frailty_engine/comparison.py</code>, <code>src/frailty_engine/progress.py</code>, <code>POST /v1/assessment-comparisons</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-033. <strong>Confidence: high for tested descriptive behavior; no causal or clinical claim.</strong>
+            The stateless comparison route and synthetic Pages artifact compare two dated same-person assessments with a versioned comparison context. They check FI item-set, coding, cutoff, unit, protocol, model, and panel identity; withhold aggregate readout deltas when eligibility is incomplete; show matched-item coverage and reference-band transitions; exclude the raw input payload; and retain false action-effect/no-clinical-claim flags — <code>src/frailty_engine/comparison.py</code>, <code>src/frailty_engine/progress.py</code>, <code>POST /v1/assessment-comparisons</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-033. <strong>Evidence class: tested descriptive behavior; no causal or clinical claim.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Pages now ships a clearly labeled synthetic SECA TableView CSV that visitors can download or load through the same local-only parser used for equipment exports. The asset contains no patient-specific identifiers and remains a software fixture, not clinical data — <code>docs/example-seca-tableview.csv</code>, <code>#seca-load-sample</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-034. <strong>Confidence: high for static sample/parser behavior.</strong>
+            Pages now ships a clearly labeled synthetic SECA TableView CSV that visitors can download or load through the same local-only parser used for equipment exports. The asset contains no patient-specific identifiers and remains a software fixture, not clinical data — <code>docs/example-seca-tableview.csv</code>, <code>#seca-load-sample</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-034. <strong>Evidence class: static sample/parser behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The selected demo now reports measured, not-measured, and focus-area counts beside the age-equivalent readout and lists missing canonical inputs without fabricating values. This keeps sparse examples from looking complete and preserves the MVV boundary — <code>data-demo-coverage</code>, <code>docs/site.js</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-035. <strong>Confidence: high for tested Pages behavior.</strong>
+            The selected demo now reports measured, not-measured, and focus-area counts beside the age-equivalent readout and lists missing canonical inputs without fabricating values. This keeps sparse examples from looking complete and preserves the MVV boundary — <code>data-demo-coverage</code>, <code>docs/site.js</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-035. <strong>Evidence class: tested Pages behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Python and Pages now expose latest-minus-previous changes for shared SECA segment values in the CLI, normalized local handoff, and preview details. The values remain descriptive equipment trends; no clinical asymmetry threshold or action effect is inferred — <code>src/frailty_engine/seca.py</code>, <code>docs/seca-parser.js</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-036. <strong>Confidence: high for tested parser/handoff behavior.</strong>
+            Python and Pages now expose latest-minus-previous changes for shared SECA segment values in the CLI, normalized local handoff, and preview details. The values remain descriptive equipment trends; no clinical asymmetry threshold or action effect is inferred — <code>src/frailty_engine/seca.py</code>, <code>docs/seca-parser.js</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-036. <strong>Evidence class: tested parser/handoff behavior.</strong>
           </li>
           <li data-tags="measured">
-            Assessment responses now carry <code>data_quality.reference_panel_fixture_only</code> as a typed boolean, matching the fixture state already exposed by the serving health surface. This prevents downstream callers from guessing whether a non-production panel is synthetic — <code>src/frailty_engine/pipeline.py</code>, <code>src/frailty_engine/schemas.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-037. <strong>Confidence: high for tested contract behavior.</strong>
-          </li>
-          <li data-tags="measured">
-            <span class="marker measured">Measured</span>
-            The committed synthetic <code>docs/demo-data.json</code> artifact has a non-writing deterministic <code>--check</code> path, and the Pages verification job runs it before deployment. This makes fixed-input synthetic readouts fail closed on artifact drift — <code>scripts/build_demo_data.py</code>, <code>.github/workflows/pages.yml</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-038. <strong>Confidence: high for reproducibility and workflow configuration; not a clinical claim.</strong>
+            Assessment responses now carry <code>data_quality.reference_panel_fixture_only</code> as a typed boolean, matching the fixture state already exposed by the serving health surface. This prevents downstream callers from guessing whether a non-production panel is synthetic — <code>src/frailty_engine/pipeline.py</code>, <code>src/frailty_engine/schemas.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-037. <strong>Evidence class: tested contract behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Reference-panel approval flags are now parsed as explicit JSON booleans: malformed string or numeric values fail before readiness can be evaluated, closing a truthiness-coercion path — <code>src/frailty_engine/calibration.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-039. <strong>Confidence: high for tested configuration behavior; this is not clinical approval.</strong>
+            The committed synthetic <code>docs/demo-data.json</code> artifact has a non-writing deterministic <code>--check</code> path, and the Pages verification job runs it before deployment. This makes fixed-input synthetic readouts fail closed on artifact drift — <code>scripts/build_demo_data.py</code>, <code>.github/workflows/pages.yml</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-038. <strong>Evidence class: reproducibility and workflow configuration; not a clinical claim.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The local SECA preview clears previous detail rows when parsing, sample loading, file reading, or size validation fails, keeping the accessible error status tied to the current action — <code>docs/site.js</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-040. <strong>Confidence: high for tested UI state behavior; this remains a non-clinical preview.</strong>
+            Reference-panel approval flags are now parsed as explicit JSON booleans: malformed string or numeric values fail before readiness can be evaluated, closing a truthiness-coercion path — <code>src/frailty_engine/calibration.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-039. <strong>Evidence class: tested configuration behavior; this is not clinical approval.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The Pages SECA parser now ignores nonnumeric rows it does not map, records their labels in the local preview/handoff, and matches the Python importer instead of failing on auxiliary export content — <code>docs/seca-parser.js</code>, <code>docs/site.js</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-041. <strong>Confidence: high for tested parser-parity behavior; this remains a non-clinical preview.</strong>
+            The local SECA preview clears previous detail rows when parsing, sample loading, file reading, or size validation fails, keeping the accessible error status tied to the current action — <code>docs/site.js</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-040. <strong>Evidence class: tested UI state behavior; this remains a non-clinical preview.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Production readiness now fails closed unless both the loaded model artifact and the frozen reference panel expose valid SHA-256 identities. The allow-listed release receipt applies the same rule to any health response marked ready, while blocked development fixtures may retain null digests for diagnostics — <code>src/frailty_engine/api.py</code>, <code>src/frailty_engine/release_receipt.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-042. <strong>Confidence: high for tested software integrity behavior; clinical approval remains absent.</strong>
+            The Pages SECA parser now ignores nonnumeric rows it does not map, records their labels in the local preview/handoff, and matches the Python importer instead of failing on auxiliary export content — <code>docs/seca-parser.js</code>, <code>docs/site.js</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-041. <strong>Evidence class: tested parser-parity behavior; this remains a non-clinical preview.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The inference encoder and persisted 36-column model manifest now derive from one source-name contract, preserving the existing order while making future additions or reordering an explicit regression change — <code>src/frailty_engine/pipeline.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-043. <strong>Confidence: high for software contract integrity; model performance and clinical approval remain unverified.</strong>
+            Production readiness now fails closed unless both the loaded model artifact and the frozen reference panel expose valid SHA-256 identities. The allow-listed release receipt applies the same rule to any health response marked ready, while blocked development fixtures may retain null digests for diagnostics — <code>src/frailty_engine/api.py</code>, <code>src/frailty_engine/release_receipt.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-042. <strong>Evidence class: tested software integrity behavior; clinical approval remains absent.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Runtime release receipts now reject semantically contradictory health payloads: a ready state cannot carry blockers, a not-ready state cannot omit them, a reference panel cannot be both production-ready and fixture-only, and top-level/control fixture flags must agree. Ready receipts also require the same model, uncertainty, digest, and API-key invariants enforced by serving — <code>src/frailty_engine/release_receipt.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-044. <strong>Confidence: high for tested release-integrity behavior; clinical approval remains absent.</strong>
+            The inference encoder and persisted 36-column model manifest now derive from one source-name contract, preserving the existing order while making future additions or reordering an explicit regression change — <code>src/frailty_engine/pipeline.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-043. <strong>Evidence class: software contract integrity; model performance and clinical approval remain unverified.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            NHANES mortality records expose the MEC follow-up duration in canonical years. The row builder rejects a months map when those normalized records are supplied, while direct row durations retain their explicit conversion path — <code>src/frailty_engine/nhanes.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-045. <strong>Confidence: high for tested unit-contract behavior; cohort endpoint validity remains unverified.</strong>
+            Runtime release receipts now reject semantically contradictory health payloads: a ready state cannot carry blockers, a not-ready state cannot omit them, a reference panel cannot be both production-ready and fixture-only, and top-level/control fixture flags must agree. Ready receipts also require the same model, uncertainty, digest, and API-key invariants enforced by serving — <code>src/frailty_engine/release_receipt.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-044. <strong>Evidence class: tested release-integrity behavior; clinical approval remains absent.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The downloadable Pages improvement report now exposes <code>action_effect_estimated: false</code> and <code>clinical_or_lifespan_claim: false</code> at its top level, matching the typed API boundary; a Node regression also requires every EVAL criterion ID to appear in the status table in order — <code>docs/site.js</code>, <code>tests/site_parser.test.cjs</code>, and E-046. <strong>Confidence: high for tested handoff and evidence-parity behavior.</strong>
+            NHANES mortality records expose the MEC follow-up duration in canonical years. The row builder rejects a months map when those normalized records are supplied, while direct row durations retain their explicit conversion path — <code>src/frailty_engine/nhanes.py</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-045. <strong>Evidence class: tested unit-contract behavior; cohort endpoint validity remains unverified.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The wellness API now retains every measured non-in-range focus item in deterministic priority/biomarker order, while Pages shows up to five by default, states “Showing N of M,” and discloses the remaining items. The generated report keeps the complete list — <code>src/frailty_engine/wellness.py</code>, <code>docs/site.js</code>, and E-047. <strong>Confidence: high for tested API/artifact/UI contract behavior.</strong>
+            The downloadable Pages improvement report now exposes <code>action_effect_estimated: false</code> and <code>clinical_or_lifespan_claim: false</code> at its top level, matching the typed API boundary; a Node regression also requires every EVAL criterion ID to appear in the status table in order — <code>docs/site.js</code>, <code>tests/site_parser.test.cjs</code>, and E-046. <strong>Evidence class: tested handoff and evidence-parity behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The repository now includes a placeholder-only <a href="EXTERNAL_VALIDATION_PROTOCOL.md"><code>EXTERNAL_VALIDATION_PROTOCOL.md</code></a> covering intended use, frozen cohort/source identity, endpoint/censoring/horizon, training-anchor versus assessment-MVV boundaries, patient-level leakage, missingness, denominators, subgroup support, discrimination, calibration, uncertainty, clinical utility, reproducibility, sign-off, and stop/rollback conditions. It contains no cohort or results and does not satisfy E-005 — E-048. <strong>Confidence: high for document/static verification; clinical approval remains absent.</strong>
+            The wellness API now retains every measured non-in-range focus item in deterministic priority/biomarker order, while Pages shows up to five by default, states “Showing N of M,” and discloses the remaining items. The generated report keeps the complete list — <code>src/frailty_engine/wellness.py</code>, <code>docs/site.js</code>, and E-047. <strong>Evidence class: tested API/artifact/UI contract behavior.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Unvalidated biological-age intervals are now withheld as <code>null</code> in both the biological-age and trajectory response fields; approved uncertainty remains able to emit a numeric interval. Runtime receipts hash the known nested <code>/health</code> schema objects, and validation reports carry the exact model/panel ids, available digests, and readiness/fixture state — <code>src/frailty_engine/model.py</code>, <code>src/frailty_engine/release_receipt.py</code>, <code>src/frailty_engine/validation.py</code>, and E-049. <strong>Confidence: high for tested software boundary behavior; clinical approval remains absent.</strong>
+            The repository now includes a placeholder-only <a href="EXTERNAL_VALIDATION_PROTOCOL.md"><code>EXTERNAL_VALIDATION_PROTOCOL.md</code></a> covering intended use, frozen cohort/source identity, endpoint/censoring/horizon, training-anchor versus assessment-MVV boundaries, patient-level leakage, missingness, denominators, subgroup support, discrimination, calibration, uncertainty, clinical utility, reproducibility, sign-off, and stop/rollback conditions. It contains no cohort or results and does not satisfy E-005 — E-048. <strong>Evidence class: document/static verification; clinical approval remains absent.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            External-validation reports now retain <code>rows_excluded</code> and privacy-safe aggregated exclusion reasons, while <code>concordance_ci_status</code> and <code>concordance_ci_construction</code> explain whether a nullable engineering interval was emitted as <code>bootstrap_percentile</code> or withheld for lack of records, comparable pairs, or valid bootstrap support. Synthetic smoke evidence confirms the supported path; this remains a review aid and does not satisfy E-005 — <code>src/frailty_engine/validation.py</code>, <code>scripts/run_external_validation_smoke.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-050/E-064. <strong>Confidence: high for tested software behavior; clinical approval remains absent.</strong>
+            Unvalidated biological-age intervals are now withheld as <code>null</code> in both the biological-age and trajectory response fields; approved uncertainty remains able to emit a numeric interval. Runtime receipts hash the known nested <code>/health</code> schema objects, and validation reports carry the exact model/panel ids, available digests, and readiness/fixture state — <code>src/frailty_engine/model.py</code>, <code>src/frailty_engine/release_receipt.py</code>, <code>src/frailty_engine/validation.py</code>, and E-049. <strong>Evidence class: tested software boundary behavior; clinical approval remains absent.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Assessment handoffs now carry the available <code>reference_panel_sha256</code> beside the panel id and a typed low/moderate/high FI denominator label. The label is count-only engineering context, not clinical adequacy; longitudinal reports reject mismatched non-null panel digests and echo both identities. Pages renders the same context in the demo and privacy-safe improvement-report boundary — <code>src/frailty_engine/pipeline.py</code>, <code>src/frailty_engine/progress.py</code>, <code>docs/site.js</code>, and E-051. <strong>Confidence: high for tested software-contract behavior; clinical approval remains absent.</strong>
+            External-validation reports now retain <code>rows_excluded</code> and privacy-safe aggregated exclusion reasons, while <code>concordance_ci_status</code> and <code>concordance_ci_construction</code> explain whether a nullable engineering interval was emitted as <code>bootstrap_percentile</code> or withheld for lack of records, comparable pairs, or valid bootstrap support. Synthetic smoke evidence confirms the supported path; this remains a review aid and does not satisfy E-005 — <code>src/frailty_engine/validation.py</code>, <code>scripts/run_external_validation_smoke.py</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-050/E-064. <strong>Evidence class: tested software behavior; clinical approval remains absent.</strong>
+          </li>
+          <li data-tags="measured">
+            <span class="marker measured">Measured</span>
+            Assessment handoffs now carry the available <code>reference_panel_sha256</code> beside the panel id and a typed low/moderate/high FI denominator label. The label is count-only engineering context, not clinical adequacy; longitudinal reports reject mismatched non-null panel digests and echo both identities. Pages renders the same context in the demo and privacy-safe improvement-report boundary — <code>src/frailty_engine/pipeline.py</code>, <code>src/frailty_engine/progress.py</code>, <code>docs/site.js</code>, and E-051. <strong>Evidence class: tested software-contract behavior; clinical approval remains absent.</strong>
            </li>
            <li data-tags="measured">
              <span class="marker measured">Measured</span>
-           Predictor serving now has one explicit <code>ModelAdapterProtocol</code>: both assessment and external-validation paths call <code>predict_for_assessment(age, encoded_vector)</code> with the persisted 36-column order, and legacy raw-component predictors are rejected. A 16-cell readiness matrix verifies that <code>/health</code>, <code>/readyz</code>, and the allow-listed release receipt agree across model, panel, fixture, and API-key states — <code>src/frailty_engine/model.py</code>, <code>src/frailty_engine/pipeline.py</code>, <code>src/frailty_engine/validation.py</code>, and E-052. <strong>Confidence: high for tested software-contract behavior; clinical approval remains absent.</strong>
+           Predictor serving now has one explicit <code>ModelAdapterProtocol</code>: both assessment and external-validation paths call <code>predict_for_assessment(age, encoded_vector)</code> with the persisted 36-column order, and legacy raw-component predictors are rejected. A 16-cell readiness matrix verifies that <code>/health</code>, <code>/readyz</code>, and the allow-listed release receipt agree across model, panel, fixture, and API-key states — <code>src/frailty_engine/model.py</code>, <code>src/frailty_engine/pipeline.py</code>, <code>src/frailty_engine/validation.py</code>, and E-052. <strong>Evidence class: tested software-contract behavior; clinical approval remains absent.</strong>
            </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Readiness probes now carry non-secret model/panel identity fields in parity with <code>/health</code>; receipt mismatches retain safe aggregated <code>readiness.blockers</code>. External-validation smoke covers three exclusion reasons across 303 received rows, while the legacy <code>race_ethnicity</code> alias is accepted and conflicting aliases are rejected. The training split smoke also exercises deterministic <code>sex</code>/<code>age_band</code> strata — E-053. <strong>Confidence: high for tested engineering behavior; external cohort and clinical approval remain absent.</strong>
+            Readiness probes now carry non-secret model/panel identity fields in parity with <code>/health</code>; receipt mismatches retain safe aggregated <code>readiness.blockers</code>. External-validation smoke covers three exclusion reasons across 303 received rows, while the legacy <code>race_ethnicity</code> alias is accepted and conflicting aliases are rejected. The training split smoke also exercises deterministic <code>sex</code>/<code>age_band</code> strata — E-053. <strong>Evidence class: tested engineering behavior; external cohort and clinical approval remain absent.</strong>
           </li>
            <li data-tags="measured product">
              <span class="marker measured">Measured</span>
-             Panel identity is now a single conservative typed state in assessment quality, health/readiness probes, and release receipts. The built-in fixture also carries a deterministic canonical-content digest without losing its fixture-only block; Pages pins the state beside the report, labels the SECA preview local-only, and can copy the complete measured focus list — E-054. <strong>Confidence: high for tested software behavior; clinical approval remains absent.</strong>
+             Panel identity is now a single conservative typed state in assessment quality, health/readiness probes, and release receipts. The built-in fixture also carries a deterministic canonical-content digest without losing its fixture-only block; Pages pins the state beside the report, labels the SECA preview local-only, and can copy the complete measured focus list — E-054. <strong>Evidence class: tested software behavior; clinical approval remains absent.</strong>
            </li>
            <li data-tags="measured product">
              <span class="marker measured">Measured</span>
-            Pages now has an explicit unavailable-data state, keeps report actions disabled until a synthetic example is loaded, ignores stale SECA sample/FileReader callbacks, renders segment values as individual lists, expands BIA acronyms, and reflows the report for print. The 22-test Node suite and local browser check cover the handoff — E-055. <strong>Confidence: high for tested software behavior; no scan data is uploaded.</strong>
+            Pages now has an explicit unavailable-data state, keeps report actions disabled until a synthetic example is loaded, ignores stale SECA sample/FileReader callbacks, renders segment values as individual lists, expands BIA acronyms, and reflows the report for print. The parser receipt and local browser checks cover the handoff — E-055. <strong>Evidence class: tested software behavior; no scan data is uploaded.</strong>
            </li>
            <li data-tags="measured security">
              <span class="marker measured">Measured</span>
-             Runtime predictor exceptions are mapped to a typed generic 500 response while input/domain validation remains 422. The response does not echo request data, identifiers, model paths, or exception text — E-056. <strong>Confidence: high for tested API behavior; production deployment still requires approval.</strong>
+             Runtime predictor exceptions are mapped to a typed generic 500 response while input/domain validation remains 422. The response does not echo request data, identifiers, model paths, or exception text — E-056. <strong>Evidence class: tested API behavior; production deployment still requires approval.</strong>
            </li>
             <li data-tags="oblig">
              <span class="marker oblig">Approval obligation</span>
-              The external-validation protocol now makes subgroup support fields and outcome-level metrics explicit future obligations: Brier or a prespecified survival analogue, calibration-in-the-large, calibration slope/ICI, and decision-curve/net-benefit only with prespecified decisions and thresholds. It does not fill in clinical values; E-005 remains blocked — E-057. <strong>Confidence: high for documentation boundary.</strong>
+              The external-validation protocol now makes subgroup support fields and outcome-level metrics explicit future obligations: Brier or a prespecified survival analogue, calibration-in-the-large, calibration slope/ICI, and decision-curve/net-benefit only with prespecified decisions and thresholds. It does not fill in clinical values; E-005 remains blocked — E-057. <strong>Evidence class: documentation boundary.</strong>
             </li>
             <li data-tags="measured engineering">
               <span class="marker measured">Measured</span>
-              The release workflow now exercises the Windows-first path with locked Python and Node environments, the full test suite, docs and manifest checks, and a PowerShell isolated-wheel smoke through the Windows console entry point. The local Windows equivalent returns the same health/assessment/validation/comparison contract as the Linux smoke — E-058. <strong>Confidence: high for local and workflow contract; E-005 clinical approval remains absent.</strong>
+              The release workflow now exercises the Windows-first path with locked Python and Node environments, the full test suite, docs and manifest checks, and a PowerShell isolated-wheel smoke through the Windows console entry point. The local Windows equivalent returns the same health/assessment/validation/comparison contract as the Linux smoke — E-058. <strong>Evidence class: local and workflow contract; E-005 clinical approval remains absent.</strong>
             </li>
             <li data-tags="measured method oblig">
               <span class="marker measured">Measured</span>
-              The new <a href="CLINICAL_ML_EVIDENCE_CROSSWALK.md"><code>clinical-ML evidence crosswalk</code></a> maps current repository controls, templates, and missing external evidence to TRIPOD+AI, PROBAST+AI, external-validation guidance, GMLP, Health Canada MLMD/transparency guidance, and WHO AI-health governance. A draft <a href="wiki/003-clinical-ml-evidence-standards.md"><code>wiki entry</code></a> preserves the source-backed research. This is selective review documentation; it does not satisfy E-005 or constitute regulatory clearance — E-059. <strong>Confidence: high for document and link verification; clinical evidence remains absent.</strong>
+              The new <a href="CLINICAL_ML_EVIDENCE_CROSSWALK.md"><code>clinical-ML evidence crosswalk</code></a> maps current repository controls, templates, and missing external evidence to TRIPOD+AI, PROBAST+AI, external-validation guidance, GMLP, Health Canada MLMD/transparency guidance, and WHO AI-health governance. A draft <a href="wiki/003-clinical-ml-evidence-standards.md"><code>wiki entry</code></a> preserves the source-backed research. This is selective review documentation; it does not satisfy E-005 or constitute regulatory clearance — E-059. <strong>Evidence class: document and link verification; clinical evidence remains absent.</strong>
             </li>
             <li data-tags="measured product">
               <span class="marker measured">Measured</span>
-              Every Pages wellness handoff now preserves typed safety flags and the model/panel boundary. The copyable focus-list JSON is versioned as <code>wellness-focus-areas-v2</code>, excludes identifiers/raw CSV, and is documented as a development-only artifact — <code>docs/site.js</code>, <code>docs/OPERATIONS.md</code>, and E-060. <strong>Confidence: high for tested software and privacy-contract behavior; clinical recommendations remain unvalidated.</strong>
+              Every Pages wellness handoff now preserves typed safety flags and the model/panel boundary. The copyable focus-list JSON is versioned as <code>wellness-focus-areas-v2</code>, excludes identifiers/raw CSV, and is documented as a development-only artifact — <code>docs/site.js</code>, <code>docs/OPERATIONS.md</code>, and E-060. <strong>Evidence class: tested software and privacy-contract behavior; clinical recommendations remain unvalidated.</strong>
             </li>
             <li data-tags="measured security">
               <span class="marker measured">Measured</span>
-              Readiness and model-release preflight now compare the actual BIA band values against the shipped synthetic fixture independently of approval flags and source labels. A panel cannot be promoted by metadata edits alone; focused API and JSON-preflight tests cover the guard — <code>src/frailty_engine/calibration.py</code>, <code>src/frailty_engine/api.py</code>, <code>scripts/validate_model_release.py</code>, and E-061. <strong>Confidence: high for the local promotion guard; an approved real reference panel remains an E-005 obligation.</strong>
+              Readiness and model-release preflight now compare the actual BIA band values against the shipped synthetic fixture independently of approval flags and source labels. A panel cannot be promoted by metadata edits alone; focused API and JSON-preflight tests cover the guard — <code>src/frailty_engine/calibration.py</code>, <code>src/frailty_engine/api.py</code>, <code>scripts/validate_model_release.py</code>, and E-061. <strong>Evidence class: the local promotion guard; an approved real reference panel remains an E-005 obligation.</strong>
             </li>
             <li data-tags="measured oblig">
               <span class="marker measured">Measured</span>
-            Assessment quality now exposes conservative all-feature reference-panel band count and age span, while external validation aggregates and excludes rows outside required panel coverage. Production release preflight also requires explicit supplied Gompertz mapper provenance and reports the source. Assessment and validation intervals now expose their construction labels separately from validation status — <code>src/frailty_engine/calibration.py</code>, <code>src/frailty_engine/validation.py</code>, <code>scripts/validate_model_release.py</code>, and E-062/E-063/E-064. <strong>Confidence: high for the software boundary; panel coverage, mapper calibration, and interval calibration still require external review.</strong>
+            Assessment quality now exposes conservative all-feature reference-panel band count and age span, while external validation aggregates and excludes rows outside required panel coverage. Production release preflight also requires explicit supplied Gompertz mapper provenance and reports the source. Assessment and validation intervals now expose their construction labels separately from validation status — <code>src/frailty_engine/calibration.py</code>, <code>src/frailty_engine/validation.py</code>, <code>scripts/validate_model_release.py</code>, and E-062/E-063/E-064. <strong>Evidence class: the software boundary; panel coverage, mapper calibration, and interval calibration still require external review.</strong>
             </li>
           <li data-tags="measured product">
             <span class="marker measured">Measured</span>
-            The local SECA workflow now includes a typed assessment-intake handoff: observed canonical scan fields are pre-filled, remaining MVV fields must be entered explicitly, and a CLI/API-ready overlay downloads locally without uploading scan or measurement data. The assess-overlay command routes the merged payload through the canonical Python assessor — E-068. <strong>Confidence: high for the tested software handoff; this remains a development readout and does not satisfy clinical approval.</strong>
+            The local SECA workflow now includes a typed assessment-intake handoff: observed canonical scan fields are pre-filled, remaining MVV fields must be entered explicitly, and a CLI/API-ready overlay downloads locally without uploading scan or measurement data. The assess-overlay command routes the merged payload through the canonical Python assessor — E-068. <strong>Evidence class: the tested software handoff; this remains a development readout and does not satisfy clinical approval.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The SECA handoff is now versioned and reviewable end to end: the form validates the same MVV categories as Python, lets the operator enter a local pseudonymous identifier, shows the exact JSON preview before download, and leaves observed scan values read-only. The canonical CLI rejects malformed, unknown, out-of-range, or conflicting values with bounded JSON errors and stable exit codes, while the E-005 clinical gate remains unchanged — E-069. <strong>Confidence: high for tested software behavior; no patient data is uploaded and no clinical validity is implied.</strong>
+            The SECA handoff is now versioned and reviewable end to end: the form validates the same MVV categories as Python, lets the operator enter a local pseudonymous identifier, shows the exact JSON preview before download, and leaves observed scan values read-only. The canonical CLI rejects malformed, unknown, out-of-range, or conflicting values with bounded JSON errors and stable exit codes, while the E-005 clinical gate remains unchanged — E-069. <strong>Evidence class: tested software behavior; no patient data is uploaded and no clinical validity is implied.</strong>
           </li>
           <li data-tags="measured oblig">
             <span class="marker measured">Measured</span>
-            A local NHANES intake-shape receipt now requires a supported cycle, repeated XPT components, the fixed-width public-use mortality file, and an explicit SEQN/age/sex/BMI map. It records only input hashes and aggregate counts, rejects duplicate or missing join keys and incompatible duration units, and keeps cycle mapping, sentinels, BIA quality, survey design, and E-005 approval as reviewer obligations — <a href="NHANES_INTAKE.md">NHANES_INTAKE.md</a> and E-070. <strong>Confidence: high for the mechanical local audit; no raw rows, patient identifiers, or clinical result are emitted.</strong>
+            A local NHANES intake-shape receipt now requires a supported cycle, repeated XPT components, the fixed-width public-use mortality file, and an explicit SEQN/age/sex/BMI map. It records only input hashes and aggregate counts, rejects duplicate or missing join keys and incompatible duration units, and keeps cycle mapping, sentinels, BIA quality, survey design, and E-005 approval as reviewer obligations — <a href="NHANES_INTAKE.md">NHANES_INTAKE.md</a> and E-070. <strong>Evidence class: the mechanical local audit; no raw rows, patient identifiers, or clinical result are emitted.</strong>
           </li>
           <li data-tags="measured oblig">
             <span class="marker measured">Measured</span>
-            Training and external-validation surfaces now carry a strict version-1 <code>SurveyDesign</code> declaration. Positive <code>case_weight</code> values are the only survey-related values applied by the development adapter; <code>replicate</code> and <code>stratum</code> plans remain metadata until a reviewed complex-survey adapter exists. Reports expose <code>weighting_applied</code> and <code>design_reviewed</code>, and production preflight blocks missing, malformed, <code>not_provided</code>, or unsupported declarations — <code>survey_design.py</code>, <code>validate_model_release.py</code>, and E-071. <strong>Confidence: high for the software boundary; complex-survey variance and E-005 clinical evidence remain unverified.</strong>
+            Training and external-validation surfaces now carry a strict version-1 <code>SurveyDesign</code> declaration. Positive <code>case_weight</code> values are the only survey-related values applied by the development adapter; <code>replicate</code> and <code>stratum</code> plans remain metadata until a reviewed complex-survey adapter exists. Reports expose <code>weighting_applied</code> and <code>design_reviewed</code>, and production preflight blocks missing, malformed, <code>not_provided</code>, or unsupported declarations — <code>survey_design.py</code>, <code>validate_model_release.py</code>, and E-071. <strong>Evidence class: the software boundary; complex-survey variance and E-005 clinical evidence remain unverified.</strong>
           </li>
           <li data-tags="measured oblig">
             <span class="marker measured">Measured</span>
@@ -1080,45 +1080,45 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The installed package is also exercised through a real loopback Uvicorn process: health, fail-closed readiness, metrics, valid and invalid assessments, response security headers, and patient-identifier non-echo are checked over HTTP by <code>scripts/run_serving_contract_smoke.py</code>. The same smoke runs after wheel installation on Ubuntu and Windows — E-075. <strong>Confidence: high for the serving contract; clinical approval remains E-005.</strong>
-            Runtime identity is now tied to the serving process with a non-secret package-tree digest, installation mode, sorted dependency-set digest, Python runtime identity, and effective-configuration digest. The isolated wheel and loopback smokes require <code>installed_distribution</code>; API keys are never retained or hashed, and the provenance is software-drift evidence only — E-076. <strong>Confidence: high for tested runtime identity; clinical approval remains E-005.</strong>
-            The Pages publication workflow runs the real Node parser suite, and the documentation verifier now requires that command to remain present. Runtime provenance distinguishes a well-formed diagnostic identity from strict installed-distribution admission; the names are intentionally not interchangeable — E-077. <strong>Confidence: high for the guarded software contract; clinical approval remains E-005.</strong>
-            The installed-wheel serving smoke now covers both sides of the deployment boundary: the synthetic development fixture remains fail-closed at <code>/readyz</code>, while a temporary non-clinical hash-bound native model/panel/approval bundle is exercised over real loopback HTTP with <code>FRAILTY_REQUIRE_PRODUCTION=true</code>. The strict stage checks <code>loaded_production_ready</code>, API-key rejection/acceptance, typed responses, security headers, and identifier non-echo, then deletes its temporary files. This is software integration evidence only and cannot satisfy E-005 — E-079. <strong>Confidence: high for the observed local serving contract; clinical approval remains absent.</strong>
+            The installed package is also exercised through a real loopback Uvicorn process: health, fail-closed readiness, metrics, valid and invalid assessments, response security headers, and patient-identifier non-echo are checked over HTTP by <code>scripts/run_serving_contract_smoke.py</code>. The same smoke runs after wheel installation on Ubuntu and Windows — E-075. <strong>Evidence class: the serving contract; clinical approval remains E-005.</strong>
+            Runtime identity is now tied to the serving process with a non-secret package-tree digest, installation mode, sorted dependency-set digest, Python runtime identity, and effective-configuration digest. The isolated wheel and loopback smokes require <code>installed_distribution</code>; API keys are never retained or hashed, and the provenance is software-drift evidence only — E-076. <strong>Evidence class: tested runtime identity; clinical approval remains E-005.</strong>
+            The Pages publication workflow runs the real Node parser suite, and the documentation verifier now requires that command to remain present. Runtime provenance distinguishes a well-formed diagnostic identity from strict installed-distribution admission; the names are intentionally not interchangeable — E-077. <strong>Evidence class: the guarded software contract; clinical approval remains E-005.</strong>
+            The installed-wheel serving smoke now covers both sides of the deployment boundary: the synthetic development fixture remains fail-closed at <code>/readyz</code>, while a temporary non-clinical hash-bound native model/panel/approval bundle is exercised over real loopback HTTP with <code>FRAILTY_REQUIRE_PRODUCTION=true</code>. The strict stage checks <code>loaded_production_ready</code>, API-key rejection/acceptance, typed responses, security headers, and identifier non-echo, then deletes its temporary files. This is software integration evidence only and cannot satisfy E-005 — E-079. <strong>Evidence class: the observed local serving contract; clinical approval remains absent.</strong>
             The post-R-080 maturity audit is recorded as E-080: Codex independently rejected redundant artifact-round-trip and in-memory-digest proposals against the current strict serving evidence, then selected explicit subgroup support warnings as the next bounded improvement. E-005 remains unchanged.
-            External-validation reports now serialize <code>subgroup_support_warnings</code> with the observed dimension, label, and concrete reasons <code>no_events</code>, <code>no_comparable_pairs</code>, or <code>insufficient_valid_replicates</code>. This makes incomplete engineering support visible without inventing clinical minimums or labeling a subgroup validated, fair, or safe — E-081. <strong>Confidence: high for tested software behavior; external clinical validation remains absent.</strong>
-            Validation reports now also serialize <code>outcome_metric_status</code> overall and per subgroup. Future Brier/calibration/decision-curve metrics are explicitly marked <code>value: null</code>, <code>status: not_implemented_pending_sap</code>, and <code>construction: none_withheld</code> until the protocol and approved cohort exist. This prevents missing outcome evidence from being mistaken for zero or for a computed clinical result — E-082. <strong>Confidence: high for the tested withholding contract; E-005 remains blocked.</strong>
-            Operators and agents can run <code>uv run python scripts/verify_project.py</code> as one canonical software gate. It composes the documented checks, emits a bounded human or JSON receipt, and still reports <code>E-005 blocked</code> separately. This is workflow evidence, not clinical approval — E-083. <strong>Confidence: high for the observed 20/20 software checks.</strong>
-            The API, installed skill, and Pages demo now expose deterministic full-body category reports with measured values, missing-measurement markers, measurement/reference provenance, forward-compatible system-card fields, and typed withheld age reports. Categories without supported inputs (currently skin, bone, and joint) are shown as unavailable; numeric category ages remain withheld pending category-specific validation — E-084. <strong>Confidence: high for tested software behavior; clinical approval remains absent.</strong>
-            The per-domain system-age manifest template is checked by <code>scripts/validate_system_age_manifest.py</code> and the canonical gate. It requires explicit construct, target, measurement, reference, uncertainty, validation, subgroup, and approval fields while keeping numeric output disabled and production readiness false — E-085. <strong>Confidence: high for the release-review shape; clinical approval remains absent.</strong>
-            Every system card now shows chronological-age context as supplied assessment metadata, including its source and the explicit fact that the current payload does not recompute age from date of birth — E-086. <strong>Confidence: high for tested presentation metadata; this is not clinical age validation.</strong>
+            External-validation reports now serialize <code>subgroup_support_warnings</code> with the observed dimension, label, and concrete reasons <code>no_events</code>, <code>no_comparable_pairs</code>, or <code>insufficient_valid_replicates</code>. This makes incomplete engineering support visible without inventing clinical minimums or labeling a subgroup validated, fair, or safe — E-081. <strong>Evidence class: tested software behavior; external clinical validation remains absent.</strong>
+            Validation reports now also serialize <code>outcome_metric_status</code> overall and per subgroup. Future Brier/calibration/decision-curve metrics are explicitly marked <code>value: null</code>, <code>status: not_implemented_pending_sap</code>, and <code>construction: none_withheld</code> until the protocol and approved cohort exist. This prevents missing outcome evidence from being mistaken for zero or for a computed clinical result — E-082. <strong>Evidence class: the tested withholding contract; E-005 remains blocked.</strong>
+            Operators and agents can run <code>uv run python scripts/verify_project.py</code> as one canonical software gate. It composes the documented checks, emits a bounded human or JSON receipt, and still reports <code>E-005 blocked</code> separately. This is workflow evidence, not clinical approval — E-083. <strong>Evidence class: canonical verifier workflow.</strong>
+            The API, installed skill, and Pages demo now expose deterministic full-body category reports with participant measured values, missing-measurement markers, real public source metadata, measurement/reference provenance, forward-compatible system-card fields, and typed withheld age reports. Source availability remains separate from participant measurement and clinical validation — E-084/E-088/E-089/E-090/E-091/E-092. <strong>Evidence class: tested software behavior and source-coverage receipt; clinical approval remains absent.</strong>
+            The per-domain system-age manifest template is checked by <code>scripts/validate_system_age_manifest.py</code> and the canonical gate. It requires explicit construct, target, measurement, reference, uncertainty, validation, subgroup, and approval fields while keeping numeric output disabled and production readiness false — E-085. <strong>Evidence class: the release-review shape; clinical approval remains absent.</strong>
+            Every system card now shows chronological-age context as supplied assessment metadata, including its source and the explicit fact that the current payload does not recompute age from date of birth — E-086. <strong>Evidence class: tested presentation metadata; this is not clinical age validation.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Canonical input matrix is exactly 35 features in 5 categories (demographics 7, BIA 5, blood 10, history 8, functional 5) — <code>src/frailty_engine/features.py:21-57</code>. <strong>Confidence: high.</strong>
+            Canonical input matrix is exactly 35 features in 5 categories (demographics 7, BIA 5, blood 10, history 8, functional 5) — <code>src/frailty_engine/features.py:21-57</code>. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Fitted matrix has 36 columns: 35 inputs (with <code>sex_male</code> encoding) plus the calculated FI — README.md &amp; EVAL.md E-001. <strong>Confidence: high.</strong>
+            Fitted matrix has 36 columns: 35 inputs (with <code>sex_male</code> encoding) plus the calculated FI — README.md &amp; EVAL.md E-001. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            FI calculator deterministically excludes `age` and `sex` from scoring via <code>FI_EXCLUDED_FEATURES = frozenset({"age", "sex"})</code> and exposes the denominator caveat through <code>FIResult.caveat</code>. <strong>Confidence: high.</strong>
+            FI calculator deterministically excludes `age` and `sex` from scoring via <code>FI_EXCLUDED_FEATURES = frozenset({"age", "sex"})</code> and exposes the denominator caveat through <code>FIResult.caveat</code>. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            Shipped <code>ReferencePanel</code> is synthetic and explicitly flagged <code>production_ready: False</code> — <code>src/frailty_engine/calibration.py:162-193</code>. <strong>Confidence: high.</strong>
+            Shipped <code>ReferencePanel</code> is synthetic and explicitly flagged <code>production_ready: False</code> — <code>src/frailty_engine/calibration.py:162-193</code>. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The active predictor is <code>DevelopmentPredictor</code>, <code>model_id="development-surrogate-v1"</code>, <code>production_ready=False</code> — <code>src/frailty_engine/model.py:432-433</code>. <strong>Confidence: high.</strong>
+            The active predictor is <code>DevelopmentPredictor</code>, <code>model_id="development-surrogate-v1"</code>, <code>production_ready=False</code> — <code>src/frailty_engine/model.py:432-433</code>. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            MVV enforces 5 mandatory variables (age, sex, bmi, phase_angle, ecw_tbw) + ≥6 blood + glucose OR hba1c + ≥4 history; failures map to HTTP 422 with a structured missing-requirements list. <strong>Confidence: high.</strong>
+            MVV enforces 5 mandatory variables (age, sex, bmi, phase_angle, ecw_tbw) + ≥6 blood + glucose OR hba1c + ≥4 history; failures map to HTTP 422 with a structured missing-requirements list. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="method">
             <span class="marker method">Method</span>
-            Accumulated-deficit construction traced to Searle et al., "A standard procedure for creating a frailty index," <em>BMC Geriatrics</em> (2008) — <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2573877/">PMC2573877</a>. <strong>Confidence: high (citation).</strong>
+            Accumulated-deficit construction traced to Searle et al., "A standard procedure for creating a frailty index," <em>BMC Geriatrics</em> (2008) — <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2573877/">PMC2573877</a>. <strong>Evidence class: cited source.</strong>
           </li>
           <li data-tags="method">
             <span class="marker method">Method</span>
@@ -1130,23 +1130,23 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           </li>
           <li data-tags="method">
             <span class="marker method">Method</span>
-            Cutoff anchors: WHO BMI, ACC/AHA 2017 BP, ADA 2024 glycemia, KDIGO 2012 eGFR, EWGSOP2 2018 grip, Sterling FIB-4, IDF waist — all enumerated in <a href="SOURCES.md">SOURCES.md</a>. <strong>Confidence: high (citation).</strong>
+            Cutoff anchors: WHO BMI, ACC/AHA 2017 BP, ADA 2024 glycemia, KDIGO 2012 eGFR, EWGSOP2 2018 grip, Sterling FIB-4, IDF waist — all enumerated in <a href="SOURCES.md">SOURCES.md</a>. <strong>Evidence class: cited source.</strong>
           </li>
           <li data-tags="unverif">
             <span class="marker unverif">Unverified</span>
-            Any specific real-world clinic, device firmware, ethnicity band, or age range is correctly served by <code>default_development_panel()</code> — directly contradicted by the fixture's <code>production_ready: False</code> flag. <strong>Confidence: high (in the sense that the claim is unsupportable).</strong>
+            Any specific real-world clinic, device firmware, ethnicity band, or age range is correctly served by <code>default_development_panel()</code> — directly contradicted by the fixture's <code>production_ready: False</code> flag. <strong>Status: contradicted by repository evidence.</strong>
           </li>
           <li data-tags="unverif">
             <span class="marker unverif">Unverified</span>
-            The <code>GompertzMapper</code> defaults approximate an approved baseline mortality curve — the module's own docstring says they do not. <strong>Confidence: high.</strong>
+            The <code>GompertzMapper</code> defaults approximate an approved baseline mortality curve — the module's own docstring says they do not. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="unverif">
             <span class="marker unverif">Unverified</span>
-            That NHANES 1999–2004 Xitron BIA values are directly equivalent to modern SECA mBCA outputs without transfer calibration — explicitly denied in <a href="SOURCES.md">SOURCES.md</a>. <strong>Confidence: high.</strong>
+            That NHANES 1999–2004 Xitron BIA values are directly equivalent to modern SECA mBCA outputs without transfer calibration — explicitly denied in <a href="SOURCES.md">SOURCES.md</a>. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="unverif">
             <span class="marker unverif">Unverified</span>
-            That any <code>top_interventions</code> entry produces a causal health benefit — recommendations are lifestyle-strings, not outcomes. <strong>Confidence: high.</strong>
+            That any <code>top_interventions</code> entry produces a causal health benefit — recommendations are lifestyle-strings, not outcomes. <strong>Evidence class: repository-observed.</strong>
           </li>
           <li data-tags="unverif">
             <span class="marker unverif">Unverified</span>
@@ -1235,7 +1235,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
         </div>
 
         <details class="status-reveal">
-           <summary>Full status table (from EVAL.md, E-001 – E-086)</summary>
+           <summary>Full status table (from EVAL.md, E-001 – E-102)</summary>
           <table>
             <thead><tr><th>Criterion</th><th>Area</th><th>Verdict</th></tr></thead>
             <tbody data-status-rows></tbody>
@@ -1272,7 +1272,8 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/README.md">README.md</a> — quick start, safety boundary, training notes.</li>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/GOAL.md">GOAL.md</a> — feature contract, dual pipeline, output schema, validation requirements.</li>
           <li><a href="RESEARCH_REPORT.md">RESEARCH_REPORT.md</a> — clinician-first workflow, methods, evidence ledger, limitations, and practical usage.</li>
-          <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> — the evidence contract this site reflects (E-001 … E-086).</li>
+          <li><a href="CLAIM_INVENTORY_2026-09-10.md">CLAIM_INVENTORY_2026-09-10.md</a> — current public claims, source identity, applicability, ownership, and evidence status.</li>
+          <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> — the evidence contract this site reflects (E-001 … E-102).</li>
           <li><a href="test-receipt.json">test-receipt.json</a> — deterministic Python/Node test-count receipt checked by CI and Pages.</li>
           <li><a href="publication-failure-demo-2026-09-10.json">publication-failure-demo-2026-09-10.json</a> — local negative-test harness receipt; remote candidate publication is not verified.</li>
           <li><a href="browser-qa-2026-09-10.json">browser-qa-2026-09-10.json</a> — local rendered QA receipt for 360, 768, and 1440 pixel checks; browser and clinical limits remain explicit.</li>
@@ -1327,8 +1328,8 @@ uv run uvicorn frailty_engine.api:app</code></pre>
   </footer>
 
   <!-- Bump the asset token when the static JS contract changes. -->
-  <script src="seca-parser.js?v=e088"></script>
-  <script src="intake-form.js?v=e088"></script>
-  <script src="site.js?v=e088"></script>
+  <script src="seca-parser.js?v=e103"></script>
+  <script src="intake-form.js?v=e103"></script>
+  <script src="site.js?v=e103"></script>
 </body>
 </html>

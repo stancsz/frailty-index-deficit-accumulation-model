@@ -11,6 +11,7 @@ from __future__ import annotations
 
 from typing import Any, Mapping
 
+from .category_data import category_source_for
 from .features import PatientData
 
 
@@ -225,6 +226,7 @@ def build_category_reports(
                 "display_name": label,
                 "category": category_id,
                 "label": label,
+                "source_data": category_source_for(category_id),
                 "chronological_age_context": chronological_age_context,
                 "status": status,
                 "reference_status": reference_status,

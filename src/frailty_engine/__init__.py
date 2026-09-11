@@ -38,6 +38,7 @@ from .seca import SecaScan, SecaTableViewExport, read_seca_tableview_csv
 from .release_receipt import ReceiptError, health_to_receipt, receipt_matches_health
 from .progress import build_progress_report
 from .body_reports import build_category_reports
+from .category_data import category_source_catalog, category_source_for
 from .survey_design import SurveyDesign, SurveyWeightKind
 
 __all__ = [
@@ -79,6 +80,8 @@ __all__ = [
     "receipt_matches_health",
     "build_progress_report",
     "build_category_reports",
+    "category_source_catalog",
+    "category_source_for",
     "SurveyDesign",
     "SurveyWeightKind",
 ]

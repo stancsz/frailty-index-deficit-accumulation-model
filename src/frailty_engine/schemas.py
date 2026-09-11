@@ -231,11 +231,32 @@ class CategoryAgeReportResponse(WellnessResponseModel):
     interpretation: str
 
 
+class CategoryDistributionEvidenceResponse(WellnessResponseModel):
+    status: Literal["real_distribution_receipt"]
+    receipt: str
+    source_file: str
+    field: str
+    interpretation: str
+
+
+class CategorySourceDataResponse(WellnessResponseModel):
+    status: Literal["real_source_available"]
+    directness: str
+    observed_source_rows: int
+    observed_source_participants: int
+    source_files: list[str]
+    fields: list[str]
+    coverage_receipt: str
+    interpretation: str
+    distribution_evidence: CategoryDistributionEvidenceResponse
+
+
 class CategoryReportResponse(WellnessResponseModel):
     system: str
     display_name: str
     category: str
     label: str
+    source_data: CategorySourceDataResponse
     chronological_age_context: ChronologicalAgeContextResponse
     status: Literal["complete", "partial", "not_available"]
     reference_status: Literal["within_reference", "attention", "mixed", "not_available"]

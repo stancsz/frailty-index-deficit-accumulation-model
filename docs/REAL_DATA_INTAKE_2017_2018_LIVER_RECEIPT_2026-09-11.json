@@ -1,0 +1,108 @@
+{
+  "boundary": {
+    "clinical_use": false,
+    "e005_status": "blocked",
+    "measurements_emitted": false,
+    "numeric_category_age": "withheld",
+    "participant_ids_emitted": false,
+    "raw_rows_emitted": false
+  },
+  "category": {
+    "clinical_validity": "not_established",
+    "fields": [
+      {
+        "field": "LUAXSTAT",
+        "nonmissing_rows": 6401,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 6401
+      },
+      {
+        "field": "LUANMVGP",
+        "nonmissing_rows": 5950,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 5950
+      },
+      {
+        "field": "LUARXNC",
+        "nonmissing_rows": 493,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 493
+      },
+      {
+        "field": "LUARXND",
+        "nonmissing_rows": 156,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 156
+      },
+      {
+        "field": "LUARXIN",
+        "nonmissing_rows": 258,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 258
+      },
+      {
+        "field": "LUAPNME",
+        "nonmissing_rows": 6401,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 6401
+      },
+      {
+        "field": "LUANMTGP",
+        "nonmissing_rows": 6401,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 6401
+      },
+      {
+        "field": "LUATECH",
+        "nonmissing_rows": 6401,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 6401
+      },
+      {
+        "field": "LUXSMED",
+        "nonmissing_rows": 5950,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 5950
+      },
+      {
+        "field": "LUXSIQR",
+        "nonmissing_rows": 5957,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 5957
+      },
+      {
+        "field": "LUXSIQRM",
+        "nonmissing_rows": 5942,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 5942
+      },
+      {
+        "field": "LUXCAPM",
+        "nonmissing_rows": 5948,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 5948
+      },
+      {
+        "field": "LUXCPIQR",
+        "nonmissing_rows": 5940,
+        "source": "LUX_J.XPT",
+        "unique_participants_with_value": 5940
+      }
+    ],
+    "mapping_review": "pending",
+    "name": "liver_health",
+    "status": "real_direct_transient_elastography_fields_present"
+  },
+  "cycle": "NHANES_2017_2018",
+  "data_sources": [
+    {
+      "columns": 14,
+      "filename": "LUX_J.XPT",
+      "rows": 6401,
+      "sha256": "e6d79981c74d822b8e619ef47f327b85767a48796d636288278e68e4a46ef848",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/LUX_J.XPT"
+    }
+  ],
+  "receipt_type": "nhanes-liver-cycle-receipt-v1",
+  "schema_version": 1
+}

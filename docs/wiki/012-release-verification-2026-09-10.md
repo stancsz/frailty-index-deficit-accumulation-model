@@ -51,15 +51,25 @@ are recorded in GOAL.md sections 4, 7 and 8.
 ### Remaining release evidence
 
 IR0 remains open. The checkout contains pre-existing modified and untracked
-files and has no candidate commit for this repair. Linux and Windows runs from
-one clean SHA, a fresh-clone installation, an isolated deliberately failing
-publication test, remote CI and Pages success, live build metadata and asset
-verification, and licensing/visibility reconciliation remain unverified.
+files and has no owner-approved candidate commit for this repair. A temporary
+clean snapshot passed locked installation and local Windows and WSL Ubuntu
+checks, while the earlier remote failure remains attached to commit
+`2f1218b9d20b61ee9682cdae0a5a74dd79a7f653`. Later remote verify run
+`34548964641` and Pages run `34548964642` succeeded for `7fc8fca`, but that is
+not the current dirty candidate. The current temporary clean candidate
+`5dd24112f6582c211b4c93b505db61c2c1e66b26` passes locked installation, all 20
+verifier checks, documentation checks and installed-wheel/loopback HTTP smoke
+on Windows; see
+[`docs/ir0-current-candidate-verification-2026-09-10.json`](../../docs/ir0-current-candidate-verification-2026-09-10.json).
+Remote same-SHA Linux evidence, an isolated remote deliberately failing
+publication test, live build metadata and asset verification, and
+licensing/visibility reconciliation remain open.
 
-The latest remote CI and Pages failures remain attached to commit
-`2f1218b9d20b61ee9682cdae0a5a74dd79a7f653`. No deployment was authorized or
-performed in this follow-up. E-005 remains blocked, and the project remains
-research-use-only and not a clinical decision-support release.
+The live audit returned HTTP 200 but found superseded confidence/test-receipt
+wording and a 404 for the current claim inventory. No current candidate
+deployment was authorized or performed in this follow-up. E-005 remains
+blocked, and the project remains research-use-only and not a clinical
+decision-support release.
 
 See [GOAL.md](../../GOAL.md), [ROADMAP.md](../../ROADMAP.md),
 [the industry-readiness plan](011-industry-readiness.md), and [Project #4](https://github.com/users/stancsz/projects/4/views/1).

@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "goal_id": "T1",
+  "review_date": "2026-09-10",
+  "candidate": {
+    "identity": "dirty checkout",
+    "sha": null,
+    "publication_status": "not published"
+  },
+  "records": [
+    {
+      "id": "T1.1",
+      "environment": "Chromium 143 through browser-harness; 1440x900 and 390x844; light theme",
+      "journey": "Load local Pages entry screen",
+      "expected": "Purpose, intended user, research-only boundary, and one-action synthetic example path appear before technical appendices.",
+      "actual": "All four are visible; the citation and release-status details are collapsed behind a labeled disclosure.",
+      "status": "pass_local_automated_visual",
+      "evidence": [
+        "local-desktop-t1.jpg",
+        "local-mobile-t1.jpg"
+      ],
+      "reviewer": "Codex automated and agent visual inspection",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "Project-owner and human reviewer acceptance remain open."
+    },
+    {
+      "id": "T1.1-source-preview",
+      "environment": "Fresh local static preview at http://127.0.0.1:8765; Chromium accessibility tree and screenshot",
+      "journey": "Load a new browser tab from the current docs/index.html source",
+      "expected": "The rendered at-a-glance software label uses bounded receipt wording and does not expose a test-count billboard.",
+      "actual": "Fresh preview rendered the bounded label 'Canonical verifier receipt; clean publication pending'. The stale 'Local software receipt: 146 Python + 28 Node tests' text was absent.",
+      "status": "pass_local_source_reconciled",
+      "evidence": [
+        "local-desktop-t1.jpg",
+        "local-mobile-t1.jpg"
+      ],
+      "reviewer": "Codex fresh-preview verification",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "The deployed Pages surface still requires authorized publication and live recheck."
+    },
+    {
+      "id": "T1.2-layout",
+      "environment": "Chromium 143, Firefox 144.0.2, WebKit 26.0; 360, 768, 1440 px; light and dark schemes",
+      "journey": "Load the entry screen and click the primary example action",
+      "expected": "No document overflow, readable entry hierarchy, visible primary action, no page errors, and demo anchor reached.",
+      "actual": "No document overflow or page errors; the primary action is visible at every target viewport and reaches #demo.",
+      "status": "pass_automated",
+      "evidence": [
+        "../browser-qa-2026-09-10.json",
+        "local-desktop-t1.jpg",
+        "local-mobile-t1.jpg"
+      ],
+      "reviewer": "Playwright engine run and agent visual inspection",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "Human screen-reader, actual browser 200% zoom, manual contrast and non-color review remain open."
+    },
+    {
+      "id": "T1.2-states",
+      "environment": "Chromium 143; local static server; 1440x1000 state captures",
+      "journey": "Inspect selected report, unavailable demo data, malformed import, comparison warning, evidence summary, and print media",
+      "expected": "Each state is visible, bounded, and retains the research-only and missing-data semantics.",
+      "actual": "Selected report shows withheld age and measurement ledger; unavailable demo disables actions; malformed import clears details and exposes an accessible error label; comparison aggregate is withheld for unknown model identity; evidence summary is visible; print output keeps only the report and produces a PDF.",
+      "status": "pass_automated_visual",
+      "evidence": [
+        "local-selected-report-t1.jpg",
+        "local-missing-data-t1.jpg",
+        "local-failed-import-t1.jpg",
+        "local-comparison-warning-t1.jpg",
+        "local-evidence-t1.jpg",
+        "local-report-t1.pdf"
+      ],
+      "reviewer": "Playwright state journey and agent visual inspection",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "Human print and accessibility sign-off remain open."
+    },
+    {
+      "id": "T1.2-manual-accessibility",
+      "environment": "Chrome local tab through CUA accessibility tree; browser-harness CDP connection",
+      "journey": "Attempt browser-level 200% zoom and inspect the first screen through the accessibility tree",
+      "expected": "Actual browser zoom and the remaining manual accessibility checks can be exercised and retained as reviewer evidence.",
+      "actual": "The CUA tab exposed the first-screen accessibility tree and screenshot, confirming the purpose, intended user, synthetic scope, research-only boundary, primary action, and E-005 boundary. Browser-level zoom could not be established through the available key path. browser-harness stopped at Chrome's Allow remote debugging permission prompt.",
+      "status": "blocked_manual",
+      "evidence": [
+        "local-desktop-t1.jpg",
+        "local-mobile-t1.jpg"
+      ],
+      "reviewer": "Codex browser control; human accessibility reviewer pending",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "A human reviewer or an authorized browser session must perform actual 200% browser zoom, screen-reader, contrast, and non-color checks. This record does not close T1.2."
+    },
+    {
+      "id": "T1.3",
+      "environment": "Repository source and local Pages surface",
+      "journey": "Review the current claim inventory and linked public surfaces",
+      "expected": "Claims identify source or receipt, applicability, identity, date, owner, and evidence status without treating counts as executed passes.",
+      "actual": "The dated claim inventory covers contract, synthetic report, withheld ages, panel, local SECA, comparisons, exports, tests, clinical gate, license, publication identity, and security reporting. The public evidence register uses bounded evidence classes and does not use self-assigned confidence slogans; collected counts are labeled receipt metadata.",
+      "status": "pass_local_documentation",
+      "evidence": [
+        "../../CLAIM_INVENTORY_2026-09-10.md",
+        "local-evidence-t1.jpg"
+      ],
+      "reviewer": "Codex source review",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "Final candidate and live publication identity are not yet reconciled."
+    },
+    {
+      "id": "T1.4",
+      "environment": "Chromium 143; local synthetic demo artifact",
+      "journey": "Load the default profile and inspect the selected report and public artifact fields",
+      "expected": "Observed measurements, units, missingness, FI numerator/denominator, and provenance precede optional details; unsupported ages remain withheld.",
+      "actual": "The measurement ledger renders 0.000 / 13, 13 measured / 20 missing, source units, no supplied assessment date, and model/panel fixture identity. All three demo JSON profiles have null age and deviation fields.",
+      "status": "pass_local_automated_visual",
+      "evidence": [
+        "local-selected-report-t1.jpg",
+        "local-report-t1.jpg",
+        "../../demo-data.json",
+        "../../site.js"
+      ],
+      "reviewer": "Playwright state journey and source verification",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "Human review of the exported and printed content remains open."
+    },
+    {
+      "id": "T1.5",
+      "environment": "Local static server plus GitHub repository metadata",
+      "journey": "Open evidence, claim inventory, methods, research report, license, evaluation, and security links",
+      "expected": "Evidence and reporting routes are reachable without implying private reporting is enabled.",
+      "actual": "Local research report, sources, and claim inventory return 200. SECURITY, EVAL, LICENSE, and repository-owned documentation are linked to the GitHub source tree. The GitHub API confirms the public repository has private vulnerability reporting disabled, so the page does not imply that route is enabled.",
+      "status": "partial_local",
+      "evidence": [
+        "local-evidence-t1.jpg",
+        "../../CLAIM_INVENTORY_2026-09-10.md",
+        "https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/SECURITY.md"
+      ],
+      "reviewer": "Codex link and repository metadata review",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "Owner must provide or confirm a private maintainer contact if security reporting is required; no contact is invented in the public documentation."
+    },
+    {
+      "id": "T1.6",
+      "environment": "Remote main and GitHub Pages at 7fc8fca; current repository remains a dirty checkout",
+      "journey": "Freeze candidate SHA, run remote CI and Pages, and inspect authorized deployment",
+      "expected": "One exact published candidate passes locked verification and live identity, links, and hashes reconcile.",
+      "actual": "Remote verify run 34548964641 and Pages run 34548964642 succeeded for 7fc8fca, and the live URL returned 200. The live page still contains superseded confidence and local-receipt wording, while the current claim inventory returns 404, so the published surface is not reconciled with the current candidate.",
+      "status": "partial_live_observation",
+      "evidence": [
+        "live-publication-audit-2026-09-10.json",
+        "https://github.com/stancsz/frailty-index-deficit-accumulation-model/actions/runs/34548964641",
+        "https://github.com/stancsz/frailty-index-deficit-accumulation-model/actions/runs/34548964642"
+      ],
+      "reviewer": "Codex external-state audit",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "Requires owner-authorized candidate freeze and publication of the current claim inventory and bounded wording, followed by live asset, link, metadata, and visual rechecks."
+    },
+    {
+      "id": "T1.7",
+      "environment": "Intended-user study",
+      "journey": "Five-user task and 30-second first-screen comprehension study",
+      "expected": "At least four of five complete the workflow in five minutes and all recognize the research-only boundary.",
+      "actual": "No participant sessions recorded.",
+      "status": "not_run",
+      "evidence": [
+        "../../CLINICIAN_WORKFLOW_STUDY.md"
+      ],
+      "reviewer": "Product owner and clinician reviewer pending",
+      "reviewer_date": null,
+      "remaining_defect": "Recruitment, de-identified task records, manual-workflow comparison, and acceptance decision are required."
+    },
+    {
+      "id": "T1.8",
+      "environment": "Repository handoff and project tracking",
+      "journey": "Compare README, GOAL, ROADMAP, Wiki, Project #4, package terms, and local artifacts",
+      "expected": "The handoff states match the bounded research-showcase capability and final release identity.",
+      "actual": "Local GOAL, ROADMAP, claim inventory, Wiki, and Project #4 notes now describe the same active T1 slice, including the bounded evidence-class wording. Final candidate identity, owner terms, and publication reconciliation remain open.",
+      "status": "partial_local",
+      "evidence": [
+        "../../README.md",
+        "../../../goals/completed/trustworthy-research-showcase/GOAL.md",
+        "../../../ROADMAP.md",
+        "../../wiki/016-trustworthy-research-showcase.md",
+        "dependency-security-review-2026-09-10.md"
+      ],
+      "reviewer": "Codex consistency review",
+      "reviewer_date": "2026-09-10",
+      "remaining_defect": "Final owner acceptance and exact release handoff remain open."
+    }
+  ],
+  "clinical_gate": "E-005 blocked",
+  "release_note": "This receipt records local candidate progress. It is not clinical approval, production readiness, or published-release evidence."
+}

@@ -1,0 +1,1125 @@
+{
+  "boundary": {
+    "clinical_validity": "not_established",
+    "cross_cycle_joins_performed": false,
+    "e005_status": "blocked",
+    "interpretation": "cycle-separated source coverage matrix; absent categories are not silently treated as missing patient measurements",
+    "measurements_emitted": false,
+    "numeric_category_age": "withheld",
+    "participant_ids_emitted": false,
+    "raw_rows_emitted": false
+  },
+  "categories": [
+    "blood_health",
+    "body_composition",
+    "bone_health",
+    "brain_cognitive_health",
+    "cardiorespiratory_health",
+    "cardiovascular_health",
+    "fluid_and_cellular",
+    "immune_inflammatory_health",
+    "joint_health",
+    "kidney_health",
+    "lifestyle_and_function",
+    "liver_health",
+    "mental_health_history",
+    "metabolic_health",
+    "muscle_health",
+    "skin_health",
+    "sleep_and_recovery"
+  ],
+  "category_count": 17,
+  "cycles": {
+    "NHANES_2005_2006": {
+      "blood_health": {
+        "field_count": 3,
+        "max_unique_participants": 8400,
+        "min_unique_participants": 8400,
+        "source_files": [
+          "CBC_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "body_composition": {
+        "field_count": 3,
+        "max_unique_participants": 9847,
+        "min_unique_participants": 8672,
+        "source_files": [
+          "BMX_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "bone_health": {
+        "field_count": 3,
+        "max_unique_participants": 6469,
+        "min_unique_participants": 6469,
+        "source_files": [
+          "DXX_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "brain_cognitive_health": {
+        "absence_reason": "no usable CFQ_D.XPT source file was available",
+        "status": "absent_in_receipt"
+      },
+      "cardiorespiratory_health": {
+        "field_count": 2,
+        "max_unique_participants": 6668,
+        "min_unique_participants": 6668,
+        "source_files": [
+          "BPX_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "cardiovascular_health": {
+        "field_count": 4,
+        "max_unique_participants": 7360,
+        "min_unique_participants": 3089,
+        "source_files": [
+          "BPX_D.XPT",
+          "TCHOL_D.XPT",
+          "TRIGLY_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "fluid_and_cellular": {
+        "absence_reason": "no usable BIX_D.XPT source file was available",
+        "status": "absent_in_receipt"
+      },
+      "immune_inflammatory_health": {
+        "field_count": 3,
+        "max_unique_participants": 8378,
+        "min_unique_participants": 8378,
+        "source_files": [
+          "CBC_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "joint_health": {
+        "field_count": 4,
+        "max_unique_participants": 4979,
+        "min_unique_participants": 3755,
+        "source_files": [
+          "MCQ_D.XPT",
+          "PFQ_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "kidney_health": {
+        "field_count": 2,
+        "max_unique_participants": 7844,
+        "min_unique_participants": 7843,
+        "source_files": [
+          "ALB_CR_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "lifestyle_and_function": {
+        "field_count": 3,
+        "max_unique_participants": 4979,
+        "min_unique_participants": 3755,
+        "source_files": [
+          "PFQ_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "liver_health": {
+        "field_count": 4,
+        "max_unique_participants": 6432,
+        "min_unique_participants": 6349,
+        "source_files": [
+          "BIOPRO_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "mental_health_history": {
+        "field_count": 3,
+        "max_unique_participants": 4836,
+        "min_unique_participants": 3185,
+        "source_files": [
+          "DPQ_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "metabolic_health": {
+        "field_count": 3,
+        "max_unique_participants": 6493,
+        "min_unique_participants": 3089,
+        "source_files": [
+          "GHB_D.XPT",
+          "GLU_D.XPT",
+          "TRIGLY_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "muscle_health": {
+        "field_count": 2,
+        "max_unique_participants": 6469,
+        "min_unique_participants": 6469,
+        "source_files": [
+          "DXX_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "skin_health": {
+        "field_count": 3,
+        "max_unique_participants": 3405,
+        "min_unique_participants": 3371,
+        "source_files": [
+          "DEQ_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "sleep_and_recovery": {
+        "field_count": 3,
+        "max_unique_participants": 6139,
+        "min_unique_participants": 6139,
+        "source_files": [
+          "SLQ_D.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      }
+    },
+    "NHANES_2007_2008": {
+      "blood_health": {
+        "field_count": 3,
+        "max_unique_participants": 8267,
+        "min_unique_participants": 8266,
+        "source_files": [
+          "CBC_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "body_composition": {
+        "field_count": 3,
+        "max_unique_participants": 9631,
+        "min_unique_participants": 8538,
+        "source_files": [
+          "BMX_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "bone_health": {
+        "absence_reason": "no usable DXX_E.XPT source file was available",
+        "status": "absent_in_receipt"
+      },
+      "brain_cognitive_health": {
+        "absence_reason": "no usable CFQ_E.XPT source file was available",
+        "status": "absent_in_receipt"
+      },
+      "cardiorespiratory_health": {
+        "field_count": 2,
+        "max_unique_participants": 7147,
+        "min_unique_participants": 7147,
+        "source_files": [
+          "BPX_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "cardiovascular_health": {
+        "field_count": 4,
+        "max_unique_participants": 7387,
+        "min_unique_participants": 3099,
+        "source_files": [
+          "BPX_E.XPT",
+          "TCHOL_E.XPT",
+          "TRIGLY_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "fluid_and_cellular": {
+        "absence_reason": "no usable BIX_E.XPT source file was available",
+        "status": "absent_in_receipt"
+      },
+      "immune_inflammatory_health": {
+        "field_count": 3,
+        "max_unique_participants": 8250,
+        "min_unique_participants": 8249,
+        "source_files": [
+          "CBC_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "joint_health": {
+        "field_count": 4,
+        "max_unique_participants": 5935,
+        "min_unique_participants": 4353,
+        "source_files": [
+          "MCQ_E.XPT",
+          "PFQ_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "kidney_health": {
+        "field_count": 2,
+        "max_unique_participants": 7878,
+        "min_unique_participants": 7878,
+        "source_files": [
+          "ALB_CR_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "lifestyle_and_function": {
+        "field_count": 3,
+        "max_unique_participants": 5935,
+        "min_unique_participants": 4353,
+        "source_files": [
+          "PFQ_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "liver_health": {
+        "field_count": 4,
+        "max_unique_participants": 6372,
+        "min_unique_participants": 6369,
+        "source_files": [
+          "BIOPRO_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "mental_health_history": {
+        "field_count": 3,
+        "max_unique_participants": 5449,
+        "min_unique_participants": 3703,
+        "source_files": [
+          "DPQ_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "metabolic_health": {
+        "field_count": 3,
+        "max_unique_participants": 6427,
+        "min_unique_participants": 3099,
+        "source_files": [
+          "GHB_E.XPT",
+          "GLU_E.XPT",
+          "TRIGLY_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "muscle_health": {
+        "field_count": 1,
+        "max_unique_participants": 9281,
+        "min_unique_participants": 9281,
+        "source_files": [
+          "BMX_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "skin_health": {
+        "absence_reason": "no usable DEQ_E.XPT source file was available",
+        "status": "absent_in_receipt"
+      },
+      "sleep_and_recovery": {
+        "field_count": 3,
+        "max_unique_participants": 6546,
+        "min_unique_participants": 6546,
+        "source_files": [
+          "SLQ_E.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      }
+    },
+    "NHANES_2013_2014": {
+      "blood_health": {
+        "field_count": 9,
+        "max_unique_participants": 8544,
+        "min_unique_participants": 3105,
+        "source_files": [
+          "BIOPRO_H.XPT",
+          "CBC_H.XPT",
+          "TCHOL_H.XPT",
+          "TRIGLY_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "body_composition": {
+        "field_count": 6,
+        "max_unique_participants": 9723,
+        "min_unique_participants": 7218,
+        "source_files": [
+          "BMX_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "bone_health": {
+        "field_count": 4,
+        "max_unique_participants": 5294,
+        "min_unique_participants": 4992,
+        "source_files": [
+          "DXX_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "brain_cognitive_health": {
+        "field_count": 9,
+        "max_unique_participants": 1785,
+        "min_unique_participants": 14,
+        "source_files": [
+          "CFQ_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "cardiorespiratory_health": {
+        "field_count": 7,
+        "max_unique_participants": 7549,
+        "min_unique_participants": 7172,
+        "source_files": [
+          "BPX_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "cardiovascular_health": {
+        "field_count": 10,
+        "max_unique_participants": 7624,
+        "min_unique_participants": 3105,
+        "source_files": [
+          "BPX_H.XPT",
+          "TCHOL_H.XPT",
+          "TRIGLY_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "fluid_and_cellular": {
+        "absence_reason": "not mapped in this receipt",
+        "status": "absent_in_receipt"
+      },
+      "immune_inflammatory_health": {
+        "field_count": 5,
+        "max_unique_participants": 8544,
+        "min_unique_participants": 6553,
+        "source_files": [
+          "BIOPRO_H.XPT",
+          "CBC_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "joint_health": {
+        "field_count": 4,
+        "max_unique_participants": 5769,
+        "min_unique_participants": 234,
+        "source_files": [
+          "MCQ_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "kidney_health": {
+        "field_count": 8,
+        "max_unique_participants": 8052,
+        "min_unique_participants": 6551,
+        "source_files": [
+          "ALB_CR_H.XPT",
+          "BIOPRO_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "lifestyle_and_function": {
+        "field_count": 7,
+        "max_unique_participants": 7776,
+        "min_unique_participants": 2003,
+        "source_files": [
+          "PAXDAY_H.XPT",
+          "PFQ_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "liver_health": {
+        "absence_reason": "not mapped in this receipt",
+        "status": "absent_in_receipt"
+      },
+      "mental_health_history": {
+        "field_count": 10,
+        "max_unique_participants": 5398,
+        "min_unique_participants": 3674,
+        "source_files": [
+          "DPQ_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "metabolic_health": {
+        "field_count": 5,
+        "max_unique_participants": 7624,
+        "min_unique_participants": 3105,
+        "source_files": [
+          "GHB_H.XPT",
+          "GLU_H.XPT",
+          "TCHOL_H.XPT",
+          "TRIGLY_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "muscle_health": {
+        "field_count": 2,
+        "max_unique_participants": 5348,
+        "min_unique_participants": 5348,
+        "source_files": [
+          "DXX_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "skin_health": {
+        "field_count": 8,
+        "max_unique_participants": 3927,
+        "min_unique_participants": 1408,
+        "source_files": [
+          "DEQ_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "sleep_and_recovery": {
+        "field_count": 6,
+        "max_unique_participants": 7776,
+        "min_unique_participants": 6461,
+        "source_files": [
+          "PAXDAY_H.XPT",
+          "SLQ_H.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      }
+    },
+    "NHANES_2015_2016": {
+      "blood_health": {
+        "field_count": 9,
+        "max_unique_participants": 8117,
+        "min_unique_participants": 2699,
+        "source_files": [
+          "BIOPRO_I.XPT",
+          "CBC_I.XPT",
+          "TCHOL_I.XPT",
+          "TRIGLY_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "body_composition": {
+        "field_count": 6,
+        "max_unique_participants": 9445,
+        "min_unique_participants": 6983,
+        "source_files": [
+          "BMX_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "bone_health": {
+        "field_count": 4,
+        "max_unique_participants": 4946,
+        "min_unique_participants": 4602,
+        "source_files": [
+          "DXX_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "brain_cognitive_health": {
+        "absence_reason": "No CFQ cognitive source file was identified in the 2015-2016 mapped intake.",
+        "status": "absent_in_receipt"
+      },
+      "cardiorespiratory_health": {
+        "field_count": 7,
+        "max_unique_participants": 7376,
+        "min_unique_participants": 7145,
+        "source_files": [
+          "BPX_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "cardiovascular_health": {
+        "field_count": 10,
+        "max_unique_participants": 7376,
+        "min_unique_participants": 2699,
+        "source_files": [
+          "BPX_I.XPT",
+          "TCHOL_I.XPT",
+          "TRIGLY_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "fluid_and_cellular": {
+        "absence_reason": "No official BIA source file was identified in the 2015-2016 mapped intake.",
+        "status": "absent_in_receipt"
+      },
+      "immune_inflammatory_health": {
+        "field_count": 5,
+        "max_unique_participants": 8117,
+        "min_unique_participants": 6256,
+        "source_files": [
+          "BIOPRO_I.XPT",
+          "CBC_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "joint_health": {
+        "field_count": 4,
+        "max_unique_participants": 5719,
+        "min_unique_participants": 271,
+        "source_files": [
+          "MCQ_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "kidney_health": {
+        "field_count": 8,
+        "max_unique_participants": 8280,
+        "min_unique_participants": 6254,
+        "source_files": [
+          "ALB_CR_I.XPT",
+          "BIOPRO_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "lifestyle_and_function": {
+        "field_count": 5,
+        "max_unique_participants": 5719,
+        "min_unique_participants": 1955,
+        "source_files": [
+          "PFQ_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "liver_health": {
+        "field_count": 7,
+        "max_unique_participants": 6256,
+        "min_unique_participants": 6253,
+        "source_files": [
+          "BIOPRO_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "mental_health_history": {
+        "field_count": 10,
+        "max_unique_participants": 5164,
+        "min_unique_participants": 3579,
+        "source_files": [
+          "DPQ_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "metabolic_health": {
+        "field_count": 5,
+        "max_unique_participants": 7256,
+        "min_unique_participants": 2699,
+        "source_files": [
+          "GHB_I.XPT",
+          "GLU_I.XPT",
+          "TCHOL_I.XPT",
+          "TRIGLY_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "muscle_health": {
+        "field_count": 2,
+        "max_unique_participants": 4985,
+        "min_unique_participants": 4961,
+        "source_files": [
+          "DXX_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "skin_health": {
+        "field_count": 8,
+        "max_unique_participants": 3818,
+        "min_unique_participants": 1339,
+        "source_files": [
+          "DEQ_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "sleep_and_recovery": {
+        "field_count": 5,
+        "max_unique_participants": 6327,
+        "min_unique_participants": 6294,
+        "source_files": [
+          "SLQ_I.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      }
+    },
+    "NHANES_2017_2018": {
+      "blood_health": {
+        "field_count": 9,
+        "max_unique_participants": 7528,
+        "min_unique_participants": 2808,
+        "source_files": [
+          "BIOPRO_J.XPT",
+          "CBC_J.XPT",
+          "TCHOL_J.XPT",
+          "TRIGLY_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "body_composition": {
+        "field_count": 5,
+        "max_unique_participants": 8580,
+        "min_unique_participants": 7601,
+        "source_files": [
+          "BMX_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "bone_health": {
+        "field_count": 4,
+        "max_unique_participants": 3912,
+        "min_unique_participants": 3569,
+        "source_files": [
+          "DXX_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "brain_cognitive_health": {
+        "absence_reason": "No CFQ cognitive source file was identified in the 2017-2018 mapped intake.",
+        "status": "absent_in_receipt"
+      },
+      "cardiorespiratory_health": {
+        "field_count": 7,
+        "max_unique_participants": 6742,
+        "min_unique_participants": 6302,
+        "source_files": [
+          "BPX_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "cardiovascular_health": {
+        "field_count": 10,
+        "max_unique_participants": 6742,
+        "min_unique_participants": 2808,
+        "source_files": [
+          "BPX_J.XPT",
+          "TCHOL_J.XPT",
+          "TRIGLY_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "fluid_and_cellular": {
+        "absence_reason": "No official BIA source file was identified in the 2017-2018 mapped intake.",
+        "status": "absent_in_receipt"
+      },
+      "immune_inflammatory_health": {
+        "field_count": 5,
+        "max_unique_participants": 7528,
+        "min_unique_participants": 5905,
+        "source_files": [
+          "BIOPRO_J.XPT",
+          "CBC_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "joint_health": {
+        "field_count": 2,
+        "max_unique_participants": 5569,
+        "min_unique_participants": 5569,
+        "source_files": [
+          "MCQ_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "kidney_health": {
+        "field_count": 8,
+        "max_unique_participants": 7632,
+        "min_unique_participants": 5901,
+        "source_files": [
+          "ALB_CR_J.XPT",
+          "BIOPRO_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "lifestyle_and_function": {
+        "field_count": 8,
+        "max_unique_participants": 5856,
+        "min_unique_participants": 2142,
+        "source_files": [
+          "ALQ_J.XPT",
+          "PAQ_J.XPT",
+          "PFQ_J.XPT",
+          "SMQ_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "liver_health": {
+        "field_count": 7,
+        "max_unique_participants": 5905,
+        "min_unique_participants": 5882,
+        "source_files": [
+          "BIOPRO_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "mental_health_history": {
+        "field_count": 10,
+        "max_unique_participants": 5094,
+        "min_unique_participants": 3362,
+        "source_files": [
+          "DPQ_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "metabolic_health": {
+        "field_count": 5,
+        "max_unique_participants": 6738,
+        "min_unique_participants": 2808,
+        "source_files": [
+          "GHB_J.XPT",
+          "GLU_J.XPT",
+          "TCHOL_J.XPT",
+          "TRIGLY_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "muscle_health": {
+        "field_count": 2,
+        "max_unique_participants": 4081,
+        "min_unique_participants": 4008,
+        "source_files": [
+          "DXX_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "skin_health": {
+        "field_count": 8,
+        "max_unique_participants": 3418,
+        "min_unique_participants": 1124,
+        "source_files": [
+          "DEQ_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "sleep_and_recovery": {
+        "field_count": 5,
+        "max_unique_participants": 6161,
+        "min_unique_participants": 6113,
+        "source_files": [
+          "SLQ_J.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      }
+    },
+    "NHANES_2021_2023": {
+      "blood_health": {
+        "field_count": 9,
+        "max_unique_participants": 7593,
+        "min_unique_participants": 3480,
+        "source_files": [
+          "BIOPRO_L.XPT",
+          "CBC_L.XPT",
+          "TCHOL_L.XPT",
+          "TRIGLY_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "body_composition": {
+        "field_count": 5,
+        "max_unique_participants": 8754,
+        "min_unique_participants": 8190,
+        "source_files": [
+          "BMX_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "bone_health": {
+        "absence_reason": "No mapped DXA source was identified in the 2021-2023 intake.",
+        "status": "absent_in_receipt"
+      },
+      "brain_cognitive_health": {
+        "absence_reason": "No CFQ cognitive source file was identified in the 2021-2023 mapped intake.",
+        "status": "absent_in_receipt"
+      },
+      "cardiorespiratory_health": {
+        "absence_reason": "No mapped BPX or spirometry source was identified; lipid fields remain separately mapped to cardiovascular health.",
+        "status": "absent_in_receipt"
+      },
+      "cardiovascular_health": {
+        "field_count": 3,
+        "max_unique_participants": 6890,
+        "min_unique_participants": 3480,
+        "source_files": [
+          "TCHOL_L.XPT",
+          "TRIGLY_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "fluid_and_cellular": {
+        "absence_reason": "No official BIA source file was identified in the 2021-2023 mapped intake.",
+        "status": "absent_in_receipt"
+      },
+      "immune_inflammatory_health": {
+        "field_count": 5,
+        "max_unique_participants": 7593,
+        "min_unique_participants": 6366,
+        "source_files": [
+          "BIOPRO_L.XPT",
+          "CBC_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "joint_health": {
+        "field_count": 1,
+        "max_unique_participants": 7807,
+        "min_unique_participants": 7807,
+        "source_files": [
+          "MCQ_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "kidney_health": {
+        "field_count": 8,
+        "max_unique_participants": 8154,
+        "min_unique_participants": 6326,
+        "source_files": [
+          "ALB_CR_L.XPT",
+          "BIOPRO_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "lifestyle_and_function": {
+        "field_count": 4,
+        "max_unique_participants": 8135,
+        "min_unique_participants": 5481,
+        "source_files": [
+          "ALQ_L.XPT",
+          "PAQ_L.XPT",
+          "SMQ_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "liver_health": {
+        "field_count": 7,
+        "max_unique_participants": 6366,
+        "min_unique_participants": 6308,
+        "source_files": [
+          "BIOPRO_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "mental_health_history": {
+        "field_count": 10,
+        "max_unique_participants": 5519,
+        "min_unique_participants": 4167,
+        "source_files": [
+          "DPQ_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "metabolic_health": {
+        "field_count": 5,
+        "max_unique_participants": 6890,
+        "min_unique_participants": 3480,
+        "source_files": [
+          "GHB_L.XPT",
+          "GLU_L.XPT",
+          "TCHOL_L.XPT",
+          "TRIGLY_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "muscle_health": {
+        "absence_reason": "No mapped grip-strength or DXA muscle source was identified in the 2021-2023 intake.",
+        "status": "absent_in_receipt"
+      },
+      "skin_health": {
+        "field_count": 3,
+        "max_unique_participants": 4302,
+        "min_unique_participants": 4271,
+        "source_files": [
+          "DEQ_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "sleep_and_recovery": {
+        "field_count": 6,
+        "max_unique_participants": 8501,
+        "min_unique_participants": 8387,
+        "source_files": [
+          "SLQ_L.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      }
+    },
+    "PRIMARY_MULTI_CYCLE": {
+      "blood_health": {
+        "field_count": 14,
+        "max_unique_participants": 7953,
+        "min_unique_participants": 2942,
+        "source_files": [
+          "APOB_G.XPT",
+          "BIOPRO_G.XPT",
+          "CBC_G.XPT",
+          "TCHOL_G.XPT",
+          "TRIGLY_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "body_composition": {
+        "field_count": 9,
+        "max_unique_participants": 9243,
+        "min_unique_participants": 4693,
+        "source_files": [
+          "BMX_G.XPT",
+          "DXXAG_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "bone_health": {
+        "field_count": 7,
+        "max_unique_participants": 4620,
+        "min_unique_participants": 4445,
+        "source_files": [
+          "DXX_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "brain_cognitive_health": {
+        "field_count": 9,
+        "max_unique_participants": 1687,
+        "min_unique_participants": 59,
+        "source_files": [
+          "CFQ_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "cardiorespiratory_health": {
+        "field_count": 19,
+        "max_unique_participants": 7495,
+        "min_unique_participants": 5999,
+        "source_files": [
+          "BPX_G.XPT",
+          "ENX_G.XPT",
+          "SPX_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "cardiovascular_health": {
+        "field_count": 12,
+        "max_unique_participants": 7060,
+        "min_unique_participants": 2942,
+        "source_files": [
+          "APOB_G.XPT",
+          "BPX_G.XPT",
+          "TCHOL_G.XPT",
+          "TRIGLY_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "fluid_and_cellular": {
+        "field_count": 14,
+        "max_unique_participants": 5329,
+        "min_unique_participants": 4159,
+        "source_files": [
+          "BIX_C.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "immune_inflammatory_health": {
+        "field_count": 14,
+        "max_unique_participants": 8299,
+        "min_unique_participants": 6525,
+        "source_files": [
+          "CBC_G.XPT",
+          "CRP_F.XPT",
+          "ENX_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "joint_health": {
+        "field_count": 75,
+        "max_unique_participants": 5559,
+        "min_unique_participants": 79,
+        "source_files": [
+          "ARQ_F.XPT",
+          "ARX_F.XPT",
+          "MCQ_G.XPT",
+          "PFQ_G.XPT",
+          "xr.dat"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "kidney_health": {
+        "field_count": 8,
+        "max_unique_participants": 7636,
+        "min_unique_participants": 5974,
+        "source_files": [
+          "ALB_CR_G.XPT",
+          "BIOPRO_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "lifestyle_and_function": {
+        "field_count": 14,
+        "max_unique_participants": 7821,
+        "min_unique_participants": 1943,
+        "source_files": [
+          "ALQ_G.XPT",
+          "PAQ_G.XPT",
+          "PAXDAY_G.XPT",
+          "PAXHD_G.XPT",
+          "PFQ_G.XPT",
+          "SMQ_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "liver_health": {
+        "field_count": 14,
+        "max_unique_participants": 10409,
+        "min_unique_participants": 5967,
+        "source_files": [
+          "BIOPRO_G.XPT",
+          "P_LUX.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "mental_health_history": {
+        "field_count": 17,
+        "max_unique_participants": 8956,
+        "min_unique_participants": 3199,
+        "source_files": [
+          "DPQ_G.XPT",
+          "HSQ_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "metabolic_health": {
+        "field_count": 6,
+        "max_unique_participants": 9363,
+        "min_unique_participants": 2942,
+        "source_files": [
+          "DIQ_G.XPT",
+          "GHB_G.XPT",
+          "GLU_G.XPT",
+          "TCHOL_G.XPT",
+          "TRIGLY_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "muscle_health": {
+        "field_count": 8,
+        "max_unique_participants": 7821,
+        "min_unique_participants": 4669,
+        "source_files": [
+          "DXX_G.XPT",
+          "MGX_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "skin_health": {
+        "field_count": 26,
+        "max_unique_participants": 3768,
+        "min_unique_participants": 1,
+        "source_files": [
+          "DEQ_G.XPT",
+          "DEX_C.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      },
+      "sleep_and_recovery": {
+        "field_count": 7,
+        "max_unique_participants": 7821,
+        "min_unique_participants": 6166,
+        "source_files": [
+          "PAXDAY_G.XPT",
+          "PAXHD_G.XPT",
+          "SLQ_G.XPT"
+        ],
+        "status": "real_numeric_source_data_present"
+      }
+    }
+  },
+  "generated_at": "2026-09-11",
+  "generated_by": "scripts/build_category_cycle_matrix.py",
+  "schema_version": "nhanes-category-cycle-matrix-v1"
+}

@@ -1,5 +1,10 @@
 # Evidence and source boundary
 
+Documentation authority: this source boundary follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and [`GOAL.md`](../GOAL.md). Citations
+do not override the project evidence contract.
+
 This file keeps the implementation's evidence boundary visible. A citation
 supports the general method or a published threshold; it does not prove that
 the prototype is calibrated for a particular clinic, device, ethnicity, age

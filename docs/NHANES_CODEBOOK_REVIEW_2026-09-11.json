@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "receipt_type": "nhanes-codebook-review-v1",
+  "status": "representative_source_review_only",
+  "review_boundary": {
+    "values_removed": false,
+    "clinical_cutoffs_set": false,
+    "all_fields_reviewed": false,
+    "e005_status": "blocked"
+  },
+  "entries": [
+    {
+      "cycle": "NHANES_2011_2012",
+      "source": "DPQ_G.XPT",
+      "field": "DPQ010",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DPQ_G.htm",
+      "observed_source_semantics": {
+        "valid_codes": {"0": "Not at all", "1": "Several days", "2": "More than half the days", "3": "Nearly every day"},
+        "special_codes": {"7": "Refused", "9": "Don't know"},
+        "missing_code": "."
+      },
+      "safe_action": "Do not score 7 or 9 as PHQ responses; retain them as nonresponse metadata after codebook review."
+    },
+    {
+      "cycle": "NHANES_2011_2012",
+      "source": "PAXDAY_G.XPT",
+      "field": "PAXVMD",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/PAXDAY_G.htm",
+      "observed_source_semantics": {
+        "valid_range": "0 to 1440 minutes",
+        "missing_code": ".",
+        "important_consequence": "999 is within the documented valid range and must not be generically removed as a special code."
+      },
+      "safe_action": "Retain numeric values pending protocol-aware day-level aggregation and wear-quality review."
+    },
+    {
+      "cycle": "NHANES_2011_2012",
+      "source": "BIOPRO_G.XPT",
+      "field": "LBXSCR",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BIOPRO_G.htm",
+      "observed_source_semantics": {
+        "unit": "mg/dL",
+        "valid_range": "0.16 to 9.51",
+        "missing_code": "."
+      },
+      "safe_action": "Retain the source unit and range metadata; do not infer a kidney cutoff from this distribution."
+    },
+    {
+      "cycle": "NHANES_2011_2012",
+      "source": "BMX_G.XPT",
+      "field": "BMXWT",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.htm",
+      "observed_source_semantics": {
+        "unit": "kg",
+        "hard_edit_range": "0.0000 to 440.0000",
+        "missing_code": "."
+      },
+      "safe_action": "Use the documented hard-edit range only as a source-quality check, not as a clinical reference interval."
+    },
+    {
+      "cycle": "NHANES_2017_2018",
+      "source": "LUX_J.XPT",
+      "field": "LUXSMED",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/LUX_J.htm",
+      "observed_source_semantics": {
+        "unit": "kPa",
+        "valid_range": "1.6 to 75",
+        "missing_code": "."
+      },
+      "safe_action": "Retain direct elastography values with exam status and quality fields; do not set a fibrosis cutoff."
+    }
+  ]
+}

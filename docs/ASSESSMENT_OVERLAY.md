@@ -5,6 +5,11 @@ file produced by the GitHub Pages SECA intake form and consumed by the local
 `assess-overlay` command. It is not a clinical record, a prediction result, or
 approval evidence.
 
+Documentation authority: this operator guidance follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and [`GOAL.md`](../GOAL.md). It does
+not override those authority layers or establish clinical approval.
+
 ## Contract
 
 The overlay is a versioned JSON object:

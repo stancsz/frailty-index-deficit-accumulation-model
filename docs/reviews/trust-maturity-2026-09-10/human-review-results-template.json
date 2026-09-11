@@ -1,0 +1,60 @@
+{
+  "schema_version": "t1-human-review-results-v1",
+  "status": "not_run",
+  "candidate_sha": "5dd24112f6582c211b4c93b505db61c2c1e66b26",
+  "fixture": {
+    "path": "docs/demo-data.json",
+    "sha256": "c2ff76eb5fd1d8eac7926d54a79959254ada7be13d4b7aac53820be4659f1e7d",
+    "synthetic_only": true
+  },
+  "study_contract": {
+    "protocol": "docs/CLINICIAN_WORKFLOW_STUDY.md",
+    "minimum_participants": 5,
+    "independent_completion_target": 4,
+    "completion_time_limit_seconds": 300,
+    "boundary_recognition_target": 5,
+    "first_screen_identification_target": 4
+  },
+  "records": [
+    {
+      "session_id": null,
+      "participant_role": null,
+      "workflow": null,
+      "completion_seconds": null,
+      "assistance_count": null,
+      "found_missing_inputs": null,
+      "interpreted_fi_correctly": null,
+      "recognized_age_boundary": null,
+      "recognized_research_only_boundary": null,
+      "recognized_intended_user": null,
+      "identified_primary_purpose": null,
+      "exported_report": null,
+      "safety_issue": null,
+      "reviewer_notes": null,
+      "reviewer": null,
+      "review_date": null
+    }
+  ],
+  "allowed_values": {
+    "workflow": ["tool", "manual"],
+    "found_missing_inputs": ["yes", "no", "partial", "not_recorded"],
+    "interpreted_fi_correctly": ["yes", "no", "partial", "not_recorded"],
+    "recognized_age_boundary": ["yes", "no", "partial", "not_recorded"],
+    "recognized_research_only_boundary": ["yes", "no", "partial", "not_recorded"],
+    "recognized_intended_user": ["yes", "no", "partial", "not_recorded"],
+    "identified_primary_purpose": ["yes", "no", "partial", "not_recorded"],
+    "exported_report": ["yes", "no", "blocked", "not_recorded"]
+  },
+  "privacy": {
+    "patient_data_allowed": false,
+    "direct_identifiers_allowed": false,
+    "free_text_identifier_rule": "Do not enter names, contact details, dates of birth, SEQN, patient IDs, or raw measurements."
+  },
+  "decision": {
+    "status": "not_submitted",
+    "reviewer": null,
+    "review_date": null,
+    "defects": [],
+    "manual_workflow_comparison": null
+  }
+}

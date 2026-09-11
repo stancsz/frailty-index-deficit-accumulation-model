@@ -7,10 +7,33 @@ software check is green.
 
 ## Current position
 
-**Next execution priority: T1, in progress (audit and goal shaping only).**
-Owner: implementation agent with project-owner acceptance; named human reviewers
-pending. [Active contract](goals/active/trustworthy-research-showcase/GOAL.md)
-and [audit](docs/PROJECT_MATURITY_AND_TRUST_REVIEW.md) define the work.
+**Current execution priority: VALUE-TOKEN-1, active (frontier-token value measurement).**
+Owner: implementation agent with project-owner acceptance. The superseded T1
+showcase contract is retained at
+`goals/completed/trustworthy-research-showcase/GOAL.md`; the completed
+documentation-governance contract is at
+`goals/completed/documentation-governance/GOAL.md`; the current active contract
+is `goals/active/frontier-value-measurement/GOAL.md`.
+The [audit](docs/PROJECT_MATURITY_AND_TRUST_REVIEW.md) and root goal retain
+the underlying product and release evidence.
+Documentation authority: this roadmap is ordered project guidance below
+[`PRODUCT_INTENT.md`](docs/product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](ARCHITECTURE.md), and the active execution contract in
+[`goals/active/frontier-value-measurement/GOAL.md`](goals/active/frontier-value-measurement/GOAL.md).
+It records sequencing and exit evidence; it does not redefine product intent
+or clinical approval.
+The dated production/value evidence package is
+[`docs/PRODUCTION_VALUE_EVIDENCE_2026-09-11.md`](docs/PRODUCTION_VALUE_EVIDENCE_2026-09-11.md).
+It records 20/20 canonical software checks, 176 Python tests, 28 Node tests,
+and a passing loopback smoke, while explicitly leaving clinical readiness,
+intended-user value, and frontier-token savings unverified.
+The independent 2026-09-11 review added durable open outcomes to `GOAL.md`.
+The immediate VALUE-TOKEN-1 order is: keep the measurement contract
+reproducible; obtain owner-supplied matched frontier-run exports; adjudicate
+quality and retries; then report a bounded result or a verified no-go. The
+local synthetic receipt verifies mechanics only. Clinical-review readiness,
+scientific validation, human acceptance, staging, and clinical approval retain
+their existing IR dependencies and are not advanced by this token measurement.
 Order: reconcile public claims and candidate identity; implement a measurement-first
 experience; verify visual/behavior states and human comprehension; publish and
 inspect the actual URL. T1 closes only with T1.1-T1.8 evidence and IR0-IR3
@@ -19,7 +42,33 @@ M1 is the local reviewer candidate; M2 is verified publication; M3 is human
 acceptance. Q0-Q4 and the measurement table in T1 define checkpoint evidence.
 All milestones remain open.
 The live page was visually inspected and differs materially from local work;
-the full local verifier passed 20/20, but neither fact establishes T1 completion.
+the latest local canonical verifier passes all required software checks, but
+neither fact establishes T1 completion.
+The local slice now fronts purpose, intended user, synthetic scope, research-only
+status and the primary example action, then leads the selected report with an
+observed measurement ledger. Local Chromium captures and the current public
+claim inventory are retained under `docs/reviews/`; cross-engine reruns and
+human acceptance remain open. The per-check local record is
+`docs/reviews/trust-maturity-2026-09-10/t1-local-qa-receipt.json`.
+After the fresh-preview QA receipt update, the current dirty checkout reran
+`uv run python scripts/verify_project.py --json`: all 20 checks passed and
+`clinical_gate` remains `E-005 blocked`. This is current local verification,
+not same-SHA remote or publication evidence.
+The security route and dependency/runtime boundary are now recorded in
+`docs/reviews/trust-maturity-2026-09-10/dependency-security-review-2026-09-10.md`;
+private GitHub vulnerability reporting is confirmed disabled.
+The live publication audit at
+`docs/reviews/trust-maturity-2026-09-10/live-publication-audit-2026-09-10.json`
+records successful remote workflows for `7fc8fca`, but also records the stale
+published wording and missing live claim inventory. T1.6 remains open.
+The fresh temporary clean candidate `5dd24112f6582c211b4c93b505db61c2c1e66b26`
+also passes locked installation, all 20 verifier checks, documentation checks,
+and installed-wheel/loopback HTTP smoke on Windows; the bounded receipt is
+`docs/ir0-current-candidate-verification-2026-09-10.json`, with the prepared
+freeze record at
+`docs/reviews/trust-maturity-2026-09-10/candidate-freeze-manifest-2026-09-10.json`.
+The snapshot predates final candidate-reference reconciliation and is not
+pushed, published or remotely verified.
 
 The repository is a substantial research-use-only engineering prototype. The
 following surfaces have implementation or historical engineering evidence.
@@ -60,6 +109,100 @@ development predictor and reference panel must not be used for clinical or
 real-person longevity decisions. Public Pages publication is limited to
 documentation, synthetic examples, and privacy-safe public-data receipts.
 
+On 2026-09-11, the four planned NHANES 2011-2012 intake files were retrieved
+outside the repository and hashed in
+`docs/REAL_DATA_INTAKE_RECEIPT_2026-09-11.json`. This makes real source fields
+available for reviewed body-composition and muscle/function mapping; it does
+not complete IR4 or validate any category. A follow-up intake added real DXA
+bone-density, cognitive-testing, full dermatology-questionnaire fields, and a
+2003-2004 direct dermatology image-reading file, so every
+current category now has a real source field or measured proxy. Joint coverage now
+includes arthritis/gout history and adult functional-difficulty items plus an
+official 2009-2010 clinical spinal-mobility source with 5,001 records and an
+NHANES III fixed-width knee-radiograph source with 2,589 age-eligible records
+and bilateral radiographic fields. The source cycles and eligibility boundaries
+are explicit rather than silently combined. The same 2009-2010 cycle now also
+includes 5,106 ARQ questionnaire records for chronic back or neck pain and
+inflammatory-back-pain context. Cycle harmonization,
+joint-specific protocols, reference bands, and qualified review remain missing
+or unapproved.
+The new `scripts/build_category_data_receipt.py` performs the local mapping
+check without emitting raw rows or measurements; its 2026-09-11 run verified
+17/17 current categories with observed source fields or proxies. The follow-up
+mapping adds the official Physical Functioning file's adult walking, standing,
+work-limitation, and equipment fields to joint and lifestyle/function coverage,
+and adds repeated systolic/diastolic examination readings to cardiovascular and
+cardiorespiratory coverage. The latter also now includes baseline spirometry
+volume, flow, quality and acceptable-curve fields. Lipid laboratory fields,
+sleep duration/disorder fields, and the full depression screener item set have
+also been added to their respective categories. Objective wrist-monitor day
+summaries are now included for lifestyle/function and sleep, with separate row
+and unique-participant counts because each participant can contribute multiple
+days. This is source coverage evidence, not clinical validity or category-age
+evidence. The companion `scripts/build_category_overlap_receipt.py` now
+reports privacy-safe unique-participant coverage and pairwise category overlap
+within each survey cycle in
+`docs/CATEGORY_OVERLAP_RECEIPT_2026-09-11.json`. It covers five cycles,
+including 16 categories with mapped participants in 2011-2012, and deliberately
+performs no cross-cycle joins or identifier/measurement emission. This
+strengthens participant-level data evidence without claiming a harmonized
+clinical cohort. In the 2011-2012 denominator of 9,756 participants, mapped
+category coverage ranges from 17.292% to 95.972%, and the all-16-category
+intersection is 0 participants. The next data tranche therefore requires
+explicit missingness, subsample, and eligibility handling rather than treating
+the source catalog as a complete patient dataset.
+An additional cycle-specific receipt now covers 17 official 2013–2014 files
+for 15 categories, including body, muscle, bone, cognitive, mental-health,
+sleep, function, blood, cardiovascular, immune, metabolic, kidney, joint
+history, and skin questionnaire data. The category catalog exposes those
+sources separately from the 2011–2012 counts. Its receipt records CDC URLs,
+hashes, field identities, rows, and participant counts without committing raw
+data; fluid/BIA and direct liver elastography remain absent from this cycle.
+The primary intake now also has a non-destructive quality receipt for all 17
+categories, counting missing rows and candidate special codes without
+filtering values. This is the evidence base for the next codebook and
+eligibility tranche.
+An additional 2015–2016 receipt now covers 15 official files and 15 categories,
+including direct body, bone, muscle, skin, blood, cardiovascular, kidney,
+metabolic, laboratory liver, sleep, function, and mental-health fields. It
+explicitly records the absence of BIA fluid, CFQ cognitive testing, and direct
+liver elastography in that cycle. The codebook receipt now covers 81 official
+CDC documentation/layout sources across seven source cycles.
+The additional 2017–2018 category receipt now covers 18 official files and 15
+categories, with BIA fluid and CFQ cognition explicitly absent and direct
+liver elastography kept in its separate `LUX_J.XPT` receipt. The full codebook
+receipt now covers 96 mapped official documentation/layout sources.
+The additional 2021–2023 receipt adds 15 official files for 12 categories and
+declares the absent BIA, DXA, grip, cognition, blood-pressure, spirometry, PFQ,
+and objective-monitor sources. The full codebook receipt now covers 99 official
+documentation/layout sources across eight source cycles.
+The recent-cycle overlap receipt reports mapped all-category intersections of
+0 across 15 categories in 2013–2014, 1,095 across 15 categories in 2015–2016,
+873 in 2017–2018, and 1,360 across 12 categories in 2021–2023,
+without emitting identifiers or performing cross-cycle joins.
+The new `CATEGORY_NUMERIC_COVERAGE_RECEIPT_2026-09-11.json` verifies
+non-missing numeric source fields and positive unique-participant counts for
+all 17 categories. Sparse categories remain visible through their minimum
+field-level counts; this is source-data coverage, not a harmonized cohort or
+clinical validation.
+The cycle matrix at `docs/CATEGORY_CYCLE_MATRIX_2026-09-11.json` makes the
+boundary auditable: the primary multi-cycle package has all 17 categories,
+2013–2014, 2005–2006, 2015–2016, and 2017–2018 have 15 each, 2007–2008 has 13, and 2021–2023 has 12. Declared absences
+remain explicit and no cross-cycle joins are performed.
+The quality summary at `docs/CATEGORY_QUALITY_SUMMARY_2026-09-11.json` adds
+per-category missingness ranges and candidate special-code counts without
+filtering values. It makes sparse and dirty fields measurable rather than
+presenting source availability as data completeness.
+The runtime catalog now exposes `cycle_coverage` for each category, with an
+explicit `real_source_present` or `not_collected_in_cycle` state and reason.
+This keeps the application from treating omitted source keys as unknown data.
+The distribution receipt at `docs/CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11.json`
+adds quantiles and unique-participant counts for one real field in every
+category. Coded fields remain labeled as source distributions, not reference
+intervals.
+Runtime category metadata now points each category to its representative
+distribution receipt, source file, and field.
+
 ## Work-tracking synchronization
 
 Project #4 is authoritative workflow metadata:
@@ -68,14 +211,18 @@ https://github.com/users/stancsz/projects/4/views/1
 The 2026-09-10 review supersedes the historical P0/P1 completion labels.
 Remote CI and Pages still fail at `2f1218b9d20b61ee9682cdae0a5a74dd79a7f653`.
 A local dirty-checkout rerun of `uv run python scripts/verify_project.py --json`
-now passes all 20 checks and reports 146 Python tests, 28 Node tests, and
-`clinical_gate: E-005 blocked`. A fresh Windows 3.11 installed-wheel and real
+now passes all required software checks and reports
+`clinical_gate: E-005 blocked`; the linked receipt retains collection metadata
+separately from executed-check status. A fresh Windows 3.11 installed-wheel and real
 loopback HTTP smoke also passes, with its dirty-tree receipt at
 `docs/ir0-wheel-smoke-2026-09-10.json`. A temporary clean snapshot at
-`0385ece0d3e65006cc1c58da6b2b015f2e1cd416` also passes locked installation and
-all 20 checks, recorded at `docs/ir0-clean-candidate-verification-2026-09-10.json`.
-The same candidate also passes installed-wheel and real loopback HTTP smokes on
-Windows and WSL Ubuntu. These are local evidence, not a published candidate or publication result. P0/P1 are reopened for IR0; P2 records the existing contract only. P3/J1 are
+`5dd24112f6582c211b4c93b505db61c2c1e66b26` also passes locked installation,
+all 20 checks, documentation checks and installed-wheel/real loopback HTTP
+smokes on Windows, recorded at
+`docs/ir0-current-candidate-verification-2026-09-10.json`. The earlier
+`0385ece0d3e65006cc1c58da6b2b015f2e1cd416` receipt retains the separate WSL
+Ubuntu evidence. These are local evidence, not a published candidate or
+publication result. P0/P1 are reopened for IR0; P2 records the existing contract only. P3/J1 are
 constrained by IR4, P4/P5 by IR5, P6 by IR6, and P7/P8 by IR7. R-087 remains
 unfinished and is absorbed by IR0/IR3. Board Todo includes blocked work because
 the project has no Blocked option. Dependencies here explain the blockers.
@@ -91,7 +238,8 @@ An independent rerun passed all 20 verifier checks, but no IR gate is closed.
 IR0 still lacks published-candidate and publication evidence. The local Pages
 workflow now executes the full Python suite before its evidence and deploy
 checks, while the checked-in receipt remains a count receipt rather than a
-pass receipt. Remote verification on the exact candidate remains open. A local
+pass receipt. The current local candidate passes its Windows clean-checkout
+gate, but remote verification on that exact candidate remains open. A local
 candidate-derived failure branch now records pytest exit 1 with the publication
 step unreached, but it is not a remote candidate-branch demonstration.
 IR2 retains the denominator regression as a test, while the local comparison
@@ -124,6 +272,11 @@ verification while named reviewers perform the five-user study, statistical
 review and manual accessibility checks on the frozen local synthetic package.
 Public deployment is not a prerequisite for beginning those reviews.
 
+The current local implementation slice is recorded in
+`docs/CLAIM_INVENTORY_2026-09-10.md` and
+`docs/reviews/trust-maturity-2026-09-10/README.md`. It remains a dirty preview,
+not a candidate SHA or published-release result.
+
 For each external blocker, record the missing input, owner role, next action and
 review date; named owners and dates remain unassigned until accepted. Continue
 independent engineering work. IR4 protocol/data preparation can proceed, but
@@ -141,6 +294,31 @@ utility is demonstrated. All original gate acceptance thresholds remain in force
 | IR5 | 2 | Blocked | ML lead and independent reviewers | IR4 | Reproducible candidate and independent comparative validation; E-005 qualified review remains blocked until approved. |
 | IR6 | 2 | In progress, synthetic local review recorded; staging and governance not started | Security/operations and governance | IR2; parallel IR4/IR5 | Staging auth, capacity, monitoring, supply-chain and rollback evidence; real use additionally requires applicable approvals. |
 | IR7 | 3 | Blocked | Product, clinical and operations | IR3, IR5/E-005, IR6 | Governed pilot meets frozen utility/safety thresholds and release approval, then monitored release. |
+
+### Next agent objectives, 2026-09-10
+
+These are ordered implementation objectives under the existing single active
+T1 contract and IR0-IR7 plan. They are not new clinical-validity claims or
+parallel active GDE goals.
+
+| Order | Objective | Agent-deliverable acceptance | Explicit boundary |
+|---|---|---|---|
+| A | Prepare an IR4 protocol and public-data manifest package | A reviewable, non-approving protocol names one musculoskeletal construct, intended research use, population, predictors, target, comparators, cohort eligibility, missingness, survey design, split boundary, metrics, CI precision and stop rule. A machine-checkable manifest records the chosen public files, release/access terms, URLs, hashes, units, sentinels and weights. | No raw cohort data, fitting, performance result, numeric age or approval claim. Protocol and manifest require clinical/data/statistical review before use. |
+| B | Make the reviewer package executable | A prepared synthetic package contains the study script, accessibility checklist, statistical comparison-review worksheet, candidate and fixture identity, evidence links, de-identified result forms, and reviewer-role destinations. The package is ready for named review; release freezing and all human results remain open. | An agent may prepare materials but cannot simulate five users, a screen-reader reviewer, a statistician or a clinician. Missing reviews remain not run. |
+| C | Reconcile a final public research release | One owner-authorized candidate SHA has clean-install, verifier, platform-smoke, remote CI, failing-test publication-block and post-deploy identity/hash/link/visual evidence. | This can close T1.6 and IR0 only when every receipt names the same candidate. It does not close E-005 or clinical production. |
+
+The public sources, controlled-access boundary and immediate source-backed inputs
+for objective A are recorded in [Wiki 017](docs/wiki/017-public-evidence-inputs-for-remaining-gates.md).
+Objective A now has a reviewable, non-approving protocol at
+`docs/IR4_MUSCULOSKELETAL_PROTOCOL_2026-09-10.md` and a machine-checkable
+planning manifest at `docs/IR4_PUBLIC_DATA_MANIFEST_2026-09-10.json`.
+`py -3 -X utf8 scripts/validate_ir4_manifest.py docs/IR4_PUBLIC_DATA_MANIFEST_2026-09-10.json`
+passes. The files deliberately retain null source hashes, pending codebook and
+survey-design decisions, no reviewers, and `E-005` blocked.
+Objective B preparation is also indexed in
+`docs/reviews/trust-maturity-2026-09-10/REVIEWER_PACKAGE.md`, with a comparison
+worksheet and de-identified result template. The package is review-ready but
+not frozen as a release and has no human results.
 
 The full executable acceptance contract is in [GOAL.md section 7](GOAL.md#7-next-steps-and-how-to-verify-them)
 and the [industry readiness review](docs/INDUSTRY_READINESS_REVIEW.md).
@@ -198,7 +376,7 @@ itself establish clinical validity, transportability, safety, or approval.
 | P0 | Publish a clean repository baseline and public-safe showcase boundary | In progress under IR0: local wording/artifact repair is present; candidate publication and licensing/visibility reconciliation remain open | none | Repository and Pages publication contain only intended source or public-safe static documentation, synthetic fixtures, receipts, and tests. No patient exports, credentials, restricted rows, model artifacts, or API deployment are published. `LICENSE.md` records the private/proprietary source decision; any external source/product use still requires written authorization. |
 | P1 | Make the software gate fully green | In progress under IR0: dirty-checkout and temporary clean-candidate verifier plus local Windows wheel/HTTP smoke pass; Linux CI and Pages remain unverified | P0 | `uv run python scripts/verify_project.py --json` returns `status: passed`; Ruff format, Python/Node tests, receipts, docs, artifact checks, and real loopback serving all pass. The output still reports `clinical_gate: E-005 blocked`. |
 | P2 | Freeze the agent-skill and full-body reporting contract | Complete for current measurement contract; final system-age shape documented; delivery deferred | P1 | `skills/frailty-engine/SKILL.md` documents the supported CLI/service path, current `category_reports`, uncertainty semantics, local-only SECA behavior, versioning, safe error handling, and withheld-age behavior. [`docs/SYSTEM_AGE_REPORT_SPEC.md`](docs/SYSTEM_AGE_REPORT_SPEC.md) defines the final system-specific age-equivalent profile. The typed API, Pages demo, and installed-wheel smoke expose deterministic measurement profiles, provenance/reference interpretation, safe next steps, and explicit unavailable skin/bone/brain-cognitive sections. Numeric system ages remain withheld until each domain has its own validated model and approval. |
-| P3 | Freeze scientific/data provenance and domain measurement protocols | Partially implemented; clinician-first research report and public-data proof ladder added to scope | P1, P2, IR1, IR4 | A reviewed training manifest identifies exact NHANES/equivalent files, linkage and endpoint rules, units, quality filters, survey-design/weight semantics, split/tuning boundary, BIA transfer panel, mapper provenance, and checksums. The research report and public receipts explain what public data prove and do not prove. For each planned system age, add the construct/target, measurement protocol, repeatability plan, reference population, device/unit rules, and missingness policy; `scripts/validate_system_age_manifest.py` mechanically checks this release-review shape and fails closed on numeric-age or approval flags. Replace all development fixtures in the candidate release with approved/licensed inputs. |
+| P3 | Freeze scientific/data provenance and domain measurement protocols | Partially implemented; clinician-first research report, public-data proof ladder, public-source intake map, and a non-approving IR4 protocol/manifest package now exist. No protocol, data manifest, or review is approved. | P1, P2, IR1, IR4 | A reviewed training manifest identifies exact NHANES/equivalent files, linkage and endpoint rules, units, quality filters, survey-design/weight semantics, split/tuning boundary, BIA transfer panel, mapper provenance, and checksums. The research report and public receipts explain what public data prove and do not prove. For each planned system age, add the construct/target, measurement protocol, repeatability plan, reference population, device/unit rules, and missingness policy; `scripts/validate_system_age_manifest.py` mechanically checks this release-review shape and fails closed on numeric-age or approval flags. Replace all development fixtures in the candidate release with approved/licensed inputs. See [Wiki 017](docs/wiki/017-public-evidence-inputs-for-remaining-gates.md), `docs/IR4_MUSCULOSKELETAL_PROTOCOL_2026-09-10.md`, and `docs/IR4_PUBLIC_DATA_MANIFEST_2026-09-10.json`; clinical/data/statistical review remains required. |
 | P4 | Train and package candidate overall and system-specific model releases | Blocked by P3 | P3 | A reproducible native model artifact, 36-column feature manifest, supplied Gompertz mapper, and approved reference panel cover the overall model. Any offered system age additionally has a separate domain model, feature/protocol manifest, target, uncertainty method, model/panel hashes, and human-authored approval sidecar that pass `validate_model_release.py`. No artifact is promoted by changing flags alone. |
 | P5 | Complete external validation and clinical review (`E-005`) | Blocked | P4 | An approved CLSA or equivalent held-out cohort is evaluated without leakage. The evidence package contains discrimination, censoring-aware horizon calibration, biological-age/homeostatic-deviation calibration, uncertainty, missingness sensitivity, FI denominator sensitivity, clinical utility, and sex/age/ethnicity subgroup support. A qualified clinical/statistical review signs off cutoffs, panel, intended use, limitations, rollback criteria, and production approval. |
 | P6 | Harden the deployment boundary | Synthetic local operations review recorded; staging and governance evidence not started | P5 | The approved artifact is served only from an installed, immutable release. Deployment has TLS, authentication/authorization, secret management, rate limiting, network policy, backups/retention rules, and an operator-owned configuration. `/readyz` is HTTP 200 only for the approved artifact/panel/uncertainty/release receipt and complete runtime provenance. |

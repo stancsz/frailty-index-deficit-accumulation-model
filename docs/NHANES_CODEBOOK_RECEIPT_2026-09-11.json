@@ -1,0 +1,805 @@
+{
+  "boundary": {
+    "clinical_use": false,
+    "e005_status": "blocked",
+    "measurements_emitted": false,
+    "raw_rows_emitted": false
+  },
+  "entries": [
+    {
+      "bytes": 236125,
+      "cycle": "2003_2004",
+      "filename": "BIX_C.XPT",
+      "http_status": 200,
+      "sha256": "c911b051770b03100a8556cb1371601e2a261130a49d3235758c7d2732314b6b",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/BIX_C.htm"
+    },
+    {
+      "bytes": 231633,
+      "cycle": "2003_2004",
+      "filename": "DEX_C.XPT",
+      "http_status": 200,
+      "sha256": "74311e26b4a4458222fe4c4791695aa607189c86d391c7b10b33df3012c3ae06",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/DEX_C.htm"
+    },
+    {
+      "bytes": 352285,
+      "cycle": "2009_2010",
+      "filename": "ARQ_F.XPT",
+      "http_status": 200,
+      "sha256": "6f8b6d432d4afe28156ef31b82f4e6b9b1450d44aee64ddc16c3fefabd39dd97",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/ARQ_F.htm"
+    },
+    {
+      "bytes": 39450,
+      "cycle": "2009_2010",
+      "filename": "ARX_F.XPT",
+      "http_status": 200,
+      "sha256": "3f94dec049a8018387c7634b59bcd952a9a79e8e2e32330d034fa7980d3951f8",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/ARX_F.htm"
+    },
+    {
+      "bytes": 9021,
+      "cycle": "2009_2010",
+      "filename": "CRP_F.XPT",
+      "http_status": 200,
+      "sha256": "18b9f2fff14388d938ac5288510dce7a1fba11e361e747875ca0d166a1231aa0",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/CRP_F.htm"
+    },
+    {
+      "bytes": 13074,
+      "cycle": "2011_2012",
+      "filename": "ALB_CR_G.XPT",
+      "http_status": 200,
+      "sha256": "531f6b605674755d6b48d2fdff958fa793bbf6b55946ea30386ca325982b23a8",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/ALB_CR_G.htm"
+    },
+    {
+      "bytes": 33354,
+      "cycle": "2011_2012",
+      "filename": "ALQ_G.XPT",
+      "http_status": 200,
+      "sha256": "e71e065228bbef4ee92460d19dbd609e8480f10db4f0e7a8c7207db9f03dc0a7",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/ALQ_G.htm"
+    },
+    {
+      "bytes": 12731,
+      "cycle": "2011_2012",
+      "filename": "APOB_G.XPT",
+      "http_status": 200,
+      "sha256": "200aeaf434c767d0a100b60cdc126c450dadf48d1e66ee18db2e8be9dfe2981a",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/APOB_G.htm"
+    },
+    {
+      "bytes": 98660,
+      "cycle": "2011_2012",
+      "filename": "BIOPRO_G.XPT",
+      "http_status": 200,
+      "sha256": "9a86feeba51d6958f016eb627b1e7e35bb442e65160023e8dbf534f8b64ec002",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BIOPRO_G.htm"
+    },
+    {
+      "bytes": 33311,
+      "cycle": "2011_2012",
+      "filename": "BMX_G.XPT",
+      "http_status": 200,
+      "sha256": "1c72476279a758945905c7c248c97b1a69dc30620864efc83494c67fa977f4bf",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.htm"
+    },
+    {
+      "bytes": 67210,
+      "cycle": "2011_2012",
+      "filename": "BPX_G.XPT",
+      "http_status": 200,
+      "sha256": "8e538d287dd2dc82cc6f51f9b70a582b6a9dae26ca14335cca4b10e00b8858cb",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BPX_G.htm"
+    },
+    {
+      "bytes": 46495,
+      "cycle": "2011_2012",
+      "filename": "CBC_G.XPT",
+      "http_status": 200,
+      "sha256": "2d7a41115481d37c06af88c4404d1d8f8310ee8c1bd0bf70565dd0b9ff4a7369",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/CBC_G.htm"
+    },
+    {
+      "bytes": 60171,
+      "cycle": "2011_2012",
+      "filename": "CFQ_G.XPT",
+      "http_status": 200,
+      "sha256": "c383115a9640bdf94a840c4349acaedf5dcc7c8f43da3ddc149d7fc2c59262c2",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/CFQ_G.htm"
+    },
+    {
+      "bytes": 37037,
+      "cycle": "2011_2012",
+      "filename": "DEQ_G.XPT",
+      "http_status": 200,
+      "sha256": "7dfa8f9af6db44443c56c34cc75b7b46208c5c2b2346f830692e7baccc3bc890",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEQ_G.htm"
+    },
+    {
+      "bytes": 156347,
+      "cycle": "2011_2012",
+      "filename": "DIQ_G.XPT",
+      "http_status": 200,
+      "sha256": "33ad9047bdf0ff083dbdfb40cf76ef7cd44ac1d9ba6127437a7f39129d0e7120",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DIQ_G.htm"
+    },
+    {
+      "bytes": 42561,
+      "cycle": "2011_2012",
+      "filename": "DPQ_G.XPT",
+      "http_status": 200,
+      "sha256": "085a3ab225d8b63f760bc3c234051fe0ae1b19ea91bd3de03ad193a3a3c12247",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DPQ_G.htm"
+    },
+    {
+      "bytes": 71410,
+      "cycle": "2011_2012",
+      "filename": "DXXAG_G.XPT",
+      "http_status": 200,
+      "sha256": "63ed85395c7ee62d67866af02d3062c5a5a3681a42bf9d576408c86f6b9d53a7",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DXXAG_G.htm"
+    },
+    {
+      "bytes": 213157,
+      "cycle": "2011_2012",
+      "filename": "DXX_G.XPT",
+      "http_status": 200,
+      "sha256": "ef13d64e750994fe753f0efa44600d030efc704e79b4c5608b9cddf9e8526c84",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DXX_G.htm"
+    },
+    {
+      "bytes": 71934,
+      "cycle": "2011_2012",
+      "filename": "ENX_G.XPT",
+      "http_status": 200,
+      "sha256": "128ba5adf08e72561129a17ac174d214dfca4c6a4e9b4e8d5b551d4c55d41e7d",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/ENX_G.htm"
+    },
+    {
+      "bytes": 24908,
+      "cycle": "2011_2012",
+      "filename": "GLU_G.XPT",
+      "http_status": 200,
+      "sha256": "f4fbf5626ddfb14ed6ae38627b68c50cdf9dc19db6dac559c72f5c80dcd30cf7",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/GLU_G.htm"
+    },
+    {
+      "bytes": 24764,
+      "cycle": "2011_2012",
+      "filename": "GHB_G.XPT",
+      "http_status": 200,
+      "sha256": "4f2bf484e342aa9910d65f6585614cb06729e8d2f1b58cc49f70adf78e258f33",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/GHB_G.htm"
+    },
+    {
+      "bytes": 44520,
+      "cycle": "2011_2012",
+      "filename": "HSQ_G.XPT",
+      "http_status": 200,
+      "sha256": "0e86494822a30cda6a847377f36aaa8a4822f9225038650b145b2c2f69d9f9c2",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/HSQ_G.htm"
+    },
+    {
+      "bytes": 318697,
+      "cycle": "2011_2012",
+      "filename": "MCQ_G.XPT",
+      "http_status": 200,
+      "sha256": "f64eff0b2d74e2b3efd8857302fea12360efe85e3af98dcc75d008007717a80d",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MCQ_G.htm"
+    },
+    {
+      "bytes": 74090,
+      "cycle": "2011_2012",
+      "filename": "MGX_G.XPT",
+      "http_status": 200,
+      "sha256": "eec1d0eb01f87420926742d63e471747ac277f78a2eec63fcaa670a921550d54",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MGX_G.htm"
+    },
+    {
+      "bytes": 64762,
+      "cycle": "2011_2012",
+      "filename": "PAXDAY_G.XPT",
+      "http_status": 200,
+      "sha256": "a620f00e6c200c0fca13919cfdc70b6bedac502cffcd69d15c310bd74ecd4e9f",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/PAXDAY_G.htm"
+    },
+    {
+      "bytes": 54775,
+      "cycle": "2011_2012",
+      "filename": "PAXHD_G.XPT",
+      "http_status": 200,
+      "sha256": "b6504afd3eb6d9fd976cad3fb3924a829ecc3513a33d492d0d51f3072a21fd3b",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/PAXHD_G.htm"
+    },
+    {
+      "bytes": 86062,
+      "cycle": "2011_2012",
+      "filename": "PAQ_G.XPT",
+      "http_status": 200,
+      "sha256": "0db224acea65cb1dce03f480ae969f2179b89573a579875fcf885a901e695832",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/PAQ_G.htm"
+    },
+    {
+      "bytes": 203027,
+      "cycle": "2011_2012",
+      "filename": "PFQ_G.XPT",
+      "http_status": 200,
+      "sha256": "df8dbb9921f2d5f5e56520db9cbcf533dc1bb10799a5ad56678981450cac0cd1",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/PFQ_G.htm"
+    },
+    {
+      "bytes": 12769,
+      "cycle": "2011_2012",
+      "filename": "SLQ_G.XPT",
+      "http_status": 200,
+      "sha256": "c99c40e22fef83f4fd4d4778984fe9f238531b944245f95860689643146f1793",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SLQ_G.htm"
+    },
+    {
+      "bytes": 111532,
+      "cycle": "2011_2012",
+      "filename": "SMQ_G.XPT",
+      "http_status": 200,
+      "sha256": "3529807a09e023bc374eaa52641bd152b45d099d5c768d6bdd628c0508257066",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SMQ_G.htm"
+    },
+    {
+      "bytes": 148436,
+      "cycle": "2011_2012",
+      "filename": "SPX_G.XPT",
+      "http_status": 200,
+      "sha256": "a64b0ee6b92845ffe6fe8f5f5305085eaad2176097ec4d66b8999371c9586d2a",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SPX_G.htm"
+    },
+    {
+      "bytes": 11810,
+      "cycle": "2011_2012",
+      "filename": "TCHOL_G.XPT",
+      "http_status": 200,
+      "sha256": "fcfb42915b6732eab0082f6e8d10578e4a481d3a2a75107f9c5ba816a4f76ec8",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/TCHOL_G.htm"
+    },
+    {
+      "bytes": 19163,
+      "cycle": "2011_2012",
+      "filename": "TRIGLY_G.XPT",
+      "http_status": 200,
+      "sha256": "d2421ff4ac269ba8f9ce8f4a9e6b3d06fba790533683bb5e20b4042f4ca3d723",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/TRIGLY_G.htm"
+    },
+    {
+      "bytes": 25157,
+      "cycle": "2013_2014",
+      "filename": "ALB_CR_H.XPT",
+      "http_status": 200,
+      "sha256": "be2486946052734bf287127484f52674dd7b7fabed88d8775cb92deee8f4bcf8",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/ALB_CR_H.htm"
+    },
+    {
+      "bytes": 109123,
+      "cycle": "2013_2014",
+      "filename": "BIOPRO_H.XPT",
+      "http_status": 200,
+      "sha256": "646dfd83a2ffd2f822033d91dc51f1e7c5fe00418908533473da731e1dda5a63",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BIOPRO_H.htm"
+    },
+    {
+      "bytes": 68196,
+      "cycle": "2013_2014",
+      "filename": "BMX_H.XPT",
+      "http_status": 200,
+      "sha256": "ee05acd20cc0b83e994230fdab31d80ce9ad8ec972ce5538f6c6f52cd527c2cd",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BMX_H.htm"
+    },
+    {
+      "bytes": 58013,
+      "cycle": "2013_2014",
+      "filename": "BPX_H.XPT",
+      "http_status": 200,
+      "sha256": "ba8e018b46211e52d083b8ada6a64800ab03042e9289451666bac8347d88099c",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BPX_H.htm"
+    },
+    {
+      "bytes": 50416,
+      "cycle": "2013_2014",
+      "filename": "CBC_H.XPT",
+      "http_status": 200,
+      "sha256": "ce55d73b7df2692b56df79585c8c9e8aa9b3e865fac160f98dfcb6eac477e84c",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/CBC_H.htm"
+    },
+    {
+      "bytes": 60310,
+      "cycle": "2013_2014",
+      "filename": "CFQ_H.XPT",
+      "http_status": 200,
+      "sha256": "f987ff54ad51504d8e2039bd001c6c742dc0309714421e1ed11e6a64aaf39251",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/CFQ_H.htm"
+    },
+    {
+      "bytes": 36967,
+      "cycle": "2013_2014",
+      "filename": "DEQ_H.XPT",
+      "http_status": 200,
+      "sha256": "78c91aee3c767919c4a3ed772637fb34163dbd66a66d55472bad4d74bb73993a",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DEQ_H.htm"
+    },
+    {
+      "bytes": 42872,
+      "cycle": "2013_2014",
+      "filename": "DPQ_H.XPT",
+      "http_status": 200,
+      "sha256": "93295946a359dfd24cfd646ce4c351e256d969b130e4e50b7738cbd7f113d7d3",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DPQ_H.htm"
+    },
+    {
+      "bytes": 296614,
+      "cycle": "2013_2014",
+      "filename": "DXX_H.XPT",
+      "http_status": 200,
+      "sha256": "fed4064263f1a722330bfab033319f7135d8421d4da868f45e3963511d4644a5",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DXX_H.htm"
+    },
+    {
+      "bytes": 13925,
+      "cycle": "2013_2014",
+      "filename": "GHB_H.XPT",
+      "http_status": 200,
+      "sha256": "3e5ffb568b1c77f621d7f19088d160b38f62fb47626d1d36ef9abf885f8f6d7b",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/GHB_H.htm"
+    },
+    {
+      "bytes": 22903,
+      "cycle": "2013_2014",
+      "filename": "GLU_H.XPT",
+      "http_status": 200,
+      "sha256": "e8e9a5ad694270c3eae7bfc1952c12a697f8e4d1eb4f3b63b00998a750ca041e",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/GLU_H.htm"
+    },
+    {
+      "bytes": 327912,
+      "cycle": "2013_2014",
+      "filename": "MCQ_H.XPT",
+      "http_status": 200,
+      "sha256": "b2f85accebed169cfd6af7894b7d528895f2ce17c19a9d03cfcceca6183de1cd",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/MCQ_H.htm"
+    },
+    {
+      "bytes": 64465,
+      "cycle": "2013_2014",
+      "filename": "PAXDAY_H.XPT",
+      "http_status": 200,
+      "sha256": "f1e0401ad79f60c579ec8ad3e64379fe1b4be4a3253b05d0d29f71241a776306",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/PAXDAY_H.htm"
+    },
+    {
+      "bytes": 169064,
+      "cycle": "2013_2014",
+      "filename": "PFQ_H.XPT",
+      "http_status": 200,
+      "sha256": "44279a52d48411408ad8836ac7c5fe6111a68dc112476f2baa9213b2d7749f32",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/PFQ_H.htm"
+    },
+    {
+      "bytes": 12771,
+      "cycle": "2013_2014",
+      "filename": "SLQ_H.XPT",
+      "http_status": 200,
+      "sha256": "3f52183ddb1da55b02ea37b003c1aa1a5e0d50f17f693a1e866dba9133245fec",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/SLQ_H.htm"
+    },
+    {
+      "bytes": 15204,
+      "cycle": "2013_2014",
+      "filename": "TCHOL_H.XPT",
+      "http_status": 200,
+      "sha256": "fad4060fe592d27b1473c624c69a2feae77aa478e2f7f0ba14ff156db16e846e",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/TCHOL_H.htm"
+    },
+    {
+      "bytes": 25619,
+      "cycle": "2013_2014",
+      "filename": "TRIGLY_H.XPT",
+      "http_status": 200,
+      "sha256": "982df89e85c8fc2d4a553ee89a3c3249c379ed6ff630b6b675b04af8266bd5f4",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/TRIGLY_H.htm"
+    },
+    {
+      "bytes": 29841,
+      "cycle": "2015_2016",
+      "filename": "ALB_CR_I.XPT",
+      "http_status": 200,
+      "sha256": "d88e200cfb03d7450c6ae460ae9f46f465010be3929c9e752390d9fd034ce4a1",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/ALB_CR_I.htm"
+    },
+    {
+      "bytes": 154121,
+      "cycle": "2015_2016",
+      "filename": "BIOPRO_I.XPT",
+      "http_status": 200,
+      "sha256": "225a6cbf2b6f5542eefceffbcb0ae28395b99e63abd93c0d4ab511a43ff62b75",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BIOPRO_I.htm"
+    },
+    {
+      "bytes": 67003,
+      "cycle": "2015_2016",
+      "filename": "BMX_I.XPT",
+      "http_status": 200,
+      "sha256": "a0c7d0e76a882259d93e0e22f175be57bca746f704f753aab9c673163601f2bd",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BMX_I.htm"
+    },
+    {
+      "bytes": 52009,
+      "cycle": "2015_2016",
+      "filename": "BPX_I.XPT",
+      "http_status": 200,
+      "sha256": "8e45eccbf040fe42deb60c44f89ab6045b4f01216153ab47427f044b730481e2",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/BPX_I.htm"
+    },
+    {
+      "bytes": 126343,
+      "cycle": "2015_2016",
+      "filename": "CBC_I.XPT",
+      "http_status": 200,
+      "sha256": "7748318a7acc09f939d9a4ca490cf16b6be42d74960d22cdc9f6d6b824fa3898",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/CBC_I.htm"
+    },
+    {
+      "bytes": 36915,
+      "cycle": "2015_2016",
+      "filename": "DEQ_I.XPT",
+      "http_status": 200,
+      "sha256": "29fc3e0888a91d559af4346a7813e6f790fd5a4e2134de09fabd7e437b22371a",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DEQ_I.htm"
+    },
+    {
+      "bytes": 42861,
+      "cycle": "2015_2016",
+      "filename": "DPQ_I.XPT",
+      "http_status": 200,
+      "sha256": "e9bdde32b1937776a10dc10b7a73ca358d8de1635725188ddd1e7a2b1a56c75c",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DPQ_I.htm"
+    },
+    {
+      "bytes": 213349,
+      "cycle": "2015_2016",
+      "filename": "DXX_I.XPT",
+      "http_status": 200,
+      "sha256": "0f3bd8b14a6fcf0474bef5e94a9080351d2d20a93f833b94b91e1d7db625926a",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/DXX_I.htm"
+    },
+    {
+      "bytes": 13064,
+      "cycle": "2015_2016",
+      "filename": "GHB_I.XPT",
+      "http_status": 200,
+      "sha256": "27341643876c6833d8954d3cba33073d5433204153a95573581a2383fc9394c3",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/GHB_I.htm"
+    },
+    {
+      "bytes": 55339,
+      "cycle": "2015_2016",
+      "filename": "GLU_I.XPT",
+      "http_status": 200,
+      "sha256": "375b8f9eb60f8ba58723b3bf7a737f98d8a1c7efd5d259dab40887908b920d4b",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/GLU_I.htm"
+    },
+    {
+      "bytes": 309685,
+      "cycle": "2015_2016",
+      "filename": "MCQ_I.XPT",
+      "http_status": 200,
+      "sha256": "284300ce5dcd393f2101fc995d7c51d9c309d667f78ca5fc45811ac989f0ed9e",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/MCQ_I.htm"
+    },
+    {
+      "bytes": 168794,
+      "cycle": "2015_2016",
+      "filename": "PFQ_I.XPT",
+      "http_status": 200,
+      "sha256": "358f672af7e53e0ee5809a2ca0f2ce4982236b5bc9bc7016e400e3e79cbd1f28",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/PFQ_I.htm"
+    },
+    {
+      "bytes": 27249,
+      "cycle": "2015_2016",
+      "filename": "SLQ_I.XPT",
+      "http_status": 200,
+      "sha256": "2f1bb1c84ecde0bde568e64a06a4354edfa26e4dad57e74e5f2272577e3e1e93",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/SLQ_I.htm"
+    },
+    {
+      "bytes": 14509,
+      "cycle": "2015_2016",
+      "filename": "TCHOL_I.XPT",
+      "http_status": 200,
+      "sha256": "aa0963ee938270033530f69d9c911a5256c4f4b0e6e176760e2ca235453615e2",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm"
+    },
+    {
+      "bytes": 27398,
+      "cycle": "2015_2016",
+      "filename": "TRIGLY_I.XPT",
+      "http_status": 200,
+      "sha256": "3e325f3443c51a5ae69272a1ecb5e1b4b894618d1cd57b02dad12126bf18b664",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm"
+    },
+    {
+      "bytes": 28019,
+      "cycle": "2017_2018",
+      "filename": "ALB_CR_J.XPT",
+      "http_status": 200,
+      "sha256": "f9f82b111c4e33842868043ca5104972605ccb2f888460fd6b307219bda4aa7b",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/ALB_CR_J.htm"
+    },
+    {
+      "bytes": 133515,
+      "cycle": "2017_2018",
+      "filename": "BIOPRO_J.XPT",
+      "http_status": 200,
+      "sha256": "9943388b7a851d278f0c0d608a0ca1d44cf44185b28ae582d3a8e37cb400a4ab",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BIOPRO_J.htm"
+    },
+    {
+      "bytes": 49460,
+      "cycle": "2017_2018",
+      "filename": "BMX_J.XPT",
+      "http_status": 200,
+      "sha256": "557b2ad6946237b7a169819006e7126e48e25cdb45926605cb368342c6773689",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BMX_J.htm"
+    },
+    {
+      "bytes": 52515,
+      "cycle": "2017_2018",
+      "filename": "BPX_J.XPT",
+      "http_status": 200,
+      "sha256": "a7583578150897efec8748a3bc05ecbc6e54d5a0b5a32cdfda87c883aba56a37",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BPX_J.htm"
+    },
+    {
+      "bytes": 58525,
+      "cycle": "2017_2018",
+      "filename": "CBC_J.XPT",
+      "http_status": 200,
+      "sha256": "e27fe77e503e3576060957233f83252bf34ccd012b9b5b3e753a4aac363b96ad",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+    },
+    {
+      "bytes": 35857,
+      "cycle": "2017_2018",
+      "filename": "DEQ_J.XPT",
+      "http_status": 200,
+      "sha256": "b42610f8665516406e411206e0d28c37ce05ae613745401a8a45666890d96cfd",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEQ_J.htm"
+    },
+    {
+      "bytes": 42844,
+      "cycle": "2017_2018",
+      "filename": "DPQ_J.XPT",
+      "http_status": 200,
+      "sha256": "b3fa83998fc07246dad7e5a463007e1cea2ce2f1c9971c0c988edc5a9f1bdc12",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DPQ_J.htm"
+    },
+    {
+      "bytes": 213745,
+      "cycle": "2017_2018",
+      "filename": "DXX_J.XPT",
+      "http_status": 200,
+      "sha256": "b49bb9cc091a8bcbda2d6bc288d3e38ed5376f1f7dcd4984fa95fdfae25255df",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DXX_J.htm"
+    },
+    {
+      "bytes": 15275,
+      "cycle": "2017_2018",
+      "filename": "GHB_J.XPT",
+      "http_status": 200,
+      "sha256": "b9f90ef7aa539fe98edc776818ddfbfc4ee9f88ecf5c21ba168c5de8116e174d",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GHB_J.htm"
+    },
+    {
+      "bytes": 20654,
+      "cycle": "2017_2018",
+      "filename": "GLU_J.XPT",
+      "http_status": 200,
+      "sha256": "cb8808a45e6b05ac9f2d31c799b501affec60ae3f2573d08da8315fe02f04ee2",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+    },
+    {
+      "bytes": 60177,
+      "cycle": "2017_2018",
+      "filename": "LUX_J.XPT",
+      "http_status": 200,
+      "sha256": "aea84273091b0eed73e9823a4090c8338fe71566f98cd2df5142add252661f02",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/LUX_J.htm"
+    },
+    {
+      "bytes": 52690,
+      "cycle": "2017_2018",
+      "filename": "ALQ_J.XPT",
+      "http_status": 200,
+      "sha256": "c9a7c51d79c3cec6c65cf877460176090d0deff156aea2b1b3b8f39ec0c9c0e6",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/ALQ_J.htm"
+    },
+    {
+      "bytes": 57846,
+      "cycle": "2017_2018",
+      "filename": "PAQ_J.XPT",
+      "http_status": 200,
+      "sha256": "0d14e3602706ae11d6e977470bcb5c2b42301ad28c144090f7298f41dd92d764",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/PAQ_J.htm"
+    },
+    {
+      "bytes": 160977,
+      "cycle": "2017_2018",
+      "filename": "SMQ_J.XPT",
+      "http_status": 200,
+      "sha256": "9859d76717b31135754247d509a1d559cce686f29c473ed96857fa8a64f36255",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/SMQ_J.htm"
+    },
+    {
+      "bytes": 257835,
+      "cycle": "2017_2018",
+      "filename": "MCQ_J.XPT",
+      "http_status": 200,
+      "sha256": "46e21d2184592135585af1999e603ce47b5685abbeb828858bb429fbe6f8ae44",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/MCQ_J.htm"
+    },
+    {
+      "bytes": 168770,
+      "cycle": "2017_2018",
+      "filename": "PFQ_J.XPT",
+      "http_status": 200,
+      "sha256": "d924a81d4311a11fd111781b3a105657f1a8fc0bdd5c4cbbe5a6d1c8ca58175e",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/PFQ_J.htm"
+    },
+    {
+      "bytes": 37776,
+      "cycle": "2017_2018",
+      "filename": "SLQ_J.XPT",
+      "http_status": 200,
+      "sha256": "d151c434f7a24b086cb1858d64708c63e33a8e49e7d2f54c33d881c3ba66b6f4",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/SLQ_J.htm"
+    },
+    {
+      "bytes": 21179,
+      "cycle": "2017_2018",
+      "filename": "TCHOL_J.XPT",
+      "http_status": 200,
+      "sha256": "068687f44f726b2bc41da501691d6bb46bf5076106511f1d787d42c63630f916",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/TCHOL_J.htm"
+    },
+    {
+      "bytes": 48324,
+      "cycle": "2017_2018",
+      "filename": "TRIGLY_J.XPT",
+      "http_status": 200,
+      "sha256": "a8b09d5cf301debc19b5f51d36ddab61f53af36e537a5e0daada7d1307ebc0f9",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/TRIGLY_J.htm"
+    },
+    {
+      "bytes": 31116,
+      "cycle": "2021_2023",
+      "filename": "ALB_CR_L.XPT",
+      "http_status": 200,
+      "sha256": "2e1d5ceeaf5264af9acac4faa4e1c71e65549922cdcddbb3648f851d777148f9",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/ALB_CR_L.htm"
+    },
+    {
+      "bytes": 43999,
+      "cycle": "2021_2023",
+      "filename": "ALQ_L.XPT",
+      "http_status": 200,
+      "sha256": "d75a61dda1d0a7d947e2fbfdb9fff4023af120f205db2944d609a267004449d0",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/ALQ_L.htm"
+    },
+    {
+      "bytes": 204228,
+      "cycle": "2021_2023",
+      "filename": "BIOPRO_L.XPT",
+      "http_status": 200,
+      "sha256": "e0e489726de02a42e52abd23eef959b73f741212257fba2151c9bf20a33c76b7",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BIOPRO_L.htm"
+    },
+    {
+      "bytes": 53617,
+      "cycle": "2021_2023",
+      "filename": "BMX_L.XPT",
+      "http_status": 200,
+      "sha256": "1d10934773f995bf994cca2f3e1de1e7bd2901f79c519b3faa88c1e3d4eaa18c",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.htm"
+    },
+    {
+      "bytes": 61360,
+      "cycle": "2021_2023",
+      "filename": "CBC_L.XPT",
+      "http_status": 200,
+      "sha256": "62fe95a290278d019c472504b0130003061e3851e28cfee7ccbbd4727f6ad413",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/CBC_L.htm"
+    },
+    {
+      "bytes": 16610,
+      "cycle": "2021_2023",
+      "filename": "DEQ_L.XPT",
+      "http_status": 200,
+      "sha256": "1eeaf3906d52af8552d1cf0acf0772734c3305a4790bf561fb5060878efe2c9b",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEQ_L.htm"
+    },
+    {
+      "bytes": 42046,
+      "cycle": "2021_2023",
+      "filename": "DPQ_L.XPT",
+      "http_status": 200,
+      "sha256": "5e30267792c93b4344564fba89b4de2ad6734a0ae55eb8391aba70d46c917598",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DPQ_L.htm"
+    },
+    {
+      "bytes": 21004,
+      "cycle": "2021_2023",
+      "filename": "GLU_L.XPT",
+      "http_status": 200,
+      "sha256": "737169f95a63beb8fb4c7f44c596b31f2c6b0229637c1993d1d9ce2c0874c138",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/GLU_L.htm"
+    },
+    {
+      "bytes": 20158,
+      "cycle": "2021_2023",
+      "filename": "GHB_L.XPT",
+      "http_status": 200,
+      "sha256": "c65e1cec9596ff6b6db9719278400b82e25f30416653adc54ecf2c5cf96ccd53",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/GHB_L.htm"
+    },
+    {
+      "bytes": 131685,
+      "cycle": "2021_2023",
+      "filename": "MCQ_L.XPT",
+      "http_status": 200,
+      "sha256": "d302acc7a487e005139b5b792e7afd9f8a454538cae565259cdf72ea78d209ae",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/MCQ_L.htm"
+    },
+    {
+      "bytes": 27709,
+      "cycle": "2021_2023",
+      "filename": "PAQ_L.XPT",
+      "http_status": 200,
+      "sha256": "e41fada40e640ce5cd343dc5544ffcbe07111a9e90fd8bd6aacf7f0b07e24f2c",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/PAQ_L.htm"
+    },
+    {
+      "bytes": 22057,
+      "cycle": "2021_2023",
+      "filename": "SLQ_L.XPT",
+      "http_status": 200,
+      "sha256": "317a1ccc81fede563dc18194e3341599e6b9fcaf4368915db7463c32a2f42dd4",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/SLQ_L.htm"
+    },
+    {
+      "bytes": 31348,
+      "cycle": "2021_2023",
+      "filename": "SMQ_L.XPT",
+      "http_status": 200,
+      "sha256": "ed1178c439a311cd6b866e9061c51abbbef6403a4239844a7a81075f2f3a850d",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/SMQ_L.htm"
+    },
+    {
+      "bytes": 21783,
+      "cycle": "2021_2023",
+      "filename": "TCHOL_L.XPT",
+      "http_status": 200,
+      "sha256": "33672b2e18b5b2dc43531b813ef5304101063757d8a5f3f023870be77f6ade1d",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/TCHOL_L.htm"
+    },
+    {
+      "bytes": 74753,
+      "cycle": "2021_2023",
+      "filename": "TRIGLY_L.XPT",
+      "http_status": 200,
+      "sha256": "956652402bba82d0775da3101ecff32f978ff11e4c4288d5928c21576b3957cf",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/TRIGLY_L.htm"
+    }
+  ],
+  "receipt_type": "nhanes-official-codebook-receipt-v1",
+  "schema_version": 1,
+  "source_count": 99
+}

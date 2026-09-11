@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-10",
+  "url": "https://stancsz.github.io/frailty-index-deficit-accumulation-model/",
+  "published_commit": "7fc8fcab408fa755c9367e04867de0a39f31d98c",
+  "observed_http_status": 200,
+  "remote_runs": [
+    {
+      "workflow": "verify",
+      "run_id": 34548964641,
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "7fc8fcab408fa755c9367e04867de0a39f31d98c"
+    },
+    {
+      "workflow": "deploy-pages",
+      "run_id": 34548964642,
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "7fc8fcab408fa755c9367e04867de0a39f31d98c"
+    }
+  ],
+  "assets": {
+    "index.html": {
+      "status": 200,
+      "bytes_utf8": 113325,
+      "sha256": "5302b329b1eab65d6c3778e3cde2a838276e404b8d9a509cba72135632983223"
+    },
+    "site.css": {
+      "status": 200,
+      "bytes_utf8": 33074,
+      "sha256": "04afecc3b89bda345833a2539c8afbf46576cbd15dce43ca03dbabe8c3857d14"
+    },
+    "site.js": {
+      "status": 200,
+      "bytes_utf8": 62164,
+      "sha256": "32898369fa9f8140a8ce91740d4a9c42cf4f35060238db7c58ab848019a02fcf"
+    },
+    "demo-data.json": {
+      "status": 200,
+      "bytes_utf8": 438101,
+      "sha256": "c2ff76eb5fd1d8eac7926d54a79959254ada7be13d4b7aac53820be4659f1e7d"
+    },
+    "test-receipt.json": {
+      "status": 200,
+      "bytes_utf8": 285,
+      "sha256": "70a34e2ab80512190c505a61ac0020b1dd5f2b146af1ccbccb97c01f57c7e224"
+    },
+    "RESEARCH_REPORT.md": {
+      "status": 200,
+      "bytes_utf8": 29104,
+      "sha256": "0b7d190c97dacac301254996aa2db049ff497dd9c6f95d66934a82e600a7df50"
+    },
+    "CLAIM_INVENTORY_2026-09-10.md": {
+      "status": 404
+    }
+  },
+  "content_checks": {
+    "start_with_what_was_measured": true,
+    "canonical_verifier_receipt_label": false,
+    "old_local_software_receipt_label": true,
+    "confidence_slogan_present": true,
+    "claim_inventory_link_present": false
+  },
+  "status": "published_surface_not_reconciled",
+  "limitations": [
+    "The published commit has successful remote verify and Pages runs, but it is not the current dirty local candidate.",
+    "The live page still contains superseded confidence and test-count wording.",
+    "The current claim inventory is not published and returns 404.",
+    "No conclusion about clinical validity or production readiness follows from the successful software workflows."
+  ]
+}

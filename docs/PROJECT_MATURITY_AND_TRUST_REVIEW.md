@@ -5,7 +5,7 @@ research-showcase quality is not yet demonstrated. This is a bounded audit and
 goal-setting document, not clinical, security or production certification.
 
 The active execution contract is
-[T1: trustworthy research showcase](../goals/active/trustworthy-research-showcase/GOAL.md).
+[T1: trustworthy research showcase](../goals/completed/trustworthy-research-showcase/GOAL.md).
 Root GOAL and IR0-IR7 remain authoritative for scientific and release boundaries.
 
 ## What was inspected
@@ -38,11 +38,17 @@ Earlier browser receipts are supporting local evidence, not new live passes.
 | Dimension | Observed strength | Remaining gap |
 |---|---|---|
 | Measurement integrity | Canonical inputs, MVV, comparison guard and explicit missingness have local checks. | Qualified interpretation review and final-candidate regression evidence. |
-| Engineering | Full verifier passes locally; Windows/Linux CI and wheel smokes are defined; local Pages now runs pytest. | Latest remote verify/Pages fail; final published candidate identity is absent. |
+| Engineering | Full verifier passes locally; the fresh temporary current candidate `5dd24112f6582c211b4c93b505db61c2c1e66b26` also passes locked Windows installation, docs checks and installed-wheel/loopback HTTP smoke; Windows/Linux CI and wheel smokes are defined; local Pages now runs pytest. Remote verify run `34548964641` and Pages run `34548964642` succeeded for `7fc8fca`. | The candidate snapshot predates final reference reconciliation and is not owner-frozen, pushed or published; remote same-SHA Linux and final live identity evidence remain open. |
 | User experience | Synthetic profiles, local preview, report and export controls exist. | Technical-first hierarchy; missing completed user study; visual review gaps. |
 | Scientific transparency | Explicit synthetic panel/development predictor and blocked E-005. | Citations and fixtures do not establish model validity; some public copy conflicts. |
-| Publication trust | Inspectable repository and evidence files. | Live HTML is older, report URL is absent, pass labels and assets differ locally. |
+| Publication trust | Inspectable repository and evidence files; the live audit records HTTP 200 and successful Pages execution for `7fc8fca`. | The live HTML still has superseded wording, the current claim inventory returns 404, and live assets are not reconciled with the current dirty candidate. |
 | Ownership/operations | Privacy and operational boundaries are documented. | Evaluation terms/owner clarity, working private reporting route, runtime-support evidence and later staging controls. |
+
+The IR4 preparation subdeliverable is now explicit: the repository contains a
+non-approving musculoskeletal protocol, a public-data manifest with pending
+hashes and review fields, and a shape validator that passes. The T1 reviewer
+package also contains executable human-review materials. These preparations do
+not close qualified review, IR0-IR3, IR4-IR7, or E-005.
 
 No aggregate maturity percentage is assigned. These dimensions have different
 evidence requirements and cannot substitute for one another.

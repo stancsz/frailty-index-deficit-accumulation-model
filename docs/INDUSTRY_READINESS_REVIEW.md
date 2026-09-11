@@ -4,6 +4,12 @@ Reviewed 2026-09-10. Decision: research prototype; not a production release.
 This is a source, live-site, CI, and targeted behavior review, not clinical
 validation or a comprehensive penetration/accessibility audit.
 
+Documentation authority: This dated review follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and the active evidence contract in
+[`GOAL.md`](../GOAL.md). It records evidence and gaps; it does not override
+the authority layers or establish production readiness.
+
 ## Verdict and release strategy
 
 The useful core is structured measurement review: preserve observations, expose

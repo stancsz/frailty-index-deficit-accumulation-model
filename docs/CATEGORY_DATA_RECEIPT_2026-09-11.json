@@ -1,0 +1,4150 @@
+{
+  "boundary": {
+    "clinical_use": false,
+    "e005_status": "blocked",
+    "measurements_emitted": false,
+    "numeric_category_age": "withheld",
+    "raw_rows_emitted": false
+  },
+  "categories": {
+    "blood_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 260.0,
+            "mean": 85.654412,
+            "median": 83.0,
+            "min": 15.0,
+            "n": 2992
+          },
+          "field": "LBXAPB",
+          "nonmissing_rows": 2992,
+          "source": "APOB_G.XPT",
+          "unique_participants_with_value": 2992
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.6,
+            "mean": 0.856544,
+            "median": 0.83,
+            "min": 0.15,
+            "n": 2992
+          },
+          "field": "LBDAPBSI",
+          "nonmissing_rows": 2992,
+          "source": "APOB_G.XPT",
+          "unique_participants_with_value": 2992
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 5.5,
+            "mean": 4.306861,
+            "median": 4.3,
+            "min": 2.1,
+            "n": 5976
+          },
+          "field": "LBXSAL",
+          "nonmissing_rows": 5976,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5976
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.51,
+            "mean": 0.876111,
+            "median": 0.82,
+            "min": 0.16,
+            "n": 5976
+          },
+          "field": "LBXSCR",
+          "nonmissing_rows": 5976,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5976
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 54.7,
+            "mean": 6.995549,
+            "median": 6.7,
+            "min": 1.7,
+            "n": 7953
+          },
+          "field": "LBXWBCSI",
+          "nonmissing_rows": 7953,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7953
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 29.8,
+            "mean": 12.946599,
+            "median": 12.7,
+            "min": 10.8,
+            "n": 7953
+          },
+          "field": "LBXRDW",
+          "nonmissing_rows": 7953,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7953
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.05,
+            "mean": 4.561022,
+            "median": 4.54,
+            "min": 2.49,
+            "n": 7953
+          },
+          "field": "LBXRBCSI",
+          "nonmissing_rows": 7953,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7953
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 19.6,
+            "mean": 13.589451,
+            "median": 13.6,
+            "min": 6.1,
+            "n": 7953
+          },
+          "field": "LBXHGB",
+          "nonmissing_rows": 7953,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7953
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 57.7,
+            "mean": 39.833975,
+            "median": 39.6,
+            "min": 20.6,
+            "n": 7953
+          },
+          "field": "LBXHCT",
+          "nonmissing_rows": 7953,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7953
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 113.8,
+            "mean": 87.554898,
+            "median": 88.1,
+            "min": 50.5,
+            "n": 7953
+          },
+          "field": "LBXMCVSI",
+          "nonmissing_rows": 7953,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7953
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 681.0,
+            "mean": 252.079225,
+            "median": 244.0,
+            "min": 13.0,
+            "n": 7952
+          },
+          "field": "LBXPLTSI",
+          "nonmissing_rows": 7952,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7952
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 523.0,
+            "mean": 183.201631,
+            "median": 179.0,
+            "min": 59.0,
+            "n": 6988
+          },
+          "field": "LBXTC",
+          "nonmissing_rows": 6988,
+          "source": "TCHOL_G.XPT",
+          "unique_participants_with_value": 6988
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1562.0,
+            "mean": 119.480936,
+            "median": 96.0,
+            "min": 18.0,
+            "n": 2990
+          },
+          "field": "LBXTR",
+          "nonmissing_rows": 2990,
+          "source": "TRIGLY_G.XPT",
+          "unique_participants_with_value": 2990
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 331.0,
+            "mean": 109.496941,
+            "median": 106.0,
+            "min": 9.0,
+            "n": 2942
+          },
+          "field": "LBDLDL",
+          "nonmissing_rows": 2942,
+          "source": "TRIGLY_G.XPT",
+          "unique_participants_with_value": 2942
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "body_composition": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 216.1,
+            "mean": 61.528919,
+            "median": 64.5,
+            "min": 3.6,
+            "n": 9243
+          },
+          "field": "BMXWT",
+          "nonmissing_rows": 9243,
+          "source": "BMX_G.XPT",
+          "unique_participants_with_value": 9243
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 204.5,
+            "mean": 155.425374,
+            "median": 162.1,
+            "min": 82.0,
+            "n": 8615
+          },
+          "field": "BMXHT",
+          "nonmissing_rows": 8615,
+          "source": "BMX_G.XPT",
+          "unique_participants_with_value": 8615
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 82.1,
+            "mean": 25.339537,
+            "median": 24.5,
+            "min": 12.4,
+            "n": 8602
+          },
+          "field": "BMXBMI",
+          "nonmissing_rows": 8602,
+          "source": "BMX_G.XPT",
+          "unique_participants_with_value": 8602
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 176.0,
+            "mean": 86.223976,
+            "median": 86.9,
+            "min": 38.7,
+            "n": 8204
+          },
+          "field": "BMXWAIST",
+          "nonmissing_rows": 8204,
+          "source": "BMX_G.XPT",
+          "unique_participants_with_value": 8204
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 58.1,
+            "mean": 28.326615,
+            "median": 29.25,
+            "min": 10.5,
+            "n": 8826
+          },
+          "field": "BMXARMC",
+          "nonmissing_rows": 8826,
+          "source": "BMX_G.XPT",
+          "unique_participants_with_value": 8826
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 40.4,
+            "mean": 21.063532,
+            "median": 20.6,
+            "min": 10.0,
+            "n": 6795
+          },
+          "field": "BMXSAD1",
+          "nonmissing_rows": 6795,
+          "source": "BMX_G.XPT",
+          "unique_participants_with_value": 6795
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 10626.5,
+            "mean": 1899.81389,
+            "median": 1594.3,
+            "min": 151.4,
+            "n": 4694
+          },
+          "field": "DXXANFM",
+          "nonmissing_rows": 4694,
+          "source": "DXXAG_G.XPT",
+          "unique_participants_with_value": 4694
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 10104.3,
+            "mean": 3459.744759,
+            "median": 3357.35,
+            "min": 793.1,
+            "n": 4694
+          },
+          "field": "DXXANLM",
+          "nonmissing_rows": 4694,
+          "source": "DXXAG_G.XPT",
+          "unique_participants_with_value": 4694
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1918.66,
+            "mean": 375.709333,
+            "median": 296.92,
+            "min": 3.97,
+            "n": 4693
+          },
+          "field": "DXXVFATM",
+          "nonmissing_rows": 4693,
+          "source": "DXXAG_G.XPT",
+          "unique_participants_with_value": 4693
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "bone_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1.88,
+            "mean": 1.049147,
+            "median": 1.065,
+            "min": 0.598,
+            "n": 4524
+          },
+          "field": "DXDTOBMD",
+          "nonmissing_rows": 4524,
+          "source": "DXX_G.XPT",
+          "unique_participants_with_value": 4524
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 4900.82,
+            "mean": 2093.069487,
+            "median": 2127.665,
+            "min": 634.7,
+            "n": 4524
+          },
+          "field": "DXDTOBMC",
+          "nonmissing_rows": 4524,
+          "source": "DXX_G.XPT",
+          "unique_participants_with_value": 4524
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 102288.7,
+            "mean": 22996.763459,
+            "median": 20957.9,
+            "min": 3410.9,
+            "n": 4521
+          },
+          "field": "DXDTOFAT",
+          "nonmissing_rows": 4521,
+          "source": "DXX_G.XPT",
+          "unique_participants_with_value": 4521
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1.813,
+            "mean": 0.926202,
+            "median": 0.937,
+            "min": 0.467,
+            "n": 4445
+          },
+          "field": "DXDSTBMD",
+          "nonmissing_rows": 4445,
+          "source": "DXX_G.XPT",
+          "unique_participants_with_value": 4445
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 4325.99,
+            "mean": 1643.168292,
+            "median": 1659.62,
+            "min": 410.14,
+            "n": 4445
+          },
+          "field": "DXDSTBMC",
+          "nonmissing_rows": 4445,
+          "source": "DXX_G.XPT",
+          "unique_participants_with_value": 4445
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 100159.8,
+            "mean": 21910.853763,
+            "median": 19846.2,
+            "min": 2587.6,
+            "n": 4544
+          },
+          "field": "DXDSTFAT",
+          "nonmissing_rows": 4544,
+          "source": "DXX_G.XPT",
+          "unique_participants_with_value": 4544
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.477,
+            "mean": 0.970957,
+            "median": 0.983,
+            "min": 0.518,
+            "n": 4620
+          },
+          "field": "DXXLSBMD",
+          "nonmissing_rows": 4620,
+          "source": "DXX_G.XPT",
+          "unique_participants_with_value": 4620
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "brain_cognitive_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 6.0,
+            "mean": 1.561944,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1687
+          },
+          "field": "CFASTAT",
+          "nonmissing_rows": 1687,
+          "source": "CFQ_G.XPT",
+          "unique_participants_with_value": 1687
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 3.0,
+            "mean": 1.066887,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1510
+          },
+          "field": "CFDCCS",
+          "nonmissing_rows": 1510,
+          "source": "CFQ_G.XPT",
+          "unique_participants_with_value": 1510
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 6.0,
+            "mean": 4.20339,
+            "median": 5.0,
+            "min": 1.0,
+            "n": 59
+          },
+          "field": "CFDCRNC",
+          "nonmissing_rows": 59,
+          "source": "CFQ_G.XPT",
+          "unique_participants_with_value": 59
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 4.342195,
+            "median": 4.0,
+            "min": 0.0,
+            "n": 1467
+          },
+          "field": "CFDCST1",
+          "nonmissing_rows": 1467,
+          "source": "CFQ_G.XPT",
+          "unique_participants_with_value": 1467
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 10.0,
+            "mean": 5.416781,
+            "median": 6.0,
+            "min": 0.0,
+            "n": 1454
+          },
+          "field": "CFDCSR",
+          "nonmissing_rows": 1454,
+          "source": "CFQ_G.XPT",
+          "unique_participants_with_value": 1454
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 4.0,
+            "mean": 0.167689,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 1467
+          },
+          "field": "CFDCIT1",
+          "nonmissing_rows": 1467,
+          "source": "CFQ_G.XPT",
+          "unique_participants_with_value": 1467
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 40.0,
+            "mean": 16.198068,
+            "median": 16.0,
+            "min": 1.0,
+            "n": 1449
+          },
+          "field": "CFDAST",
+          "nonmissing_rows": 1449,
+          "source": "CFQ_G.XPT",
+          "unique_participants_with_value": 1449
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 3.0,
+            "mean": 1.076159,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1510
+          },
+          "field": "CFDAPP",
+          "nonmissing_rows": 1510,
+          "source": "CFQ_G.XPT",
+          "unique_participants_with_value": 1510
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 100.0,
+            "mean": 44.912799,
+            "median": 44.0,
+            "min": 0.0,
+            "n": 1422
+          },
+          "field": "CFDDS",
+          "nonmissing_rows": 1422,
+          "source": "CFQ_G.XPT",
+          "unique_participants_with_value": 1422
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "cardiorespiratory_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 5.0,
+            "mean": 1.377051,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 7495
+          },
+          "field": "ENXSTAT",
+          "nonmissing_rows": 7495,
+          "source": "ENX_G.XPT",
+          "unique_participants_with_value": 7495
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 10.0,
+            "mean": 3.858913,
+            "median": 3.0,
+            "min": 1.0,
+            "n": 6939
+          },
+          "field": "ENAATMPT",
+          "nonmissing_rows": 6939,
+          "source": "ENX_G.XPT",
+          "unique_participants_with_value": 6939
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 177.0,
+            "mean": 17.617936,
+            "median": 13.0,
+            "min": 5.0,
+            "n": 5999
+          },
+          "field": "ENXTR1Q",
+          "nonmissing_rows": 5999,
+          "source": "ENX_G.XPT",
+          "unique_participants_with_value": 5999
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 205.0,
+            "mean": 18.13603,
+            "median": 13.0,
+            "min": 5.0,
+            "n": 6131
+          },
+          "field": "ENXTR2Q",
+          "nonmissing_rows": 6131,
+          "source": "ENX_G.XPT",
+          "unique_participants_with_value": 6131
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 197.0,
+            "mean": 16.90728,
+            "median": 12.5,
+            "min": 3.5,
+            "n": 6525
+          },
+          "field": "ENXMEAN",
+          "nonmissing_rows": 6525,
+          "source": "ENX_G.XPT",
+          "unique_participants_with_value": 6525
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 172.0,
+            "mean": 74.261756,
+            "median": 74.0,
+            "min": 0.0,
+            "n": 7060
+          },
+          "field": "BPXPLS",
+          "nonmissing_rows": 7060,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 7060
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 238.0,
+            "mean": 119.169923,
+            "median": 116.0,
+            "min": 74.0,
+            "n": 6756
+          },
+          "field": "BPXSY1",
+          "nonmissing_rows": 6756,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6756
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 120.0,
+            "mean": 66.895796,
+            "median": 68.0,
+            "min": 0.0,
+            "n": 6756
+          },
+          "field": "BPXDI1",
+          "nonmissing_rows": 6756,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6756
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 234.0,
+            "mean": 118.696873,
+            "median": 116.0,
+            "min": 74.0,
+            "n": 6908
+          },
+          "field": "BPXSY2",
+          "nonmissing_rows": 6908,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6908
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 134.0,
+            "mean": 66.284598,
+            "median": 68.0,
+            "min": 0.0,
+            "n": 6908
+          },
+          "field": "BPXDI2",
+          "nonmissing_rows": 6908,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6908
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 232.0,
+            "mean": 118.202111,
+            "median": 116.0,
+            "min": 74.0,
+            "n": 6917
+          },
+          "field": "BPXSY3",
+          "nonmissing_rows": 6917,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6917
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 128.0,
+            "mean": 65.909787,
+            "median": 68.0,
+            "min": 0.0,
+            "n": 6917
+          },
+          "field": "BPXDI3",
+          "nonmissing_rows": 6917,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6917
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7863.0,
+            "mean": 3502.01383,
+            "median": 3442.5,
+            "min": 592.0,
+            "n": 6652
+          },
+          "field": "SPXNFVC",
+          "nonmissing_rows": 6652,
+          "source": "SPX_G.XPT",
+          "unique_participants_with_value": 6652
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 6923.0,
+            "mean": 2836.134847,
+            "median": 2790.0,
+            "min": 409.0,
+            "n": 6652
+          },
+          "field": "SPXNFEV1",
+          "nonmissing_rows": 6652,
+          "source": "SPX_G.XPT",
+          "unique_participants_with_value": 6652
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9280.0,
+            "mean": 2900.116506,
+            "median": 2768.5,
+            "min": 124.0,
+            "n": 6652
+          },
+          "field": "SPXNF257",
+          "nonmissing_rows": 6652,
+          "source": "SPX_G.XPT",
+          "unique_participants_with_value": 6652
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 19024.0,
+            "mean": 7250.223241,
+            "median": 7175.5,
+            "min": 901.0,
+            "n": 6652
+          },
+          "field": "SPXNPEF",
+          "nonmissing_rows": 6652,
+          "source": "SPX_G.XPT",
+          "unique_participants_with_value": 6652
+        },
+        {
+          "field": "SPXNQFVC",
+          "nonmissing_rows": 7495,
+          "source": "SPX_G.XPT",
+          "unique_participants_with_value": 7495
+        },
+        {
+          "field": "SPXNQFV1",
+          "nonmissing_rows": 7495,
+          "source": "SPX_G.XPT",
+          "unique_participants_with_value": 7495
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 12.0,
+            "mean": 4.925179,
+            "median": 5.0,
+            "min": 0.0,
+            "n": 6696
+          },
+          "field": "SPDNACC",
+          "nonmissing_rows": 6696,
+          "source": "SPX_G.XPT",
+          "unique_participants_with_value": 6696
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "cardiovascular_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 260.0,
+            "mean": 85.654412,
+            "median": 83.0,
+            "min": 15.0,
+            "n": 2992
+          },
+          "field": "LBXAPB",
+          "nonmissing_rows": 2992,
+          "source": "APOB_G.XPT",
+          "unique_participants_with_value": 2992
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.6,
+            "mean": 0.856544,
+            "median": 0.83,
+            "min": 0.15,
+            "n": 2992
+          },
+          "field": "LBDAPBSI",
+          "nonmissing_rows": 2992,
+          "source": "APOB_G.XPT",
+          "unique_participants_with_value": 2992
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 172.0,
+            "mean": 74.261756,
+            "median": 74.0,
+            "min": 0.0,
+            "n": 7060
+          },
+          "field": "BPXPLS",
+          "nonmissing_rows": 7060,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 7060
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 238.0,
+            "mean": 119.169923,
+            "median": 116.0,
+            "min": 74.0,
+            "n": 6756
+          },
+          "field": "BPXSY1",
+          "nonmissing_rows": 6756,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6756
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 120.0,
+            "mean": 66.895796,
+            "median": 68.0,
+            "min": 0.0,
+            "n": 6756
+          },
+          "field": "BPXDI1",
+          "nonmissing_rows": 6756,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6756
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 234.0,
+            "mean": 118.696873,
+            "median": 116.0,
+            "min": 74.0,
+            "n": 6908
+          },
+          "field": "BPXSY2",
+          "nonmissing_rows": 6908,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6908
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 134.0,
+            "mean": 66.284598,
+            "median": 68.0,
+            "min": 0.0,
+            "n": 6908
+          },
+          "field": "BPXDI2",
+          "nonmissing_rows": 6908,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6908
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 232.0,
+            "mean": 118.202111,
+            "median": 116.0,
+            "min": 74.0,
+            "n": 6917
+          },
+          "field": "BPXSY3",
+          "nonmissing_rows": 6917,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6917
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 128.0,
+            "mean": 65.909787,
+            "median": 68.0,
+            "min": 0.0,
+            "n": 6917
+          },
+          "field": "BPXDI3",
+          "nonmissing_rows": 6917,
+          "source": "BPX_G.XPT",
+          "unique_participants_with_value": 6917
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 523.0,
+            "mean": 183.201631,
+            "median": 179.0,
+            "min": 59.0,
+            "n": 6988
+          },
+          "field": "LBXTC",
+          "nonmissing_rows": 6988,
+          "source": "TCHOL_G.XPT",
+          "unique_participants_with_value": 6988
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1562.0,
+            "mean": 119.480936,
+            "median": 96.0,
+            "min": 18.0,
+            "n": 2990
+          },
+          "field": "LBXTR",
+          "nonmissing_rows": 2990,
+          "source": "TRIGLY_G.XPT",
+          "unique_participants_with_value": 2990
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 331.0,
+            "mean": 109.496941,
+            "median": 106.0,
+            "min": 9.0,
+            "n": 2942
+          },
+          "field": "LBDLDL",
+          "nonmissing_rows": 2942,
+          "source": "TRIGLY_G.XPT",
+          "unique_participants_with_value": 2942
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "fluid_and_cellular": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 6.0,
+            "mean": 1.691875,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 5329
+          },
+          "field": "BIAEXSTS",
+          "nonmissing_rows": 5329,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 5329
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.5076,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 5329
+          },
+          "field": "BIDFIT",
+          "nonmissing_rows": 5329,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 5329
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1736.1,
+            "mean": 663.986474,
+            "median": 656.1,
+            "min": 396.5,
+            "n": 4229
+          },
+          "field": "BIDRECF",
+          "nonmissing_rows": 4229,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4229
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 4153.0,
+            "mean": 1380.065902,
+            "median": 1345.8,
+            "min": 224.8,
+            "n": 4229
+          },
+          "field": "BIDRICF",
+          "nonmissing_rows": 4229,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4229
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 36.75,
+            "mean": 1.844557,
+            "median": 1.69,
+            "min": 0.15,
+            "n": 4229
+          },
+          "field": "BIDCM",
+          "nonmissing_rows": 4229,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4229
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 193.439,
+            "mean": 5.003309,
+            "median": 4.493,
+            "min": -33.812,
+            "n": 4229
+          },
+          "field": "BIDTD",
+          "nonmissing_rows": 4229,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4229
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1.1,
+            "mean": 0.671389,
+            "median": 0.675,
+            "min": 0.302,
+            "n": 4229
+          },
+          "field": "BIDALPHA",
+          "nonmissing_rows": 4229,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4229
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 896.0,
+            "mean": 51.1511,
+            "median": 47.0,
+            "min": 2.0,
+            "n": 4229
+          },
+          "field": "BIDFC",
+          "nonmissing_rows": 4229,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4229
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 29.63,
+            "mean": 14.935982,
+            "median": 14.72,
+            "min": 5.36,
+            "n": 4159
+          },
+          "field": "BIDECF",
+          "nonmissing_rows": 4159,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4159
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 77.31,
+            "mean": 34.942888,
+            "median": 33.85,
+            "min": 10.74,
+            "n": 4159
+          },
+          "field": "BIDTBW",
+          "nonmissing_rows": 4159,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4159
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 50.02,
+            "mean": 20.006906,
+            "median": 19.15,
+            "min": 5.33,
+            "n": 4159
+          },
+          "field": "BIDICF",
+          "nonmissing_rows": 4159,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4159
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 105.6,
+            "mean": 46.954629,
+            "median": 45.4,
+            "min": 14.1,
+            "n": 4159
+          },
+          "field": "BIDFFM",
+          "nonmissing_rows": 4159,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4159
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 78.3,
+            "mean": 20.669151,
+            "median": 18.7,
+            "min": 1.3,
+            "n": 4159
+          },
+          "field": "BIDFAT",
+          "nonmissing_rows": 4159,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4159
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 60.2,
+            "mean": 29.900769,
+            "median": 30.3,
+            "min": 2.1,
+            "n": 4159
+          },
+          "field": "BIDPFAT",
+          "nonmissing_rows": 4159,
+          "source": "BIX_C.XPT",
+          "unique_participants_with_value": 4159
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "immune_inflammatory_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 18.01,
+            "mean": 0.338788,
+            "median": 0.13,
+            "min": 0.01,
+            "n": 8299
+          },
+          "field": "LBXCRP",
+          "nonmissing_rows": 8299,
+          "source": "CRP_F.XPT",
+          "unique_participants_with_value": 8299
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 197.0,
+            "mean": 16.90728,
+            "median": 12.5,
+            "min": 3.5,
+            "n": 6525
+          },
+          "field": "ENXMEAN",
+          "nonmissing_rows": 6525,
+          "source": "ENX_G.XPT",
+          "unique_participants_with_value": 6525
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 54.7,
+            "mean": 6.995549,
+            "median": 6.7,
+            "min": 1.7,
+            "n": 7953
+          },
+          "field": "LBXWBCSI",
+          "nonmissing_rows": 7953,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7953
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 29.8,
+            "mean": 12.946599,
+            "median": 12.7,
+            "min": 10.8,
+            "n": 7953
+          },
+          "field": "LBXRDW",
+          "nonmissing_rows": 7953,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7953
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 83.2,
+            "mean": 33.83288,
+            "median": 32.6,
+            "min": 2.7,
+            "n": 7944
+          },
+          "field": "LBXLYPCT",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 66.9,
+            "mean": 7.701221,
+            "median": 7.5,
+            "min": 0.6,
+            "n": 7944
+          },
+          "field": "LBXMOPCT",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 96.6,
+            "mean": 54.663394,
+            "median": 55.6,
+            "min": 0.8,
+            "n": 7944
+          },
+          "field": "LBXNEPCT",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 28.9,
+            "mean": 3.118341,
+            "median": 2.5,
+            "min": 0.0,
+            "n": 7944
+          },
+          "field": "LBXEOPCT",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 14.4,
+            "mean": 0.725793,
+            "median": 0.6,
+            "min": 0.0,
+            "n": 7944
+          },
+          "field": "LBXBAPCT",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 43.7,
+            "mean": 2.314904,
+            "median": 2.1,
+            "min": 0.2,
+            "n": 7944
+          },
+          "field": "LBDLYMNO",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 10.2,
+            "mean": 0.523401,
+            "median": 0.5,
+            "min": 0.0,
+            "n": 7944
+          },
+          "field": "LBDMONO",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 18.5,
+            "mean": 3.895859,
+            "median": 3.6,
+            "min": 0.1,
+            "n": 7944
+          },
+          "field": "LBDNENO",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 3.7,
+            "mean": 0.214615,
+            "median": 0.2,
+            "min": 0.0,
+            "n": 7944
+          },
+          "field": "LBDEONO",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1.4,
+            "mean": 0.040395,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 7944
+          },
+          "field": "LBDBANO",
+          "nonmissing_rows": 7944,
+          "source": "CBC_G.XPT",
+          "unique_participants_with_value": 7944
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "joint_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.708774,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5106
+          },
+          "field": "ARQ010",
+          "nonmissing_rows": 5106,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 5106
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 538
+          },
+          "field": "ARQ020A",
+          "nonmissing_rows": 538,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 538
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.0,
+            "mean": 2.0,
+            "median": 2.0,
+            "min": 2.0,
+            "n": 334
+          },
+          "field": "ARQ020B",
+          "nonmissing_rows": 334,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 334
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 3.0,
+            "mean": 3.0,
+            "median": 3.0,
+            "min": 3.0,
+            "n": 314
+          },
+          "field": "ARQ020C",
+          "nonmissing_rows": 314,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 314
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 4.0,
+            "mean": 4.0,
+            "median": 4.0,
+            "min": 4.0,
+            "n": 989
+          },
+          "field": "ARQ020D",
+          "nonmissing_rows": 989,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 989
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 5.0,
+            "mean": 5.0,
+            "median": 5.0,
+            "min": 5.0,
+            "n": 456
+          },
+          "field": "ARQ020E",
+          "nonmissing_rows": 456,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 456
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 6.0,
+            "mean": 6.0,
+            "median": 6.0,
+            "min": 6.0,
+            "n": 245
+          },
+          "field": "ARQ020F",
+          "nonmissing_rows": 245,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 245
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 7.0,
+            "median": 7.0,
+            "min": 7.0,
+            "n": 79
+          },
+          "field": "ARQ020G",
+          "nonmissing_rows": 79,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 79
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 3.309423,
+            "median": 3.0,
+            "min": 1.0,
+            "n": 1422
+          },
+          "field": "ARQ040",
+          "nonmissing_rows": 1422,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 1422
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.405063,
+            "median": 3.0,
+            "min": 1.0,
+            "n": 1422
+          },
+          "field": "ARQ050",
+          "nonmissing_rows": 1422,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 1422
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.485232,
+            "median": 3.0,
+            "min": 1.0,
+            "n": 1422
+          },
+          "field": "ARQ060",
+          "nonmissing_rows": 1422,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 1422
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.54571,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1422
+          },
+          "field": "ARQ070",
+          "nonmissing_rows": 1422,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 1422
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.396957,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 723
+          },
+          "field": "ARQ073",
+          "nonmissing_rows": 723,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 723
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.166667,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 84
+          },
+          "field": "ARQ077",
+          "nonmissing_rows": 84,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 84
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.444444,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1422
+          },
+          "field": "ARQ080",
+          "nonmissing_rows": 1422,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 1422
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.682018,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 456
+          },
+          "field": "ARQ100",
+          "nonmissing_rows": 456,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 456
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.867998,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5106
+          },
+          "field": "ARQ110",
+          "nonmissing_rows": 5106,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 5106
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.020368,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5106
+          },
+          "field": "ARD125A",
+          "nonmissing_rows": 5106,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 5106
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.003329,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5106
+          },
+          "field": "ARQ125C",
+          "nonmissing_rows": 5106,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 5106
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.003329,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5106
+          },
+          "field": "ARQ125D",
+          "nonmissing_rows": 5106,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 5106
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.00803,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5106
+          },
+          "field": "ARQ125E",
+          "nonmissing_rows": 5106,
+          "source": "ARQ_F.XPT",
+          "unique_participants_with_value": 5106
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 3.0,
+            "mean": 1.096981,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 5001
+          },
+          "field": "ARDEXSTS",
+          "nonmissing_rows": 5001,
+          "source": "ARX_F.XPT",
+          "unique_participants_with_value": 5001
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 16.5,
+            "mean": 0.269016,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4938
+          },
+          "field": "ARXO2WD",
+          "nonmissing_rows": 4938,
+          "source": "ARX_F.XPT",
+          "unique_participants_with_value": 4938
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 148.0,
+            "mean": 96.644355,
+            "median": 96.0,
+            "min": 65.4,
+            "n": 4615
+          },
+          "field": "ARXCCIN",
+          "nonmissing_rows": 4615,
+          "source": "ARX_F.XPT",
+          "unique_participants_with_value": 4615
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 144.8,
+            "mean": 92.105005,
+            "median": 91.5,
+            "min": 62.6,
+            "n": 4615
+          },
+          "field": "ARXCCEX",
+          "nonmissing_rows": 4615,
+          "source": "ARX_F.XPT",
+          "unique_participants_with_value": 4615
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 18.5,
+            "mean": 4.53935,
+            "median": 4.3,
+            "min": 0.0,
+            "n": 4615
+          },
+          "field": "ARDDINEX",
+          "nonmissing_rows": 4615,
+          "source": "ARX_F.XPT",
+          "unique_participants_with_value": 4615
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.3,
+            "mean": 0.36065,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4615
+          },
+          "field": "ARXXDIST",
+          "nonmissing_rows": 4615,
+          "source": "ARX_F.XPT",
+          "unique_participants_with_value": 4615
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 11.0,
+            "mean": 3.897921,
+            "median": 3.8,
+            "min": 0.0,
+            "n": 4665
+          },
+          "field": "ARDLFTL",
+          "nonmissing_rows": 4665,
+          "source": "ARX_F.XPT",
+          "unique_participants_with_value": 4665
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.480881,
+            "median": 1.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPKLR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.441483,
+            "median": 1.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPKLL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.833526,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPOMFR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.784087,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPOMFL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.915411,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPOMTR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.886829,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPOMTL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.791039,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPOLFR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.755118,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPOLFL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.835458,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPOLTR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.792198,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPOLTL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.796833,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPSMFR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.770568,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPSMFL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.828891,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPSMTR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.808806,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPSMTL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.680572,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPSLFR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.642719,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPSLFL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.694477,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPSLTR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.65083,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPSLTL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.693318,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPCHOR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.672847,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPCHOL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.528776,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPJRR",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.517188,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 2589
+          },
+          "field": "XRPJRL",
+          "nonmissing_rows": 2589,
+          "source": "xr.dat",
+          "unique_participants_with_value": 2589
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.764124,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5558
+          },
+          "field": "MCQ160A",
+          "nonmissing_rows": 5558,
+          "source": "MCQ_G.XPT",
+          "unique_participants_with_value": 5558
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.961684,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5559
+          },
+          "field": "MCQ160N",
+          "nonmissing_rows": 5559,
+          "source": "MCQ_G.XPT",
+          "unique_participants_with_value": 5559
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99999.0,
+            "mean": 2906.133333,
+            "median": 51.0,
+            "min": 0.0,
+            "n": 1365
+          },
+          "field": "MCQ180A",
+          "nonmissing_rows": 1365,
+          "source": "MCQ_G.XPT",
+          "unique_participants_with_value": 1365
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99999.0,
+            "mean": 2581.194093,
+            "median": 50.0,
+            "min": 9.0,
+            "n": 237
+          },
+          "field": "MCQ180N",
+          "nonmissing_rows": 237,
+          "source": "MCQ_G.XPT",
+          "unique_participants_with_value": 237
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.898543,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5559
+          },
+          "field": "PFQ054",
+          "nonmissing_rows": 5559,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 5559
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.979449,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 4136
+          },
+          "field": "PFQ059",
+          "nonmissing_rows": 4136,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 4136
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.387545,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1943
+          },
+          "field": "PFQ061B",
+          "nonmissing_rows": 1943,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 1943
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.249099,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1943
+          },
+          "field": "PFQ061C",
+          "nonmissing_rows": 1943,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 1943
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.848328,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061D",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.572054,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061E",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.562898,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061F",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.406449,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061G",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.201035,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061H",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.363057,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061I",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.277866,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061J",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.100318,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061K",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.216162,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061L",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.915605,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061M",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.368232,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061N",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.302548,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061O",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.237659,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061P",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.500398,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061Q",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.523089,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061R",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.119029,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061S",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.915605,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061T",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "kidney_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 14800.0,
+            "mean": 44.954997,
+            "median": 8.2,
+            "min": 0.21,
+            "n": 7636
+          },
+          "field": "URXUMA",
+          "nonmissing_rows": 7636,
+          "source": "ALB_CR_G.XPT",
+          "unique_participants_with_value": 7636
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 14800.0,
+            "mean": 44.954997,
+            "median": 8.2,
+            "min": 0.21,
+            "n": 7636
+          },
+          "field": "URXUMS",
+          "nonmissing_rows": 7636,
+          "source": "ALB_CR_G.XPT",
+          "unique_participants_with_value": 7636
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 800.0,
+            "mean": 124.60516,
+            "median": 110.0,
+            "min": 4.0,
+            "n": 7636
+          },
+          "field": "URXUCR",
+          "nonmissing_rows": 7636,
+          "source": "ALB_CR_G.XPT",
+          "unique_participants_with_value": 7636
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 70720.0,
+            "mean": 11015.096124,
+            "median": 9724.0,
+            "min": 353.6,
+            "n": 7636
+          },
+          "field": "URXCRS",
+          "nonmissing_rows": 7636,
+          "source": "ALB_CR_G.XPT",
+          "unique_participants_with_value": 7636
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 92500.0,
+            "mean": 52.586201,
+            "median": 7.545,
+            "min": 0.43,
+            "n": 7636
+          },
+          "field": "URDACT",
+          "nonmissing_rows": 7636,
+          "source": "ALB_CR_G.XPT",
+          "unique_participants_with_value": 7636
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.51,
+            "mean": 0.876111,
+            "median": 0.82,
+            "min": 0.16,
+            "n": 5976
+          },
+          "field": "LBXSCR",
+          "nonmissing_rows": 5976,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5976
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 95.0,
+            "mean": 12.514979,
+            "median": 12.0,
+            "min": 2.0,
+            "n": 5975
+          },
+          "field": "LBXSBU",
+          "nonmissing_rows": 5975,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5975
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 11.3,
+            "mean": 5.361667,
+            "median": 5.2,
+            "min": 0.4,
+            "n": 5974
+          },
+          "field": "LBXSUA",
+          "nonmissing_rows": 5974,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5974
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "lifestyle_and_function": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.862074,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 6779
+          },
+          "field": "PAQ605",
+          "nonmissing_rows": 6779,
+          "source": "PAQ_G.XPT",
+          "unique_participants_with_value": 6779
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.58068,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5559
+          },
+          "field": "SMQ020",
+          "nonmissing_rows": 5559,
+          "source": "SMQ_G.XPT",
+          "unique_participants_with_value": 5559
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.285513,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 4977
+          },
+          "field": "ALQ101",
+          "nonmissing_rows": 4977,
+          "source": "ALQ_G.XPT",
+          "unique_participants_with_value": 4977
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.850693,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5559
+          },
+          "field": "PFQ049",
+          "nonmissing_rows": 5559,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 5559
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.898543,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 5559
+          },
+          "field": "PFQ054",
+          "nonmissing_rows": 5559,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 5559
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.387545,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1943
+          },
+          "field": "PFQ061B",
+          "nonmissing_rows": 1943,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 1943
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.249099,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1943
+          },
+          "field": "PFQ061C",
+          "nonmissing_rows": 1943,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 1943
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.915605,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061M",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.368232,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2512
+          },
+          "field": "PFQ061N",
+          "nonmissing_rows": 2512,
+          "source": "PFQ_G.XPT",
+          "unique_participants_with_value": 2512
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.0,
+            "mean": 1.115586,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 7821
+          },
+          "field": "PAXSTS",
+          "nonmissing_rows": 7821,
+          "source": "PAXHD_G.XPT",
+          "unique_participants_with_value": 7821
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1440.0,
+            "mean": 1275.465897,
+            "median": 1440.0,
+            "min": 0.0,
+            "n": 61168
+          },
+          "field": "PAXVMD",
+          "nonmissing_rows": 61168,
+          "source": "PAXDAY_G.XPT",
+          "unique_participants_with_value": 6917
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 50683.232,
+            "mean": 11367.280024,
+            "median": 11678.7545,
+            "min": 0.0,
+            "n": 61168
+          },
+          "field": "PAXMTSD",
+          "nonmissing_rows": 61168,
+          "source": "PAXDAY_G.XPT",
+          "unique_participants_with_value": 6917
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1437.0,
+            "mean": 703.114177,
+            "median": 846.0,
+            "min": 0.0,
+            "n": 61168
+          },
+          "field": "PAXWWMD",
+          "nonmissing_rows": 61168,
+          "source": "PAXDAY_G.XPT",
+          "unique_participants_with_value": 6917
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2880.0,
+            "mean": 2.06062,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 61168
+          },
+          "field": "PAXQFD",
+          "nonmissing_rows": 61168,
+          "source": "PAXDAY_G.XPT",
+          "unique_participants_with_value": 6917
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "liver_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 4.0,
+            "mean": 1.218657,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 10409
+          },
+          "field": "LUAXSTAT",
+          "nonmissing_rows": 10409,
+          "source": "P_LUX.XPT",
+          "unique_participants_with_value": 10409
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 30.0,
+            "mean": 11.108225,
+            "median": 10.0,
+            "min": 0.0,
+            "n": 9702
+          },
+          "field": "LUANMVGP",
+          "nonmissing_rows": 9702,
+          "source": "P_LUX.XPT",
+          "unique_participants_with_value": 9702
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 75.0,
+            "mean": 5.890598,
+            "median": 5.0,
+            "min": 1.6,
+            "n": 9700
+          },
+          "field": "LUXSMED",
+          "nonmissing_rows": 9700,
+          "source": "P_LUX.XPT",
+          "unique_participants_with_value": 9700
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 67.3,
+            "mean": 0.980424,
+            "median": 0.7,
+            "min": 0.0,
+            "n": 9706
+          },
+          "field": "LUXSIQR",
+          "nonmissing_rows": 9706,
+          "source": "P_LUX.XPT",
+          "unique_participants_with_value": 9706
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1338.0,
+            "mean": 15.087287,
+            "median": 13.1,
+            "min": 0.0,
+            "n": 9691
+          },
+          "field": "LUXSIQRM",
+          "nonmissing_rows": 9691,
+          "source": "P_LUX.XPT",
+          "unique_participants_with_value": 9691
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 400.0,
+            "mean": 257.588059,
+            "median": 253.0,
+            "min": 100.0,
+            "n": 9698
+          },
+          "field": "LUXCAPM",
+          "nonmissing_rows": 9698,
+          "source": "P_LUX.XPT",
+          "unique_participants_with_value": 9698
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 206.0,
+            "mean": 38.033853,
+            "median": 34.0,
+            "min": 0.0,
+            "n": 9689
+          },
+          "field": "LUXCPIQR",
+          "nonmissing_rows": 9689,
+          "source": "P_LUX.XPT",
+          "unique_participants_with_value": 9689
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 5.5,
+            "mean": 4.306861,
+            "median": 4.3,
+            "min": 2.1,
+            "n": 5976
+          },
+          "field": "LBXSAL",
+          "nonmissing_rows": 5976,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5976
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1363.0,
+            "mean": 23.701105,
+            "median": 19.0,
+            "min": 5.0,
+            "n": 5972
+          },
+          "field": "LBXSATSI",
+          "nonmissing_rows": 5972,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5972
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 597.0,
+            "mean": 25.325515,
+            "median": 23.0,
+            "min": 7.0,
+            "n": 5969
+          },
+          "field": "LBXSASSI",
+          "nonmissing_rows": 5969,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5969
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 729.0,
+            "mean": 79.868597,
+            "median": 66.0,
+            "min": 7.0,
+            "n": 5974
+          },
+          "field": "LBXSAPSI",
+          "nonmissing_rows": 5974,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5974
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1136.0,
+            "mean": 25.424841,
+            "median": 17.0,
+            "min": 4.0,
+            "n": 5974
+          },
+          "field": "LBXSGTSI",
+          "nonmissing_rows": 5974,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5974
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 4.4,
+            "mean": 0.708176,
+            "median": 0.7,
+            "min": 0.1,
+            "n": 5969
+          },
+          "field": "LBXSTB",
+          "nonmissing_rows": 5969,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5969
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.5,
+            "mean": 7.19328,
+            "median": 7.2,
+            "min": 5.2,
+            "n": 5967
+          },
+          "field": "LBXSTP",
+          "nonmissing_rows": 5967,
+          "source": "BIOPRO_G.XPT",
+          "unique_participants_with_value": 5967
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "mental_health_history": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 5.0,
+            "mean": 2.720299,
+            "median": 3.0,
+            "min": 1.0,
+            "n": 5892
+          },
+          "field": "HSD010",
+          "nonmissing_rows": 5892,
+          "source": "HSQ_G.XPT",
+          "unique_participants_with_value": 5892
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99.0,
+            "mean": 3.616938,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 5892
+          },
+          "field": "HSQ470",
+          "nonmissing_rows": 5892,
+          "source": "HSQ_G.XPT",
+          "unique_participants_with_value": 5892
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99.0,
+            "mean": 3.958418,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 5892
+          },
+          "field": "HSQ480",
+          "nonmissing_rows": 5892,
+          "source": "HSQ_G.XPT",
+          "unique_participants_with_value": 5892
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99.0,
+            "mean": 1.951112,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 5891
+          },
+          "field": "HSQ490",
+          "nonmissing_rows": 5891,
+          "source": "HSQ_G.XPT",
+          "unique_participants_with_value": 5891
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99.0,
+            "mean": 3.053641,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 5891
+          },
+          "field": "HSQ493",
+          "nonmissing_rows": 5891,
+          "source": "HSQ_G.XPT",
+          "unique_participants_with_value": 5891
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99.0,
+            "mean": 5.173374,
+            "median": 1.0,
+            "min": 0.0,
+            "n": 5889
+          },
+          "field": "HSQ496",
+          "nonmissing_rows": 5889,
+          "source": "HSQ_G.XPT",
+          "unique_participants_with_value": 5889
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.0,
+            "mean": 1.731242,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 8956
+          },
+          "field": "HSAQUEX",
+          "nonmissing_rows": 8956,
+          "source": "HSQ_G.XPT",
+          "unique_participants_with_value": 8956
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.387195,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4951
+          },
+          "field": "DPQ010",
+          "nonmissing_rows": 4951,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 4951
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.356032,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4949
+          },
+          "field": "DPQ020",
+          "nonmissing_rows": 4949,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 4949
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.613581,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4948
+          },
+          "field": "DPQ030",
+          "nonmissing_rows": 4948,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 4948
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.710936,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4947
+          },
+          "field": "DPQ040",
+          "nonmissing_rows": 4947,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 4947
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.38589,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4947
+          },
+          "field": "DPQ050",
+          "nonmissing_rows": 4947,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 4947
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.27962,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4946
+          },
+          "field": "DPQ060",
+          "nonmissing_rows": 4946,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 4946
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.262434,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4946
+          },
+          "field": "DPQ070",
+          "nonmissing_rows": 4946,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 4946
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.187664,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4945
+          },
+          "field": "DPQ080",
+          "nonmissing_rows": 4945,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 4945
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.066748,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 4944
+          },
+          "field": "DPQ090",
+          "nonmissing_rows": 4944,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 4944
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 0.385433,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 3199
+          },
+          "field": "DPQ100",
+          "nonmissing_rows": 3199,
+          "source": "DPQ_G.XPT",
+          "unique_participants_with_value": 3199
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "metabolic_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 382.0,
+            "mean": 105.753379,
+            "median": 98.0,
+            "min": 39.0,
+            "n": 3033
+          },
+          "field": "LBXGLU",
+          "nonmissing_rows": 3033,
+          "source": "GLU_G.XPT",
+          "unique_participants_with_value": 3033
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 17.8,
+            "mean": 5.70275,
+            "median": 5.5,
+            "min": 3.6,
+            "n": 6145
+          },
+          "field": "LBXGH",
+          "nonmissing_rows": 6145,
+          "source": "GHB_G.XPT",
+          "unique_participants_with_value": 6145
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.942006,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 9363
+          },
+          "field": "DIQ010",
+          "nonmissing_rows": 9363,
+          "source": "DIQ_G.XPT",
+          "unique_participants_with_value": 9363
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 523.0,
+            "mean": 183.201631,
+            "median": 179.0,
+            "min": 59.0,
+            "n": 6988
+          },
+          "field": "LBXTC",
+          "nonmissing_rows": 6988,
+          "source": "TCHOL_G.XPT",
+          "unique_participants_with_value": 6988
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1562.0,
+            "mean": 119.480936,
+            "median": 96.0,
+            "min": 18.0,
+            "n": 2990
+          },
+          "field": "LBXTR",
+          "nonmissing_rows": 2990,
+          "source": "TRIGLY_G.XPT",
+          "unique_participants_with_value": 2990
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 331.0,
+            "mean": 109.496941,
+            "median": 106.0,
+            "min": 9.0,
+            "n": 2942
+          },
+          "field": "LBDLDL",
+          "nonmissing_rows": 2942,
+          "source": "TRIGLY_G.XPT",
+          "unique_participants_with_value": 2942
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "muscle_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 3.0,
+            "mean": 1.179133,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 7821
+          },
+          "field": "MGDEXSTS",
+          "nonmissing_rows": 7821,
+          "source": "MGX_G.XPT",
+          "unique_participants_with_value": 7821
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 169.6,
+            "mean": 62.586934,
+            "median": 59.6,
+            "min": 11.4,
+            "n": 7064
+          },
+          "field": "MGDCGSZ",
+          "nonmissing_rows": 7064,
+          "source": "MGX_G.XPT",
+          "unique_participants_with_value": 7064
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 79.2,
+            "mean": 28.634505,
+            "median": 27.65,
+            "min": 5.0,
+            "n": 7170
+          },
+          "field": "MGXH1T1",
+          "nonmissing_rows": 7170,
+          "source": "MGX_G.XPT",
+          "unique_participants_with_value": 7170
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 77.3,
+            "mean": 29.329359,
+            "median": 27.9,
+            "min": 0.0,
+            "n": 7071
+          },
+          "field": "MGXH2T1",
+          "nonmissing_rows": 7071,
+          "source": "MGX_G.XPT",
+          "unique_participants_with_value": 7071
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 83.7,
+            "mean": 29.774682,
+            "median": 28.4,
+            "min": 5.2,
+            "n": 7161
+          },
+          "field": "MGXH1T2",
+          "nonmissing_rows": 7161,
+          "source": "MGX_G.XPT",
+          "unique_participants_with_value": 7161
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 83.8,
+            "mean": 30.093221,
+            "median": 28.7,
+            "min": 5.0,
+            "n": 7066
+          },
+          "field": "MGXH2T2",
+          "nonmissing_rows": 7066,
+          "source": "MGX_G.XPT",
+          "unique_participants_with_value": 7066
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7394.7,
+            "mean": 2645.633333,
+            "median": 2436.8,
+            "min": 533.8,
+            "n": 4671
+          },
+          "field": "DXDLALE",
+          "nonmissing_rows": 4671,
+          "source": "DXX_G.XPT",
+          "unique_participants_with_value": 4671
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7438.2,
+            "mean": 2802.640715,
+            "median": 2609.9,
+            "min": 619.1,
+            "n": 4669
+          },
+          "field": "DXDRALE",
+          "nonmissing_rows": 4669,
+          "source": "DXX_G.XPT",
+          "unique_participants_with_value": 4669
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "skin_health": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 3.0,
+            "mean": 1.200869,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2992
+          },
+          "field": "MXAEXSTS",
+          "nonmissing_rows": 2992,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2992
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.0,
+            "mean": 1.002223,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2699
+          },
+          "field": "DEABACK",
+          "nonmissing_rows": 2699,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2699
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.0,
+            "mean": 1.001853,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2699
+          },
+          "field": "DEAINARM",
+          "nonmissing_rows": 2699,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2699
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.0,
+            "mean": 1.002594,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2699
+          },
+          "field": "DEAFRLEG",
+          "nonmissing_rows": 2699,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2699
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.0,
+            "mean": 1.002594,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2699
+          },
+          "field": "DEALOLEG",
+          "nonmissing_rows": 2699,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2699
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 3.727003,
+            "median": 3.0,
+            "min": 1.0,
+            "n": 2696
+          },
+          "field": "DEX1FITZ",
+          "nonmissing_rows": 2696,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2696
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.008163,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 2695
+          },
+          "field": "DED1HDDX",
+          "nonmissing_rows": 2695,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2695
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.022626,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 2696
+          },
+          "field": "DED1PSDX",
+          "nonmissing_rows": 2696,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2696
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 3.438427,
+            "median": 3.0,
+            "min": 1.0,
+            "n": 2696
+          },
+          "field": "DEX2FITZ",
+          "nonmissing_rows": 2696,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2696
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.995918,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 2695
+          },
+          "field": "DED2HDDX",
+          "nonmissing_rows": 2695,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2695
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.008902,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 2696
+          },
+          "field": "DED2PSDX",
+          "nonmissing_rows": 2696,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2696
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 6.0,
+            "mean": 3.507692,
+            "median": 3.0,
+            "min": 2.0,
+            "n": 260
+          },
+          "field": "DEX6FITZ",
+          "nonmissing_rows": 260,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 260
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.942308,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 260
+          },
+          "field": "DED6HDDX",
+          "nonmissing_rows": 260,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 260
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 2.119231,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 260
+          },
+          "field": "DED6PSDX",
+          "nonmissing_rows": 260,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 260
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 9
+          },
+          "field": "DEX6PSFH",
+          "nonmissing_rows": 9,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 9
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 2
+          },
+          "field": "DEX6PSBK",
+          "nonmissing_rows": 2,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 2
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1
+          },
+          "field": "DEX6PSPL",
+          "nonmissing_rows": 1,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 1
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 6
+          },
+          "field": "DEX6PSAL",
+          "nonmissing_rows": 6,
+          "source": "DEX_C.XPT",
+          "unique_participants_with_value": 6
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99.0,
+            "mean": 4.203822,
+            "median": 4.0,
+            "min": 1.0,
+            "n": 3768
+          },
+          "field": "DED031",
+          "nonmissing_rows": 3768,
+          "source": "DEQ_G.XPT",
+          "unique_participants_with_value": 3768
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99.0,
+            "mean": 2.923301,
+            "median": 3.0,
+            "min": 1.0,
+            "n": 3768
+          },
+          "field": "DEQ034A",
+          "nonmissing_rows": 3768,
+          "source": "DEQ_G.XPT",
+          "unique_participants_with_value": 3768
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 5.0,
+            "mean": 4.003261,
+            "median": 5.0,
+            "min": 1.0,
+            "n": 3680
+          },
+          "field": "DEQ034C",
+          "nonmissing_rows": 3680,
+          "source": "DEQ_G.XPT",
+          "unique_participants_with_value": 3680
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 5.0,
+            "mean": 3.645924,
+            "median": 4.0,
+            "min": 1.0,
+            "n": 3680
+          },
+          "field": "DEQ034D",
+          "nonmissing_rows": 3680,
+          "source": "DEQ_G.XPT",
+          "unique_participants_with_value": 3680
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.670382,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 3768
+          },
+          "field": "DEQ038G",
+          "nonmissing_rows": 3768,
+          "source": "DEQ_G.XPT",
+          "unique_participants_with_value": 3768
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99999.0,
+            "mean": 80.005452,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 1284
+          },
+          "field": "DEQ038Q",
+          "nonmissing_rows": 1284,
+          "source": "DEQ_G.XPT",
+          "unique_participants_with_value": 1284
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9999.0,
+            "mean": 484.664717,
+            "median": 60.0,
+            "min": 0.0,
+            "n": 3761
+          },
+          "field": "DED120",
+          "nonmissing_rows": 3761,
+          "source": "DEQ_G.XPT",
+          "unique_participants_with_value": 3761
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9999.0,
+            "mean": 167.512896,
+            "median": 120.0,
+            "min": 0.0,
+            "n": 3761
+          },
+          "field": "DED125",
+          "nonmissing_rows": 3761,
+          "source": "DEQ_G.XPT",
+          "unique_participants_with_value": 3761
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "sleep_and_recovery": {
+      "clinical_validity": "not_established",
+      "fields": [
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 99.0,
+            "mean": 7.005352,
+            "median": 7.0,
+            "min": 2.0,
+            "n": 6166
+          },
+          "field": "SLD010H",
+          "nonmissing_rows": 6166,
+          "source": "SLQ_G.XPT",
+          "unique_participants_with_value": 6166
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 7.0,
+            "mean": 1.778102,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 6174
+          },
+          "field": "SLQ050",
+          "nonmissing_rows": 6174,
+          "source": "SLQ_G.XPT",
+          "unique_participants_with_value": 6174
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 9.0,
+            "mean": 1.928733,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 6174
+          },
+          "field": "SLQ060",
+          "nonmissing_rows": 6174,
+          "source": "SLQ_G.XPT",
+          "unique_participants_with_value": 6174
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2.0,
+            "mean": 1.115586,
+            "median": 1.0,
+            "min": 1.0,
+            "n": 7821
+          },
+          "field": "PAXSTS",
+          "nonmissing_rows": 7821,
+          "source": "PAXHD_G.XPT",
+          "unique_participants_with_value": 7821
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1440.0,
+            "mean": 1275.465897,
+            "median": 1440.0,
+            "min": 0.0,
+            "n": 61168
+          },
+          "field": "PAXVMD",
+          "nonmissing_rows": 61168,
+          "source": "PAXDAY_G.XPT",
+          "unique_participants_with_value": 6917
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 1440.0,
+            "mean": 383.338903,
+            "median": 418.0,
+            "min": 0.0,
+            "n": 61168
+          },
+          "field": "PAXSWMD",
+          "nonmissing_rows": 61168,
+          "source": "PAXDAY_G.XPT",
+          "unique_participants_with_value": 6917
+        },
+        {
+          "descriptive_numeric_summary": {
+            "interpretation": "unfiltered public-use source distribution; not a clinical reference interval",
+            "max": 2880.0,
+            "mean": 2.06062,
+            "median": 0.0,
+            "min": 0.0,
+            "n": 61168
+          },
+          "field": "PAXQFD",
+          "nonmissing_rows": 61168,
+          "source": "PAXDAY_G.XPT",
+          "unique_participants_with_value": 6917
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    }
+  },
+  "data_sources": [
+    {
+      "columns": 6,
+      "filename": "ALB_CR_G.XPT",
+      "rows": 7821,
+      "sha256": "46c5733d0bdb1d4bbe841614a3e6ef6b9dab8501f455af4f841cc43a312e579d"
+    },
+    {
+      "columns": 10,
+      "filename": "ALQ_G.XPT",
+      "rows": 5615,
+      "sha256": "5f06ba3506f9d69cedffa0380ad0cecbc15df2d6d9b7a3644ac3e2678aaac5e5"
+    },
+    {
+      "columns": 4,
+      "filename": "APOB_G.XPT",
+      "rows": 3239,
+      "sha256": "a3f311da210f3129f910ec8206a5ce06201295590be36d312a2c825423e98e85"
+    },
+    {
+      "columns": 125,
+      "filename": "ARQ_F.XPT",
+      "rows": 5106,
+      "sha256": "78596ae95bf2b2c75d1de48f4da98874a6cf717f97c2ebf3b7dc45c7a6a3b7c3"
+    },
+    {
+      "columns": 13,
+      "filename": "ARX_F.XPT",
+      "rows": 5001,
+      "sha256": "8fba47fde72888053f93fb0c4c69c305ee1d3983089d9e589fec35e0bdfc7490"
+    },
+    {
+      "columns": 38,
+      "filename": "BIOPRO_G.XPT",
+      "rows": 6549,
+      "sha256": "8c3a0b1bea79ff79c5600ad6a76c4206a7d689479f94ae81da6360058eda5d05"
+    },
+    {
+      "columns": 115,
+      "filename": "BIX_C.XPT",
+      "rows": 5329,
+      "sha256": "e1699e68a4103b9cba23c714691b70bdd61bf239b6881949b019b1fc9959df69"
+    },
+    {
+      "columns": 26,
+      "filename": "BMX_G.XPT",
+      "rows": 9338,
+      "sha256": "4814bfc3047ed400b9d43d285f8c3ea7c940ac6489404a9b699579715d158ec3"
+    },
+    {
+      "columns": 27,
+      "filename": "BPX_G.XPT",
+      "rows": 9338,
+      "sha256": "1dd66110f41465d601cd54f1e3c6010baafb9375f09fbcaa3aef2536876146fd"
+    },
+    {
+      "columns": 21,
+      "filename": "CBC_G.XPT",
+      "rows": 8956,
+      "sha256": "f5fd08c8f7564d73429579620f3dab4aec48cfdb0a908e450c0ea849d80589c0"
+    },
+    {
+      "columns": 19,
+      "filename": "CFQ_G.XPT",
+      "rows": 1687,
+      "sha256": "086c0c5a1bcfe965671ec0ff1cd607d6924ce4ddee82610d21eea69bfbf353e7"
+    },
+    {
+      "columns": 2,
+      "filename": "CRP_F.XPT",
+      "rows": 9211,
+      "sha256": "049ab627054bda1b540353b0e80bfd9c1ef2ef67b22cb0f1a84f22a42404fc1f"
+    },
+    {
+      "columns": 9,
+      "filename": "DEQ_G.XPT",
+      "rows": 3769,
+      "sha256": "62eecc3cf25444e338618d252b5548df37a470db3f0389a5b78858037c7f32a1"
+    },
+    {
+      "columns": 102,
+      "filename": "DEX_C.XPT",
+      "rows": 2992,
+      "sha256": "40b1305e11fd4a86d99d64c600021b0fd646eddc525a8895ac1671df98c2def1"
+    },
+    {
+      "columns": 53,
+      "filename": "DIQ_G.XPT",
+      "rows": 9364,
+      "sha256": "a9d5475e0cd66d6a7bc30230345ed0172a9abcbc0a7a4145a35025c827a52a87"
+    },
+    {
+      "columns": 11,
+      "filename": "DPQ_G.XPT",
+      "rows": 5615,
+      "sha256": "38c3e2cb303c6f635330bcbbb0534df90e20ccedee23cf7622ca1ccbc6811844"
+    },
+    {
+      "columns": 23,
+      "filename": "DXXAG_G.XPT",
+      "rows": 5692,
+      "sha256": "1b2277340059ef18c6ef80a524da73759d8e4da74379e3187a8329ba79d603f4"
+    },
+    {
+      "columns": 93,
+      "filename": "DXX_G.XPT",
+      "rows": 5692,
+      "sha256": "df4a9741ef55866ca039b0a01f55ab4d3dd55f83f4ee845ca03e8bfca9a65099"
+    },
+    {
+      "columns": 22,
+      "filename": "ENX_G.XPT",
+      "rows": 7495,
+      "sha256": "e8fda9beb9dfd88ea1732a826edd6e01f6dbec64344632f718e210ca3f1600d8"
+    },
+    {
+      "columns": 2,
+      "filename": "GHB_G.XPT",
+      "rows": 6549,
+      "sha256": "8ff7cc95461fdfd47d2c9640b944a2bcd45926a3c0e64c98a09a4cef6c0f88d7"
+    },
+    {
+      "columns": 8,
+      "filename": "GLU_G.XPT",
+      "rows": 3239,
+      "sha256": "e9c3816dbdfc21cd53a23d63c3610d2550662ee41a21df0a5b72c4a16cd1a8fd"
+    },
+    {
+      "columns": 14,
+      "filename": "HSQ_G.XPT",
+      "rows": 8956,
+      "sha256": "1f37f1c2c24a7498806713500d7f197e3166040ed78d08619c1e858d751aadf3"
+    },
+    {
+      "columns": 92,
+      "filename": "MCQ_G.XPT",
+      "rows": 9364,
+      "sha256": "7538eb86c72b81fd5e76b56120fcb068ed38149d44650e9e750670ad58658d52"
+    },
+    {
+      "columns": 28,
+      "filename": "MGX_G.XPT",
+      "rows": 7821,
+      "sha256": "a91826169503b45efe605d5b51a7b0937e9cda2400011e38a6216a73200ed783"
+    },
+    {
+      "columns": 21,
+      "filename": "PAQ_G.XPT",
+      "rows": 9107,
+      "sha256": "6b56874f6c3af191aebcb10316c028bc1ae1d4f89d0aafc00cc080c9f533b32a"
+    },
+    {
+      "columns": 15,
+      "filename": "PAXDAY_G.XPT",
+      "rows": 61168,
+      "sha256": "2c2ffafe0896de13658233576661eaf6addc81109aee2b28b2018b940e752079"
+    },
+    {
+      "columns": 9,
+      "filename": "PAXHD_G.XPT",
+      "rows": 7821,
+      "sha256": "3b439c38e389c41245202301a33f14dd0942803449202f9c2514d10cb27390be"
+    },
+    {
+      "columns": 35,
+      "filename": "PFQ_G.XPT",
+      "rows": 8350,
+      "sha256": "453ef39e77298921ff9d192cb03d40412e79100edd970e2bda13cf8e95937a10"
+    },
+    {
+      "columns": 13,
+      "filename": "P_LUX.XPT",
+      "rows": 10409,
+      "sha256": "0a8625bf308e2ae4ea36f7518d8532f058609b9d39ce86cb0642d306b23adced"
+    },
+    {
+      "columns": 4,
+      "filename": "SLQ_G.XPT",
+      "rows": 6175,
+      "sha256": "11cc76894cf468f64b7f6f58b44852f2ce600d103ee154d8ca40e2ad7579b815"
+    },
+    {
+      "columns": 30,
+      "filename": "SMQ_G.XPT",
+      "rows": 6790,
+      "sha256": "69f2375f036a815082b1e97110e79c505b91e0985c61696f8eaacf94828115dc"
+    },
+    {
+      "columns": 51,
+      "filename": "SPX_G.XPT",
+      "rows": 7495,
+      "sha256": "58177b07ad94a2c005b0c9494cddb82fc94ec8f5c6c13a91b83da035f20770d9"
+    },
+    {
+      "columns": 3,
+      "filename": "TCHOL_G.XPT",
+      "rows": 7821,
+      "sha256": "08682d7bcee71c1a5c5d977ebfe5f55eda43354a4ff76b07c3fbb487075e0731"
+    },
+    {
+      "columns": 6,
+      "filename": "TRIGLY_G.XPT",
+      "rows": 3239,
+      "sha256": "4b7f9c73f5169f8bb582823d00a8e488d6985ea9d8784f85ee63ff60179589a0"
+    },
+    {
+      "columns": 23,
+      "filename": "xr.dat",
+      "rows": 2589,
+      "sha256": "d1725dc94640145f9385c2efb710bcc30fdedc505546fd99f8a3dd367fbc0b19"
+    }
+  ],
+  "receipt_type": "nhanes-category-data-receipt-v1",
+  "schema_version": 1
+}

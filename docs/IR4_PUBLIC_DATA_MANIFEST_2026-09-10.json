@@ -1,0 +1,208 @@
+{
+  "schema_version": "ir4-public-data-manifest-v1",
+  "manifest_version": 1,
+  "status": "planning_unpopulated",
+  "created_at": "2026-09-10",
+  "protocol_id": "ir4-msk-almi-reference-v1",
+  "purpose": "Non-approving manifest for a future NHANES 2011-2012 appendicular lean-mass index reference-profile review.",
+  "research_boundary": {
+    "intended_use": "research-only measurement and reference-profile preparation",
+    "clinical_use": false,
+    "patient_facing_use": false,
+    "numeric_system_age_authorized": false,
+    "model_fitting_authorized": false,
+    "e005_status": "blocked",
+    "raw_data_committed": false
+  },
+  "population": {
+    "survey": "NHANES",
+    "release": "2011-2012",
+    "age_range_years": [20, 59],
+    "analysis_unit": "one participant, identified only by controlled internal SEQN handling",
+    "cycle_eligibility": "DXX_G adult eligibility and official cycle codebook rules must be confirmed before retrieval or analysis"
+  },
+  "construct": {
+    "id": "appendicular_lean_mass_index",
+    "label": "Appendicular lean-mass index",
+    "type": "normative_measurement_reference_profile",
+    "target": "age-and-sex-stratified ALMI in kg/m^2",
+    "formula": "(DXDLALE + DXDRALE + DXDLLLE + DXDRLLE) / 1000 / (BMXHT / 100)^2",
+    "numeric_age_equivalent": null,
+    "outcome_prediction": false,
+    "clinical_cutoff": null
+  },
+  "access": {
+    "release_type": "CDC public-use files",
+    "terms_url": "https://www.cdc.gov/nchs/policy/data-user-agreement.html",
+    "terms_status": "review_required_before_retrieval",
+    "redistribution": "not authorized",
+    "storage_boundary": "raw files remain outside this repository unless separately approved"
+  },
+  "source_files": [
+    {
+      "id": "nhanes-2011-2012-dxx-g",
+      "role": "whole_body_dxa",
+      "filename": "DXX_G.XPT",
+      "cycle": "2011-2012",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DXX_G.XPT",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DXX_G.htm",
+      "sha256": null,
+      "retrieved_at": null,
+      "hash_status": "pending_local_retrieval_and_review",
+      "access_status": "public_use_subject_to_terms_review"
+    },
+    {
+      "id": "nhanes-2011-2012-bmx-g",
+      "role": "body_measures",
+      "filename": "BMX_G.XPT",
+      "cycle": "2011-2012",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.XPT",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.htm",
+      "sha256": null,
+      "retrieved_at": null,
+      "hash_status": "pending_local_retrieval_and_review",
+      "access_status": "public_use_subject_to_terms_review"
+    },
+    {
+      "id": "nhanes-2011-2012-mgx-g",
+      "role": "grip_strength_context",
+      "filename": "MGX_G.XPT",
+      "cycle": "2011-2012",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MGX_G.XPT",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MGX_G.htm",
+      "sha256": null,
+      "retrieved_at": null,
+      "hash_status": "pending_local_retrieval_and_review",
+      "access_status": "public_use_subject_to_terms_review"
+    },
+    {
+      "id": "nhanes-2011-2012-demo-g",
+      "role": "demographics_weights_design",
+      "filename": "DEMO_G.XPT",
+      "cycle": "2011-2012",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEMO_G.XPT",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEMO_G.htm",
+      "sha256": null,
+      "retrieved_at": null,
+      "hash_status": "pending_local_retrieval_and_review",
+      "access_status": "public_use_subject_to_terms_review"
+    }
+  ],
+  "variables": {
+    "join_key": {
+      "name": "SEQN",
+      "source": "DXX_G/BMX_G/MGX_G/DEMO_G",
+      "unit": null,
+      "sentinels": [],
+      "sentinel_status": "not_applicable_key_handling_must_be_reviewed",
+      "public_receipt_policy": "never emit raw values"
+    },
+    "dxx_exam_status": {
+      "name": "DXAEXSTS",
+      "source": "DXX_G",
+      "unit": "code",
+      "sentinels": [],
+      "sentinel_status": "confirm_from_codebook",
+      "quality_rule_status": "pending_codebook_review"
+    },
+    "left_arm_lean_excl_bmc": {
+      "name": "DXDLALE",
+      "source": "DXX_G",
+      "unit": "g",
+      "sentinels": [],
+      "sentinel_status": "confirm_from_codebook",
+      "quality_flag": "DXALATV"
+    },
+    "right_arm_lean_excl_bmc": {
+      "name": "DXDRALE",
+      "source": "DXX_G",
+      "unit": "g",
+      "sentinels": [],
+      "sentinel_status": "confirm_from_codebook",
+      "quality_flag": "DXARATV"
+    },
+    "left_leg_lean_excl_bmc": {
+      "name": "DXDLLLE",
+      "source": "DXX_G",
+      "unit": "g",
+      "sentinels": [],
+      "sentinel_status": "confirm_from_codebook",
+      "quality_flag": "DXALLTV"
+    },
+    "right_leg_lean_excl_bmc": {
+      "name": "DXDRLLE",
+      "source": "DXX_G",
+      "unit": "g",
+      "sentinels": [],
+      "sentinel_status": "confirm_from_codebook",
+      "quality_flag": "DXARLTV"
+    },
+    "standing_height": {
+      "name": "BMXHT",
+      "source": "BMX_G",
+      "unit": "cm",
+      "sentinels": [],
+      "sentinel_status": "confirm_from_codebook"
+    },
+    "combined_grip_strength": {
+      "name": "MGDCGSZ",
+      "source": "MGX_G",
+      "unit": "kg",
+      "sentinels": [],
+      "sentinel_status": "confirm_from_codebook",
+      "status_field": "MGDEXSTS",
+      "effort_fields": ["MGXH1T1E", "MGXH2T1E", "MGXH1T2E", "MGXH2T2E", "MGXH1T3E", "MGXH2T3E"]
+    },
+    "age": {
+      "name": "RIDAGEYR",
+      "source": "DEMO_G",
+      "unit": "years",
+      "sentinels": [],
+      "sentinel_status": "confirm_from_codebook"
+    },
+    "sex": {
+      "name": "RIAGENDR",
+      "source": "DEMO_G",
+      "unit": "code",
+      "sentinels": [],
+      "sentinel_status": "confirm_from_codebook"
+    }
+  },
+  "survey_design": {
+    "weight_name": "WTMEC2YR",
+    "weight_source": "DEMO_G",
+    "weight_status": "planned_field_requires_component_review",
+    "strata_name": "SDMVSTRA",
+    "psu_name": "SDMVPSU",
+    "variance_method": null,
+    "variance_status": "not_approved",
+    "analytic_guidance_url": "https://wwwn.cdc.gov/Nchs/data/nhanes/analyticguidelines/11-16-analytic-guidelines.pdf",
+    "do_not_claim": "A sample weight without an approved survey variance method is not clinical or population-valid evidence."
+  },
+  "planned_analysis": {
+    "comparators": [
+      "age-and-sex-stratified descriptive reference",
+      "age-only descriptive reference",
+      "unweighted versus approved weighted summary",
+      "separate combined-grip-strength context"
+    ],
+    "metrics": [
+      "valid numerator and denominator by source field",
+      "ALMI mean median and prespecified quantiles",
+      "95% confidence interval with declared design method",
+      "coverage and missingness by age and sex",
+      "subgroup support and sensitivity results"
+    ],
+    "precision_target": "95% interval half-width <= 0.5 kg/m^2 when reviewed support permits; otherwise report not estimable or descriptive uncertainty",
+    "split_policy": "No participant may cross development, tuning, or holdout partitions; any future fit must predeclare a cycle or participant split.",
+    "stop_rule": "Stop before analysis if source identity, units, sentinels, quality flags, weights, design method, or reviewer approval is unresolved."
+  },
+  "review": {
+    "clinical_data_reviewer": null,
+    "statistical_reviewer": null,
+    "review_date": null,
+    "approval_status": "not_submitted",
+    "approval_evidence": [],
+    "e005_status": "blocked"
+  }
+}

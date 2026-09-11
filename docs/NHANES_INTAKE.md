@@ -1,5 +1,10 @@
 # Local NHANES intake review
 
+Documentation authority: this local intake guidance follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and [`GOAL.md`](../GOAL.md). It does
+not override the evidence contract or satisfy E-005.
+
 `scripts/review_nhanes_intake.py` is a bounded, local-only audit of the
 existing non-imputing NHANES adapter. It checks that an operator's explicit
 cycle map can join local SAS transport components to the CDC public-use

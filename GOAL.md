@@ -11,14 +11,17 @@ reconcile visibility, licensing and public wording; private source is not verifi
 
 ## Active execution goal
 
-[T1: a trustworthy published measurement-review showcase](goals/active/trustworthy-research-showcase/GOAL.md)
-is the single active execution contract, shaped with goal-driven-engineering.
-It makes the IR0-IR3 reviewer-package milestone actionable through visual,
-editorial, workflow, claim-traceability and published-release acceptance.
-The [maturity and trust audit](docs/PROJECT_MATURITY_AND_TRUST_REVIEW.md)
-records direct visual inspection of live/local pages, comparable practices and
-remaining gaps. This root file retains the broader product and scientific
-requirements; no IR or clinical gate is closed by creating T1.
+[VALUE-TOKEN-1: measure frontier-token value without overclaiming](goals/active/frontier-value-measurement/GOAL.md)
+is the single active execution contract. DOCS-GDE-1 is complete and retained
+under `goals/completed/documentation-governance/`. It must preserve one
+consistent statement of project state across this file, `ROADMAP.md`, `EVAL.md`,
+the Wiki, and Project #4. [T1: a trustworthy published measurement-review
+showcase](goals/completed/trustworthy-research-showcase/GOAL.md) is retained as
+superseded history, not current work or evidence of acceptance. The
+[maturity and trust audit](docs/PROJECT_MATURITY_AND_TRUST_REVIEW.md) records
+the related visual, release, workflow, and claim-traceability evidence. This
+root file retains the broader product and scientific requirements; completing
+documentation governance cannot close an IR or clinical gate.
 
 ## Release decision from the 2026-09-10 review
 
@@ -26,10 +29,19 @@ Current status: **research prototype; the dirty-checkout software gate and a
 local Windows 3.11 installed-wheel/HTTP smoke now pass, full release
 verification remains incomplete, and clinical production is blocked by E-005**.
 The local evidence now includes a temporary clean candidate verification and a
-desktop capture of the currently published Pages surface. That capture still
+desktop capture of the currently published Pages surface. The current temporary
+candidate `5dd24112f6582c211b4c93b505db61c2c1e66b26` passes locked installation,
+all 20 verifier checks, documentation checks, and the installed-wheel/loopback
+HTTP smoke on Windows; its bounded receipt is
+[`docs/ir0-current-candidate-verification-2026-09-10.json`](docs/ir0-current-candidate-verification-2026-09-10.json).
+That candidate remains local-only. The capture still
 shows the older `120 / 120 passing` and `v0.1.0 · draft` presentation, so it
-does not establish a published candidate, remote CI and Pages publication, or
-the deployed Pages identity for the current checkout.
+does not establish that the current dirty checkout is the published candidate.
+The later live audit observed successful remote verify run `34548964641` and
+Pages run `34548964642` for `7fc8fca`, but the live page still contains
+superseded confidence and local-receipt wording and returns 404 for the current
+claim inventory. The deployed surface therefore remains unreconciled with the
+current checkout.
 
 The next deliverable is a focused, useful measurement-review research release,
 not a broader collection of age estimates. Start with one clinician/researcher
@@ -67,11 +79,37 @@ The following findings remain release blockers:
 
 | Gate | Observed gap | Required closeout evidence |
 |---|---|---|
-| IR0 | Required release files remain modified or untracked; latest remote CI and Pages runs failed at `2f1218b9d20b61ee9682cdae0a5a74dd79a7f653`. A temporary local clean snapshot at `0385ece0d3e65006cc1c58da6b2b015f2e1cd416` passed locked installation and all 20 software checks on Windows and WSL Ubuntu. Installed-wheel and real loopback HTTP smokes also pass on both platforms; the complete receipt is [`docs/ir0-clean-candidate-verification-2026-09-10.json`](docs/ir0-clean-candidate-verification-2026-09-10.json). | One candidate SHA with locked fresh-clone installation, passing Linux/Windows and wheel/HTTP checks, successful publication and verified live identity. Reconcile licensing and visibility wording. The temporary candidate is not pushed or published, and Linux CI has not run. |
-| IR0 | The local Pages workflow now executes `uv run python -m pytest -q` before its evidence and deploy checks. The exact temporary candidate and an isolated `ir0-failure-demo` branch derived from it verify pytest exit 1 with the publication step unreached, recorded in [`docs/ir0-publication-failure-candidate-2026-09-10.json`](docs/ir0-publication-failure-candidate-2026-09-10.json). Remote Pages and candidate-branch execution remain unverified. The checked-in receipt remains a count receipt, not a substitute for execution. | Verify the executed-test dependency and isolated failing-test demonstration on the exact published candidate path through remote Actions. Collection counts are not pass receipts. |
+| IR0 | Required release files remain modified or untracked. Remote verify run `34548964641` and Pages run `34548964642` succeeded for `7fc8fca`, but the current dirty checkout is not frozen or published. The live URL returned HTTP 200 while retaining superseded confidence and local-receipt wording, and the current claim inventory returned 404. The fresh temporary clean candidate `5dd24112f6582c211b4c93b505db61c2c1e66b26` passes locked installation, all 20 software checks, documentation checks, and installed-wheel/loopback HTTP smokes on Windows; its receipt and prepared freeze manifest are recorded in [`docs/ir0-current-candidate-verification-2026-09-10.json`](docs/ir0-current-candidate-verification-2026-09-10.json) and [`candidate-freeze-manifest-2026-09-10.json`](docs/reviews/trust-maturity-2026-09-10/candidate-freeze-manifest-2026-09-10.json). The snapshot predates final candidate-reference reconciliation and is not authorized for publication. The earlier `0385ece0d3e65006cc1c58da6b2b015f2e1cd416` receipt retains the separate WSL Ubuntu evidence. | One owner-authorized candidate SHA with locked fresh-clone installation, passing Linux/Windows and wheel/HTTP checks, successful publication and verified live identity. Reconcile licensing and visibility wording. The current dirty candidate is not pushed or published, and live asset/link/metadata reconciliation remains open. |
+| IR0 | The local Pages workflow now executes `uv run python -m pytest -q` before its evidence and deploy checks. The exact temporary candidate and an isolated `ir0-failure-demo` branch derived from it verify pytest exit 1 with the publication step unreached, recorded in [`docs/ir0-publication-failure-candidate-2026-09-10.json`](docs/ir0-publication-failure-candidate-2026-09-10.json). Remote verify and Pages success are recorded for `7fc8fca`, but candidate-branch failure execution on remote Actions and the exact current candidate path remain unverified. The checked-in receipt remains a count receipt, not a substitute for execution. | Verify the executed-test dependency and isolated failing-test demonstration on the exact published candidate path through remote Actions. Collection counts are not pass receipts. |
 | IR2 | The regression remains reproducible, but the local comparison layer now withholds the unsupported aggregate change and discloses coverage; statistical review is absent. | Retain the coverage-only regression, complete the section 7 test matrix, and record qualified review sign-off. |
 | IR1 and IR3 | `docs/RESEARCH_REPORT.md`, the study protocol, and the manual accessibility checklist now exist; local Chrome, Firefox, and WebKit QA cover the three target widths, keyboard focus, light/dark modes, effective 2x layout containment, print-to-PDF flow, malformed-import rejection, and page-origin network privacy. Headed Chrome accessibility-tree review found 119 of 119 interactive controls named, four landmarks, and five polite live regions. An automated light-theme computed-style sweep found no failures across 977 visible leaf-text nodes with a 4.55 minimum ratio. Human screen-reader review, actual browser 200% zoom UI evidence, human light/dark contrast and non-color review, and the required user study remain outstanding. | Retain the report, browser QA receipt, manual checklist, cross-browser findings, accessibility-tree evidence, and results meeting the IR1/IR3 acceptance thresholds. |
 | IR4-IR7 | Approved protocol/data, independent validation, operational controls and governed pilot evidence remain incomplete. | Supply each gate's required evidence and qualified review. Keep E-005 blocked until approval is recorded. |
+
+### Required work from the independent third-party review, 2026-09-11
+
+The following work remains open. The current local verifier pass is software
+evidence only and does not satisfy these outcomes. Do not mark an item complete
+without the stated exit evidence.
+
+| Priority | Required outcome | Current state | Exit evidence |
+|---|---|---|---|
+| P0 | Make clinical-review readiness fail closed | Open. `ValidationReport.status` can return `ready_for_clinical_review` when no ordinary blocker is present even though required statistical-analysis-plan metrics remain unimplemented and model uncertainty may be unvalidated. | Automated tests prove that missing uncertainty validation, Brier score, calibration-in-the-large, calibration slope, integrated calibration index, required decision-curve or net-benefit analysis, or another prespecified required metric keeps the report blocked. The status name must not imply qualified clinical review when only an engineering report was generated. |
+| P0 | Replace self-asserted model approval with governed approval evidence | Open. Approval metadata verifies fields and hashes but does not establish reviewer identity, qualification, evidence authenticity, approval scope, expiry, or revocation. | A fail-closed approval authority binds the exact model, feature order, reference panel, mapper, protocol, cohort, evaluation report, intended use, reviewer identity and review date. Missing, expired, revoked, scope-mismatched, or unverifiable approval keeps production readiness false and E-005 blocked. |
+| P0 | Restore one canonical project state | Open. The root goal, active goal, `EVAL.md`, `ROADMAP.md`, Wiki and Project #4 contain conflicting active/completed states, test counts, paths and release descriptions. | One active goal exists. All six authority and reader surfaces agree on goal status, current candidate, evidence dates, open blockers and E-005. Historical receipts and counts are labeled historical rather than presented as current. Mechanical checks detect stale active-goal paths and contradictory status claims. |
+| P0 | Freeze and publish one immutable release candidate | Open. The current checkout has extensive modified and untracked work, while remote green CI and Pages runs apply to `7fc8fca`, not the current checkout. | The owner authorizes one candidate SHA. A clean clone at that SHA passes locked installation, the canonical verifier, supported-platform Python and Node tests, wheel and loopback HTTP smokes, and remote CI/Pages. The deployed build identity, core links, metadata and asset hashes match that SHA. The public claim inventory resolves successfully. Licensing, repository visibility and reuse wording agree. |
+| P1 | Prove the first intended-user workflow before expanding evidence artifacts | Open. No completed clinician or clinical-researcher study demonstrates task value or comprehension. | At least five intended users complete the prespecified IR1 workflow. At least four of five independently select the sample, identify missing inputs, interpret FI and its denominator correctly, and export the report within five minutes. All five recognize that numeric ages and clinical advice are unvalidated or withheld. Record de-identified results, errors, comparison with the current manual workflow, reviewer and date. |
+| P1 | Freeze the scientific construct and complete an approved analysis plan | Open. The implemented FI combines heterogeneous deficits with project-specific cutoffs; the age-equivalent construct, endpoint, calibration, missingness handling, uncertainty and incremental value remain unvalidated. | Qualified clinical and statistical reviewers approve the construct, intended use, deficit selection and direction, cutoff sources, endpoint and horizon, cohort flow, survey design, missingness and sensitivity analyses, calibration and uncertainty methods, subgroup plan, leakage controls, sample-size and precision rules, simple comparators, stop rules and pass/fail thresholds before confirmatory evaluation. |
+| P1 | Demonstrate genuinely independent validation | Open. Current external-validation artifacts are synthetic harness fixtures and cannot establish transportability, calibration, fairness or clinical utility. | A frozen model is evaluated once against an appropriate independently governed cohort under the approved plan. Report denominators, exclusions, censoring, discrimination where relevant, calibration, uncertainty coverage, missingness and FI-denominator sensitivity, subgroup support, transportability and incremental value over chronological age, FI alone and a simple domain baseline. Retire the used holdout from tuning claims and retain qualified review. |
+| P1 | Harden CI, package identity and supported-runtime evidence | Open. Actions use mutable version tags, Python support metadata is broader than the tested matrix, and package/API versions are independently maintained. | Pin third-party Actions to reviewed commit SHAs; test the declared minimum and primary supported Python versions on the intended operating systems; run wheel/HTTP smoke on the supported matrix; derive service version from installed package metadata; add vulnerability, license-policy and SBOM evidence appropriate to a health-data system. Narrow support claims if the matrix is not maintained. |
+| P1 | Make externally reachable serving explicitly fail closed | Open. API-key enforcement and strict readiness are opt-in, while the quick-start command does not establish a production boundary. | A dedicated externally bound configuration refuses startup or readiness without authentication, strict artifact/panel/approval checks and an explicit production profile. Documentation places the exposure warning beside serving commands. Staging evidence demonstrates TLS, authorization, rate limits, request limits, secrets, retention/deletion, monitoring, rollback and incident ownership before any real-person use. |
+| P2 | Complete human accessibility and publication review | Open. Automated browser, contrast and accessibility-tree evidence exists, but human screen-reader, actual 200 percent zoom, non-color and intended-user comprehension evidence remains absent. | Named reviewers complete and date the manual checklist on the frozen candidate, record defects and resolutions, and repeat affected checks on the published same-SHA surface. |
+
+Execution order is intentional: first prevent false clinical-readiness states and
+restore a single project truth, then freeze a release candidate and prove the
+intended-user workflow. Scientific validation, deployment and pilot work may
+advance only within their existing IR dependencies. Additional receipt or
+criterion expansion is lower priority unless it directly closes one of the
+outcomes above.
 
 IR2 regression case: start from the balanced synthetic demo, set BMI to 31,
 then add only creatinine 0.9 in the canonical input unit. The review observed
@@ -377,10 +415,10 @@ the temporary snapshot does not automatically certify later working-tree edits.
 | Work now | Owner role | Next action and exit evidence |
 |---|---|---|
 | Freeze the reviewer package | Maintainer | Select exact intended files, reconcile license/visibility wording, record one candidate SHA and hashes, and verify it from a clean checkout. Preserve unrelated changes. Record any source changes since the existing snapshot. |
-| Finish remote release verification | Maintainer | For the selected candidate, obtain remote Linux/Windows CI and wheel/HTTP results plus the isolated failing-test publication check. After authorized publication, verify live metadata and assets. IR0 remains open until these pass. |
-| Run human review in parallel | Product owner with clinician, statistical and accessibility reviewers | Assign named people and review dates. Use the frozen local synthetic package for the five-user study, comparison review and remaining manual accessibility checks. Record results against the unchanged IR1-IR3 thresholds. Public deployment is not required to begin this review. |
+| Finish remote release verification | Maintainer | Remote verify and Pages runs succeeded for `7fc8fca`; the current local candidate passes its Windows clean-checkout gate, but remote same-SHA Linux/Windows and wheel/HTTP results, the isolated failing-test publication check, candidate authorization and publication remain open. After publication, verify live metadata, assets, links and visuals. IR0 remains open until these pass. |
+| Run human review in parallel | Product owner with clinician, statistical and accessibility reviewers | The study protocol, comparison worksheet, accessibility checklist, candidate/fixture identity, and de-identified result form are prepared under `docs/reviews/trust-maturity-2026-09-10/`. Assign named people and review dates, freeze the package identity, and record results against the unchanged IR1-IR3 thresholds. Public deployment is not required to begin this review. |
 | Close findings and prepare showcase release | Engineering and documentation | Fix observed defects, rerun affected checks, and refresh receipts for the final candidate. Reconcile GOAL, ROADMAP, Wiki and Project #4 before declaring IR0-IR3 complete. |
-| Prepare later evidence without fitting | Clinical/data lead | Identify permitted data and qualified reviewers, draft the domain protocol and list missing inputs. IR4 approval and IR5 fitting still require their original evidence gates. |
+| Prepare later evidence without fitting | Clinical/data lead | The non-approving musculoskeletal protocol and public-data manifest are drafted and mechanically shape-checked in `docs/IR4_MUSCULOSKELETAL_PROTOCOL_2026-09-10.md`, `docs/IR4_PUBLIC_DATA_MANIFEST_2026-09-10.json`, and `scripts/validate_ir4_manifest.py`. Assign qualified reviewers and resolve hashes, sentinels, weights, and variance decisions before any data use. IR4 approval and IR5 fitting still require their original evidence gates. |
 
 ### Status and blocker rules
 
@@ -413,7 +451,7 @@ not passed; independent work may continue. Role owners below are assignments sti
 
 | ID | Owner and dependency | Required result and verification |
 |---|---|---|
-| IR0 | Maintainer; first | Reconcile tracked files, licensing/visibility wording and current status. Preserve unrelated work. From a fresh clone at one candidate SHA, install with `uv sync --locked --extra dev --extra ml`, run `uv run python scripts/verify_project.py --json`, and run both platform wheel/HTTP smokes. Linux, Windows and Pages must pass for the same SHA. Bind deploy to executed tests, then prove a deliberately failing Python test blocks publication on an isolated test branch. Verify live build metadata, asset hashes and links after an authorized deployment. E-005 remains blocked. A temporary local clean snapshot at `0385ece0d3e65006cc1c58da6b2b015f2e1cd416` passed locked installation and all 20 software checks on Windows and WSL Ubuntu, and its isolated failure branch returned pytest exit 1 before publication. It is not pushed or published and does not satisfy Linux CI, remote, publication, live identity, or licensing/visibility reconciliation. |
+| IR0 | Maintainer; first | Reconcile tracked files, licensing/visibility wording and current status. Preserve unrelated work. From a fresh clone at one candidate SHA, install with `uv sync --locked --extra dev --extra ml`, run `uv run python scripts/verify_project.py --json`, and run both platform wheel/HTTP smokes. Linux, Windows and Pages must pass for the same SHA. Bind deploy to executed tests, then prove a deliberately failing Python test blocks publication on an isolated test branch. Verify live build metadata, asset hashes and links after an authorized deployment. E-005 remains blocked. The fresh temporary clean candidate `5dd24112f6582c211b4c93b505db61c2c1e66b26` passes the locked Windows installation, all 20 checks, documentation checks and installed-wheel/HTTP smoke; the freeze manifest records that it predates final reference reconciliation and remains unauthorized. The earlier `0385ece0d3e65006cc1c58da6b2b015f2e1cd416` receipt retains the separate WSL Ubuntu evidence. Remote verify and Pages runs later succeeded for `7fc8fca`, but the current dirty candidate is not pushed or published and the live surface remains unreconciled. Remote same-SHA Linux evidence, remote failure-branch execution, live identity and licensing/visibility reconciliation remain open. |
 | IR1 | Product owner plus clinician reviewer; start with frozen local package, release closeout requires IR0 | Define one user, setting, task, minimum available data, report and alternative workflow. Interview at least five intended users; record de-identified task evidence. At least four of five must complete sample selection, find missing inputs, interpret FI correctly and export the report without assistance in five minutes; all must recognize that ages and clinical advice are unvalidated. Compare task time and interpretation errors with their current manual report. Revise scope if utility is not demonstrated; do not recruit patient use through the public demo. |
 | IR2 | Engineering plus statistical reviewer; draft IR1 contract for implementation, frozen package for review; release closeout requires IR0 | Implement explicit comparison eligibility using item set, coding version, units/protocol, date and model/panel/artifact identity. Test unchanged overlapping values with added/removed normal and abnormal items, changed units/protocol, unknown hashes and changed cutoffs. Withhold unsupported aggregate change or show clearly labeled matched-item change and coverage difference. No improvement interpretation from coverage alone. Preserve MVV rejection and null unsupported ages. Retain reproducible tests and review sign-off. |
 | IR3 | Product designer plus documentation owner; start from draft IR1/IR2 contract, close after their review and IR0 | Build the four-part site and research report; reconcile README, metadata, license text and all status claims. Test actual browser journeys in Chromium, Firefox and WebKit at 360, 768 and 1440 px, keyboard-only navigation, 200% zoom, screen reader, light/dark modes, print and failed imports. Target WCAG 2.2 AA; retain automated findings and manual checklist, with no unresolved serious/critical issues or blocked core task. Inspect network traffic for synthetic CSV import and form entry: no measurement data may leave the browser. Repeat IR1 comprehension test and retain screenshots. |
@@ -451,6 +489,17 @@ remain blocked. This planning update does not implement or satisfy the gates.
 
 - [`GOAL.md`](GOAL.md): product intent, scope, boundaries, readiness definitions,
   and definition of done.
+- [`docs/product-specs/PRODUCT_INTENT.md`](docs/product-specs/PRODUCT_INTENT.md):
+  the GDE product-intent layer, primary users, evidence classes, and product
+  boundary.
+- [`ARCHITECTURE.md`](ARCHITECTURE.md): the GDE architecture layer, dependency
+  direction, and durable engineering invariants.
+- [`goals/active/frontier-value-measurement/GOAL.md`](goals/active/frontier-value-measurement/GOAL.md):
+  the current active frontier-value measurement contract.
+- [`goals/completed/documentation-governance/GOAL.md`](goals/completed/documentation-governance/GOAL.md):
+  the completed documentation-governance execution record.
+- [`docs/DOCUMENTATION_CATALOG.md`](docs/DOCUMENTATION_CATALOG.md): the
+  repository-wide documentation inventory and reconciliation map.
 - [`ROADMAP.md`](ROADMAP.md): ordered dependencies, owners, statuses, and exit
   evidence.
 - [`EVAL.md`](EVAL.md): criterion-level engineering evidence and the E-005

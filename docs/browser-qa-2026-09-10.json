@@ -75,6 +75,71 @@
       "comparison_warning_visible": true
     }
   ],
+  "t1_local_slice": {
+    "date": "2026-09-10",
+    "candidate": "dirty checkout; no release SHA",
+    "browser": "Chromium through browser-harness with CDP layout emulation",
+    "first_screen": {
+      "desktop_1440x900": {
+        "purpose_visible_before_appendices": true,
+        "intended_user_visible": true,
+        "research_only_visible": true,
+        "primary_example_action_visible": true,
+        "screenshot": "reviews/trust-maturity-2026-09-10/local-desktop-t1.jpg"
+      },
+      "mobile_390x844": {
+        "purpose_visible_before_appendices": true,
+        "intended_user_visible": true,
+        "research_only_visible": true,
+        "primary_example_action_visible": true,
+        "document_scroll_width": 375,
+        "viewport_width": 390,
+        "screenshot": "reviews/trust-maturity-2026-09-10/local-mobile-t1.jpg"
+      }
+    },
+    "selected_report": {
+      "measurement_ledger_before_derived_cards": true,
+      "fi_numerator_denominator_visible": true,
+      "coverage_units_missing_date_and_provenance_visible": true,
+      "screenshot": "reviews/trust-maturity-2026-09-10/local-report-t1.jpg"
+    },
+    "status": "local implementation evidence only; human accessibility and comprehension review remain open"
+  },
+  "t1_cross_engine_rerun": {
+    "date": "2026-09-10",
+    "candidate": "dirty checkout; no release SHA",
+    "engines": {
+      "chromium": "143.0.7499.4",
+      "firefox": "144.0.2",
+      "webkit": "26.0"
+    },
+    "viewports": [360, 768, 1440],
+    "color_schemes": ["light", "dark"],
+    "observed": {
+      "no_document_overflow": true,
+      "primary_action_visible_at_target_viewports": true,
+      "primary_action_click_reached_demo_anchor": true,
+      "measurement_ledger_present": true,
+      "fi_fraction_rendered": "0.000 / 13",
+      "page_errors": []
+    },
+    "print_export": {
+      "print_media_applied": true,
+      "header_hidden": true,
+      "non_report_main_sections_visible": 0,
+      "report_visible": true,
+      "pdf_bytes": 1172,
+      "artifact": "reviews/trust-maturity-2026-09-10/local-report-t1.pdf"
+    },
+    "state_captures": {
+      "selected_report": "reviews/trust-maturity-2026-09-10/local-selected-report-t1.jpg",
+      "missing_data": "reviews/trust-maturity-2026-09-10/local-missing-data-t1.jpg",
+      "failed_import": "reviews/trust-maturity-2026-09-10/local-failed-import-t1.jpg",
+      "comparison_warning": "reviews/trust-maturity-2026-09-10/local-comparison-warning-t1.jpg",
+      "evidence_view": "reviews/trust-maturity-2026-09-10/local-evidence-t1.jpg"
+    },
+    "scope": "Automated Playwright rerun after the reviewer-first markup and measurement-ledger change. Human screen-reader, actual browser 200% zoom, manual contrast/non-color and IR1 comprehension review remain open."
+  },
   "keyboard": {
     "tabs_exercised": 8,
     "first_focus": "Skip to main content",

@@ -9,6 +9,11 @@ run by a deployment and governance owner. Local software evidence is not a
 substitute for TLS, ingress, secret-management, infrastructure, or clinical
 approval evidence.
 
+Documentation authority: this dated evidence review follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and [`GOAL.md`](../GOAL.md). It does
+not close IR6 or E-005.
+
 | Control | Current observation | Closeout evidence still required |
 |---|---|---|
 | Deployment boundary | The API is exercised over loopback HTTP; the Pages surface is static and local-import oriented | Approved deployment diagram, trust boundaries, jurisdiction, intended-use, and data-flow review |

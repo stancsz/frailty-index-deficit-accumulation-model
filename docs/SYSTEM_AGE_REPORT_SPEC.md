@@ -1,5 +1,11 @@
 # System-specific age-equivalent report
 
+Documentation authority: this target specification follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and [`GOAL.md`](../GOAL.md). It is a
+future contract and does not authorize unsupported numeric ages or clinical
+use.
+
 This is the target presentation and evidence contract for the finished
 healthspan product. It is a product specification, not a claim that the
 current development model can produce all of these numbers.

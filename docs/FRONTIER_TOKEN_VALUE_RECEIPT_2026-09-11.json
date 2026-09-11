@@ -1,0 +1,59 @@
+{
+  "baseline": {
+    "calls": 8,
+    "input_tokens": 7000,
+    "mean_latency_ms": 2250.0,
+    "output_tokens": 1780,
+    "p95_latency_ms": 3125.0,
+    "quality_pass_rate": 0.833333,
+    "retries": 2,
+    "success_rate": 0.833333,
+    "successful_tasks": 5,
+    "tasks": 6,
+    "tokens_per_successful_task": 1756.0,
+    "total_tokens": 8780
+  },
+  "boundary": {
+    "claim_status": "real_value_unverified",
+    "credentials_emitted": false,
+    "identifiers_emitted": false,
+    "outputs_emitted": false,
+    "prompts_emitted": false
+  },
+  "candidate": {
+    "calls": 7,
+    "input_tokens": 4050,
+    "mean_latency_ms": 1650.0,
+    "output_tokens": 1620,
+    "p95_latency_ms": 2225.0,
+    "quality_pass_rate": 1.0,
+    "retries": 1,
+    "success_rate": 1.0,
+    "successful_tasks": 6,
+    "tasks": 6,
+    "tokens_per_successful_task": 945.0,
+    "total_tokens": 5670
+  },
+  "data_class": "synthetic_fixture",
+  "input_sha256": "7c5fd1b89eaab65cc6825b1c792d5140e7a4f030de524992ffcd23200527d8d1",
+  "matched_success_metrics": {
+    "baseline_total_tokens": 7130,
+    "bootstrap": {
+      "iterations": 2000,
+      "mean_token_difference_ci95": [
+        398.0,
+        644.0
+      ],
+      "method": "deterministic_task_bootstrap",
+      "seed": 0,
+      "status": "mechanics_only"
+    },
+    "candidate_total_tokens": 4620,
+    "token_savings_percent": 35.203366
+  },
+  "paired_success_count": 5,
+  "real_paired_runs": false,
+  "record_count": 6,
+  "schema_version": "frontier-token-value-receipt-v1",
+  "source_schema_version": "frontier-token-pair-v1"
+}

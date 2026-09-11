@@ -2,6 +2,11 @@
 
 Status: development-serving contract; this is not a production approval.
 
+Documentation authority: This operational guidance follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and the active evidence contract in
+[`GOAL.md`](../GOAL.md). It does not override them.
+
 This runbook describes how to run, verify, observe, and roll back the
 healthspan engine. It is intentionally explicit about the boundary between
 software operations and clinical/model approval. The repository currently

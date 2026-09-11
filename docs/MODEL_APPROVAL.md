@@ -6,6 +6,11 @@ a separate JSON sidecar. The loader verifies that the sidecar matches the exact
 artifact bytes and the persisted feature manifest before it applies any
 production or uncertainty flags.
 
+Documentation authority: this approval-sidecar contract follows
+[`PRODUCT_INTENT.md`](product-specs/PRODUCT_INTENT.md),
+[`ARCHITECTURE.md`](../ARCHITECTURE.md), and [`GOAL.md`](../GOAL.md). A valid
+sidecar is a software integrity control, not clinical approval.
+
 The sidecar must contain exactly these fields:
 
 ```json

@@ -3,9 +3,11 @@
 Status: current planning decision, 2026-09-10. IR0 is in progress; no release
 gate is complete.
 
-The project remains a research prototype. Remote CI and Pages still fail at
-2f1218b9d20b61ee9682cdae0a5a74dd79a7f653. A 2026-09-10 local dirty-checkout
-verification now passes all 20 software checks with 146 Python and 28 Node
+The project remains a research prototype. The earlier remote CI and Pages
+failure remains attached to `2f1218b9d20b61ee9682cdae0a5a74dd79a7f653`, while
+later remote verify run `34548964641` and Pages run `34548964642` succeeded for
+`7fc8fca`. A 2026-09-10 local dirty-checkout verification now passes all 20
+software checks with 146 Python and 28 Node
 tests, while a Windows 3.11 installed-wheel/HTTP smoke and local Pages
 failure harness also pass. A temporary clean snapshot at
 `0385ece0d3e65006cc1c58da6b2b015f2e1cd416` also passes locked installation and
@@ -13,6 +15,12 @@ all 20 checks; the receipt is recorded in
 [`docs/ir0-clean-candidate-verification-2026-09-10.json`](../ir0-clean-candidate-verification-2026-09-10.json).
 The same candidate also passes installed-wheel and real loopback HTTP smokes on
 Windows and WSL Ubuntu.
+The current temporary clean candidate
+`5dd24112f6582c211b4c93b505db61c2c1e66b26` also passes the locked Windows
+installation, all 20 verifier checks, documentation checks and installed-wheel/
+loopback HTTP smoke; its receipt is
+[`docs/ir0-current-candidate-verification-2026-09-10.json`](../ir0-current-candidate-verification-2026-09-10.json).
+It remains local-only and does not establish publication.
 The local Pages contrast repair also has an automated light-theme sweep with no
 failures across 977 visible leaf-text nodes; human contrast and non-color review
 remain open.
@@ -24,8 +32,11 @@ reconciliation requirement and is not a current release receipt.
 An `ir0-failure-demo` branch derived from the same candidate also returned
 pytest exit 1 before publication; its local receipt is
 [`docs/ir0-publication-failure-candidate-2026-09-10.json`](../ir0-publication-failure-candidate-2026-09-10.json).
-E-005 remains blocked. The local result does not establish a published
-candidate, Linux CI, current publication, or clinical readiness.
+E-005 remains blocked. The local result and later remote workflow success do
+not establish that the current dirty checkout is the published candidate. The
+live audit found superseded confidence/test-receipt wording and a 404 for the
+current claim inventory, so current publication reconciliation and clinical
+readiness remain open.
 
 Prioritize one measurement-review workflow. Preserve observed data, provenance,
 missingness, transparent FI and safe comparison. Numeric system ages remain
@@ -39,6 +50,13 @@ The public site also differs from the dirty local draft, and local license
 metadata conflicts with the proprietary decision. GitHub currently reports a
 public repository; this does not establish an open-source license. IR0 requires
 owner reconciliation, not an automatic repository visibility change.
+
+The dependency/runtime review was refreshed for temporary candidate
+`5dd24112f6582c211b4c93b505db61c2c1e66b26`: the installed-wheel and loopback
+smoke passed on Python 3.13.11, and the current ephemeral `pip-audit 2.10.1`
+run reported no known third-party Python vulnerabilities. This remains local
+engineering evidence; the project distribution, JavaScript surface, SBOM and
+hosted deployment are outside that audit.
 
 Execution order: IR0 release integrity; IR1 workflow proof; IR2 comparison
 integrity; IR3 site and documentation; IR4 protocol and data; IR5 independent
@@ -55,7 +73,7 @@ supersedes older Wiki completion claims wherever current evidence contradicts th
 
 | ID | Owner and dependency | Required result and verification |
 |---|---|---|
-| IR0 | Maintainer; first | Reconcile tracked files, licensing/visibility wording and current status. Preserve unrelated work. From a fresh clone at one candidate SHA, install with `uv sync --locked --extra dev --extra ml`, run `uv run python scripts/verify_project.py --json`, and run both platform wheel/HTTP smokes. Linux, Windows and Pages must pass for the same SHA. Bind deploy to executed tests, then prove a deliberately failing Python test blocks publication on an isolated test branch. Verify live build metadata, asset hashes and links after an authorized deployment. E-005 remains blocked. Temporary local clean-candidate verification on Windows and WSL Ubuntu, dirty-checkout verification, a Windows wheel/HTTP smoke, and a failure harness pass, but Linux CI, remote, and publication evidence remain open. |
+| IR0 | Maintainer; first | Reconcile tracked files, licensing/visibility wording and current status. Preserve unrelated work. From a fresh clone at one candidate SHA, install with `uv sync --locked --extra dev --extra ml`, run `uv run python scripts/verify_project.py --json`, and run both platform wheel/HTTP smokes. Linux, Windows and Pages must pass for the same SHA. Bind deploy to executed tests, then prove a deliberately failing Python test blocks publication on an isolated test branch. Verify live build metadata, asset hashes and links after an authorized deployment. E-005 remains blocked. The fresh temporary clean candidate `5dd24112f6582c211b4c93b505db61c2c1e66b26` passes the locked Windows installation, all 20 checks, documentation checks and installed-wheel/HTTP smoke; its freeze manifest records that it predates final reference reconciliation and the candidate remains unauthorized. Remote verify and Pages later succeeded for `7fc8fca`, but remote same-SHA Linux evidence, remote failure-branch execution, authorized publication and live reconciliation remain open. |
 | IR1 | Product owner plus clinician reviewer; IR0 | Define one user, setting, task, minimum available data, report and alternative workflow. Interview at least five intended users; record de-identified task evidence. At least four of five must complete sample selection, find missing inputs, interpret FI correctly and export the report without assistance in five minutes; all must recognize that ages and clinical advice are unvalidated. Compare task time and interpretation errors with their current manual report. Revise scope if utility is not demonstrated; do not recruit patient use through the public demo. |
 | IR2 | Engineering plus statistical reviewer; IR0 and IR1 contract | Implement explicit comparison eligibility using item set, coding version, units/protocol, date and model/panel/artifact identity. Test unchanged overlapping values with added/removed normal and abnormal items, changed units/protocol, unknown hashes and changed cutoffs. Withhold unsupported aggregate change or show clearly labeled matched-item change and coverage difference. No improvement interpretation from coverage alone. Preserve MVV rejection and null unsupported ages. Retain reproducible tests and review sign-off. |
 | IR3 | Product designer plus documentation owner; IR1 and IR2 report contract | Build the four-part site and research report; reconcile README, metadata, license text and all status claims. Test actual browser journeys in Chromium, Firefox and WebKit at 360, 768 and 1440 px, keyboard-only navigation, 200% zoom, screen reader, light/dark modes, print and failed imports. Target WCAG 2.2 AA; retain automated findings and manual checklist, with no unresolved serious/critical issues or blocked core task. Inspect network traffic for synthetic CSV import and form entry: no measurement data may leave the browser. Repeat IR1 comprehension test and retain screenshots. |

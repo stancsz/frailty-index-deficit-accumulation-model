@@ -1,11 +1,14 @@
 # Goal: a trustworthy published measurement-review showcase
 
-Status: active  
+Status: superseded  
 Created: 2026-09-10  
 Goal ID: T1  
 Steward: project owner; contract prepared by Codex  
 Builder: next implementation agent  
 Acceptance reviewers: project owner plus clinician, statistical and accessibility reviewers; named assignments pending
+
+This goal was superseded on 2026-09-11 by the documentation-governance goal.
+Its evidence and blocker history are retained for traceability.
 
 ## Steward-owned contract
 
@@ -67,7 +70,7 @@ in parallel. Missing M2/M3 evidence does not erase a verified M1 result.
 
 | Milestone | Can proceed with | Exit measurement | State at goal creation |
 |---|---|---|---|
-| M1: reviewable local candidate | Current synthetic fixtures, source and local browser tools | T1.1, T1.3-T1.5 local implementation passes; automated and agent visual portion of T1.2 passes; every remaining human/release check listed explicitly. Retain candidate identity, claim inventory, screenshots and QA receipt. | Not passed; baseline audit only |
+| M1: reviewable local candidate | Current synthetic fixtures, source and local browser tools | T1.1, T1.3-T1.5 local implementation passes; automated and agent visual portion of T1.2 passes; every remaining human/release check listed explicitly. Retain candidate identity, claim inventory, screenshots and QA receipt. | Not passed as an accepted milestone; local implementation and evidence are present, while owner, human-accessibility and release closeout remain open |
 | M2: verified publication | M1, owner-approved terms/contact and authorized publish path | T1.6 passes; zero failed core links, live assets match approved hashes, no unsupported numeric ages in public outputs, no unresolved critical/high-impact defect in core tasks. | Not passed; current live version differs |
 | M3: accepted research showcase | Frozen package, assigned reviewers and five intended users | T1.2 human checks, T1.7 and T1.8 pass; all T1 criteria and applicable IR0-IR3 closeout evidence approved. | Not passed; reviewers/results pending |
 
@@ -167,10 +170,36 @@ unavailable, finish the reviewable candidate and retain the live gap explicitly.
 - [x] Baseline source, receipt, live Actions and rendered-page audit recorded.
 - [x] Official comparable evidence practices reviewed with applicability limits.
 - [x] Goal contract and project tracking synchronized during planning.
-- [ ] T1.1-T1.5: implement and verify presentation, claims and workflow.
+- [x] Objective A preparation: non-approving IR4 protocol, public-data manifest,
+  and manifest-shape validator created; review and data approval remain open.
+- [x] Objective B preparation: reviewer package, comparison worksheet, and
+  de-identified result template created; human review remains not run.
+- [x] T1.1-T1.5 local implementation and automated/state evidence prepared;
+  final reviewer acceptance and exact published-candidate reconciliation remain
+  open.
 - [ ] T1.6: verify the final candidate and published identity.
 - [ ] T1.7: complete intended-user and qualified human review.
-- [ ] T1.8: reconcile repository handoff and final status.
+- [x] T1.8 local dependency/security review and repository handoff comparison
+  prepared; final owner terms, candidate identity and publication reconciliation
+  remain open.
+
+### Next agent objectives
+
+The active contract remains T1. The following ordered objectives make the
+source-backed remaining work actionable without changing T1's non-clinical
+scope or creating a second active GDE goal:
+
+1. Obtain clinical/data/statistical review of the prepared IR4 protocol and
+   public-data manifest in `docs/IR4_MUSCULOSKELETAL_PROTOCOL_2026-09-10.md`
+   and `docs/IR4_PUBLIC_DATA_MANIFEST_2026-09-10.json`. Populate hashes,
+   sentinels, weights, and codebook decisions only after that review. Do not
+   fit a model or claim an evaluated result.
+2. Obtain named clinician, statistician, accessibility, and owner reviewers for
+   the prepared package in `docs/reviews/trust-maturity-2026-09-10/`. Freeze the
+   candidate and fixture identity before collecting results. Human review remains
+   not run until those people perform it.
+3. Freeze and reconcile one public research-release candidate, then collect the
+   exact-candidate remote and live evidence required by T1.6 and IR0.
 
 ### Discoveries and decisions
 
@@ -187,9 +216,79 @@ passed 20/20 during the audit with `clinical_gate: E-005 blocked`. That baseline
 is neither final-candidate evidence nor a pass for this goal. No redesign or
 deployment was performed while authoring this goal.
 
+The first T1 implementation slice now has local Chromium captures at 1440 x 900
+and 390 x 844 in `docs/reviews/trust-maturity-2026-09-10/`. The first screen
+shows purpose, intended user, synthetic scope, research-only status, and a
+one-action example path before the technical appendices. The selected report
+puts the observed measurement ledger before derived cards and records FI
+numerator/denominator, coverage, units, missing assessment date, and model/panel
+identity. `uv run python scripts/verify_docs.py`,
+`uv run python scripts/build_test_receipt.py --check`, and the Node parser suite
+pass after this slice. The current claim inventory is
+`docs/CLAIM_INVENTORY_2026-09-10.md`. The per-check local receipt is
+`docs/reviews/trust-maturity-2026-09-10/t1-local-qa-receipt.json`.
+After the fresh-preview QA receipt update, the current dirty checkout reran
+`uv run python scripts/verify_project.py --json`; all 20 checks passed and
+`clinical_gate` remains `E-005 blocked`. This is current local evidence only,
+not remote same-SHA or publication evidence.
+
+The public evidence register now uses bounded evidence classes and linked
+receipts instead of self-assigned confidence slogans. The first-screen status
+and at-a-glance software label no longer present test-count billboards, and the
+receipt explicitly labels collected counts as metadata rather than executed
+results.
+
+This is local candidate evidence only. Firefox and WebKit reruns after the T1
+markup change now pass the automated target-width and light/dark rerun, with no
+document overflow, a visible primary action, a working demo anchor, and a
+rendered measurement ledger in Chromium 143, Firefox 144.0.2, and WebKit 26.0.
+The print rerun also generated a 1,172-byte report PDF with the report visible
+and non-report sections hidden.
+Selected-report, unavailable-demo, malformed-import, comparison-warning, and
+evidence-view captures are retained beside the first-screen captures.
+Human screen-reader review, actual browser 200% zoom, manual contrast and
+non-color review, and IR1 user study remain open. The current live publication
+audit found successful remote verify and Pages runs for `7fc8fca`, but the live
+page still has superseded confidence/test-receipt wording and returns 404 for
+the current claim inventory. The receipt is
+`docs/reviews/trust-maturity-2026-09-10/live-publication-audit-2026-09-10.json`.
+A second temporary clean snapshot at
+`5dd24112f6582c211b4c93b505db61c2c1e66b26` passes the locked Windows install,
+all 20 verifier checks, documentation checks and installed-wheel/loopback HTTP
+smoke; its bounded receipt is
+`docs/ir0-current-candidate-verification-2026-09-10.json`. This strengthens the
+local candidate evidence only. The prepared freeze manifest
+`docs/reviews/trust-maturity-2026-09-10/candidate-freeze-manifest-2026-09-10.json`
+records that the snapshot predates final candidate-reference reconciliation and
+is not authorized for publication, so it does not close T1.6.
+
+The dependency/runtime review was refreshed for the same local candidate:
+Python 3.13.11 was observed in the locked environment and installed-wheel
+smoke, and a fresh ephemeral `pip-audit 2.10.1` run reported no known
+third-party Python vulnerabilities. The local project distribution was skipped
+because it is not published on PyPI; this does not certify source code,
+JavaScript, SBOM, hosted deployment, or future advisories.
+
+Objective A preparation is also retained in
+`docs/IR4_MUSCULOSKELETAL_PROTOCOL_2026-09-10.md` and
+`docs/IR4_PUBLIC_DATA_MANIFEST_2026-09-10.json`. The manifest-shape check
+passes, but its source hashes, sentinel decisions, survey variance method,
+reviewers, and approval status are intentionally unresolved.
+
+Objective B preparation is retained in
+`docs/reviews/trust-maturity-2026-09-10/REVIEWER_PACKAGE.md`,
+`comparison-review-worksheet.md`, and
+`human-review-results-template.json`. The package is ready for named review,
+but no participant, accessibility, statistical, clinician, or owner result has
+been recorded.
+
 ### Remaining gap
 
 All T1 acceptance criteria remain open pending implementation or final review.
+The IR4 preparation subdeliverable is complete, but its qualified review and
+all downstream scientific gates remain open.
 Named human reviewers, final ownership/evaluation terms and release evidence
-remain outstanding. The audit inspected selected rendered states and source
-surfaces, not every line, browser state, dependency or scientific claim.
+remain outstanding. The live audit confirms remote workflow success but also
+confirms that the published surface is not yet the current local candidate.
+The audit inspected selected rendered states and source surfaces, not every
+line, browser state, dependency or scientific claim.

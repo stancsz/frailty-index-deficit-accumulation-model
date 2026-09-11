@@ -1,0 +1,637 @@
+{
+  "boundary": {
+    "clinical_use": false,
+    "e005_status": "blocked",
+    "measurements_emitted": false,
+    "numeric_category_age": "withheld",
+    "participant_ids_emitted": false,
+    "raw_rows_emitted": false
+  },
+  "categories": {
+    "blood_health": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "LBXWBCSI",
+          "nonmissing_rows": 7593,
+          "source": "CBC_L.XPT",
+          "unique_participants_with_value": 7593
+        },
+        {
+          "field": "LBXHGB",
+          "nonmissing_rows": 7593,
+          "source": "CBC_L.XPT",
+          "unique_participants_with_value": 7593
+        },
+        {
+          "field": "LBXHCT",
+          "nonmissing_rows": 7593,
+          "source": "CBC_L.XPT",
+          "unique_participants_with_value": 7593
+        },
+        {
+          "field": "LBXPLTSI",
+          "nonmissing_rows": 7593,
+          "source": "CBC_L.XPT",
+          "unique_participants_with_value": 7593
+        },
+        {
+          "field": "LBXSAL",
+          "nonmissing_rows": 6366,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6366
+        },
+        {
+          "field": "LBXSCR",
+          "nonmissing_rows": 6326,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6326
+        },
+        {
+          "field": "LBXTC",
+          "nonmissing_rows": 6890,
+          "source": "TCHOL_L.XPT",
+          "unique_participants_with_value": 6890
+        },
+        {
+          "field": "LBXTLG",
+          "nonmissing_rows": 3517,
+          "source": "TRIGLY_L.XPT",
+          "unique_participants_with_value": 3517
+        },
+        {
+          "field": "LBDLDL",
+          "nonmissing_rows": 3480,
+          "source": "TRIGLY_L.XPT",
+          "unique_participants_with_value": 3480
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "body_composition": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "BMXWT",
+          "nonmissing_rows": 8754,
+          "source": "BMX_L.XPT",
+          "unique_participants_with_value": 8754
+        },
+        {
+          "field": "BMXHT",
+          "nonmissing_rows": 8499,
+          "source": "BMX_L.XPT",
+          "unique_participants_with_value": 8499
+        },
+        {
+          "field": "BMXBMI",
+          "nonmissing_rows": 8471,
+          "source": "BMX_L.XPT",
+          "unique_participants_with_value": 8471
+        },
+        {
+          "field": "BMXWAIST",
+          "nonmissing_rows": 8190,
+          "source": "BMX_L.XPT",
+          "unique_participants_with_value": 8190
+        },
+        {
+          "field": "BMXARMC",
+          "nonmissing_rows": 8562,
+          "source": "BMX_L.XPT",
+          "unique_participants_with_value": 8562
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "cardiovascular_health": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "LBXTC",
+          "nonmissing_rows": 6890,
+          "source": "TCHOL_L.XPT",
+          "unique_participants_with_value": 6890
+        },
+        {
+          "field": "LBXTLG",
+          "nonmissing_rows": 3517,
+          "source": "TRIGLY_L.XPT",
+          "unique_participants_with_value": 3517
+        },
+        {
+          "field": "LBDLDL",
+          "nonmissing_rows": 3480,
+          "source": "TRIGLY_L.XPT",
+          "unique_participants_with_value": 3480
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "immune_inflammatory_health": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "LBXWBCSI",
+          "nonmissing_rows": 7593,
+          "source": "CBC_L.XPT",
+          "unique_participants_with_value": 7593
+        },
+        {
+          "field": "LBXLYPCT",
+          "nonmissing_rows": 7582,
+          "source": "CBC_L.XPT",
+          "unique_participants_with_value": 7582
+        },
+        {
+          "field": "LBXMOPCT",
+          "nonmissing_rows": 7582,
+          "source": "CBC_L.XPT",
+          "unique_participants_with_value": 7582
+        },
+        {
+          "field": "LBXNEPCT",
+          "nonmissing_rows": 7582,
+          "source": "CBC_L.XPT",
+          "unique_participants_with_value": 7582
+        },
+        {
+          "field": "LBXSAL",
+          "nonmissing_rows": 6366,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6366
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "joint_health": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "MCQ160A",
+          "nonmissing_rows": 7807,
+          "source": "MCQ_L.XPT",
+          "unique_participants_with_value": 7807
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "kidney_health": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "URXUMA",
+          "nonmissing_rows": 8153,
+          "source": "ALB_CR_L.XPT",
+          "unique_participants_with_value": 8153
+        },
+        {
+          "field": "URXUMS",
+          "nonmissing_rows": 8153,
+          "source": "ALB_CR_L.XPT",
+          "unique_participants_with_value": 8153
+        },
+        {
+          "field": "URXUCR",
+          "nonmissing_rows": 8154,
+          "source": "ALB_CR_L.XPT",
+          "unique_participants_with_value": 8154
+        },
+        {
+          "field": "URXCRS",
+          "nonmissing_rows": 8154,
+          "source": "ALB_CR_L.XPT",
+          "unique_participants_with_value": 8154
+        },
+        {
+          "field": "URDACT",
+          "nonmissing_rows": 8153,
+          "source": "ALB_CR_L.XPT",
+          "unique_participants_with_value": 8153
+        },
+        {
+          "field": "LBXSCR",
+          "nonmissing_rows": 6326,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6326
+        },
+        {
+          "field": "LBXSBU",
+          "nonmissing_rows": 6326,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6326
+        },
+        {
+          "field": "LBXSUA",
+          "nonmissing_rows": 6329,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6329
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "lifestyle_and_function": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "PAD790Q",
+          "nonmissing_rows": 8135,
+          "source": "PAQ_L.XPT",
+          "unique_participants_with_value": 8135
+        },
+        {
+          "field": "PAD800",
+          "nonmissing_rows": 6390,
+          "source": "PAQ_L.XPT",
+          "unique_participants_with_value": 6390
+        },
+        {
+          "field": "ALQ111",
+          "nonmissing_rows": 5481,
+          "source": "ALQ_L.XPT",
+          "unique_participants_with_value": 5481
+        },
+        {
+          "field": "SMQ020",
+          "nonmissing_rows": 8135,
+          "source": "SMQ_L.XPT",
+          "unique_participants_with_value": 8135
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "liver_health": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "LBXSAL",
+          "nonmissing_rows": 6366,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6366
+        },
+        {
+          "field": "LBXSATSI",
+          "nonmissing_rows": 6321,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6321
+        },
+        {
+          "field": "LBXSASSI",
+          "nonmissing_rows": 6308,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6308
+        },
+        {
+          "field": "LBXSAPSI",
+          "nonmissing_rows": 6327,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6327
+        },
+        {
+          "field": "LBXSGTSI",
+          "nonmissing_rows": 6327,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6327
+        },
+        {
+          "field": "LBXSTB",
+          "nonmissing_rows": 6325,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6325
+        },
+        {
+          "field": "LBXSTP",
+          "nonmissing_rows": 6364,
+          "source": "BIOPRO_L.XPT",
+          "unique_participants_with_value": 6364
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "mental_health_history": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "DPQ010",
+          "nonmissing_rows": 5519,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 5519
+        },
+        {
+          "field": "DPQ020",
+          "nonmissing_rows": 5518,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 5518
+        },
+        {
+          "field": "DPQ030",
+          "nonmissing_rows": 5516,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 5516
+        },
+        {
+          "field": "DPQ040",
+          "nonmissing_rows": 5514,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 5514
+        },
+        {
+          "field": "DPQ050",
+          "nonmissing_rows": 5513,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 5513
+        },
+        {
+          "field": "DPQ060",
+          "nonmissing_rows": 5510,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 5510
+        },
+        {
+          "field": "DPQ070",
+          "nonmissing_rows": 5508,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 5508
+        },
+        {
+          "field": "DPQ080",
+          "nonmissing_rows": 5508,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 5508
+        },
+        {
+          "field": "DPQ090",
+          "nonmissing_rows": 5506,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 5506
+        },
+        {
+          "field": "DPQ100",
+          "nonmissing_rows": 4167,
+          "source": "DPQ_L.XPT",
+          "unique_participants_with_value": 4167
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "metabolic_health": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "LBXGLU",
+          "nonmissing_rows": 3672,
+          "source": "GLU_L.XPT",
+          "unique_participants_with_value": 3672
+        },
+        {
+          "field": "LBXGH",
+          "nonmissing_rows": 6715,
+          "source": "GHB_L.XPT",
+          "unique_participants_with_value": 6715
+        },
+        {
+          "field": "LBXTC",
+          "nonmissing_rows": 6890,
+          "source": "TCHOL_L.XPT",
+          "unique_participants_with_value": 6890
+        },
+        {
+          "field": "LBXTLG",
+          "nonmissing_rows": 3517,
+          "source": "TRIGLY_L.XPT",
+          "unique_participants_with_value": 3517
+        },
+        {
+          "field": "LBDLDL",
+          "nonmissing_rows": 3480,
+          "source": "TRIGLY_L.XPT",
+          "unique_participants_with_value": 3480
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "skin_health": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "DEQ034A",
+          "nonmissing_rows": 4302,
+          "source": "DEQ_L.XPT",
+          "unique_participants_with_value": 4302
+        },
+        {
+          "field": "DEQ034C",
+          "nonmissing_rows": 4271,
+          "source": "DEQ_L.XPT",
+          "unique_participants_with_value": 4271
+        },
+        {
+          "field": "DEQ034D",
+          "nonmissing_rows": 4271,
+          "source": "DEQ_L.XPT",
+          "unique_participants_with_value": 4271
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    },
+    "sleep_and_recovery": {
+      "clinical_validity": "not_established",
+      "cycle": "NHANES_2021_2023",
+      "fields": [
+        {
+          "field": "SLD012",
+          "nonmissing_rows": 8388,
+          "source": "SLQ_L.XPT",
+          "unique_participants_with_value": 8388
+        },
+        {
+          "field": "SLQ300",
+          "nonmissing_rows": 8501,
+          "source": "SLQ_L.XPT",
+          "unique_participants_with_value": 8501
+        },
+        {
+          "field": "SLQ310",
+          "nonmissing_rows": 8501,
+          "source": "SLQ_L.XPT",
+          "unique_participants_with_value": 8501
+        },
+        {
+          "field": "SLQ320",
+          "nonmissing_rows": 8501,
+          "source": "SLQ_L.XPT",
+          "unique_participants_with_value": 8501
+        },
+        {
+          "field": "SLQ330",
+          "nonmissing_rows": 8501,
+          "source": "SLQ_L.XPT",
+          "unique_participants_with_value": 8501
+        },
+        {
+          "field": "SLD013",
+          "nonmissing_rows": 8387,
+          "source": "SLQ_L.XPT",
+          "unique_participants_with_value": 8387
+        }
+      ],
+      "mapping_review": "pending",
+      "status": "real_source_fields_present"
+    }
+  },
+  "cycle": "NHANES_2021_2023",
+  "data_sources": [
+    {
+      "columns": 8,
+      "cycle": "NHANES_2021_2023",
+      "filename": "ALB_CR_L.XPT",
+      "rows": 8493,
+      "sha256": "fc011a80d14419884559372a3196f0a268b494f4f2fa972d00be1f3a23ba3c41",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/ALB_CR_L.XPT"
+    },
+    {
+      "columns": 9,
+      "cycle": "NHANES_2021_2023",
+      "filename": "ALQ_L.XPT",
+      "rows": 6337,
+      "sha256": "24debf0555c8253e34cce8d6a2e21766c84b10559e0c979c1a36fb4dd86789d9",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/ALQ_L.XPT"
+    },
+    {
+      "columns": 42,
+      "cycle": "NHANES_2021_2023",
+      "filename": "BIOPRO_L.XPT",
+      "rows": 7199,
+      "sha256": "912b345aad6b71d53a3bc299a7f3bb0d5530e9fa5b6e76d2d00103979861a476",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BIOPRO_L.XPT"
+    },
+    {
+      "columns": 22,
+      "cycle": "NHANES_2021_2023",
+      "filename": "BMX_L.XPT",
+      "rows": 8860,
+      "sha256": "44440c416d9ad709e8b1708a5975378ab4d5b18edc39eb5015c2ae7186500170",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/BMX_L.XPT"
+    },
+    {
+      "columns": 23,
+      "cycle": "NHANES_2021_2023",
+      "filename": "CBC_L.XPT",
+      "rows": 8727,
+      "sha256": "4405da2a5899dcd11e3ef4dbec0b4d2fca6d736a3efa7a85afee668baa95923f",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/CBC_L.XPT"
+    },
+    {
+      "columns": 4,
+      "cycle": "NHANES_2021_2023",
+      "filename": "DEQ_L.XPT",
+      "rows": 4305,
+      "sha256": "fd92d9b529a77a67fc2eba3fbc4469d34cf7631d4b96ae2be7fc2f91fc79cdca",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEQ_L.XPT"
+    },
+    {
+      "columns": 11,
+      "cycle": "NHANES_2021_2023",
+      "filename": "DPQ_L.XPT",
+      "rows": 6337,
+      "sha256": "25605a02685035fe997477b31a0991cca2776b0f72f24a8e61ac5b018456304b",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DPQ_L.XPT"
+    },
+    {
+      "columns": 3,
+      "cycle": "NHANES_2021_2023",
+      "filename": "GHB_L.XPT",
+      "rows": 7199,
+      "sha256": "67aee0353160e2392dc0a33bece99b90764a630c76d82415ac4639105ad9dd03",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/GHB_L.XPT"
+    },
+    {
+      "columns": 4,
+      "cycle": "NHANES_2021_2023",
+      "filename": "GLU_L.XPT",
+      "rows": 3996,
+      "sha256": "70f773ab37e3d8485341f32137e280e05b9279e5fe9b6f0362e4052d8fe9a201",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/GLU_L.XPT"
+    },
+    {
+      "columns": 35,
+      "cycle": "NHANES_2021_2023",
+      "filename": "MCQ_L.XPT",
+      "rows": 11744,
+      "sha256": "0889bb3eaa5adedf1a11c4af2d4776fc4c4c3cfdeea24fcedb77c4636b478f61",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/MCQ_L.XPT"
+    },
+    {
+      "columns": 8,
+      "cycle": "NHANES_2021_2023",
+      "filename": "PAQ_L.XPT",
+      "rows": 8153,
+      "sha256": "de34acfed4523f10f52bea06e64ed33c8db973cb38d3539eeceb2b68039248c8",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/PAQ_L.XPT"
+    },
+    {
+      "columns": 7,
+      "cycle": "NHANES_2021_2023",
+      "filename": "SLQ_L.XPT",
+      "rows": 8501,
+      "sha256": "918c3258b2f466ac1cae55ea45330c736dbdc573ee4dc72306e3d2b222764741",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/SLQ_L.XPT"
+    },
+    {
+      "columns": 9,
+      "cycle": "NHANES_2021_2023",
+      "filename": "SMQ_L.XPT",
+      "rows": 9015,
+      "sha256": "abbefebfa5585b1e19c079fa14be20c113a4649318070197214b258d05b93c50",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/SMQ_L.XPT"
+    },
+    {
+      "columns": 4,
+      "cycle": "NHANES_2021_2023",
+      "filename": "TCHOL_L.XPT",
+      "rows": 8068,
+      "sha256": "5c3312e555bb0706fd97cbd63fcbc9e78f00bda8d2d149732d9dd368169b25d3",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/TCHOL_L.XPT"
+    },
+    {
+      "columns": 10,
+      "cycle": "NHANES_2021_2023",
+      "filename": "TRIGLY_L.XPT",
+      "rows": 3996,
+      "sha256": "77679864c33b98d9b6db528f3a0ac0a15ea34bde9731c04d23bc9801277975f4",
+      "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/TRIGLY_L.XPT"
+    }
+  ],
+  "not_collected_in_cycle": {
+    "bone_health": "No mapped DXA source was identified in the 2021-2023 intake.",
+    "brain_cognitive_health": "No CFQ cognitive source file was identified in the 2021-2023 mapped intake.",
+    "cardiorespiratory_health": "No mapped BPX or spirometry source was identified; lipid fields remain separately mapped to cardiovascular health.",
+    "fluid_and_cellular": "No official BIA source file was identified in the 2021-2023 mapped intake.",
+    "lifestyle_and_function": "No mapped PFQ or objective activity-monitor source was identified; PAQ, alcohol, and smoking fields are included above.",
+    "muscle_health": "No mapped grip-strength or DXA muscle source was identified in the 2021-2023 intake."
+  },
+  "receipt_type": "nhanes-category-cycle-receipt-v1",
+  "schema_version": 1
+}

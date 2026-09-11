@@ -114,9 +114,9 @@ test("Pages keeps development and single-scan limits visible", () => {
   assert.match(testReceipt.node_command, /--test-reporter=tap/);
   assert.match(pageSource, /test-receipt\.json/);
   assert.match(pagesWorkflow, /scripts\/build_test_receipt\.py --check/);
-  assert.match(pageSource, /site\.js\?v=e088/);
-  assert.match(pageSource, /intake-form\.js\?v=e088/);
-  assert.match(pageSource, /seca-parser\.js\?v=e088/);
+  assert.match(pageSource, /site\.js\?v=e103/);
+  assert.match(pageSource, /intake-form\.js\?v=e103/);
+  assert.match(pageSource, /seca-parser\.js\?v=e103/);
   assert.match(pageSource, /subgroup_support_warnings/);
   assert.match(pageSource, /support warning/);
   assert.match(pageSource, /outcome_metric_status/);
@@ -323,26 +323,26 @@ test("Pages renders the full-body category report with withheld category ages", 
   assert.match(pageSource, /data-demo-categories/);
   assert.ok(
     pageSource.includes(
-      "Skin and bone measurements are not currently collected.",
+      "real public-data source coverage",
     ),
   );
+  assert.ok(pageSource.includes("DXA bone, cognitive testing, dermatology"));
   assert.ok(
     pageSource.includes(
-      "osteoarthritis history and chair-rise timing",
-    ),
-  );
-  assert.ok(
-    pageSource.includes(
-      "category ages are withheld until a",
+      "Category ages are withheld until a",
     ),
   );
   assert.match(pageSource, /development only · withheld/);
-  assert.match(pageSource, /osteoarthritis history/);
+  assert.match(pageSource, /participant has/);
   assert.match(siteSource, /withheld_unvalidated/);
   assert.match(siteSource, /function.*renderDemo/);
   assert.match(siteSource, /result\.category_reports/);
   assert.match(siteSource, /Chronological age context/);
   assert.match(siteSource, /category\.measurement_profile \|\| category\.measurements/);
+  assert.match(siteSource, /category\.source_data/);
+  assert.match(siteSource, /Real public source available/);
+  assert.match(siteSource, /observed source rows/);
+  assert.match(siteSource, /observed source participants/);
   assert.match(siteSource, /category\.reference_interpretation/);
   assert.match(siteSource, /category\.next_step/);
   assert.match(pageSource, /category-specific model,\s+reference panel/);
@@ -649,7 +649,7 @@ test("Pages exposes a visible :focus-visible rule for copy buttons and a printab
     /\.demo-controls, \.demo-result\s*\{[\s\S]*?min-width:\s*0/,
   );
   assert.match(siteCss, /\.demo-flag\s*\{[\s\S]*?overflow-wrap:\s*anywhere/);
-  assert.match(pageSource, /site\.css\?v=ir3-responsive-5/);
+  assert.match(pageSource, /site\.css\?v=ir3-t1-review-1/);
   // Reduced-motion handling must remain in place.
   assert.match(siteCss, /@media \(prefers-reduced-motion: reduce\)/);
 });

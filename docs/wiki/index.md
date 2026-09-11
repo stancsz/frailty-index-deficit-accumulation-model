@@ -14,3 +14,20 @@
 014 | current | 2026-09-10 | How does the comparison layer prevent measurement coverage changes from looking like health improvement?
 015 | current | 2026-09-10 | What does the clinician-first research report establish, and which readiness gates remain open?
 016 | current | 2026-09-10 | What visual, evidence, workflow and publication checks make the research showcase trustworthy?
+017 | draft | 2026-09-10 | Which remaining validation inputs can be obtained from public sources?
+018 | current | 2026-09-11 | How are product intent, architecture, goals, evidence, and reader documentation governed under GDE?
+020 | current | 2026-09-11 | What evidence is required to measure frontier-token value without overclaiming?
+021 | current | 2026-09-11 | What engineering work and verification were completed at the current release checkpoint?
+# Wiki index
+
+This Wiki is reader guidance and retained decision history. Its canonical
+authority is the repository's [documentation catalog](../DOCUMENTATION_CATALOG.md),
+which defers to [product intent](../product-specs/PRODUCT_INTENT.md),
+[architecture](../../ARCHITECTURE.md), [GOAL.md](../../GOAL.md), and the one
+[active execution goal](../../goals/active/frontier-value-measurement/GOAL.md).
+Wiki entries must not override those documents.
+# Evidence and current status
+
+- [Production and value evidence, 2026-09-11](../PRODUCTION_VALUE_EVIDENCE_2026-09-11.md)
+- [Real public-data intake, 2026-09-11](../REAL_DATA_INTAKE_2026-09-11.md)
+019 | current | 2026-09-11 | Real public-data category coverage intake |

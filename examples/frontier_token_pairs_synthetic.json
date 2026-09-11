@@ -1,0 +1,36 @@
+{
+  "schema_version": "frontier-token-pair-v1",
+  "data_class": "synthetic_fixture",
+  "records": [
+    {
+      "task_id": "task-001",
+      "baseline": {"calls": 1, "input_tokens": 1200, "output_tokens": 300, "latency_ms": 2100, "success": true, "quality_score": 0.9, "quality_pass": true, "failure_reason": null},
+      "candidate": {"calls": 1, "input_tokens": 700, "output_tokens": 280, "latency_ms": 1500, "success": true, "quality_score": 0.9, "quality_pass": true, "failure_reason": null}
+    },
+    {
+      "task_id": "task-002",
+      "baseline": {"calls": 2, "input_tokens": 1500, "output_tokens": 400, "latency_ms": 3200, "success": true, "quality_score": 0.8, "quality_pass": true, "failure_reason": null},
+      "candidate": {"calls": 1, "input_tokens": 800, "output_tokens": 330, "latency_ms": 1700, "success": true, "quality_score": 0.82, "quality_pass": true, "failure_reason": null}
+    },
+    {
+      "task_id": "task-003",
+      "baseline": {"calls": 1, "input_tokens": 1000, "output_tokens": 250, "latency_ms": 1800, "success": true, "quality_score": 0.85, "quality_pass": true, "failure_reason": null},
+      "candidate": {"calls": 2, "input_tokens": 600, "output_tokens": 260, "latency_ms": 2400, "success": true, "quality_score": 0.84, "quality_pass": true, "failure_reason": null}
+    },
+    {
+      "task_id": "task-004",
+      "baseline": {"calls": 1, "input_tokens": 1100, "output_tokens": 260, "latency_ms": 1900, "success": true, "quality_score": 0.88, "quality_pass": true, "failure_reason": null},
+      "candidate": {"calls": 1, "input_tokens": 650, "output_tokens": 240, "latency_ms": 1450, "success": true, "quality_score": 0.87, "quality_pass": true, "failure_reason": null}
+    },
+    {
+      "task_id": "task-005",
+      "baseline": {"calls": 1, "input_tokens": 900, "output_tokens": 220, "latency_ms": 1600, "success": true, "quality_score": 0.83, "quality_pass": true, "failure_reason": null},
+      "candidate": {"calls": 1, "input_tokens": 550, "output_tokens": 210, "latency_ms": 1300, "success": true, "quality_score": 0.82, "quality_pass": true, "failure_reason": null}
+    },
+    {
+      "task_id": "task-006",
+      "baseline": {"calls": 2, "input_tokens": 1300, "output_tokens": 350, "latency_ms": 2900, "success": false, "quality_score": null, "quality_pass": false, "failure_reason": "synthetic_timeout"},
+      "candidate": {"calls": 1, "input_tokens": 750, "output_tokens": 300, "latency_ms": 1550, "success": true, "quality_score": 0.81, "quality_pass": true, "failure_reason": null}
+    }
+  ]
+}

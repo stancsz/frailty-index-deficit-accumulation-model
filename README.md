@@ -47,6 +47,24 @@ other governed domains). The current release provides the measurement profile
 and explicit withheld/unavailable states; see the detailed
 [`docs/SYSTEM_AGE_REPORT_SPEC.md`](docs/SYSTEM_AGE_REPORT_SPEC.md).
 
+## Documentation and agent contract
+
+This repository uses Goal-Driven Engineering as its documentation operating
+model. Read the authority layers in this order:
+
+1. [`docs/product-specs/PRODUCT_INTENT.md`](docs/product-specs/PRODUCT_INTENT.md)
+   for product purpose and boundaries.
+2. [`ARCHITECTURE.md`](ARCHITECTURE.md) for system shape and invariants.
+3. [`GOAL.md`](GOAL.md) for project-wide evidence and readiness gates.
+4. [`goals/active/documentation-governance/GOAL.md`](goals/active/documentation-governance/GOAL.md)
+   for the current execution cycle.
+
+The complete documentation inventory and reconciliation rules are in the
+[`documentation catalog`](docs/DOCUMENTATION_CATALOG.md).
+
+The reports, operations guides, release receipts, and Wiki mirror these
+authorities. Historical receipts are retained evidence, not active plans.
+
 ## Use the agent skill
 
 The supported agent contract is [`skills/frailty-engine/SKILL.md`](skills/frailty-engine/SKILL.md).
@@ -103,6 +121,9 @@ the repository documentation and the [research wiki index](docs/wiki/index.md).
 The clinician-first narrative, evidence ledger, limitations, and practical
 usage report is [`docs/RESEARCH_REPORT.md`](docs/RESEARCH_REPORT.md). The IR1
 study protocol is [`docs/CLINICIAN_WORKFLOW_STUDY.md`](docs/CLINICIAN_WORKFLOW_STUDY.md).
+The current public claim inventory, applicability limits, source identities and
+evidence status are recorded in
+[`docs/CLAIM_INVENTORY_2026-09-10.md`](docs/CLAIM_INVENTORY_2026-09-10.md).
 The current full-body report design and its limitations are documented in
 [`docs/wiki/005-full-body-category-reports.md`](docs/wiki/005-full-body-category-reports.md).
 The finished system-specific age-equivalent profile and its scientific evidence

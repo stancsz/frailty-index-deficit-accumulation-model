@@ -368,6 +368,36 @@
             "display_name": "Body composition",
             "category": "body_composition",
             "label": "Body composition",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_measurements",
+              "source_files": [
+                "BMX_G.XPT",
+                "DXXAG_G.XPT"
+              ],
+              "fields": [
+                "BMXWT",
+                "BMXHT",
+                "BMXBMI",
+                "BMXWAIST",
+                "BMXARMC",
+                "BMXSAD1",
+                "DXXANFM",
+                "DXXANLM",
+                "DXXVFATM"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 9243,
+              "observed_source_participants": 9243,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BMX_E.XPT",
+                "field": "BMXBMI",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -455,6 +485,40 @@
             "display_name": "Fluid and cellular health",
             "category": "fluid_and_cellular",
             "label": "Fluid and cellular health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_BIA_measurements",
+              "source_files": [
+                "BIX_C.XPT"
+              ],
+              "fields": [
+                "BIAEXSTS",
+                "BIDFIT",
+                "BIDRECF",
+                "BIDRICF",
+                "BIDCM",
+                "BIDTD",
+                "BIDALPHA",
+                "BIDFC",
+                "BIDECF",
+                "BIDTBW",
+                "BIDICF",
+                "BIDFFM",
+                "BIDFAT",
+                "BIDPFAT"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 5329,
+              "observed_source_participants": 5329,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BIX_C.XPT",
+                "field": "BIDTBW",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -581,6 +645,35 @@
             "display_name": "Muscle health",
             "category": "muscle_health",
             "label": "Muscle health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_measurements",
+              "source_files": [
+                "MGX_G.XPT",
+                "DXX_G.XPT"
+              ],
+              "fields": [
+                "MGDEXSTS",
+                "MGDCGSZ",
+                "MGXH1T1",
+                "MGXH2T1",
+                "MGXH1T2",
+                "MGXH2T2",
+                "DXDLALE",
+                "DXDRALE"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7821,
+              "observed_source_participants": 7821,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BMX_E.XPT",
+                "field": "BMXARMC",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -630,6 +723,105 @@
             "display_name": "Joint health",
             "category": "joint_health",
             "label": "Joint health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "radiographic_and_clinical_mobility_measurements_plus_history_and_function_proxy",
+              "source_files": [
+                "ARQ_F.XPT",
+                "ARX_F.XPT",
+                "xr.dat",
+                "MCQ_G.XPT",
+                "PFQ_G.XPT"
+              ],
+              "fields": [
+                "ARQ010",
+                "ARQ020A",
+                "ARQ020B",
+                "ARQ020C",
+                "ARQ020D",
+                "ARQ020E",
+                "ARQ020F",
+                "ARQ020G",
+                "ARQ040",
+                "ARQ050",
+                "ARQ060",
+                "ARQ070",
+                "ARQ073",
+                "ARQ077",
+                "ARQ080",
+                "ARQ100",
+                "ARQ110",
+                "ARD125A",
+                "ARQ125C",
+                "ARQ125D",
+                "ARQ125E",
+                "ARDEXSTS",
+                "ARXO2WD",
+                "ARXCCIN",
+                "ARXCCEX",
+                "ARDDINEX",
+                "ARXXDIST",
+                "ARDLFTL",
+                "XRPKLR",
+                "XRPKLL",
+                "XRPOMFR",
+                "XRPOMFL",
+                "XRPOMTR",
+                "XRPOMTL",
+                "XRPOLFR",
+                "XRPOLFL",
+                "XRPOLTR",
+                "XRPOLTL",
+                "XRPSMFR",
+                "XRPSMFL",
+                "XRPSMTR",
+                "XRPSMTL",
+                "XRPSLFR",
+                "XRPSLFL",
+                "XRPSLTR",
+                "XRPSLTL",
+                "XRPCHOR",
+                "XRPCHOL",
+                "XRPJRR",
+                "XRPJRL",
+                "MCQ160A",
+                "MCQ160N",
+                "MCQ180A",
+                "MCQ180N",
+                "PFQ054",
+                "PFQ059",
+                "PFQ061B",
+                "PFQ061C",
+                "PFQ061D",
+                "PFQ061E",
+                "PFQ061F",
+                "PFQ061G",
+                "PFQ061H",
+                "PFQ061I",
+                "PFQ061J",
+                "PFQ061K",
+                "PFQ061L",
+                "PFQ061M",
+                "PFQ061N",
+                "PFQ061O",
+                "PFQ061P",
+                "PFQ061Q",
+                "PFQ061R",
+                "PFQ061S",
+                "PFQ061T"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 5559,
+              "observed_source_participants": 5559,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "PFQ_E.XPT",
+                "field": "PFQ054",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -716,6 +908,33 @@
             "display_name": "Bone health",
             "category": "bone_health",
             "label": "Bone health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_DXA_measurements",
+              "source_files": [
+                "DXX_G.XPT"
+              ],
+              "fields": [
+                "DXDTOBMD",
+                "DXDTOBMC",
+                "DXDTOFAT",
+                "DXDSTBMD",
+                "DXDSTBMC",
+                "DXDSTFAT",
+                "DXXLSBMD"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 4620,
+              "observed_source_participants": 4620,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "DXX_D.XPT",
+                "field": "DXDTOBMD",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -762,6 +981,53 @@
             "display_name": "Skin health",
             "category": "skin_health",
             "label": "Skin health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_dermatology_image_readings_plus_questionnaire_proxy",
+              "source_files": [
+                "DEX_C.XPT",
+                "DEQ_G.XPT"
+              ],
+              "fields": [
+                "MXAEXSTS",
+                "DEABACK",
+                "DEAINARM",
+                "DEAFRLEG",
+                "DEALOLEG",
+                "DEX1FITZ",
+                "DED1HDDX",
+                "DED1PSDX",
+                "DEX2FITZ",
+                "DED2HDDX",
+                "DED2PSDX",
+                "DEX6FITZ",
+                "DED6HDDX",
+                "DED6PSDX",
+                "DEX6PSFH",
+                "DEX6PSBK",
+                "DEX6PSPL",
+                "DEX6PSAL",
+                "DED031",
+                "DEQ034A",
+                "DEQ034C",
+                "DEQ034D",
+                "DEQ038G",
+                "DEQ038Q",
+                "DED120",
+                "DED125"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 3768,
+              "observed_source_participants": 3768,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "DEQ_D.XPT",
+                "field": "DEQ034C",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -808,6 +1074,44 @@
             "display_name": "Blood health",
             "category": "blood_health",
             "label": "Blood health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_measurements",
+              "source_files": [
+                "APOB_G.XPT",
+                "BIOPRO_G.XPT",
+                "CBC_G.XPT",
+                "TCHOL_G.XPT",
+                "TRIGLY_G.XPT"
+              ],
+              "fields": [
+                "LBXAPB",
+                "LBDAPBSI",
+                "LBXSAL",
+                "LBXSCR",
+                "LBXWBCSI",
+                "LBXRDW",
+                "LBXRBCSI",
+                "LBXHGB",
+                "LBXHCT",
+                "LBXMCVSI",
+                "LBXPLTSI",
+                "LBXTC",
+                "LBXTR",
+                "LBDLDL"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7953,
+              "observed_source_participants": 7953,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "CBC_E.XPT",
+                "field": "LBXHGB",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1085,6 +1389,41 @@
             "display_name": "Cardiovascular health",
             "category": "cardiovascular_health",
             "label": "Cardiovascular health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "repeated_examination_measurements",
+              "source_files": [
+                "APOB_G.XPT",
+                "BPX_G.XPT",
+                "TCHOL_G.XPT",
+                "TRIGLY_G.XPT"
+              ],
+              "fields": [
+                "LBXAPB",
+                "LBDAPBSI",
+                "BPXPLS",
+                "BPXSY1",
+                "BPXDI1",
+                "BPXSY2",
+                "BPXDI2",
+                "BPXSY3",
+                "BPXDI3",
+                "LBXTC",
+                "LBXTR",
+                "LBDLDL"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7060,
+              "observed_source_participants": 7060,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BPX_E.XPT",
+                "field": "BPXSY1",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1212,6 +1551,47 @@
             "display_name": "Cardiorespiratory health",
             "category": "cardiorespiratory_health",
             "label": "Cardiorespiratory health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "repeated_examination_and_spirometry_measurements",
+              "source_files": [
+                "BPX_G.XPT",
+                "ENX_G.XPT",
+                "SPX_G.XPT"
+              ],
+              "fields": [
+                "ENXSTAT",
+                "ENAATMPT",
+                "ENXTR1Q",
+                "ENXTR2Q",
+                "ENXMEAN",
+                "BPXPLS",
+                "BPXSY1",
+                "BPXDI1",
+                "BPXSY2",
+                "BPXDI2",
+                "BPXSY3",
+                "BPXDI3",
+                "SPXNFVC",
+                "SPXNFEV1",
+                "SPXNF257",
+                "SPXNPEF",
+                "SPXNQFVC",
+                "SPXNQFV1",
+                "SPDNACC"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7495,
+              "observed_source_participants": 7495,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BPX_E.XPT",
+                "field": "BPXSY1",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1260,6 +1640,42 @@
             "display_name": "Immune and inflammatory health",
             "category": "immune_inflammatory_health",
             "label": "Immune and inflammatory health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_measurements",
+              "source_files": [
+                "CBC_G.XPT",
+                "CRP_F.XPT",
+                "ENX_G.XPT"
+              ],
+              "fields": [
+                "LBXCRP",
+                "ENXMEAN",
+                "LBXWBCSI",
+                "LBXRDW",
+                "LBXLYPCT",
+                "LBXMOPCT",
+                "LBXNEPCT",
+                "LBXEOPCT",
+                "LBXBAPCT",
+                "LBDLYMNO",
+                "LBDMONO",
+                "LBDNENO",
+                "LBDEONO",
+                "LBDBANO"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 8299,
+              "observed_source_participants": 8299,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "CBC_E.XPT",
+                "field": "LBXWBCSI",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1384,6 +1800,35 @@
             "display_name": "Brain and cognitive health",
             "category": "brain_cognitive_health",
             "label": "Brain and cognitive health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "standardized_cognitive_testing",
+              "source_files": [
+                "CFQ_G.XPT"
+              ],
+              "fields": [
+                "CFASTAT",
+                "CFDCCS",
+                "CFDCRNC",
+                "CFDCST1",
+                "CFDCSR",
+                "CFDCIT1",
+                "CFDAST",
+                "CFDAPP",
+                "CFDDS"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 1687,
+              "observed_source_participants": 1687,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "CFQ_H.XPT",
+                "field": "CFDCCS",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1430,6 +1875,36 @@
             "display_name": "Metabolic health",
             "category": "metabolic_health",
             "label": "Metabolic health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_and_history",
+              "source_files": [
+                "GLU_G.XPT",
+                "GHB_G.XPT",
+                "DIQ_G.XPT",
+                "TCHOL_G.XPT",
+                "TRIGLY_G.XPT"
+              ],
+              "fields": [
+                "LBXGLU",
+                "LBXGH",
+                "DIQ010",
+                "LBXTC",
+                "LBXTR",
+                "LBDLDL"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 9363,
+              "observed_source_participants": 9363,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "GLU_E.XPT",
+                "field": "LBXGLU",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1631,6 +2106,35 @@
             "display_name": "Kidney health",
             "category": "kidney_health",
             "label": "Kidney health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_measurement",
+              "source_files": [
+                "ALB_CR_G.XPT",
+                "BIOPRO_G.XPT"
+              ],
+              "fields": [
+                "URXUMA",
+                "URXUMS",
+                "URXUCR",
+                "URXCRS",
+                "URDACT",
+                "LBXSCR",
+                "LBXSBU",
+                "LBXSUA"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7636,
+              "observed_source_participants": 7636,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "ALB_CR_E.XPT",
+                "field": "URXUCR",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1715,6 +2219,41 @@
             "display_name": "Liver health",
             "category": "liver_health",
             "label": "Liver health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_transient_elastography_plus_laboratory_measurements",
+              "source_files": [
+                "P_LUX.XPT",
+                "BIOPRO_G.XPT"
+              ],
+              "fields": [
+                "LUAXSTAT",
+                "LUANMVGP",
+                "LUXSMED",
+                "LUXSIQR",
+                "LUXSIQRM",
+                "LUXCAPM",
+                "LUXCPIQR",
+                "LBXSAL",
+                "LBXSATSI",
+                "LBXSASSI",
+                "LBXSAPSI",
+                "LBXSGTSI",
+                "LBXSTB",
+                "LBXSTP"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 10409,
+              "observed_source_participants": 10409,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BIOPRO_E.XPT",
+                "field": "LBXSATSI",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1802,6 +2341,35 @@
             "display_name": "Sleep and recovery",
             "category": "sleep_and_recovery",
             "label": "Sleep and recovery",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "questionnaire_and_objective_monitoring",
+              "source_files": [
+                "SLQ_G.XPT",
+                "PAXHD_G.XPT",
+                "PAXDAY_G.XPT"
+              ],
+              "fields": [
+                "SLD010H",
+                "SLQ050",
+                "SLQ060",
+                "PAXSTS",
+                "PAXVMD",
+                "PAXSWMD",
+                "PAXQFD"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 61168,
+              "observed_source_participants": 7821,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "SLQ_E.XPT",
+                "field": "SLD010H",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1888,6 +2456,45 @@
             "display_name": "Lifestyle and function",
             "category": "lifestyle_and_function",
             "label": "Lifestyle and function",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "questionnaire_and_functional_measurements",
+              "source_files": [
+                "PAQ_G.XPT",
+                "SMQ_G.XPT",
+                "ALQ_G.XPT",
+                "PFQ_G.XPT",
+                "PAXHD_G.XPT",
+                "PAXDAY_G.XPT"
+              ],
+              "fields": [
+                "PAQ605",
+                "SMQ020",
+                "ALQ101",
+                "PFQ049",
+                "PFQ054",
+                "PFQ061B",
+                "PFQ061C",
+                "PFQ061M",
+                "PFQ061N",
+                "PAXSTS",
+                "PAXVMD",
+                "PAXMTSD",
+                "PAXWWMD",
+                "PAXQFD"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 61168,
+              "observed_source_participants": 7821,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "PFQ_E.XPT",
+                "field": "PFQ049",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -1938,6 +2545,44 @@
             "display_name": "Mental-health history",
             "category": "mental_health_history",
             "label": "Mental-health history",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "depression_screening_and_current_health_status_questionnaire",
+              "source_files": [
+                "DPQ_G.XPT",
+                "HSQ_G.XPT"
+              ],
+              "fields": [
+                "HSD010",
+                "HSQ470",
+                "HSQ480",
+                "HSQ490",
+                "HSQ493",
+                "HSQ496",
+                "HSAQUEX",
+                "DPQ010",
+                "DPQ020",
+                "DPQ030",
+                "DPQ040",
+                "DPQ050",
+                "DPQ060",
+                "DPQ070",
+                "DPQ080",
+                "DPQ090",
+                "DPQ100"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 8956,
+              "observed_source_participants": 8956,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "DPQ_E.XPT",
+                "field": "DPQ010",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 45.0,
               "unit": "years",
@@ -3572,6 +4217,36 @@
             "display_name": "Body composition",
             "category": "body_composition",
             "label": "Body composition",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_measurements",
+              "source_files": [
+                "BMX_G.XPT",
+                "DXXAG_G.XPT"
+              ],
+              "fields": [
+                "BMXWT",
+                "BMXHT",
+                "BMXBMI",
+                "BMXWAIST",
+                "BMXARMC",
+                "BMXSAD1",
+                "DXXANFM",
+                "DXXANLM",
+                "DXXVFATM"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 9243,
+              "observed_source_participants": 9243,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BMX_E.XPT",
+                "field": "BMXBMI",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -3732,6 +4407,40 @@
             "display_name": "Fluid and cellular health",
             "category": "fluid_and_cellular",
             "label": "Fluid and cellular health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_BIA_measurements",
+              "source_files": [
+                "BIX_C.XPT"
+              ],
+              "fields": [
+                "BIAEXSTS",
+                "BIDFIT",
+                "BIDRECF",
+                "BIDRICF",
+                "BIDCM",
+                "BIDTD",
+                "BIDALPHA",
+                "BIDFC",
+                "BIDECF",
+                "BIDTBW",
+                "BIDICF",
+                "BIDFFM",
+                "BIDFAT",
+                "BIDPFAT"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 5329,
+              "observed_source_participants": 5329,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BIX_C.XPT",
+                "field": "BIDTBW",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -3858,6 +4567,35 @@
             "display_name": "Muscle health",
             "category": "muscle_health",
             "label": "Muscle health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_measurements",
+              "source_files": [
+                "MGX_G.XPT",
+                "DXX_G.XPT"
+              ],
+              "fields": [
+                "MGDEXSTS",
+                "MGDCGSZ",
+                "MGXH1T1",
+                "MGXH2T1",
+                "MGXH1T2",
+                "MGXH2T2",
+                "DXDLALE",
+                "DXDRALE"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7821,
+              "observed_source_participants": 7821,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BMX_E.XPT",
+                "field": "BMXARMC",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -4058,6 +4796,105 @@
             "display_name": "Joint health",
             "category": "joint_health",
             "label": "Joint health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "radiographic_and_clinical_mobility_measurements_plus_history_and_function_proxy",
+              "source_files": [
+                "ARQ_F.XPT",
+                "ARX_F.XPT",
+                "xr.dat",
+                "MCQ_G.XPT",
+                "PFQ_G.XPT"
+              ],
+              "fields": [
+                "ARQ010",
+                "ARQ020A",
+                "ARQ020B",
+                "ARQ020C",
+                "ARQ020D",
+                "ARQ020E",
+                "ARQ020F",
+                "ARQ020G",
+                "ARQ040",
+                "ARQ050",
+                "ARQ060",
+                "ARQ070",
+                "ARQ073",
+                "ARQ077",
+                "ARQ080",
+                "ARQ100",
+                "ARQ110",
+                "ARD125A",
+                "ARQ125C",
+                "ARQ125D",
+                "ARQ125E",
+                "ARDEXSTS",
+                "ARXO2WD",
+                "ARXCCIN",
+                "ARXCCEX",
+                "ARDDINEX",
+                "ARXXDIST",
+                "ARDLFTL",
+                "XRPKLR",
+                "XRPKLL",
+                "XRPOMFR",
+                "XRPOMFL",
+                "XRPOMTR",
+                "XRPOMTL",
+                "XRPOLFR",
+                "XRPOLFL",
+                "XRPOLTR",
+                "XRPOLTL",
+                "XRPSMFR",
+                "XRPSMFL",
+                "XRPSMTR",
+                "XRPSMTL",
+                "XRPSLFR",
+                "XRPSLFL",
+                "XRPSLTR",
+                "XRPSLTL",
+                "XRPCHOR",
+                "XRPCHOL",
+                "XRPJRR",
+                "XRPJRL",
+                "MCQ160A",
+                "MCQ160N",
+                "MCQ180A",
+                "MCQ180N",
+                "PFQ054",
+                "PFQ059",
+                "PFQ061B",
+                "PFQ061C",
+                "PFQ061D",
+                "PFQ061E",
+                "PFQ061F",
+                "PFQ061G",
+                "PFQ061H",
+                "PFQ061I",
+                "PFQ061J",
+                "PFQ061K",
+                "PFQ061L",
+                "PFQ061M",
+                "PFQ061N",
+                "PFQ061O",
+                "PFQ061P",
+                "PFQ061Q",
+                "PFQ061R",
+                "PFQ061S",
+                "PFQ061T"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 5559,
+              "observed_source_participants": 5559,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "PFQ_E.XPT",
+                "field": "PFQ054",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -4180,6 +5017,33 @@
             "display_name": "Bone health",
             "category": "bone_health",
             "label": "Bone health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_DXA_measurements",
+              "source_files": [
+                "DXX_G.XPT"
+              ],
+              "fields": [
+                "DXDTOBMD",
+                "DXDTOBMC",
+                "DXDTOFAT",
+                "DXDSTBMD",
+                "DXDSTBMC",
+                "DXDSTFAT",
+                "DXXLSBMD"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 4620,
+              "observed_source_participants": 4620,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "DXX_D.XPT",
+                "field": "DXDTOBMD",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -4226,6 +5090,53 @@
             "display_name": "Skin health",
             "category": "skin_health",
             "label": "Skin health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_dermatology_image_readings_plus_questionnaire_proxy",
+              "source_files": [
+                "DEX_C.XPT",
+                "DEQ_G.XPT"
+              ],
+              "fields": [
+                "MXAEXSTS",
+                "DEABACK",
+                "DEAINARM",
+                "DEAFRLEG",
+                "DEALOLEG",
+                "DEX1FITZ",
+                "DED1HDDX",
+                "DED1PSDX",
+                "DEX2FITZ",
+                "DED2HDDX",
+                "DED2PSDX",
+                "DEX6FITZ",
+                "DED6HDDX",
+                "DED6PSDX",
+                "DEX6PSFH",
+                "DEX6PSBK",
+                "DEX6PSPL",
+                "DEX6PSAL",
+                "DED031",
+                "DEQ034A",
+                "DEQ034C",
+                "DEQ034D",
+                "DEQ038G",
+                "DEQ038Q",
+                "DED120",
+                "DED125"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 3768,
+              "observed_source_participants": 3768,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "DEQ_D.XPT",
+                "field": "DEQ034C",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -4272,6 +5183,44 @@
             "display_name": "Blood health",
             "category": "blood_health",
             "label": "Blood health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_measurements",
+              "source_files": [
+                "APOB_G.XPT",
+                "BIOPRO_G.XPT",
+                "CBC_G.XPT",
+                "TCHOL_G.XPT",
+                "TRIGLY_G.XPT"
+              ],
+              "fields": [
+                "LBXAPB",
+                "LBDAPBSI",
+                "LBXSAL",
+                "LBXSCR",
+                "LBXWBCSI",
+                "LBXRDW",
+                "LBXRBCSI",
+                "LBXHGB",
+                "LBXHCT",
+                "LBXMCVSI",
+                "LBXPLTSI",
+                "LBXTC",
+                "LBXTR",
+                "LBDLDL"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7953,
+              "observed_source_participants": 7953,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "CBC_E.XPT",
+                "field": "LBXHGB",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -4696,6 +5645,41 @@
             "display_name": "Cardiovascular health",
             "category": "cardiovascular_health",
             "label": "Cardiovascular health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "repeated_examination_measurements",
+              "source_files": [
+                "APOB_G.XPT",
+                "BPX_G.XPT",
+                "TCHOL_G.XPT",
+                "TRIGLY_G.XPT"
+              ],
+              "fields": [
+                "LBXAPB",
+                "LBDAPBSI",
+                "BPXPLS",
+                "BPXSY1",
+                "BPXDI1",
+                "BPXSY2",
+                "BPXDI2",
+                "BPXSY3",
+                "BPXDI3",
+                "LBXTC",
+                "LBXTR",
+                "LBDLDL"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7060,
+              "observed_source_participants": 7060,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BPX_E.XPT",
+                "field": "BPXSY1",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -4934,6 +5918,47 @@
             "display_name": "Cardiorespiratory health",
             "category": "cardiorespiratory_health",
             "label": "Cardiorespiratory health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "repeated_examination_and_spirometry_measurements",
+              "source_files": [
+                "BPX_G.XPT",
+                "ENX_G.XPT",
+                "SPX_G.XPT"
+              ],
+              "fields": [
+                "ENXSTAT",
+                "ENAATMPT",
+                "ENXTR1Q",
+                "ENXTR2Q",
+                "ENXMEAN",
+                "BPXPLS",
+                "BPXSY1",
+                "BPXDI1",
+                "BPXSY2",
+                "BPXDI2",
+                "BPXSY3",
+                "BPXDI3",
+                "SPXNFVC",
+                "SPXNFEV1",
+                "SPXNF257",
+                "SPXNPEF",
+                "SPXNQFVC",
+                "SPXNQFV1",
+                "SPDNACC"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7495,
+              "observed_source_participants": 7495,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BPX_E.XPT",
+                "field": "BPXSY1",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -5094,6 +6119,42 @@
             "display_name": "Immune and inflammatory health",
             "category": "immune_inflammatory_health",
             "label": "Immune and inflammatory health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_measurements",
+              "source_files": [
+                "CBC_G.XPT",
+                "CRP_F.XPT",
+                "ENX_G.XPT"
+              ],
+              "fields": [
+                "LBXCRP",
+                "ENXMEAN",
+                "LBXWBCSI",
+                "LBXRDW",
+                "LBXLYPCT",
+                "LBXMOPCT",
+                "LBXNEPCT",
+                "LBXEOPCT",
+                "LBXBAPCT",
+                "LBDLYMNO",
+                "LBDMONO",
+                "LBDNENO",
+                "LBDEONO",
+                "LBDBANO"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 8299,
+              "observed_source_participants": 8299,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "CBC_E.XPT",
+                "field": "LBXWBCSI",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -5254,6 +6315,35 @@
             "display_name": "Brain and cognitive health",
             "category": "brain_cognitive_health",
             "label": "Brain and cognitive health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "standardized_cognitive_testing",
+              "source_files": [
+                "CFQ_G.XPT"
+              ],
+              "fields": [
+                "CFASTAT",
+                "CFDCCS",
+                "CFDCRNC",
+                "CFDCST1",
+                "CFDCSR",
+                "CFDCIT1",
+                "CFDAST",
+                "CFDAPP",
+                "CFDDS"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 1687,
+              "observed_source_participants": 1687,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "CFQ_H.XPT",
+                "field": "CFDCCS",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -5300,6 +6390,36 @@
             "display_name": "Metabolic health",
             "category": "metabolic_health",
             "label": "Metabolic health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_and_history",
+              "source_files": [
+                "GLU_G.XPT",
+                "GHB_G.XPT",
+                "DIQ_G.XPT",
+                "TCHOL_G.XPT",
+                "TRIGLY_G.XPT"
+              ],
+              "fields": [
+                "LBXGLU",
+                "LBXGH",
+                "DIQ010",
+                "LBXTC",
+                "LBXTR",
+                "LBDLDL"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 9363,
+              "observed_source_participants": 9363,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "GLU_E.XPT",
+                "field": "LBXGLU",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -5574,6 +6694,35 @@
             "display_name": "Kidney health",
             "category": "kidney_health",
             "label": "Kidney health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_measurement",
+              "source_files": [
+                "ALB_CR_G.XPT",
+                "BIOPRO_G.XPT"
+              ],
+              "fields": [
+                "URXUMA",
+                "URXUMS",
+                "URXUCR",
+                "URXCRS",
+                "URDACT",
+                "LBXSCR",
+                "LBXSBU",
+                "LBXSUA"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7636,
+              "observed_source_participants": 7636,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "ALB_CR_E.XPT",
+                "field": "URXUCR",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -5694,6 +6843,41 @@
             "display_name": "Liver health",
             "category": "liver_health",
             "label": "Liver health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_transient_elastography_plus_laboratory_measurements",
+              "source_files": [
+                "P_LUX.XPT",
+                "BIOPRO_G.XPT"
+              ],
+              "fields": [
+                "LUAXSTAT",
+                "LUANMVGP",
+                "LUXSMED",
+                "LUXSIQR",
+                "LUXSIQRM",
+                "LUXCAPM",
+                "LUXCPIQR",
+                "LBXSAL",
+                "LBXSATSI",
+                "LBXSASSI",
+                "LBXSAPSI",
+                "LBXSGTSI",
+                "LBXSTB",
+                "LBXSTP"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 10409,
+              "observed_source_participants": 10409,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BIOPRO_E.XPT",
+                "field": "LBXSATSI",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -5854,6 +7038,35 @@
             "display_name": "Sleep and recovery",
             "category": "sleep_and_recovery",
             "label": "Sleep and recovery",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "questionnaire_and_objective_monitoring",
+              "source_files": [
+                "SLQ_G.XPT",
+                "PAXHD_G.XPT",
+                "PAXDAY_G.XPT"
+              ],
+              "fields": [
+                "SLD010H",
+                "SLQ050",
+                "SLQ060",
+                "PAXSTS",
+                "PAXVMD",
+                "PAXSWMD",
+                "PAXQFD"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 61168,
+              "observed_source_participants": 7821,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "SLQ_E.XPT",
+                "field": "SLD010H",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -5976,6 +7189,45 @@
             "display_name": "Lifestyle and function",
             "category": "lifestyle_and_function",
             "label": "Lifestyle and function",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "questionnaire_and_functional_measurements",
+              "source_files": [
+                "PAQ_G.XPT",
+                "SMQ_G.XPT",
+                "ALQ_G.XPT",
+                "PFQ_G.XPT",
+                "PAXHD_G.XPT",
+                "PAXDAY_G.XPT"
+              ],
+              "fields": [
+                "PAQ605",
+                "SMQ020",
+                "ALQ101",
+                "PFQ049",
+                "PFQ054",
+                "PFQ061B",
+                "PFQ061C",
+                "PFQ061M",
+                "PFQ061N",
+                "PAXSTS",
+                "PAXVMD",
+                "PAXMTSD",
+                "PAXWWMD",
+                "PAXQFD"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 61168,
+              "observed_source_participants": 7821,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "PFQ_E.XPT",
+                "field": "PFQ049",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -6208,6 +7460,44 @@
             "display_name": "Mental-health history",
             "category": "mental_health_history",
             "label": "Mental-health history",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "depression_screening_and_current_health_status_questionnaire",
+              "source_files": [
+                "DPQ_G.XPT",
+                "HSQ_G.XPT"
+              ],
+              "fields": [
+                "HSD010",
+                "HSQ470",
+                "HSQ480",
+                "HSQ490",
+                "HSQ493",
+                "HSQ496",
+                "HSAQUEX",
+                "DPQ010",
+                "DPQ020",
+                "DPQ030",
+                "DPQ040",
+                "DPQ050",
+                "DPQ060",
+                "DPQ070",
+                "DPQ080",
+                "DPQ090",
+                "DPQ100"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 8956,
+              "observed_source_participants": 8956,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "DPQ_E.XPT",
+                "field": "DPQ010",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 62.0,
               "unit": "years",
@@ -8018,6 +9308,36 @@
             "display_name": "Body composition",
             "category": "body_composition",
             "label": "Body composition",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_measurements",
+              "source_files": [
+                "BMX_G.XPT",
+                "DXXAG_G.XPT"
+              ],
+              "fields": [
+                "BMXWT",
+                "BMXHT",
+                "BMXBMI",
+                "BMXWAIST",
+                "BMXARMC",
+                "BMXSAD1",
+                "DXXANFM",
+                "DXXANLM",
+                "DXXVFATM"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 9243,
+              "observed_source_participants": 9243,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BMX_E.XPT",
+                "field": "BMXBMI",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -8142,6 +9462,40 @@
             "display_name": "Fluid and cellular health",
             "category": "fluid_and_cellular",
             "label": "Fluid and cellular health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_BIA_measurements",
+              "source_files": [
+                "BIX_C.XPT"
+              ],
+              "fields": [
+                "BIAEXSTS",
+                "BIDFIT",
+                "BIDRECF",
+                "BIDRICF",
+                "BIDCM",
+                "BIDTD",
+                "BIDALPHA",
+                "BIDFC",
+                "BIDECF",
+                "BIDTBW",
+                "BIDICF",
+                "BIDFFM",
+                "BIDFAT",
+                "BIDPFAT"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 5329,
+              "observed_source_participants": 5329,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BIX_C.XPT",
+                "field": "BIDTBW",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -8268,6 +9622,35 @@
             "display_name": "Muscle health",
             "category": "muscle_health",
             "label": "Muscle health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_measurements",
+              "source_files": [
+                "MGX_G.XPT",
+                "DXX_G.XPT"
+              ],
+              "fields": [
+                "MGDEXSTS",
+                "MGDCGSZ",
+                "MGXH1T1",
+                "MGXH2T1",
+                "MGXH1T2",
+                "MGXH2T2",
+                "DXDLALE",
+                "DXDRALE"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7821,
+              "observed_source_participants": 7821,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BMX_E.XPT",
+                "field": "BMXARMC",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -8397,6 +9780,105 @@
             "display_name": "Joint health",
             "category": "joint_health",
             "label": "Joint health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "radiographic_and_clinical_mobility_measurements_plus_history_and_function_proxy",
+              "source_files": [
+                "ARQ_F.XPT",
+                "ARX_F.XPT",
+                "xr.dat",
+                "MCQ_G.XPT",
+                "PFQ_G.XPT"
+              ],
+              "fields": [
+                "ARQ010",
+                "ARQ020A",
+                "ARQ020B",
+                "ARQ020C",
+                "ARQ020D",
+                "ARQ020E",
+                "ARQ020F",
+                "ARQ020G",
+                "ARQ040",
+                "ARQ050",
+                "ARQ060",
+                "ARQ070",
+                "ARQ073",
+                "ARQ077",
+                "ARQ080",
+                "ARQ100",
+                "ARQ110",
+                "ARD125A",
+                "ARQ125C",
+                "ARQ125D",
+                "ARQ125E",
+                "ARDEXSTS",
+                "ARXO2WD",
+                "ARXCCIN",
+                "ARXCCEX",
+                "ARDDINEX",
+                "ARXXDIST",
+                "ARDLFTL",
+                "XRPKLR",
+                "XRPKLL",
+                "XRPOMFR",
+                "XRPOMFL",
+                "XRPOMTR",
+                "XRPOMTL",
+                "XRPOLFR",
+                "XRPOLFL",
+                "XRPOLTR",
+                "XRPOLTL",
+                "XRPSMFR",
+                "XRPSMFL",
+                "XRPSMTR",
+                "XRPSMTL",
+                "XRPSLFR",
+                "XRPSLFL",
+                "XRPSLTR",
+                "XRPSLTL",
+                "XRPCHOR",
+                "XRPCHOL",
+                "XRPJRR",
+                "XRPJRL",
+                "MCQ160A",
+                "MCQ160N",
+                "MCQ180A",
+                "MCQ180N",
+                "PFQ054",
+                "PFQ059",
+                "PFQ061B",
+                "PFQ061C",
+                "PFQ061D",
+                "PFQ061E",
+                "PFQ061F",
+                "PFQ061G",
+                "PFQ061H",
+                "PFQ061I",
+                "PFQ061J",
+                "PFQ061K",
+                "PFQ061L",
+                "PFQ061M",
+                "PFQ061N",
+                "PFQ061O",
+                "PFQ061P",
+                "PFQ061Q",
+                "PFQ061R",
+                "PFQ061S",
+                "PFQ061T"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 5559,
+              "observed_source_participants": 5559,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "PFQ_E.XPT",
+                "field": "PFQ054",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -8483,6 +9965,33 @@
             "display_name": "Bone health",
             "category": "bone_health",
             "label": "Bone health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_DXA_measurements",
+              "source_files": [
+                "DXX_G.XPT"
+              ],
+              "fields": [
+                "DXDTOBMD",
+                "DXDTOBMC",
+                "DXDTOFAT",
+                "DXDSTBMD",
+                "DXDSTBMC",
+                "DXDSTFAT",
+                "DXXLSBMD"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 4620,
+              "observed_source_participants": 4620,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "DXX_D.XPT",
+                "field": "DXDTOBMD",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -8529,6 +10038,53 @@
             "display_name": "Skin health",
             "category": "skin_health",
             "label": "Skin health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_dermatology_image_readings_plus_questionnaire_proxy",
+              "source_files": [
+                "DEX_C.XPT",
+                "DEQ_G.XPT"
+              ],
+              "fields": [
+                "MXAEXSTS",
+                "DEABACK",
+                "DEAINARM",
+                "DEAFRLEG",
+                "DEALOLEG",
+                "DEX1FITZ",
+                "DED1HDDX",
+                "DED1PSDX",
+                "DEX2FITZ",
+                "DED2HDDX",
+                "DED2PSDX",
+                "DEX6FITZ",
+                "DED6HDDX",
+                "DED6PSDX",
+                "DEX6PSFH",
+                "DEX6PSBK",
+                "DEX6PSPL",
+                "DEX6PSAL",
+                "DED031",
+                "DEQ034A",
+                "DEQ034C",
+                "DEQ034D",
+                "DEQ038G",
+                "DEQ038Q",
+                "DED120",
+                "DED125"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 3768,
+              "observed_source_participants": 3768,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "DEQ_D.XPT",
+                "field": "DEQ034C",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -8575,6 +10131,44 @@
             "display_name": "Blood health",
             "category": "blood_health",
             "label": "Blood health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_measurements",
+              "source_files": [
+                "APOB_G.XPT",
+                "BIOPRO_G.XPT",
+                "CBC_G.XPT",
+                "TCHOL_G.XPT",
+                "TRIGLY_G.XPT"
+              ],
+              "fields": [
+                "LBXAPB",
+                "LBDAPBSI",
+                "LBXSAL",
+                "LBXSCR",
+                "LBXWBCSI",
+                "LBXRDW",
+                "LBXRBCSI",
+                "LBXHGB",
+                "LBXHCT",
+                "LBXMCVSI",
+                "LBXPLTSI",
+                "LBXTC",
+                "LBXTR",
+                "LBDLDL"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7953,
+              "observed_source_participants": 7953,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "CBC_E.XPT",
+                "field": "LBXHGB",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -8852,6 +10446,41 @@
             "display_name": "Cardiovascular health",
             "category": "cardiovascular_health",
             "label": "Cardiovascular health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "repeated_examination_measurements",
+              "source_files": [
+                "APOB_G.XPT",
+                "BPX_G.XPT",
+                "TCHOL_G.XPT",
+                "TRIGLY_G.XPT"
+              ],
+              "fields": [
+                "LBXAPB",
+                "LBDAPBSI",
+                "BPXPLS",
+                "BPXSY1",
+                "BPXDI1",
+                "BPXSY2",
+                "BPXDI2",
+                "BPXSY3",
+                "BPXDI3",
+                "LBXTC",
+                "LBXTR",
+                "LBDLDL"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7060,
+              "observed_source_participants": 7060,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BPX_E.XPT",
+                "field": "BPXSY1",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -8979,6 +10608,47 @@
             "display_name": "Cardiorespiratory health",
             "category": "cardiorespiratory_health",
             "label": "Cardiorespiratory health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "repeated_examination_and_spirometry_measurements",
+              "source_files": [
+                "BPX_G.XPT",
+                "ENX_G.XPT",
+                "SPX_G.XPT"
+              ],
+              "fields": [
+                "ENXSTAT",
+                "ENAATMPT",
+                "ENXTR1Q",
+                "ENXTR2Q",
+                "ENXMEAN",
+                "BPXPLS",
+                "BPXSY1",
+                "BPXDI1",
+                "BPXSY2",
+                "BPXDI2",
+                "BPXSY3",
+                "BPXDI3",
+                "SPXNFVC",
+                "SPXNFEV1",
+                "SPXNF257",
+                "SPXNPEF",
+                "SPXNQFVC",
+                "SPXNQFV1",
+                "SPDNACC"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7495,
+              "observed_source_participants": 7495,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BPX_E.XPT",
+                "field": "BPXSY1",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -9027,6 +10697,42 @@
             "display_name": "Immune and inflammatory health",
             "category": "immune_inflammatory_health",
             "label": "Immune and inflammatory health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_measurements",
+              "source_files": [
+                "CBC_G.XPT",
+                "CRP_F.XPT",
+                "ENX_G.XPT"
+              ],
+              "fields": [
+                "LBXCRP",
+                "ENXMEAN",
+                "LBXWBCSI",
+                "LBXRDW",
+                "LBXLYPCT",
+                "LBXMOPCT",
+                "LBXNEPCT",
+                "LBXEOPCT",
+                "LBXBAPCT",
+                "LBDLYMNO",
+                "LBDMONO",
+                "LBDNENO",
+                "LBDEONO",
+                "LBDBANO"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 8299,
+              "observed_source_participants": 8299,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "CBC_E.XPT",
+                "field": "LBXWBCSI",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -9151,6 +10857,35 @@
             "display_name": "Brain and cognitive health",
             "category": "brain_cognitive_health",
             "label": "Brain and cognitive health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "standardized_cognitive_testing",
+              "source_files": [
+                "CFQ_G.XPT"
+              ],
+              "fields": [
+                "CFASTAT",
+                "CFDCCS",
+                "CFDCRNC",
+                "CFDCST1",
+                "CFDCSR",
+                "CFDCIT1",
+                "CFDAST",
+                "CFDAPP",
+                "CFDDS"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 1687,
+              "observed_source_participants": 1687,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "CFQ_H.XPT",
+                "field": "CFDCCS",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -9197,6 +10932,36 @@
             "display_name": "Metabolic health",
             "category": "metabolic_health",
             "label": "Metabolic health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_and_history",
+              "source_files": [
+                "GLU_G.XPT",
+                "GHB_G.XPT",
+                "DIQ_G.XPT",
+                "TCHOL_G.XPT",
+                "TRIGLY_G.XPT"
+              ],
+              "fields": [
+                "LBXGLU",
+                "LBXGH",
+                "DIQ010",
+                "LBXTC",
+                "LBXTR",
+                "LBDLDL"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 9363,
+              "observed_source_participants": 9363,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "GLU_E.XPT",
+                "field": "LBXGLU",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -9435,6 +11200,35 @@
             "display_name": "Kidney health",
             "category": "kidney_health",
             "label": "Kidney health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "laboratory_measurement",
+              "source_files": [
+                "ALB_CR_G.XPT",
+                "BIOPRO_G.XPT"
+              ],
+              "fields": [
+                "URXUMA",
+                "URXUMS",
+                "URXUCR",
+                "URXCRS",
+                "URDACT",
+                "LBXSCR",
+                "LBXSBU",
+                "LBXSUA"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 7636,
+              "observed_source_participants": 7636,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "ALB_CR_E.XPT",
+                "field": "URXUCR",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -9519,6 +11313,41 @@
             "display_name": "Liver health",
             "category": "liver_health",
             "label": "Liver health",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "direct_transient_elastography_plus_laboratory_measurements",
+              "source_files": [
+                "P_LUX.XPT",
+                "BIOPRO_G.XPT"
+              ],
+              "fields": [
+                "LUAXSTAT",
+                "LUANMVGP",
+                "LUXSMED",
+                "LUXSIQR",
+                "LUXSIQRM",
+                "LUXCAPM",
+                "LUXCPIQR",
+                "LBXSAL",
+                "LBXSATSI",
+                "LBXSASSI",
+                "LBXSAPSI",
+                "LBXSGTSI",
+                "LBXSTB",
+                "LBXSTP"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 10409,
+              "observed_source_participants": 10409,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "BIOPRO_E.XPT",
+                "field": "LBXSATSI",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -9606,6 +11435,35 @@
             "display_name": "Sleep and recovery",
             "category": "sleep_and_recovery",
             "label": "Sleep and recovery",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "questionnaire_and_objective_monitoring",
+              "source_files": [
+                "SLQ_G.XPT",
+                "PAXHD_G.XPT",
+                "PAXDAY_G.XPT"
+              ],
+              "fields": [
+                "SLD010H",
+                "SLQ050",
+                "SLQ060",
+                "PAXSTS",
+                "PAXVMD",
+                "PAXSWMD",
+                "PAXQFD"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 61168,
+              "observed_source_participants": 7821,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "SLQ_E.XPT",
+                "field": "SLD010H",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -9692,6 +11550,45 @@
             "display_name": "Lifestyle and function",
             "category": "lifestyle_and_function",
             "label": "Lifestyle and function",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "questionnaire_and_functional_measurements",
+              "source_files": [
+                "PAQ_G.XPT",
+                "SMQ_G.XPT",
+                "ALQ_G.XPT",
+                "PFQ_G.XPT",
+                "PAXHD_G.XPT",
+                "PAXDAY_G.XPT"
+              ],
+              "fields": [
+                "PAQ605",
+                "SMQ020",
+                "ALQ101",
+                "PFQ049",
+                "PFQ054",
+                "PFQ061B",
+                "PFQ061C",
+                "PFQ061M",
+                "PFQ061N",
+                "PAXSTS",
+                "PAXVMD",
+                "PAXMTSD",
+                "PAXWWMD",
+                "PAXQFD"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 61168,
+              "observed_source_participants": 7821,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "PFQ_E.XPT",
+                "field": "PFQ049",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",
@@ -9742,6 +11639,44 @@
             "display_name": "Mental-health history",
             "category": "mental_health_history",
             "label": "Mental-health history",
+            "source_data": {
+              "status": "real_source_available",
+              "directness": "depression_screening_and_current_health_status_questionnaire",
+              "source_files": [
+                "DPQ_G.XPT",
+                "HSQ_G.XPT"
+              ],
+              "fields": [
+                "HSD010",
+                "HSQ470",
+                "HSQ480",
+                "HSQ490",
+                "HSQ493",
+                "HSQ496",
+                "HSAQUEX",
+                "DPQ010",
+                "DPQ020",
+                "DPQ030",
+                "DPQ040",
+                "DPQ050",
+                "DPQ060",
+                "DPQ070",
+                "DPQ080",
+                "DPQ090",
+                "DPQ100"
+              ],
+              "coverage_receipt": "CATEGORY_DATA_RECEIPT_2026-09-11",
+              "observed_source_rows": 8956,
+              "observed_source_participants": 8956,
+              "interpretation": "Real public source fields or measured proxies are available for local research mapping; this does not establish patient validity or a category-specific age.",
+              "distribution_evidence": {
+                "status": "real_distribution_receipt",
+                "receipt": "CATEGORY_DISTRIBUTION_RECEIPT_2026-09-11",
+                "source_file": "DPQ_E.XPT",
+                "field": "DPQ010",
+                "interpretation": "representative unfiltered public-use distribution; not a clinical reference interval"
+              }
+            },
             "chronological_age_context": {
               "value": 51.0,
               "unit": "years",

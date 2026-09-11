@@ -1,0 +1,73 @@
+{
+  "schema": "candidate-freeze-manifest-v1",
+  "date": "2026-09-10",
+  "status": "prepared_not_authorized",
+  "candidate": {
+    "sha": "5dd24112f6582c211b4c93b505db61c2c1e66b26",
+    "source_baseline": "7fc8fcab408fa755c9367e04867de0a39f31d98c",
+    "kind": "temporary local clean snapshot captured before final candidate-reference reconciliation",
+    "working_tree": "clean",
+    "location": "temporary local clone only",
+    "publication_status": "not_published",
+    "receipt": "docs/ir0-current-candidate-verification-2026-09-10.json",
+    "receipt_in_snapshot": false
+  },
+  "candidate_scope": {
+    "changed_path_count": 35,
+    "changed_paths_recorded_in": "git show --format= --name-only 5dd24112f6582c211b4c93b505db61c2c1e66b26",
+    "reference_reconciliation": "The snapshot predates reconciliation of the current candidate references and excludes the self-referential current receipt and freeze manifest. It is evidence for the local candidate checks, not an authorized final publication candidate."
+  },
+  "clinical_gate": "E-005 blocked",
+  "evidence": {
+    "python": "3.13.11",
+    "dependency_set_sha256": "6f11f6e6cf28e60e445288b13d56994055f68722d85e600dc49361bad23ff623",
+    "package_tree_sha256": "30f500d5fa127a484da4bb56f109a3296e4d30d504cfb60b90ab689d51ec1c83",
+    "wheel_sha256": "9c84c898f61762512628be1c0c02896ea0d92e11267bdab792fe392e8f338e44",
+    "verifier": {
+      "command": "uv run python scripts/verify_project.py --json",
+      "status": "passed",
+      "checks": 20,
+      "python_tests": 146,
+      "node_tests": 28
+    },
+    "docs_verifier": {
+      "command": "uv run python scripts/verify_docs.py",
+      "status": "passed"
+    },
+    "receipt_check": {
+      "command": "uv run python scripts/build_test_receipt.py --check",
+      "status": "passed"
+    },
+    "manifest_check": {
+      "command": "py -3 -X utf8 scripts/validate_ir4_manifest.py docs/IR4_PUBLIC_DATA_MANIFEST_2026-09-10.json",
+      "status": "passed"
+    },
+    "publication_failure_demo": {
+      "command": "uv run python scripts/verify_publication_failure_demo.py --check",
+      "status": "passed",
+      "pytest_returncode": 1,
+      "publication_step_reached": false,
+      "remote_verified": false
+    },
+    "wheel_http_smoke": {
+      "status": "passed",
+      "health": 200,
+      "metrics": 200,
+      "assessment": 200,
+      "invalid_assessment": 422,
+      "comparison": 200,
+      "production_readyz": 200,
+      "development_readyz": 503,
+      "clinical_use": "forbidden"
+    }
+  },
+  "open_gates": [
+    "Owner authorization to freeze, push, publish, or deploy this candidate",
+    "Remote same-SHA Linux/Pages execution and artifact identity",
+    "Authorized live metadata, asset hash, link, and visual reconciliation",
+    "Named human reviewers, actual screen-reader review, 200 percent review, contrast/non-color review, and five-user study",
+    "IR4 data hashes, sentinels, codebook, variance report, independent review, and approval",
+    "E-005 clinical validation remains blocked"
+  ],
+  "source_of_truth": "docs/ir0-current-candidate-verification-2026-09-10.json"
+}

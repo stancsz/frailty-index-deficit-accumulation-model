@@ -1,0 +1,1670 @@
+{
+  "boundary": {
+    "clinical_use": false,
+    "e005_status": "blocked",
+    "measurements_emitted": false,
+    "participant_ids_emitted": false,
+    "raw_rows_emitted": false,
+    "values_removed": false
+  },
+  "candidate_special_codes": [
+    7,
+    9,
+    77,
+    99,
+    777,
+    999,
+    7777,
+    9999,
+    99999
+  ],
+  "categories": {
+    "blood_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "7": 117,
+            "9": 64
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 117,
+            "9": 64
+          },
+          "field": "LBXWBCSI",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 878,
+          "nonmissing_rows": 8544,
+          "numeric_rows": 8544,
+          "source": "CBC_H.XPT",
+          "source_rows": 9422,
+          "unique_participants_with_value": 8544
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LBXHGB",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 878,
+          "nonmissing_rows": 8544,
+          "numeric_rows": 8544,
+          "source": "CBC_H.XPT",
+          "source_rows": 9422,
+          "unique_participants_with_value": 8544
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LBXHCT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 878,
+          "nonmissing_rows": 8544,
+          "numeric_rows": 8544,
+          "source": "CBC_H.XPT",
+          "source_rows": 9422,
+          "unique_participants_with_value": 8544
+        },
+        {
+          "candidate_special_code_rows": {
+            "99": 1
+          },
+          "candidate_special_code_unique_participants": {
+            "99": 1
+          },
+          "field": "LBXPLTSI",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 878,
+          "nonmissing_rows": 8544,
+          "numeric_rows": 8544,
+          "source": "CBC_H.XPT",
+          "source_rows": 9422,
+          "unique_participants_with_value": 8544
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LBXSAL",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 426,
+          "nonmissing_rows": 6553,
+          "numeric_rows": 6553,
+          "source": "BIOPRO_H.XPT",
+          "source_rows": 6979,
+          "unique_participants_with_value": 6553
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LBXSCR",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 426,
+          "nonmissing_rows": 6553,
+          "numeric_rows": 6553,
+          "source": "BIOPRO_H.XPT",
+          "source_rows": 6979,
+          "unique_participants_with_value": 6553
+        },
+        {
+          "candidate_special_code_rows": {
+            "99": 4
+          },
+          "candidate_special_code_unique_participants": {
+            "99": 4
+          },
+          "field": "LBXTC",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 667,
+          "nonmissing_rows": 7624,
+          "numeric_rows": 7624,
+          "source": "TCHOL_H.XPT",
+          "source_rows": 8291,
+          "unique_participants_with_value": 7624
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 26,
+            "99": 22
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 26,
+            "99": 22
+          },
+          "field": "LBXTR",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 183,
+          "nonmissing_rows": 3146,
+          "numeric_rows": 3146,
+          "source": "TRIGLY_H.XPT",
+          "source_rows": 3329,
+          "unique_participants_with_value": 3146
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 24,
+            "99": 35
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 24,
+            "99": 35
+          },
+          "field": "LBDLDL",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 224,
+          "nonmissing_rows": 3105,
+          "numeric_rows": 3105,
+          "source": "TRIGLY_H.XPT",
+          "source_rows": 3329,
+          "unique_participants_with_value": 3105
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "body_composition": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "7": 5,
+            "77": 11,
+            "9": 11,
+            "99": 4
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 5,
+            "77": 11,
+            "9": 11,
+            "99": 4
+          },
+          "field": "BMXWT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 90,
+          "nonmissing_rows": 9723,
+          "numeric_rows": 9723,
+          "source": "BMX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 9723
+        },
+        {
+          "candidate_special_code_rows": {
+            "99": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "99": 2
+          },
+          "field": "BMXHT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 746,
+          "nonmissing_rows": 9067,
+          "numeric_rows": 9067,
+          "source": "BMX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 9067
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BMXBMI",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 758,
+          "nonmissing_rows": 9055,
+          "numeric_rows": 9055,
+          "source": "BMX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 9055
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 13,
+            "99": 12
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 13,
+            "99": 12
+          },
+          "field": "BMXWAIST",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 1152,
+          "nonmissing_rows": 8661,
+          "numeric_rows": 8661,
+          "source": "BMX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 8661
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BMXARMC",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 512,
+          "nonmissing_rows": 9301,
+          "numeric_rows": 9301,
+          "source": "BMX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 9301
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BMXSAD1",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2595,
+          "nonmissing_rows": 7218,
+          "numeric_rows": 7218,
+          "source": "BMX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7218
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "bone_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "DXDSTBMD",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 1041,
+          "nonmissing_rows": 4992,
+          "numeric_rows": 4992,
+          "source": "DXX_H.XPT",
+          "source_rows": 6033,
+          "unique_participants_with_value": 4992
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "DXDSTBMC",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 1041,
+          "nonmissing_rows": 4992,
+          "numeric_rows": 4992,
+          "source": "DXX_H.XPT",
+          "source_rows": 6033,
+          "unique_participants_with_value": 4992
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "DXDSTFAT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 923,
+          "nonmissing_rows": 5110,
+          "numeric_rows": 5110,
+          "source": "DXX_H.XPT",
+          "source_rows": 6033,
+          "unique_participants_with_value": 5110
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "DXXLSBMD",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 739,
+          "nonmissing_rows": 5294,
+          "numeric_rows": 5294,
+          "source": "DXX_H.XPT",
+          "source_rows": 6033,
+          "unique_participants_with_value": 5294
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "brain_cognitive_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "CFASTAT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 1785,
+          "numeric_rows": 1785,
+          "source": "CFQ_H.XPT",
+          "source_rows": 1785,
+          "unique_participants_with_value": 1785
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "CFDCCS",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 99,
+          "nonmissing_rows": 1686,
+          "numeric_rows": 1686,
+          "source": "CFQ_H.XPT",
+          "source_rows": 1785,
+          "unique_participants_with_value": 1686
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "CFDCRNC",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 1771,
+          "nonmissing_rows": 14,
+          "numeric_rows": 14,
+          "source": "CFQ_H.XPT",
+          "source_rows": 1785,
+          "unique_participants_with_value": 14
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 183,
+            "9": 13
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 183,
+            "9": 13
+          },
+          "field": "CFDCST1",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 104,
+          "nonmissing_rows": 1681,
+          "numeric_rows": 1681,
+          "source": "CFQ_H.XPT",
+          "source_rows": 1785,
+          "unique_participants_with_value": 1681
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 264,
+            "9": 165
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 264,
+            "9": 165
+          },
+          "field": "CFDCSR",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 113,
+          "nonmissing_rows": 1672,
+          "numeric_rows": 1672,
+          "source": "CFQ_H.XPT",
+          "source_rows": 1785,
+          "unique_participants_with_value": 1672
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "CFDCIT1",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 104,
+          "nonmissing_rows": 1681,
+          "numeric_rows": 1681,
+          "source": "CFQ_H.XPT",
+          "source_rows": 1785,
+          "unique_participants_with_value": 1681
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "CFDAPP",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 99,
+          "nonmissing_rows": 1686,
+          "numeric_rows": 1686,
+          "source": "CFQ_H.XPT",
+          "source_rows": 1785,
+          "unique_participants_with_value": 1686
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 21,
+            "9": 51
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 21,
+            "9": 51
+          },
+          "field": "CFDAST",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 124,
+          "nonmissing_rows": 1661,
+          "numeric_rows": 1661,
+          "source": "CFQ_H.XPT",
+          "source_rows": 1785,
+          "unique_participants_with_value": 1661
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 4,
+            "77": 8
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 4,
+            "77": 8
+          },
+          "field": "CFDDS",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 193,
+          "nonmissing_rows": 1592,
+          "numeric_rows": 1592,
+          "source": "CFQ_H.XPT",
+          "source_rows": 1785,
+          "unique_participants_with_value": 1592
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "cardiorespiratory_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXPLS",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2264,
+          "nonmissing_rows": 7549,
+          "numeric_rows": 7549,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7549
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXSY1",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2641,
+          "nonmissing_rows": 7172,
+          "numeric_rows": 7172,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7172
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXDI1",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2641,
+          "nonmissing_rows": 7172,
+          "numeric_rows": 7172,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7172
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXSY2",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2404,
+          "nonmissing_rows": 7409,
+          "numeric_rows": 7409,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7409
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXDI2",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2404,
+          "nonmissing_rows": 7409,
+          "numeric_rows": 7409,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7409
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXSY3",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2405,
+          "nonmissing_rows": 7408,
+          "numeric_rows": 7408,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7408
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXDI3",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2405,
+          "nonmissing_rows": 7408,
+          "numeric_rows": 7408,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7408
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "cardiovascular_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXPLS",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2264,
+          "nonmissing_rows": 7549,
+          "numeric_rows": 7549,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7549
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXSY1",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2641,
+          "nonmissing_rows": 7172,
+          "numeric_rows": 7172,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7172
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXDI1",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2641,
+          "nonmissing_rows": 7172,
+          "numeric_rows": 7172,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7172
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXSY2",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2404,
+          "nonmissing_rows": 7409,
+          "numeric_rows": 7409,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7409
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXDI2",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2404,
+          "nonmissing_rows": 7409,
+          "numeric_rows": 7409,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7409
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXSY3",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2405,
+          "nonmissing_rows": 7408,
+          "numeric_rows": 7408,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7408
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "BPXDI3",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2405,
+          "nonmissing_rows": 7408,
+          "numeric_rows": 7408,
+          "source": "BPX_H.XPT",
+          "source_rows": 9813,
+          "unique_participants_with_value": 7408
+        },
+        {
+          "candidate_special_code_rows": {
+            "99": 4
+          },
+          "candidate_special_code_unique_participants": {
+            "99": 4
+          },
+          "field": "LBXTC",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 667,
+          "nonmissing_rows": 7624,
+          "numeric_rows": 7624,
+          "source": "TCHOL_H.XPT",
+          "source_rows": 8291,
+          "unique_participants_with_value": 7624
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 26,
+            "99": 22
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 26,
+            "99": 22
+          },
+          "field": "LBXTR",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 183,
+          "nonmissing_rows": 3146,
+          "numeric_rows": 3146,
+          "source": "TRIGLY_H.XPT",
+          "source_rows": 3329,
+          "unique_participants_with_value": 3146
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 24,
+            "99": 35
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 24,
+            "99": 35
+          },
+          "field": "LBDLDL",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 224,
+          "nonmissing_rows": 3105,
+          "numeric_rows": 3105,
+          "source": "TRIGLY_H.XPT",
+          "source_rows": 3329,
+          "unique_participants_with_value": 3105
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "immune_inflammatory_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "7": 117,
+            "9": 64
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 117,
+            "9": 64
+          },
+          "field": "LBXWBCSI",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 878,
+          "nonmissing_rows": 8544,
+          "numeric_rows": 8544,
+          "source": "CBC_H.XPT",
+          "source_rows": 9422,
+          "unique_participants_with_value": 8544
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 1
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 1
+          },
+          "field": "LBXLYPCT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 903,
+          "nonmissing_rows": 8519,
+          "numeric_rows": 8519,
+          "source": "CBC_H.XPT",
+          "source_rows": 9422,
+          "unique_participants_with_value": 8519
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 112,
+            "9": 113
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 112,
+            "9": 113
+          },
+          "field": "LBXMOPCT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 903,
+          "nonmissing_rows": 8519,
+          "numeric_rows": 8519,
+          "source": "CBC_H.XPT",
+          "source_rows": 9422,
+          "unique_participants_with_value": 8519
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 2
+          },
+          "field": "LBXNEPCT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 903,
+          "nonmissing_rows": 8519,
+          "numeric_rows": 8519,
+          "source": "CBC_H.XPT",
+          "source_rows": 9422,
+          "unique_participants_with_value": 8519
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LBXSAL",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 426,
+          "nonmissing_rows": 6553,
+          "numeric_rows": 6553,
+          "source": "BIOPRO_H.XPT",
+          "source_rows": 6979,
+          "unique_participants_with_value": 6553
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "joint_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "9": 13
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 13
+          },
+          "field": "MCQ160A",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 4001,
+          "nonmissing_rows": 5769,
+          "numeric_rows": 5769,
+          "source": "MCQ_H.XPT",
+          "source_rows": 9770,
+          "unique_participants_with_value": 5769
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 4
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 4
+          },
+          "field": "MCQ160N",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 4001,
+          "nonmissing_rows": 5769,
+          "numeric_rows": 5769,
+          "source": "MCQ_H.XPT",
+          "source_rows": 9770,
+          "unique_participants_with_value": 5769
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 2,
+            "77": 4,
+            "9": 1,
+            "99999": 30
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 2,
+            "77": 4,
+            "9": 1,
+            "99999": 30
+          },
+          "field": "MCQ180A",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 8262,
+          "nonmissing_rows": 1508,
+          "numeric_rows": 1508,
+          "source": "MCQ_H.XPT",
+          "source_rows": 9770,
+          "unique_participants_with_value": 1508
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 1,
+            "99999": 3
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 1,
+            "99999": 3
+          },
+          "field": "MCQ180N",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 9536,
+          "nonmissing_rows": 234,
+          "numeric_rows": 234,
+          "source": "MCQ_H.XPT",
+          "source_rows": 9770,
+          "unique_participants_with_value": 234
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "kidney_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "7": 52,
+            "77": 1,
+            "9": 52,
+            "99": 5
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 52,
+            "77": 1,
+            "9": 52,
+            "99": 5
+          },
+          "field": "URXUMA",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 239,
+          "nonmissing_rows": 8052,
+          "numeric_rows": 8052,
+          "source": "ALB_CR_H.XPT",
+          "source_rows": 8291,
+          "unique_participants_with_value": 8052
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 52,
+            "77": 1,
+            "9": 52,
+            "99": 5
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 52,
+            "77": 1,
+            "9": 52,
+            "99": 5
+          },
+          "field": "URXUMS",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 239,
+          "nonmissing_rows": 8052,
+          "numeric_rows": 8052,
+          "source": "ALB_CR_H.XPT",
+          "source_rows": 8291,
+          "unique_participants_with_value": 8052
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 1,
+            "77": 47,
+            "9": 9,
+            "99": 47
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1,
+            "77": 47,
+            "9": 9,
+            "99": 47
+          },
+          "field": "URXUCR",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 239,
+          "nonmissing_rows": 8052,
+          "numeric_rows": 8052,
+          "source": "ALB_CR_H.XPT",
+          "source_rows": 8291,
+          "unique_participants_with_value": 8052
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "URXCRS",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 239,
+          "nonmissing_rows": 8052,
+          "numeric_rows": 8052,
+          "source": "ALB_CR_H.XPT",
+          "source_rows": 8291,
+          "unique_participants_with_value": 8052
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 12,
+            "9": 8
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 12,
+            "9": 8
+          },
+          "field": "URDACT",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 239,
+          "nonmissing_rows": 8052,
+          "numeric_rows": 8052,
+          "source": "ALB_CR_H.XPT",
+          "source_rows": 8291,
+          "unique_participants_with_value": 8052
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "LBXSCR",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 426,
+          "nonmissing_rows": 6553,
+          "numeric_rows": 6553,
+          "source": "BIOPRO_H.XPT",
+          "source_rows": 6979,
+          "unique_participants_with_value": 6553
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 336,
+            "9": 576
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 336,
+            "9": 576
+          },
+          "field": "LBXSBU",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 426,
+          "nonmissing_rows": 6553,
+          "numeric_rows": 6553,
+          "source": "BIOPRO_H.XPT",
+          "source_rows": 6979,
+          "unique_participants_with_value": 6553
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 88,
+            "9": 8
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 88,
+            "9": 8
+          },
+          "field": "LBXSUA",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 428,
+          "nonmissing_rows": 6551,
+          "numeric_rows": 6551,
+          "source": "BIOPRO_H.XPT",
+          "source_rows": 6979,
+          "unique_participants_with_value": 6551
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "lifestyle_and_function": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "7": 1,
+            "9": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1,
+            "9": 2
+          },
+          "field": "PFQ049",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 3461,
+          "nonmissing_rows": 5769,
+          "numeric_rows": 5769,
+          "source": "PFQ_H.XPT",
+          "source_rows": 9230,
+          "unique_participants_with_value": 5769
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "PFQ054",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 3461,
+          "nonmissing_rows": 5769,
+          "numeric_rows": 5769,
+          "source": "PFQ_H.XPT",
+          "source_rows": 9230,
+          "unique_participants_with_value": 5769
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 1
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 1
+          },
+          "field": "PFQ061B",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 7227,
+          "nonmissing_rows": 2003,
+          "numeric_rows": 2003,
+          "source": "PFQ_H.XPT",
+          "source_rows": 9230,
+          "unique_participants_with_value": 2003
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 2
+          },
+          "field": "PFQ061M",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 6635,
+          "nonmissing_rows": 2595,
+          "numeric_rows": 2595,
+          "source": "PFQ_H.XPT",
+          "source_rows": 9230,
+          "unique_participants_with_value": 2595
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "PFQ061N",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 6635,
+          "nonmissing_rows": 2595,
+          "numeric_rows": 2595,
+          "source": "PFQ_H.XPT",
+          "source_rows": 9230,
+          "unique_participants_with_value": 2595
+        },
+        {
+          "candidate_special_code_rows": {
+            "777": 1,
+            "999": 332
+          },
+          "candidate_special_code_unique_participants": {
+            "777": 1,
+            "999": 332
+          },
+          "field": "PAXVMD",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 69018,
+          "numeric_rows": 69018,
+          "source": "PAXDAY_H.XPT",
+          "source_rows": 69018,
+          "unique_participants_with_value": 7776
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 99,
+            "777": 1,
+            "9": 412,
+            "99": 1,
+            "999": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 98,
+            "777": 1,
+            "9": 354,
+            "99": 1,
+            "999": 2
+          },
+          "field": "PAXQFD",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 69018,
+          "numeric_rows": 69018,
+          "source": "PAXDAY_H.XPT",
+          "source_rows": 69018,
+          "unique_participants_with_value": 7776
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "mental_health_history": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "7": 1,
+            "9": 5
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1,
+            "9": 5
+          },
+          "field": "DPQ010",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 526,
+          "nonmissing_rows": 5398,
+          "numeric_rows": 5398,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 5398
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 3,
+            "9": 3
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 3,
+            "9": 3
+          },
+          "field": "DPQ020",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 528,
+          "nonmissing_rows": 5396,
+          "numeric_rows": 5396,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 5396
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 1
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1
+          },
+          "field": "DPQ030",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 529,
+          "nonmissing_rows": 5395,
+          "numeric_rows": 5395,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 5395
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 1
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1
+          },
+          "field": "DPQ040",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 529,
+          "nonmissing_rows": 5395,
+          "numeric_rows": 5395,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 5395
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 2
+          },
+          "field": "DPQ050",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 529,
+          "nonmissing_rows": 5395,
+          "numeric_rows": 5395,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 5395
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 4
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 4
+          },
+          "field": "DPQ060",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 530,
+          "nonmissing_rows": 5394,
+          "numeric_rows": 5394,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 5394
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 1,
+            "9": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1,
+            "9": 2
+          },
+          "field": "DPQ070",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 530,
+          "nonmissing_rows": 5394,
+          "numeric_rows": 5394,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 5394
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 1,
+            "9": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1,
+            "9": 2
+          },
+          "field": "DPQ080",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 530,
+          "nonmissing_rows": 5394,
+          "numeric_rows": 5394,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 5394
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 1,
+            "9": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1,
+            "9": 2
+          },
+          "field": "DPQ090",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 531,
+          "nonmissing_rows": 5393,
+          "numeric_rows": 5393,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 5393
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 1,
+            "9": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1,
+            "9": 2
+          },
+          "field": "DPQ100",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2250,
+          "nonmissing_rows": 3674,
+          "numeric_rows": 3674,
+          "source": "DPQ_H.XPT",
+          "source_rows": 5924,
+          "unique_participants_with_value": 3674
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "metabolic_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "77": 11,
+            "99": 125
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 11,
+            "99": 125
+          },
+          "field": "LBXGLU",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 157,
+          "nonmissing_rows": 3172,
+          "numeric_rows": 3172,
+          "source": "GLU_H.XPT",
+          "source_rows": 3329,
+          "unique_participants_with_value": 3172
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 34,
+            "9": 3
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 34,
+            "9": 3
+          },
+          "field": "LBXGH",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 336,
+          "nonmissing_rows": 6643,
+          "numeric_rows": 6643,
+          "source": "GHB_H.XPT",
+          "source_rows": 6979,
+          "unique_participants_with_value": 6643
+        },
+        {
+          "candidate_special_code_rows": {
+            "99": 4
+          },
+          "candidate_special_code_unique_participants": {
+            "99": 4
+          },
+          "field": "LBXTC",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 667,
+          "nonmissing_rows": 7624,
+          "numeric_rows": 7624,
+          "source": "TCHOL_H.XPT",
+          "source_rows": 8291,
+          "unique_participants_with_value": 7624
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 26,
+            "99": 22
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 26,
+            "99": 22
+          },
+          "field": "LBXTR",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 183,
+          "nonmissing_rows": 3146,
+          "numeric_rows": 3146,
+          "source": "TRIGLY_H.XPT",
+          "source_rows": 3329,
+          "unique_participants_with_value": 3146
+        },
+        {
+          "candidate_special_code_rows": {
+            "77": 24,
+            "99": 35
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 24,
+            "99": 35
+          },
+          "field": "LBDLDL",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 224,
+          "nonmissing_rows": 3105,
+          "numeric_rows": 3105,
+          "source": "TRIGLY_H.XPT",
+          "source_rows": 3329,
+          "unique_participants_with_value": 3105
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "muscle_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "DXDLALE",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 685,
+          "nonmissing_rows": 5348,
+          "numeric_rows": 5348,
+          "source": "DXX_H.XPT",
+          "source_rows": 6033,
+          "unique_participants_with_value": 5348
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "DXDRALE",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 685,
+          "nonmissing_rows": 5348,
+          "numeric_rows": 5348,
+          "source": "DXX_H.XPT",
+          "source_rows": 6033,
+          "unique_participants_with_value": 5348
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "skin_health": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "77": 1,
+            "99": 5
+          },
+          "candidate_special_code_unique_participants": {
+            "77": 1,
+            "99": 5
+          },
+          "field": "DED031",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 1,
+          "nonmissing_rows": 3927,
+          "numeric_rows": 3927,
+          "source": "DEQ_H.XPT",
+          "source_rows": 3928,
+          "unique_participants_with_value": 3927
+        },
+        {
+          "candidate_special_code_rows": {
+            "99": 1
+          },
+          "candidate_special_code_unique_participants": {
+            "99": 1
+          },
+          "field": "DEQ034A",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 1,
+          "nonmissing_rows": 3927,
+          "numeric_rows": 3927,
+          "source": "DEQ_H.XPT",
+          "source_rows": 3928,
+          "unique_participants_with_value": 3927
+        },
+        {
+          "candidate_special_code_rows": {},
+          "candidate_special_code_unique_participants": {},
+          "field": "DEQ034C",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 47,
+          "nonmissing_rows": 3881,
+          "numeric_rows": 3881,
+          "source": "DEQ_H.XPT",
+          "source_rows": 3928,
+          "unique_participants_with_value": 3881
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 1
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 1
+          },
+          "field": "DEQ034D",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 47,
+          "nonmissing_rows": 3881,
+          "numeric_rows": 3881,
+          "source": "DEQ_H.XPT",
+          "source_rows": 3928,
+          "unique_participants_with_value": 3881
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 10
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 10
+          },
+          "field": "DEQ038G",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 1,
+          "nonmissing_rows": 3927,
+          "numeric_rows": 3927,
+          "source": "DEQ_H.XPT",
+          "source_rows": 3928,
+          "unique_participants_with_value": 3927
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 2
+          },
+          "field": "DEQ038Q",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 2520,
+          "nonmissing_rows": 1408,
+          "numeric_rows": 1408,
+          "source": "DEQ_H.XPT",
+          "source_rows": 3928,
+          "unique_participants_with_value": 1408
+        },
+        {
+          "candidate_special_code_rows": {
+            "9999": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "9999": 2
+          },
+          "field": "DED120",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 4,
+          "nonmissing_rows": 3924,
+          "numeric_rows": 3924,
+          "source": "DEQ_H.XPT",
+          "source_rows": 3928,
+          "unique_participants_with_value": 3924
+        },
+        {
+          "candidate_special_code_rows": {
+            "9999": 4
+          },
+          "candidate_special_code_unique_participants": {
+            "9999": 4
+          },
+          "field": "DED125",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 4,
+          "nonmissing_rows": 3924,
+          "numeric_rows": 3924,
+          "source": "DEQ_H.XPT",
+          "source_rows": 3928,
+          "unique_participants_with_value": 3924
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    },
+    "sleep_and_recovery": {
+      "fields": [
+        {
+          "candidate_special_code_rows": {
+            "7": 1707,
+            "9": 366,
+            "99": 7
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 1707,
+            "9": 366,
+            "99": 7
+          },
+          "field": "SLD010H",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 3,
+          "nonmissing_rows": 6461,
+          "numeric_rows": 6461,
+          "source": "SLQ_H.XPT",
+          "source_rows": 6464,
+          "unique_participants_with_value": 6461
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 2
+          },
+          "field": "SLQ050",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 6464,
+          "numeric_rows": 6464,
+          "source": "SLQ_H.XPT",
+          "source_rows": 6464,
+          "unique_participants_with_value": 6464
+        },
+        {
+          "candidate_special_code_rows": {
+            "9": 13
+          },
+          "candidate_special_code_unique_participants": {
+            "9": 13
+          },
+          "field": "SLQ060",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 6464,
+          "numeric_rows": 6464,
+          "source": "SLQ_H.XPT",
+          "source_rows": 6464,
+          "unique_participants_with_value": 6464
+        },
+        {
+          "candidate_special_code_rows": {
+            "777": 1,
+            "999": 332
+          },
+          "candidate_special_code_unique_participants": {
+            "777": 1,
+            "999": 332
+          },
+          "field": "PAXVMD",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 69018,
+          "numeric_rows": 69018,
+          "source": "PAXDAY_H.XPT",
+          "source_rows": 69018,
+          "unique_participants_with_value": 7776
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 38,
+            "77": 60,
+            "777": 16,
+            "9": 82,
+            "99": 63,
+            "999": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 38,
+            "77": 60,
+            "777": 16,
+            "9": 82,
+            "99": 63,
+            "999": 2
+          },
+          "field": "PAXSWMD",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 69018,
+          "numeric_rows": 69018,
+          "source": "PAXDAY_H.XPT",
+          "source_rows": 69018,
+          "unique_participants_with_value": 7776
+        },
+        {
+          "candidate_special_code_rows": {
+            "7": 99,
+            "777": 1,
+            "9": 412,
+            "99": 1,
+            "999": 2
+          },
+          "candidate_special_code_unique_participants": {
+            "7": 98,
+            "777": 1,
+            "9": 354,
+            "99": 1,
+            "999": 2
+          },
+          "field": "PAXQFD",
+          "interpretation": "candidate code counts only; no values were removed or classified as invalid",
+          "missing_rows": 0,
+          "nonmissing_rows": 69018,
+          "numeric_rows": 69018,
+          "source": "PAXDAY_H.XPT",
+          "source_rows": 69018,
+          "unique_participants_with_value": 7776
+        }
+      ],
+      "quality_status": "candidate_special_codes_audited_no_cleaning_applied"
+    }
+  },
+  "cycle_scope": "NHANES_2013_2014",
+  "receipt_type": "nhanes-category-quality-audit-v1",
+  "schema_version": 1,
+  "scope": "2013_2014"
+}

@@ -127,7 +127,7 @@
   }
 
   // ---------------------------------------------------------------
-  // 3) Status table — sourced from EVAL.md (E-001..E-086). Kept in
+  // 3) Status table — sourced from EVAL.md. Kept in
   //    the JS so the table reflects the source of truth exactly.
   // ---------------------------------------------------------------
   var STATUS_ROWS = [
@@ -218,6 +218,21 @@
     { id: "E-085", verdict: "passing", area: "Fail-closed system-age model manifest shape" },
     { id: "E-086", verdict: "passing", area: "Chronological-age context on every category card" },
     { id: "E-087", verdict: "passing", area: "Bounded Pages trust presentation and build metadata" },
+    { id: "E-088", verdict: "passing", area: "Real source coverage and category data catalog" },
+    { id: "E-089", verdict: "passing", area: "Same-cycle participant overlap without cross-cycle joins" },
+    { id: "E-090", verdict: "passing", area: "2015-2016 real-data cycle and declared absences" },
+    { id: "E-091", verdict: "passing", area: "2017-2018 real-data cycle and elastography boundary" },
+    { id: "E-092", verdict: "passing", area: "2021-2023 current-data cycle and reduced-exam boundary" },
+    { id: "E-093", verdict: "passing", area: "Recent-cycle participant intersections without identifier leakage" },
+    { id: "E-094", verdict: "passing", area: "All 17 categories have real numeric source coverage" },
+    { id: "E-095", verdict: "passing", area: "Cycle-separated category source matrix" },
+    { id: "E-096", verdict: "passing", area: "Category missingness and special-code quality metrics" },
+    { id: "E-097", verdict: "passing", area: "2005-2006 real category source cycle" },
+    { id: "E-098", verdict: "passing", area: "2007-2008 real category source cycle" },
+    { id: "E-099", verdict: "passing", area: "Explicit runtime cycle presence and absence metadata" },
+    { id: "E-100", verdict: "passing", area: "Representative real-data distributions for all categories" },
+    { id: "E-101", verdict: "passing", area: "Runtime links to category distribution evidence" },
+    { id: "E-102", verdict: "passing", area: "Privacy-safe frontier-token value measurement mechanics" },
   ];
 
   function initStatusTable() {
@@ -507,6 +522,15 @@
         var ageContextText = ageContext.value === null || ageContext.value === undefined
           ? "not supplied"
           : formatValue(ageContext.value) + " years (supplied assessment age; not recalculated from date of birth)";
+        var sourceData = category.source_data || {};
+        var sourceText = sourceData.status === "real_source_available"
+          ? "Real public source available"
+            + " · " + humanize(sourceData.directness || "source mapping")
+            + " · observed source rows: " + String(sourceData.observed_source_rows || 0)
+            + " · observed source participants: " + String(sourceData.observed_source_participants || 0)
+            + " · " + (sourceData.source_files || []).join(", ")
+            + " · receipt: " + String(sourceData.coverage_receipt || "not recorded")
+          : "Real source status not recorded";
         var measurements = (category.measurement_profile || category.measurements || []).map(function (item) {
           return "<li><strong>" + escapeHtml(item.label) + "</strong>: "
             + escapeHtml(formatValue(item.current_value))
@@ -521,6 +545,7 @@
           + " of " + escapeHtml(String(category.expected_count)) + " · <strong>Reference status:</strong> "
           + escapeHtml(humanize(category.reference_status)) + "</p>"
           + "<p><strong>Chronological age context:</strong> " + escapeHtml(ageContextText) + "</p>"
+          + "<p class=\"field-note\"><strong>Real-data source:</strong> " + escapeHtml(sourceText) + "</p>"
           + "<p class=\"field-note\"><strong>Reference interpretation:</strong> "
           + escapeHtml(humanize(reference.direction || category.reference_status)) + "</p>"
           + "<p><strong>Category age report:</strong> " + escapeHtml(ageText) + "</p>"
