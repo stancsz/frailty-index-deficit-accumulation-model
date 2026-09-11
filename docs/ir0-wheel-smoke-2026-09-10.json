@@ -1,0 +1,51 @@
+{
+  "receipt_type": "local-installed-wheel-smoke",
+  "observed_at": "2026-09-10",
+  "status": "passed",
+  "evidence_class": "dirty-working-tree",
+  "source_base_sha": "2f1218b9d20b61ee9682cdae0a5a74dd79a7f653",
+  "candidate_sha": null,
+  "platform": {
+    "os": "Windows",
+    "python": "3.11.14",
+    "uv": "0.11.28"
+  },
+  "wheel": {
+    "filename": "frailty_index_deficit_accumulation_model-0.1.0-py3-none-any.whl",
+    "sha256": "a0f9eee8b6c1613f5b85c83df778a9b136f4a350970dca810edc96016e501e65",
+    "package_tree_sha256": "e6e3a5b7436686dada24b1babb8c312a4281cc57bd11ddb925219bb902a8a5df",
+    "dependency_set_sha256": "390e3cdc375fbfbd1e8477c43c4885452afc6fd4101c0023ac70435819ea2e96"
+  },
+  "checks": {
+    "health": 200,
+    "metrics": 200,
+    "assessment": 200,
+    "invalid_assessment": 422,
+    "comparison": 200,
+    "seca_ready": false,
+    "seca_canonical_fields": 4,
+    "seca_segments": 5,
+    "package_installation_mode": "installed_distribution",
+    "development_readyz": 503,
+    "production_readyz": 200,
+    "production_unauthenticated_metrics": 401,
+    "production_unauthenticated_assessment": 401,
+    "production_authenticated_assessment": 200,
+    "production_invalid_assessment": 422,
+    "clinical_use": "forbidden"
+  },
+  "commands": [
+    "uv build --wheel --out-dir <temporary-directory>",
+    "uv export --locked --extra ml --no-dev --no-editable --no-emit-project --format requirements.txt --output-file <temporary-file>",
+    "uv venv --python 3.11 <temporary-directory>",
+    "uv pip sync --python <wheel-python> <requirements-file>",
+    "uv pip install --python <wheel-python> --no-deps <wheel>",
+    "<wheel-python> scripts/verify_package_install.py",
+    "<wheel-python> scripts/run_serving_contract_smoke.py"
+  ],
+  "limitations": [
+    "The receipt was produced from the dirty local working tree, not a clean candidate SHA.",
+    "It does not establish Linux CI, remote CI, Pages publication, live identity, or licensing and visibility reconciliation.",
+    "It is software integration evidence only and does not satisfy E-005 or any clinical approval gate."
+  ]
+}

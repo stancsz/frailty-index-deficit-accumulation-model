@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-10",
+  "kind": "baseline_visual_audit_not_release_acceptance",
+  "published_url": "https://stancsz.github.io/frailty-index-deficit-accumulation-model/",
+  "local_url": "http://127.0.0.1:8773/",
+  "local_identity": "dirty working tree; no final candidate",
+  "browser": "BrowserOS neo Chromium via CDP",
+  "desktop_css_viewport": [
+    1440,
+    1000
+  ],
+  "mobile_css_viewport": [
+    390,
+    844
+  ],
+  "mobile_is_emulated": true,
+  "published_mobile_client_width": 390,
+  "published_mobile_scroll_width": 740,
+  "screenshots": [
+    {
+      "path": "local-demo.jpg",
+      "sha256": "90d095fc4ddccdb07ce193e88c0ecb9e701b9dca328123c9073963c2f5c40558",
+      "bytes": 144993
+    },
+    {
+      "path": "local-desktop.jpg",
+      "sha256": "41e71c69f5de6435f5c4cc3c87442188f3691a86a999610fea77d78dd536e3f9",
+      "bytes": 126449
+    },
+    {
+      "path": "local-mobile.jpg",
+      "sha256": "b6d0cd7e02fc0eec150f442a9df8ebe7b9c1aaee3a68e82f8b89a30f6070239c",
+      "bytes": 44592
+    },
+    {
+      "path": "published-demo.jpg",
+      "sha256": "d48139a46bd448a4d346168fcf9eaf2f41f6630a0ebd9f32e0d89a0c01569fa0",
+      "bytes": 150717
+    },
+    {
+      "path": "published-desktop.jpg",
+      "sha256": "f27f7e6f336071d7b448c92868cc4c689721ac50440dc870495b4c412976f099",
+      "bytes": 154583
+    },
+    {
+      "path": "published-mobile.jpg",
+      "sha256": "8f20368875986f58c65e4dbd081a3ea503b29559dae28ee6464adc081b9dad91",
+      "bytes": 40771
+    }
+  ],
+  "limits": [
+    "Selected rendered states only, not all page states",
+    "No physical mobile or human screen-reader test",
+    "No logged-in competitor workflow",
+    "No deployment performed",
+    "Images retained as observed baseline, not proof of final acceptance"
+  ]
+}

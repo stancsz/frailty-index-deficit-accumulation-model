@@ -84,6 +84,34 @@ prognostic or diagnostic claims.
   measured-feature ranges, provenance, missingness, and conservative next
   steps. It is a wellness interpretation layer, not a treatment plan or an
   estimate of action effect.
+- **Make measurements auditable:** accept measurements supplied by a validated
+  device, laboratory, assessment, or cognitive protocol; preserve the value,
+  unit, source, date, and protocol when supplied. The skill may derive only
+  explicitly supported values (for example, FFMI from same-scan height and
+  fat-free mass). It cannot perform a DEXA, VO2 max, laboratory, MRI, skin, or
+  cognitive test, and it must show those inputs as missing or unavailable
+  rather than infer them from other fields.
+- **Read the full-body report:** use `category_reports` to present coverage and
+  measured values for body composition, fluid/cellular, muscle, blood,
+  cardiovascular, metabolic, kidney, liver, sleep/recovery, lifestyle/function,
+  and mental-health history. Always show the explicit skin-health and
+  bone-health sections as unavailable when their measurements are absent; do
+  not call them normal. Preserve each category's `reference_status`, sources,
+  missing measurements, and interpretation. Category `age_report` values are
+  intentionally nullable and currently use `withheld_unvalidated`; never copy
+  the overall biological age or convert a z-score into a category age.
+- **Target system-age profile:** the finished report should render a consistent
+  system card for musculoskeletal, cardiorespiratory, metabolic,
+  immune/inflammatory, brain/cognitive, blood, kidney, liver, skin, bone,
+  sleep/recovery, and other approved domains. Each card separates chronological
+  age context, measurement provenance, reference interpretation, age-report
+  status, and a safe next step. A numeric system-specific age-equivalent is
+  permitted only when that domain has its own construct/target, repeatable
+  protocol, reference population, model, uncertainty, held-out validation,
+  subgroup support, and human approval. See
+  `docs/SYSTEM_AGE_REPORT_SPEC.md`. The illustrative 45-year-old values are
+  presentation examples only; do not use them as defaults or relabel a vendor
+  score, FI, z-score, overall age, or single biomarker as a system age.
 - **Compare follow-up:** use `POST /v1/assessment-comparisons` with two dated
   snapshots for the same person when a longitudinal view is needed. It returns
   descriptive readout deltas, reference-band transitions, and current focus

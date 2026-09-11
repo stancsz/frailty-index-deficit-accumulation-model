@@ -115,6 +115,70 @@ cohort review.
   This supports the conceptual age-equivalent risk mapping. The prototype's
   Gompertz parameters are explicit software defaults and are not a substitute
   for fitting a baseline mortality curve to the approved training cohort.
+- Johnson et al., “Contextualizing aging clocks and properly describing biological
+  age,” *GeroScience* (2024), [PMCID: PMC11634725](https://pmc.ncbi.nlm.nih.gov/articles/PMC11634725/).
+  This supports describing an output by its input domain or clock name rather
+  than claiming that one grip, VO2 max, methylation, protein, or other measure
+  is whole-body biological age. It also supports the system-specific profile
+  framing because biological aging is heterogeneous across tissues and
+  functions.
+- Moqri et al., “Validation of biomarkers of aging,” *Nature Medicine* (2024),
+  [PMCID: PMC11090477](https://pmc.ncbi.nlm.nih.gov/articles/PMC11090477/).
+  This supports separating analytic, predictive, and clinical validation and
+  requiring reliability, outcome relevance, diverse-population validation, and
+  clinical utility before translation.
+- Zurbuchen et al., “Methods for the assessment of biological age — A
+  systematic review,” *Maturitas* (2025),
+  [PubMed PMID: 39938306](https://pubmed.ncbi.nlm.nih.gov/39938306/).
+  This supports the statement that no biological-age gold standard or consensus
+  method currently exists.
+- Sehgal et al., “Systems Age: a single blood methylation test to quantify aging
+  heterogeneity across 11 physiological systems,” *Nature Aging* (2025),
+  [PubMed PMID: 40954326](https://pubmed.ncbi.nlm.nih.gov/40954326/).
+  This is a research example of system-level age modeling, not validation of
+  this repository or permission to copy its estimates. It demonstrates why
+  every system age needs an explicit model, inputs, population, and evidence
+  record.
+
+## System measurement guidance for the end-state report
+
+- The [CDC age definition](https://www.cdc.gov/nchs/hus/sources-definitions/age.htm)
+  describes reported age as completed years calculated from date of birth and
+  a reference date. The report uses this as the chronological-age context and
+  keeps it separate from biomarker interpretation.
+- The [ISCD 2023 Adult Official Positions](https://iscd.org/wp-content/uploads/2024/03/2023-ISCD-Adult-Positions.pdf)
+  provide the clinical measurement and interpretation starting point for DXA
+  bone mineral density. DXA BMD is not itself a universal bone-aging clock.
+- Cruz-Jentoft et al., “Sarcopenia: revised European consensus on definition
+  and diagnosis (EWGSOP2),” *Age and Ageing* (2019),
+  [doi:10.1093/ageing/afy169](https://doi.org/10.1093/ageing/afy169).
+  This supports using muscle strength and physical performance together with
+  muscle quantity in a musculoskeletal profile, rather than treating a single
+  lean-mass measurement as muscle age.
+- Ross et al., “Importance of Assessing Cardiorespiratory Fitness in Clinical
+  Practice,” *Circulation* (2016),
+  [doi:10.1161/CIR.0000000000000461](https://doi.org/10.1161/CIR.0000000000000461),
+  and the 2024 overview of meta-analyses,
+  [PMC11103301](https://pmc.ncbi.nlm.nih.gov/articles/PMC11103301/), support
+  direct cardiorespiratory-fitness measurement as an important health marker.
+  They do not establish VO2 peak as a single strongest or universal biological
+  age test.
+- The [NIH Toolbox Cognition Battery](https://nihtoolbox.org/domain/cognition/)
+  and NIH description of the [NIH Toolbox](https://www.nia.nih.gov/research/resource/nih-toolbox)
+  support multidomain, standardized assessment of executive function, memory,
+  attention, and processing speed. Cognitive test performance and MRI brain age
+  are separate constructs and must not be merged without an approved model.
+- CDC's [A1C testing guidance](https://www.cdc.gov/diabetes/diabetes-testing/prediabetes-a1c-test.html)
+  supports HbA1c as a measure of average glycemia over roughly the prior three
+  months and documents factors that can affect accuracy. It is a metabolic
+  measurement, not a metabolic-age test.
+- The [CDC sleep guidance](https://www.cdc.gov/sleep/about/index.html) supports
+  recording sleep duration and quality in context. Sleep duration alone should
+  not be converted into a biological age.
+- hs-CRP is a nonspecific acute-phase/inflammatory marker; interpretation must
+  account for infection and other context. See the CDC/AHA background paper,
+  [PubMed PMID: 15611384](https://pubmed.ncbi.nlm.nih.gov/15611384/), and the
+  recent review [PMC11959579](https://pmc.ncbi.nlm.nih.gov/articles/PMC11959579/).
 
 ## Prediction-model credibility and AI governance
 

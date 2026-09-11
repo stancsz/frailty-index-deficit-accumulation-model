@@ -34,6 +34,21 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
     html = (root / "docs" / "index.html").read_text(encoding="utf-8")
     evaluation = (root / "EVAL.md").read_text(encoding="utf-8")
     model_card = (root / "docs" / "MODEL_CARD.md").read_text(encoding="utf-8")
+    research_report_path = root / "docs" / "RESEARCH_REPORT.md"
+    research_report = (
+        research_report_path.read_text(encoding="utf-8")
+        if research_report_path.is_file()
+        else ""
+    )
+    browser_qa_path = root / "docs" / "browser-qa-2026-09-10.json"
+    browser_qa: dict[str, Any] = {}
+    if browser_qa_path.is_file():
+        try:
+            parsed_browser_qa = json.loads(browser_qa_path.read_text(encoding="utf-8"))
+            if isinstance(parsed_browser_qa, dict):
+                browser_qa = parsed_browser_qa
+        except json.JSONDecodeError:
+            browser_qa = {}
     model_approval = (root / "docs" / "MODEL_APPROVAL.md").read_text(encoding="utf-8")
     operations_path = root / "docs" / "OPERATIONS.md"
     operations = operations_path.read_text(encoding="utf-8")
@@ -153,19 +168,19 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
     )
     failures: list[str] = []
     expected_node_count = f"{node_test_count} Node Pages/parser tests"
-    if (
-        f"Software gate: CI runs {test_count} Python + {node_test_count} Node tests"
-        not in html
-    ):
+    if f"Local receipt: {test_count} Python + {node_test_count} Node tests" not in html:
         failures.append("docs/index.html has a stale status-ribbon test count")
     if not re.search(
-        rf'<dt>Software gate</dt><dd class="ok"[^>]*>CI runs {test_count} Python \+ {node_test_count} Node tests',
+        rf'<dt>Software gate</dt><dd class="ok"[^>]*>Local software receipt: {test_count} Python \+ {node_test_count} Node tests',
         html,
     ):
         failures.append("docs/index.html has a stale at-a-glance software-gate count")
     if f">{test_count} collected<" not in html:
         failures.append("docs/index.html has a stale automated receipt")
-    if f"`py -3 -m pytest`: {test_count} passed" not in evaluation:
+    if (
+        f"`py -3 -m pytest`: {test_count} passed" not in evaluation
+        and f"`uv run pytest`: {test_count} tests passed" not in evaluation
+    ):
         failures.append("EVAL.md has a stale pytest receipt")
     if (
         f"The current checkout collects {test_count} Python tests and "
@@ -178,6 +193,35 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
         failures.append("docs/index.html has a stale Node test count")
     if f"{test_count}-test suite plus {expected_node_count}" not in model_card:
         failures.append("MODEL_CARD.md has a stale Node test count")
+    for marker in (
+        "# Research report: clinician-first measurement review",
+        "## 1. Executive summary",
+        "## 12. References and appendices",
+        "comparison_eligibility",
+        "matched_items_only",
+        "E-005",
+        "research-use-only",
+    ):
+        if marker not in research_report:
+            failures.append(f"RESEARCH_REPORT.md is missing marker: {marker}")
+    if not browser_qa:
+        failures.append("browser QA receipt is missing or invalid")
+    else:
+        if browser_qa.get("scope") != "local dirty-checkout rendered Pages QA":
+            failures.append("browser QA receipt has an unexpected scope")
+        viewport_rows = browser_qa.get("viewports")
+        if not isinstance(viewport_rows, list) or {
+            row.get("width") for row in viewport_rows if isinstance(row, dict)
+        } != {360, 768, 1440}:
+            failures.append("browser QA receipt is missing required viewport rows")
+        elif any(
+            row.get("viewport_overflow") is not False
+            for row in viewport_rows
+            if isinstance(row, dict)
+        ):
+            failures.append("browser QA receipt records viewport overflow")
+        if browser_qa.get("clinical_gate") != "E-005 blocked":
+            failures.append("browser QA receipt has an unsafe clinical gate")
     if '<a href="test-receipt.json">test-receipt.json</a>' not in html:
         failures.append("Pages is missing the public test-receipt link")
     eval_ids = re.findall(r"(?m)^\| (E-\d+) \|", evaluation)
@@ -233,6 +277,8 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
         "uv run python scripts/build_external_validation_fixture.py --output examples/external_validation_synthetic.json --check",
         "uv run python scripts/run_external_validation_report.py --check",
         "uv run python scripts/build_test_receipt.py --check",
+        "uv run python -m pytest -q",
+        "uv run python scripts/verify_publication_failure_demo.py --check",
         "node --check docs/intake-form.js",
         "node --test tests/site_parser.test.cjs",
         "scripts/build_pages_metadata.py",
@@ -807,6 +853,10 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
 
     if not (root / "scripts" / "verify_package_install.py").is_file():
         failures.append("installed-wheel smoke runner is missing")
+    if not (root / "scripts" / "verify_publication_failure_demo.py").is_file():
+        failures.append("publication failure demo runner is missing")
+    if not (root / "docs" / "publication-failure-demo-2026-09-10.json").is_file():
+        failures.append("publication failure demo receipt is missing")
 
     manifest_check = subprocess.run(
         [
@@ -866,6 +916,8 @@ def _failures(root: Path, test_count: int, node_test_count: int) -> list[str]:
                 not path.is_file()
                 or path.name == "verify_docs.py"
                 or path.suffix == ".pyc"
+                or path.suffix
+                in {".png", ".jpg", ".jpeg", ".gif", ".webp", ".ico", ".bmp", ".svgz"}
             ):
                 continue
             text = path.read_text(encoding="utf-8")

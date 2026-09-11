@@ -4,13 +4,81 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Clinical Healthspan Engine — Evidence-bounded documentation</title>
-  <meta name="description" content="Deficit-accumulation engine: 35-feature contract, deterministic FI, BIA transfer calibration, and a withheld biological-age development interface. Software evidence is complete; clinical validation (E-005) is not." />
+  <meta name="description" content="Deficit-accumulation engine: 35-feature contract, deterministic FI, BIA transfer calibration, and a withheld biological-age development interface. Local software checks pass in this checkout; clean publication and clinical validation (E-005) are not verified." />
   <meta name="robots" content="index,follow" />
   <meta name="color-scheme" content="light dark" />
-  <link rel="stylesheet" href="site.css" />
-</head>
+  <link rel="stylesheet" href="site.css?v=ir3-responsive-5" />
+
+<!-- ===== Trust / identity metadata (additive 2026-09-09) =====
+     Additive only; preserves the trust-pass shell verbatim. Closes:
+       - feedback #1 (identity / favicon / OG / Twitter / PWA)
+       - feedback #2 (citation, JSON-LD, structured provenance)
+       - feedback #3 (standards row, comparative surface) -->
+<link rel="canonical" href="https://stancsz.github.io/frailty-index-deficit-accumulation-model/" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="assets/site.webmanifest" />
+<meta name="theme-color" content="#0f1620" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#ece5d6" media="(prefers-color-scheme: dark)" />
+<meta name="application-name" content="Clinical Healthspan Engine" />
+<meta name="generator" content="Evidence-bounded documentation" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Clinical Healthspan Engine" />
+<meta property="og:title" content="Clinical Healthspan Engine — Evidence-bounded documentation" />
+<meta property="og:description" content="Deficit-accumulation engine: 35-feature contract, deterministic FI, BIA transfer calibration, and a withheld biological-age development interface. Local software checks pass in this checkout; clean publication and clinical validation (E-005) are not verified." />
+<meta property="og:url" content="https://stancsz.github.io/frailty-index-deficit-accumulation-model/" />
+<meta property="og:locale" content="en" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Clinical Healthspan Engine — Evidence-bounded documentation" />
+<meta name="twitter:description" content="Deficit-accumulation engine: 35-feature contract, deterministic FI, BIA transfer calibration, and a withheld biological-age development interface. Local software checks pass in this checkout; clean publication and clinical validation (E-005) are not verified." />
+
+<!-- Structured data: SoftwareSourceCode + BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://stancsz.github.io/frailty-index-deficit-accumulation-model/#software",
+      "name": "Clinical Healthspan Engine",
+      "alternateName": "CHE",
+      "description": "Evidence-bounded documentation for a deterministic deficit-accumulation engine implementing the Rockwood / Mitnitski 35-feature frailty index. Local software checks pass in this checkout; clean publication and clinical validation (E-005) are not verified.",
+      "url": "https://stancsz.github.io/frailty-index-deficit-accumulation-model/",
+      "codeRepository": "https://github.com/stancsz/frailty-index-deficit-accumulation-model",
+      "license": "https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/LICENSE.md",
+      "programmingLanguage": ["Python", "JavaScript"],
+      "isAccessibleForFree": true,
+      "keywords": "deficit accumulation, frailty index, Rockwood, Mitnitski, biological age, evidence-bounded",
+      "inLanguage": "en",
+      "maintainer": {
+        "@type": "Person",
+        "@id": "https://github.com/stancsz",
+        "name": "stancsz",
+        "url": "https://github.com/stancsz"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://github.com/stancsz",
+        "name": "stancsz",
+        "url": "https://github.com/stancsz"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stancsz.github.io/frailty-index-deficit-accumulation-model/" }
+      ]
+    }
+  ]
+}
+</script></head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main" tabindex="0">Skip to main content</a>
 
   <!-- ============ MASTHEAD ============ -->
   <header class="masthead" role="banner">
@@ -25,21 +93,91 @@
       <div class="dateline" aria-hidden="true" data-build-meta-mirror>
         Repository documentation · not a clinical decision-support product
       </div>
+
+      <details class="masthead-evidence-drawer">
+        <summary>Open evidence, citations and release status</summary>
+      <div class="masthead-extras" aria-label="Trust and citation surface">
+        <div class="masthead-logo" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="40" height="40" focusable="false">
+            <rect width="64" height="64" rx="10" fill="#0f1620"/>
+            <g fill="none" stroke="#faf6ef" stroke-width="2" stroke-linecap="round">
+              <path d="M10 44 Q 20 36, 32 44 T 54 44"/>
+              <circle cx="22" cy="41" r="1.6" fill="#faf6ef" stroke="none"/>
+              <circle cx="44" cy="42" r="1.6" fill="#faf6ef" stroke="none"/>
+            </g>
+            <text x="32" y="26" text-anchor="middle" font-family="Iowan Old Style, Charter, Georgia, serif" font-size="20" font-style="italic" fill="#faf6ef">che</text>
+          </svg>
+        </div>
+        <ul class="trust-chips" aria-label="Trust signals">
+          <li><span class="trust-chip-k">License</span><span class="trust-chip-v"><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/LICENSE.md">Proprietary distribution</a></span></li>
+          <li><span class="trust-chip-k">Variables</span><span class="trust-chip-v">35 canonical</span></li>
+          <li><span class="trust-chip-k">MVV</span><span class="trust-chip-v">5 mandatory + ≥6 blood + ≥4 history</span></li>
+          <li><span class="trust-chip-k">Reference panel</span><span class="trust-chip-v">synthetic fixture</span></li>
+          <li><span class="trust-chip-k">Software gate</span><span class="trust-chip-v ok">Local receipt: 146 Python + 28 Node tests</span></li>
+        </ul>
+        <div class="standards-row" aria-label="Standards we report against">
+          <p class="standards-row-lead">Standards we report against</p>
+          <ul>
+            <li><a href="CLINICAL_ML_EVIDENCE_CROSSWALK.md">Clinical ML evidence crosswalk</a></li>
+            <li><a href="ASSESSMENT_OVERLAY.md">Assessment overlay</a></li>
+            <li><a href="EXTERNAL_VALIDATION_PROTOCOL.md">External validation protocol</a></li>
+            <li><a href="MODEL_APPROVAL.md">Model approval gate</a></li>
+            <li><a href="PRIVACY_THREAT_MODEL.md">Privacy / threat model</a></li>
+            <li><a href="wiki/001-model-credibility.md">Project wiki</a></li>
+          </ul>
+        </div>
+        <div class="cite-this" aria-label="How to cite">
+          <p class="cite-this-lead">Cite this documentation</p>
+          <pre class="cite-apa">stancsz. (2026). <em>Clinical Healthspan Engine</em> (v0.1.0): Evidence-bounded documentation for a deficit-accumulation frailty index engine [Software documentation]. GitHub. https://stancsz.github.io/frailty-index-deficit-accumulation-model/</pre>
+          <pre class="cite-bibtex">@software{stancsz_che_2026,
+  author = {stancsz},
+  title  = {{Clinical Healthspan Engine}: Evidence-bounded documentation},
+  year   = {2026},
+  version = {0.1.0},
+  url    = {https://stancsz.github.io/frailty-index-deficit-accumulation-model/},
+  note   = {Local software checks pass in this checkout; clean publication and clinical validation (E-005) are not verified. Research-use-only.}
+}</pre>
+          <p class="cite-this-foot">More evidence: <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> · <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/docs/RESEARCH_REPORT.md">RESEARCH_REPORT.md</a> · <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/MODEL_CARD.md">MODEL_CARD.md</a> · <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/PRIVACY_THREAT_MODEL.md">PRIVACY_THREAT_MODEL.md</a> · <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/docs/SOURCES.md">SOURCES.md</a>.</p>
+        </div>
+      </div>
+      </details>
     </div>
   </header>
 
-  <!-- ============ STATUS RIBBON (UNMISSABLE) ============ -->
+  <!-- ============ REVIEW STATUS ============ -->
   <div class="status-ribbon" role="status" aria-label="Development status">
     <div class="status-ribbon-inner">
-      <strong>Development status:</strong>
-      <span>Wellness &amp; healthspan prototype. Not a diagnostic device.</span>
-      <span class="status-pill block">research-use-only — not for clinical use</span>
-      <span class="status-pill block">Reference panel: synthetic fixture</span>
-      <span class="status-pill block">Predictor: development surrogate</span>
-      <span class="status-pill ok">Software contract: deterministic</span>
-      <span class="status-pill ok" data-software-gate>Software gate: CI runs 142 Python + 25 Node tests before deployment</span>
+      <strong>Research demonstration</strong>
+      <span>Measurements first · synthetic examples · no diagnosis</span>
+      <span class="status-pill block">research-use-only · not for clinical use</span>
+      <span class="status-pill block">Clinical gate: E-005 blocked</span>
     </div>
   </div>
+
+  <!-- ============ REVIEWER-FIRST ENTRY ============ -->
+  <section class="review-hero" aria-labelledby="review-hero-title">
+    <div class="review-hero-copy">
+      <p class="h-eyebrow">Measurement review · research demonstration</p>
+      <h2 id="review-hero-title">Start with what was measured.</h2>
+      <div class="review-hero-actions" aria-label="Start here">
+        <a class="hero-action hero-action-primary" href="#demo">Open synthetic example</a>
+        <a class="hero-action" href="#evidence">See evidence and limits</a>
+        <a class="hero-action hero-action-quiet" href="#sources">Find methods, ownership and reporting</a>
+      </div>
+      <p class="review-hero-lede">
+        A clinician-first walkthrough of a synthetic assessment: observed values,
+        FI denominator, missing inputs, and safe next discussion points. Numeric
+        age-equivalent outputs stay withheld because this checkout has no approved
+        external cohort or clinical review.
+      </p>
+    </div>
+    <div class="review-hero-facts" aria-label="Scope at a glance">
+      <div><span>Intended user</span><strong>Clinicians and research collaborators</strong></div>
+      <div><span>Data in this page</span><strong>Public synthetic examples only</strong></div>
+      <div><span>Interpretation</span><strong>Research use only, not clinical advice</strong></div>
+      <div><span>Primary boundary</span><strong>FI measurements are shown; age claims are withheld</strong></div>
+    </div>
+  </section>
 
   <!-- ============ PAGE SHELL ============ -->
   <div class="shell">
@@ -99,7 +237,7 @@
             <dt>MVV</dt><dd>5 mandatory + ≥6 blood + ≥4 history</dd>
             <dt>Reference panel</dt><dd class="block">synthetic fixture</dd>
             <dt>Predictor</dt><dd class="block">development surrogate</dd>
-            <dt>Software gate</dt><dd class="ok" data-software-gate>CI runs 142 Python + 25 Node tests before deployment</dd>
+            <dt>Software gate</dt><dd class="ok" data-software-gate>Local software receipt: 146 Python + 28 Node tests; clean publication pending</dd>
             <dt>Wellness framing</dt><dd class="block">non-clinical, non-diagnostic</dd>
             <dt>Diagnostic claim</dt><dd class="block">not supported</dd>
             <dt>Causal claim</dt><dd class="block">not supported</dd>
@@ -567,6 +705,20 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           <div id="demo-report" class="demo-result" role="region" aria-labelledby="demo-report-heading">
             <h3 id="demo-report-heading" class="sr-only">Selected synthetic profile report</h3>
             <p class="print-only report-print-banner">Research-use-only — synthetic development output — not for clinical use, lifespan prediction, or treatment decisions.</p>
+            <section class="measurement-first" aria-labelledby="measurement-first-title">
+              <div class="measurement-first-heading">
+                <p class="h-eyebrow">Observed first</p>
+                <h4 id="measurement-first-title">Measurement ledger</h4>
+                <p class="field-note">The report starts with values that were actually present in the synthetic artifact. Missing inputs remain missing, units stay attached to their source measurements, and no assessment date is invented.</p>
+              </div>
+              <div class="measurement-ledger">
+                <div><span>FI numerator / denominator</span><strong data-demo-fi-fraction>—</strong><small>valid FI variables only; missing values are excluded</small></div>
+                <div><span>Observed coverage</span><strong data-demo-coverage-summary>—</strong><small>canonical values present in this example</small></div>
+                <div><span>Units in source ranges</span><strong data-demo-units>—</strong><small>displayed again with each measured value</small></div>
+                <div><span>Assessment date</span><strong>Not supplied</strong><small>the public synthetic artifact carries no patient date</small></div>
+              </div>
+              <p class="measurement-provenance"><strong>Provenance:</strong> <code>docs/demo-data.json</code> · <span data-demo-provenance>synthetic fixture</span> · panel and model identity are shown below before interpretation.</p>
+            </section>
             <div class="readout-grid">
               <div class="readout-card readout-primary">
                 <span>Biological-age readout <span class="withheld-tag">development only · withheld</span></span>
@@ -632,6 +784,8 @@ uv run uvicorn frailty_engine.api:app</code></pre>
             </details>
             <div class="progress-panel" data-demo-progress hidden>
               <h3>Descriptive progress snapshot</h3>
+              <p class="field-note" data-demo-progress-eligibility></p>
+              <p class="field-note" data-demo-progress-coverage></p>
               <p class="field-note" data-demo-progress-summary></p>
               <div class="table-scroll">
                 <table class="wellness-table progress-table">
@@ -673,7 +827,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           <li><strong>Not verified:</strong> clinical validity, mortality prediction, lifespan prediction, treatment effect, or a numeric joint age.</li>
           <li><strong>Public demo:</strong> synthetic data only; biological-age and homeostatic-deviation numbers are withheld from the published artifact.</li>
           <li><strong>Main blocker:</strong> E-005 remains blocked pending an approved external cohort and qualified clinical and statistical review.</li>
-          <li><strong>Source trail:</strong> exact criteria live in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a>; citations and their limits live in <a href="SOURCES.md">SOURCES.md</a>.</li>
+          <li><strong>Source trail:</strong> the clinician-first narrative lives in <a href="RESEARCH_REPORT.md">RESEARCH_REPORT.md</a>; exact criteria live in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a>; citations and their limits live in <a href="SOURCES.md">SOURCES.md</a>.</li>
         </ul>
 
         <details class="status-reveal evidence-register">
@@ -691,7 +845,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
 
         <div class="test-receipt" id="test-receipt" data-test-receipt>
           <div><strong>Automated software gate</strong><br><code>py -3 -m pytest</code></div>
-          <div><span class="receipt-value" data-test-receipt-count>142 collected</span><br><span class="field-note" data-test-receipt-detail>Plus <span data-test-receipt-node-count>25 Node Pages/parser tests</span> · exact counts: <a href="test-receipt.json">test-receipt.json</a></span></div>
+          <div><span class="receipt-value" data-test-receipt-count>146 collected</span><br><span class="field-note" data-test-receipt-detail>Plus <span data-test-receipt-node-count>28 Node Pages/parser tests</span> · exact counts: <a href="test-receipt.json">test-receipt.json</a></span></div>
           <div><strong>Static checks</strong><br><span class="field-note">Ruff · byte compilation · wheel build · API smoke · XGBoost artifact round-trip · Node syntax/tests</span></div>
           <p class="field-note">Full criterion index (E-001 … E-087) lives in <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> and the status table below. This summary intentionally collapses the index to keep the front of the page scannable.</p>
         </div>
@@ -755,7 +909,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The static Pages publication workflow runs the repository evidence verifier and all browser-parser tests before uploading only <code>docs/</code> through the official Pages artifact/deploy actions; its deploy job is restricted to the <code>main</code> ref and the <code>github-pages</code> environment, and it does not deploy the API, model, or patient data — <code>.github/workflows/pages.yml</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-025. <strong>Confidence: high for workflow configuration; remote execution remains operator/Actions-bound.</strong>
+            The static Pages publication workflow runs the full Python suite, repository evidence verifier, and all browser-parser tests before uploading only <code>docs/</code> through the official Pages artifact/deploy actions; its deploy job is restricted to the <code>main</code> ref and the <code>github-pages</code> environment, and it does not deploy the API, model, or patient data — <code>.github/workflows/pages.yml</code> and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-025. <strong>Confidence: high for workflow configuration; remote execution remains operator/Actions-bound.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
@@ -787,7 +941,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
-            The stateless comparison route and synthetic Pages artifact compare two dated same-person assessments, expose readout deltas and reference-band transitions, identify new or resolved focus areas, exclude the raw input payload from the report, and retain false action-effect/no-clinical-claim flags — <code>src/frailty_engine/progress.py</code>, <code>POST /v1/assessment-comparisons</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-033. <strong>Confidence: high for tested descriptive behavior; no causal or clinical claim.</strong>
+            The stateless comparison route and synthetic Pages artifact compare two dated same-person assessments with a versioned comparison context. They check FI item-set, coding, cutoff, unit, protocol, model, and panel identity; withhold aggregate readout deltas when eligibility is incomplete; show matched-item coverage and reference-band transitions; exclude the raw input payload; and retain false action-effect/no-clinical-claim flags — <code>src/frailty_engine/comparison.py</code>, <code>src/frailty_engine/progress.py</code>, <code>POST /v1/assessment-comparisons</code>, and <a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> E-033. <strong>Confidence: high for tested descriptive behavior; no causal or clinical claim.</strong>
           </li>
           <li data-tags="measured">
             <span class="marker measured">Measured</span>
@@ -933,7 +1087,7 @@ uv run uvicorn frailty_engine.api:app</code></pre>
             The post-R-080 maturity audit is recorded as E-080: Codex independently rejected redundant artifact-round-trip and in-memory-digest proposals against the current strict serving evidence, then selected explicit subgroup support warnings as the next bounded improvement. E-005 remains unchanged.
             External-validation reports now serialize <code>subgroup_support_warnings</code> with the observed dimension, label, and concrete reasons <code>no_events</code>, <code>no_comparable_pairs</code>, or <code>insufficient_valid_replicates</code>. This makes incomplete engineering support visible without inventing clinical minimums or labeling a subgroup validated, fair, or safe — E-081. <strong>Confidence: high for tested software behavior; external clinical validation remains absent.</strong>
             Validation reports now also serialize <code>outcome_metric_status</code> overall and per subgroup. Future Brier/calibration/decision-curve metrics are explicitly marked <code>value: null</code>, <code>status: not_implemented_pending_sap</code>, and <code>construction: none_withheld</code> until the protocol and approved cohort exist. This prevents missing outcome evidence from being mistaken for zero or for a computed clinical result — E-082. <strong>Confidence: high for the tested withholding contract; E-005 remains blocked.</strong>
-            Operators and agents can run <code>uv run python scripts/verify_project.py</code> as one canonical software gate. It composes the documented checks, emits a bounded human or JSON receipt, and still reports <code>E-005 blocked</code> separately. This is workflow evidence, not clinical approval — E-083. <strong>Confidence: high for the observed 19/19 software checks.</strong>
+            Operators and agents can run <code>uv run python scripts/verify_project.py</code> as one canonical software gate. It composes the documented checks, emits a bounded human or JSON receipt, and still reports <code>E-005 blocked</code> separately. This is workflow evidence, not clinical approval — E-083. <strong>Confidence: high for the observed 20/20 software checks.</strong>
             The API, installed skill, and Pages demo now expose deterministic full-body category reports with measured values, missing-measurement markers, measurement/reference provenance, forward-compatible system-card fields, and typed withheld age reports. Categories without supported inputs (currently skin, bone, and joint) are shown as unavailable; numeric category ages remain withheld pending category-specific validation — E-084. <strong>Confidence: high for tested software behavior; clinical approval remains absent.</strong>
             The per-domain system-age manifest template is checked by <code>scripts/validate_system_age_manifest.py</code> and the canonical gate. It requires explicit construct, target, measurement, reference, uncertainty, validation, subgroup, and approval fields while keeping numeric output disabled and production readiness false — E-085. <strong>Confidence: high for the release-review shape; clinical approval remains absent.</strong>
             Every system card now shows chronological-age context as supplied assessment metadata, including its source and the explicit fact that the current payload does not recompute age from date of birth — E-086. <strong>Confidence: high for tested presentation metadata; this is not clinical age validation.</strong>
@@ -1117,8 +1271,11 @@ uv run uvicorn frailty_engine.api:app</code></pre>
         <ul>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/README.md">README.md</a> — quick start, safety boundary, training notes.</li>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/GOAL.md">GOAL.md</a> — feature contract, dual pipeline, output schema, validation requirements.</li>
+          <li><a href="RESEARCH_REPORT.md">RESEARCH_REPORT.md</a> — clinician-first workflow, methods, evidence ledger, limitations, and practical usage.</li>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/EVAL.md">EVAL.md</a> — the evidence contract this site reflects (E-001 … E-086).</li>
           <li><a href="test-receipt.json">test-receipt.json</a> — deterministic Python/Node test-count receipt checked by CI and Pages.</li>
+          <li><a href="publication-failure-demo-2026-09-10.json">publication-failure-demo-2026-09-10.json</a> — local negative-test harness receipt; remote candidate publication is not verified.</li>
+          <li><a href="browser-qa-2026-09-10.json">browser-qa-2026-09-10.json</a> — local rendered QA receipt for 360, 768, and 1440 pixel checks; browser and clinical limits remain explicit.</li>
           <li><a href="https://github.com/stancsz/frailty-index-deficit-accumulation-model/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> — contribution, privacy, evidence, Pages, and release-receipt rules.</li>
           <li><a href="MODEL_CARD.md">MODEL_CARD.md</a> — intended use, limitations, evidence, and promotion gates.</li>
           <li><a href="MODEL_APPROVAL.md">MODEL_APPROVAL.md</a> — hash-bound approval-sidecar schema and promotion workflow.</li>

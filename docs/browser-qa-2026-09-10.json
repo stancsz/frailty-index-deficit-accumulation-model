@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-10",
+  "scope": "local dirty-checkout rendered Pages QA",
+  "source_url": "http://127.0.0.1:8765/",
+  "browser": "Chrome through the connected local browser session and CDP layout emulation",
+  "cross_browser": {
+    "scope": "local headless Playwright browser engines against the same dirty-checkout static server",
+    "firefox": {
+      "version": "144.0.2",
+      "viewports": [360, 768, 1440],
+      "no_overflow": true,
+      "h1_count_one": true,
+      "profile_switch": true,
+      "comparison_warning_visible": true,
+      "keyboard": {
+        "tabs_exercised": 8,
+        "first_focus": "Skip to main content",
+        "last_focus": "Project wiki",
+        "all_focus_labels_nonempty": true
+      },
+      "light_dark": true,
+      "print_report_only": true,
+      "failed_import_error": true,
+      "non_local_http_requests": [],
+      "page_errors": []
+    },
+    "webkit": {
+      "version": "26.0",
+      "viewports": [360, 768, 1440],
+      "no_overflow": true,
+      "h1_count_one": true,
+      "profile_switch": true,
+      "comparison_warning_visible": true,
+      "keyboard": {
+        "tabs_exercised": 8,
+        "first_focus": "Skip to main content",
+        "last_focus": "Load synthetic SECA example",
+        "all_focus_labels_nonempty": true
+      },
+      "light_dark": true,
+      "print_report_only": true,
+      "failed_import_error": true,
+      "non_local_http_requests": [],
+      "page_errors": []
+    },
+    "headless_actual_browser_zoom_ui_verified": false
+  },
+  "viewports": [
+    {
+      "width": 360,
+      "height": 800,
+      "document_scroll_width": 345,
+      "viewport_overflow": false,
+      "h1_count": 1,
+      "profile_switch": true,
+      "comparison_warning_visible": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "document_scroll_width": 753,
+      "viewport_overflow": false,
+      "h1_count": 1,
+      "profile_switch": true,
+      "comparison_warning_visible": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "document_scroll_width": 1425,
+      "viewport_overflow": false,
+      "h1_count": 1,
+      "profile_switch": true,
+      "comparison_warning_visible": true
+    }
+  ],
+  "keyboard": {
+    "tabs_exercised": 8,
+    "first_focus": "Skip to main content",
+    "last_focus": "Project wiki"
+  },
+  "accessibility_tree": {
+    "browser": "headed Chrome through the connected browser session",
+    "h1_count": 1,
+    "heading_count_h1_to_h4": 39,
+    "landmarks": ["banner", "navigation", "main", "contentinfo"],
+    "interactive_controls_total": 119,
+    "interactive_controls_named": 119,
+    "unnamed_controls": [],
+    "skip_link": {
+      "name": "Skip to main content",
+      "tabindex": "0"
+    },
+    "polite_live_regions": 5,
+    "status": "automated accessibility-tree evidence only; human screen-reader review remains open"
+  },
+  "render_modes": {
+    "color_scheme": [
+      {
+        "scheme": "light",
+        "body_background": "rgb(250, 246, 239)",
+        "body_color": "rgb(15, 22, 32)",
+        "viewport_overflow": false,
+        "h1_count": 1
+      },
+      {
+        "scheme": "dark",
+        "body_background": "rgb(10, 17, 24)",
+        "body_color": "rgb(236, 229, 214)",
+        "viewport_overflow": false,
+        "h1_count": 1
+      }
+    ],
+    "effective_200_percent_layout": {
+      "css_viewport": [637, 427],
+      "device_pixel_ratio": 2,
+      "document_scroll_width": 622,
+      "client_width": 622,
+      "viewport_overflow": false,
+      "h1_count": 1,
+      "actual_browser_zoom_ui_verified": false
+    }
+  },
+  "contrast_sweep": {
+    "light_dom_foreground_background": {
+      "failures": 0,
+      "minimum_ratio": 4.55,
+      "visible_leaf_text_nodes": 977
+    },
+    "scope": "automated computed-style sweep of visible leaf text; images, non-color meaning, and human review are not covered",
+    "status": "automated light-theme boundary passed; human light/dark contrast and non-color review remain open"
+  },
+  "print": {
+    "print_mode_class_applied": true,
+    "header_hidden": true,
+    "report_visible": true,
+    "non_report_main_children_visible": 0,
+    "print_to_pdf_succeeded": true,
+    "pdf_base64_bytes": 1708
+  },
+  "failed_import": {
+    "fixture": "in-page synthetic malformed File; no patient data",
+    "error_status": "[seca 1] Could not parse this export: expected Value, Unit, and dated columns",
+    "error_aria_label": "Error 1 · Could not parse this export: expected Value, Unit, and dated columns",
+    "details_cleared": true
+  },
+  "network_privacy": {
+    "page_requests": [
+      "http://127.0.0.1:8765/",
+      "http://127.0.0.1:8765/site.css?v=ir3-responsive-5",
+      "http://127.0.0.1:8765/seca-parser.js?v=e088",
+      "http://127.0.0.1:8765/intake-form.js?v=e088",
+      "http://127.0.0.1:8765/site.js?v=e088",
+      "http://127.0.0.1:8765/assets/site.webmanifest",
+      "http://127.0.0.1:8765/demo-data.json",
+      "http://127.0.0.1:8765/assets/favicon.svg",
+      "http://127.0.0.1:8765/example-seca-tableview.csv"
+    ],
+    "non_local_http_requests": [],
+    "browser_extension_requests_excluded": true,
+    "note": "The page loaded local assets and fetched the synthetic SECA fixture locally; Chrome extension traffic was excluded from the page-origin result."
+  },
+  "outstanding": [
+    "screen-reader review",
+    "actual browser 200% zoom UI review (effective 2x layout emulation passed)",
+    "IR1 five-user comprehension study"
+  ],
+  "clinical_gate": "E-005 blocked",
+  "release_note": "This receipt is local rendered software evidence only; it is not a deployment or clinical-readiness receipt."
+}

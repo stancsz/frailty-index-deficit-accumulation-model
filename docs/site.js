@@ -365,6 +365,10 @@
     var fiDetail = document.querySelector("[data-demo-fi-detail]");
     var fiStrength = document.querySelector("[data-demo-fi-strength]");
     var deviationEl = document.querySelector("[data-demo-deviation]");
+    var fiFractionEl = document.querySelector("[data-demo-fi-fraction]");
+    var coverageSummaryEl = document.querySelector("[data-demo-coverage-summary]");
+    var unitsEl = document.querySelector("[data-demo-units]");
+    var provenanceEl = document.querySelector("[data-demo-provenance]");
     var description = document.querySelector("#demo-description");
     if (ageEl) {
       ageEl.textContent = age.point_estimate === null || age.point_estimate === undefined
@@ -381,6 +385,10 @@
     if (fiStrength) fiStrength.textContent = "Denominator band: "
       + humanize(metrics.current_deficit_load_fi_details.denominator_strength || "low")
       + " (engineering count label; not clinical adequacy)";
+    if (fiFractionEl) {
+      fiFractionEl.textContent = Number(metrics.current_deficit_load_fi_details.numerator).toFixed(3)
+        + " / " + String(metrics.current_deficit_load_fi_details.denominator);
+    }
     if (deviationEl) {
       var deviation = result.trajectory.homeostatic_deviation_score;
       deviationEl.textContent = deviation === null || deviation === undefined
@@ -418,6 +426,21 @@
     var missingEl = document.querySelector("[data-demo-missing]");
     var focusCountEl = document.querySelector("[data-demo-focus-count]");
     var missingListEl = document.querySelector("[data-demo-missing-list]");
+    if (coverageSummaryEl) {
+      coverageSummaryEl.textContent = String(coverage.measured_features ?? 0)
+        + " measured / " + String(coverage.missing_features ?? 0) + " missing";
+    }
+    if (unitsEl) {
+      var unitLabels = Array.from(new Set((report.ranges || []).map(function (item) {
+        return item.unit || "unitless";
+      })));
+      unitsEl.textContent = unitLabels.length ? unitLabels.join(", ") : "Not recorded";
+    }
+    if (provenanceEl) {
+      provenanceEl.textContent = "model " + String(result.model_metadata.model_id || "not recorded")
+        + " · panel " + String(result.data_quality.reference_panel_id || "not recorded")
+        + " · fixture-only " + String(Boolean(result.data_quality.reference_panel_fixture_only));
+    }
     if (measuredEl) measuredEl.textContent = String(coverage.measured_features ?? 0);
     if (missingEl) missingEl.textContent = String(coverage.missing_features ?? 0);
     if (focusCountEl) focusCountEl.textContent = String(coverage.focus_areas ?? 0);
@@ -537,11 +560,15 @@
   function renderProgress(report) {
     var panel = document.querySelector("[data-demo-progress]");
     var summary = document.querySelector("[data-demo-progress-summary]");
+    var eligibilityText = document.querySelector("[data-demo-progress-eligibility]");
+    var coverageText = document.querySelector("[data-demo-progress-coverage]");
     var changes = document.querySelector("[data-demo-progress-changes]");
     var boundary = document.querySelector("[data-demo-progress-boundary]");
     if (!panel || !summary || !changes || !boundary) return;
     if (!report) {
       panel.hidden = true;
+      if (eligibilityText) eligibilityText.textContent = "";
+      if (coverageText) coverageText.textContent = "";
       summary.textContent = "";
       changes.innerHTML = "";
       boundary.textContent = "";
@@ -549,6 +576,22 @@
     }
     panel.hidden = false;
     var counts = report.summary || {};
+    var eligibility = report.comparison_eligibility || {};
+    var blockers = eligibility.blockers || [];
+    if (eligibilityText) {
+      eligibilityText.textContent = eligibility.status === "eligible"
+        ? "Aggregate readouts are comparable under the recorded model, panel, item-set, unit, protocol, and cutoff identities."
+        : "Aggregate readouts withheld. This is a matched-items-only comparison; "
+          + (blockers.length ? "reason: " + blockers.map(humanize).join(", ") + "." : "comparison identity is incomplete.");
+    }
+    if (coverageText) {
+      var matched = (eligibility.matched_fi_features || []).length;
+      var added = eligibility.added_fi_features || [];
+      var removed = eligibility.removed_fi_features || [];
+      coverageText.textContent = "FI item coverage: " + matched + " matched, "
+        + added.length + " added, " + removed.length + " removed. "
+        + "A coverage change alone does not establish health improvement.";
+    }
     summary.textContent = "Compared " + report.previous_assessed_at + " → " + report.current_assessed_at
       + ": " + counts.moved_into_reference_range + " measured item(s) moved into a development reference range, "
       + counts.moved_out_of_reference_range + " moved out, and "
@@ -598,6 +641,7 @@
       top_interventions: result.top_interventions || [],
       wellness_report: report,
       category_reports: result.category_reports || [],
+      comparison_context: result.comparison_context || null,
       action_effect_estimated: false,
       clinical_or_lifespan_claim: false,
       progress_report: example.progress ? publicProgressReport(example.progress.report) : null,

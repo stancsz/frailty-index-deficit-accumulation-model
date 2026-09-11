@@ -377,7 +377,10 @@ def test_api_comparison_is_typed_and_rejects_different_people() -> None:
     assert response.status_code == 200
     parsed = AssessmentComparisonResponse.model_validate(response.json())
     assert parsed.format == "wellness-progress-report-v1"
-    assert parsed.comparison_basis == "same_model_and_reference_panel"
+    assert parsed.comparison_basis == "matched_items_only"
+    assert parsed.comparison_eligibility.status == "withheld"
+    assert "model_artifact_sha256_unknown" in parsed.comparison_eligibility.blockers
+    assert parsed.readout_changes == []
     assert parsed.action_effect_estimated is False
     assert parsed.current_focus_areas == []
     assert "measurements" not in json.dumps(response.json())
@@ -393,6 +396,132 @@ def test_api_comparison_is_typed_and_rejects_different_people() -> None:
     chronology_error = client.post("/v1/assessment-comparisons", json=non_chronological)
     assert chronology_error.status_code == 422
     assert chronology_error.json()["error"]["code"] == "ValidationError"
+
+
+def test_progress_report_withholds_aggregate_change_when_fi_coverage_changes() -> None:
+    previous_payload = sample_payload()
+    previous_payload["patient_id"] = "coverage-comparison-test"
+    current_payload = json.loads(json.dumps(previous_payload))
+    current_payload["measurements"]["creatinine"] = 0.9
+    previous = assess(previous_payload)
+    current = assess(current_payload)
+
+    report = build_progress_report(
+        previous,
+        current,
+        previous_assessed_at="2026-01-01",
+        current_assessed_at="2026-03-01",
+    )
+
+    assert report["comparison_basis"] == "matched_items_only"
+    assert report["readout_changes"] == []
+    assert report["summary"]["aggregate_readouts_comparable"] is False
+    assert "fi_item_set_changed" in report["comparison_eligibility"]["blockers"]
+    assert report["comparison_eligibility"]["added_fi_features"] == ["creatinine"]
+    assert "coverage change alone" in report["summary"]["interpretation"]
+
+    reverse = build_progress_report(
+        current,
+        previous,
+        previous_assessed_at="2026-03-01",
+        current_assessed_at="2026-04-01",
+    )
+    assert reverse["comparison_eligibility"]["removed_fi_features"] == ["creatinine"]
+
+
+def test_progress_report_withholds_aggregate_change_for_added_abnormal_fi_item() -> (
+    None
+):
+    previous_payload = sample_payload()
+    previous_payload["patient_id"] = "abnormal-coverage-comparison-test"
+    current_payload = json.loads(json.dumps(previous_payload))
+    current_payload["measurements"]["cancer"] = 1
+    previous = assess(previous_payload)
+    current = assess(current_payload)
+
+    report = build_progress_report(
+        previous,
+        current,
+        previous_assessed_at="2026-01-01",
+        current_assessed_at="2026-03-01",
+    )
+
+    assert report["comparison_basis"] == "matched_items_only"
+    assert report["readout_changes"] == []
+    assert report["summary"]["aggregate_readouts_comparable"] is False
+    assert "fi_item_set_changed" in report["comparison_eligibility"]["blockers"]
+    assert report["comparison_eligibility"]["added_fi_features"] == ["cancer"]
+    assert "coverage change alone" in report["summary"]["interpretation"]
+
+    reverse = build_progress_report(
+        current,
+        previous,
+        previous_assessed_at="2026-03-01",
+        current_assessed_at="2026-04-01",
+    )
+    assert reverse["comparison_eligibility"]["removed_fi_features"] == ["cancer"]
+
+
+@pytest.mark.parametrize(
+    ("context_key", "feature", "expected_blocker", "eligibility_key"),
+    [
+        ("feature_units", "bmi", "measurement_units_changed", "changed_units"),
+        (
+            "feature_protocols",
+            "bmi",
+            "measurement_protocol_changed",
+            "changed_protocols",
+        ),
+    ],
+)
+def test_progress_report_withholds_changed_units_or_protocol(
+    context_key: str,
+    feature: str,
+    expected_blocker: str,
+    eligibility_key: str,
+) -> None:
+    payload = sample_payload()
+    payload["patient_id"] = "contract-comparison-test"
+    previous = assess(payload)
+    current = assess(json.loads(json.dumps(payload)))
+    current["comparison_context"][context_key][feature] = "changed-contract"
+
+    report = build_progress_report(
+        previous,
+        current,
+        previous_assessed_at="2026-01-01",
+        current_assessed_at="2026-03-01",
+    )
+
+    assert report["comparison_basis"] == "matched_items_only"
+    assert expected_blocker in report["comparison_eligibility"]["blockers"]
+    assert report["comparison_eligibility"][eligibility_key] == [feature]
+    assert report["readout_changes"] == []
+
+
+def test_progress_report_withholds_changed_cutoff_identity_and_unknown_panel_hash() -> (
+    None
+):
+    payload = sample_payload()
+    payload["patient_id"] = "cutoff-comparison-test"
+    previous = assess(payload)
+    current = assess(json.loads(json.dumps(payload)))
+    current["comparison_context"]["fi_cutoff_set_id"] = "engineering-cutoff-set-v2"
+    current["data_quality"]["reference_panel_sha256"] = None
+
+    report = build_progress_report(
+        previous,
+        current,
+        previous_assessed_at="2026-01-01",
+        current_assessed_at="2026-03-01",
+    )
+
+    assert report["comparison_basis"] == "matched_items_only"
+    assert "fi_cutoff_set_id_mismatch" in report["comparison_eligibility"]["blockers"]
+    assert (
+        "reference_panel_sha256_unknown" in report["comparison_eligibility"]["blockers"]
+    )
+    assert report["readout_changes"] == []
 
 
 def test_api_app_factory_injects_runtime_model_and_panel_into_health_metadata() -> None:
@@ -1172,12 +1301,44 @@ def test_wellness_schema_rejects_unknown_status_and_extra_fields() -> None:
         )
 
 
+def test_static_demo_artifact_matches_the_python_assessment_pipeline() -> None:
+    script = Path(__file__).parents[1] / "scripts" / "build_demo_data.py"
+    subprocess.run(
+        [sys.executable, str(script), "--check"],
+        check=True,
+        capture_output=True,
+    )
+    data = json.loads(
+        (Path(__file__).parents[1] / "docs" / "demo-data.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert data["privacy_note"].startswith("Synthetic")
+    assert len(data["examples"]) >= 2
+    for example in data["examples"]:
+        payload = example["payload"]
+        assert payload["patient_id"].startswith("demo-")
+        expected = assess(payload)
         public_metrics = example["result"]["metrics"]
-        assert public_metrics["chronological_age"] == expected["metrics"]["chronological_age"]
-        assert public_metrics["current_deficit_load_fi"] == expected["metrics"]["current_deficit_load_fi"]
+        assert (
+            public_metrics["chronological_age"]
+            == expected["metrics"]["chronological_age"]
+        )
+        assert (
+            public_metrics["current_deficit_load_fi"]
+            == expected["metrics"]["current_deficit_load_fi"]
+        )
+        assert (
+            public_metrics["current_deficit_load_fi_details"]
+            == expected["metrics"]["current_deficit_load_fi_details"]
+        )
         assert public_metrics["biological_age"]["point_estimate"] is None
         assert public_metrics["biological_age"]["ci_95"] is None
-        assert public_metrics["biological_age"]["interpretation"].startswith("Numeric biological-age output is withheld")
+        assert public_metrics["biological_age"]["uncertainty_validated"] is False
+        assert (
+            "withheld from the public Pages artifact"
+            in public_metrics["biological_age"]["interpretation"]
+        )
         assert example["result"]["trajectory"]["homeostatic_deviation_score"] is None
         assert example["result"]["wellness_report"] == expected["wellness_report"]
 
@@ -3314,4 +3475,3 @@ def test_validate_external_cohort_pre_checks_panel_age_coverage_and_aggregates_o
         "age outside reference-panel band coverage" in blocker
         for blocker in report.blockers
     )
-

@@ -30,6 +30,8 @@ jobs:
           uv sync --locked --extra dev
       - name: Verify public evidence and Pages parser
         run: |
+          uv run python -m pytest -q
+          uv run python scripts/verify_publication_failure_demo.py --check
           uv run python scripts/verify_docs.py
           node --check docs/seca-parser.js
           node --check docs/intake-form.js

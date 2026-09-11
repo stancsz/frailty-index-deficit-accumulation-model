@@ -1,1 +1,4 @@
 2026-08-27 | 001, 002 | used the credibility gap and CDC provenance receipts to shape the training-manifest template and validator, saved an estimated 15 minutes on a future re-audit
+2026-08-31 | 007 | used the biological-age measurement evidence to define the final system-specific report specification and correct unsupported example claims, saved an estimated 30 minutes on future terminology and scope reviews
+2026-09-01 | 008 | used the product decision baseline to define a public clinician-first Pages boundary while retaining private source and product distribution, saved an estimated 20 minutes on scope reconciliation
+2026-09-01 | 009 | distilled the public-data proof ladder from GOAL.md/ROADMAP.md/EVAL.md/SOURCES.md and wiki 001-003,008, saved an estimated 25 minutes on a future evidence-scope review

@@ -1,0 +1,20 @@
+{
+  "base_candidate_sha": "0385ece0d3e65006cc1c58da6b2b015f2e1cd416",
+  "branch": "ir0-failure-demo",
+  "date": "2026-09-10",
+  "deliberate_test_returncode": 1,
+  "evidence_class": "local-isolated-branch",
+  "failure_observed": true,
+  "limitations": [
+    "The branch exists only in a temporary local clone.",
+    "The deployment job was not invoked by this local command.",
+    "Remote GitHub Actions execution remains unverified."
+  ],
+  "publication_step_reached": false,
+  "receipt_type": "candidate-branch-publication-failure-demo",
+  "schema_version": 1,
+  "test_command": "uv run python -m pytest -q",
+  "workflow_dependency": "deploy.needs: verify",
+  "remote_verified": false,
+  "status": "passed"
+}

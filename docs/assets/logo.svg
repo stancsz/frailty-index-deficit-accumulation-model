@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" role="img" aria-label="Clinical Healthspan Engine">
+  <title>Clinical Healthspan Engine</title>
+  <desc>Wordmark for the Clinical Healthspan Engine documentation site. The underline motif evokes a deficit-accumulation curve across cohorts.</desc>
+  <g font-family="'Iowan Old Style','Charter','Source Serif Pro',Georgia,'Times New Roman',serif">
+    <text x="0" y="32" font-size="22" font-weight="600" fill="#0f1620" letter-spacing="0.2">Clinical <tspan font-style="italic">Healthspan</tspan> Engine</text>
+  </g>
+  <g fill="none" stroke="#0f1620" stroke-width="1.4" stroke-linecap="round">
+    <path d="M2 46 Q 28 40, 54 46 T 106 46 T 158 46 T 210 46 T 262 46 T 314 46" />
+    <circle cx="54" cy="46" r="1.4" fill="#0f1620" />
+    <circle cx="210" cy="46" r="1.4" fill="#0f1620" />
+  </g>
+  <text x="0" y="60" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="7" letter-spacing="2.4" fill="#2a3343">DEFICIT-ACCUMULATION DOCUMENTATION</text>
+</svg>

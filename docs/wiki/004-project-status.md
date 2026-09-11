@@ -2,7 +2,7 @@
 
 - **scope:** the repository roadmap, evaluation contract, and intended GitHub
   Project board, reviewed 2026-09-07.
-- **status:** current
+- **status:** historical snapshot, superseded by wiki 011 and 012
 - **decision it feeds:** what remains before the engineering prototype can be
   considered ready for an approved production deployment.
 
@@ -31,7 +31,7 @@ paths.
 4. After E-005, implement the production deployment boundary, controlled pilot,
    and ongoing release, monitoring, revalidation, and change-control process.
 
-The intended work tracker is [GitHub Project #4 — longevity](https://github.com/users/stancsz/projects/4/views/1).
+The intended work tracker was and remains [GitHub Project #4 — longevity](https://github.com/users/stancsz/projects/4/views/1).
 It was reconciled on 2026-08-31 after project scope was restored: P1 and P2 are
 `Done`, P0 and P3 are `In Progress`, and P4–P8 are `Todo`. The board has no
 dedicated blocked state, so `ROADMAP.md` remains the source of dependency
@@ -40,6 +40,11 @@ detail. Project #5 is the unrelated `hgrid` board.
 E-005 remains blocked. Synthetic fixtures, passing software checks, and a
 working serving contract do not establish clinical validity, production model
 approval, or permission to make real-person longevity decisions.
+
+The 2026-09-10 follow-up is recorded in wiki 012. It found a passing local
+dirty-checkout verifier after receipt and documentation repair, while the
+remote CI/Pages failure and the remaining IR0 clean-candidate requirements
+remain open.
 
 ## Pages trust-pass
 

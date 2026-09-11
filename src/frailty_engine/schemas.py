@@ -115,6 +115,7 @@ class InterventionResponse(BaseModel):
 class ModelMetadataResponse(BaseModel):
     model_id: str
     production_ready: bool
+    artifact_sha256: str | None
 
 
 class WellnessResponseModel(BaseModel):
@@ -184,6 +185,73 @@ class WellnessReportResponse(WellnessResponseModel):
     disclaimer: str
 
 
+class CategoryMeasurementResponse(WellnessResponseModel):
+    feature: str
+    label: str
+    current_value: float | int | str | None
+    unit: str | None
+    status: Literal["in_range", "attention", "below_target", "above_target", "flagged"]
+    direction: Literal["within_range", "below", "above", "flagged"]
+    target_range: TargetRangeResponse
+    target_range_label: str
+    source: str
+    measurement_source: str
+    measured_at: str | None
+    protocol: str | None
+    reference_source: str | None
+
+
+class CategoryReferenceInterpretationResponse(WellnessResponseModel):
+    status: Literal["within_reference", "attention", "mixed", "not_available"]
+    basis: str
+    direction: str
+
+
+class ChronologicalAgeContextResponse(WellnessResponseModel):
+    value: float
+    unit: Literal["years"]
+    source: str
+    reference_date: str | None
+    precision: str
+    status: Literal["supplied_not_recomputed"]
+
+
+class CategoryAgeReportResponse(WellnessResponseModel):
+    status: Literal["withheld_unvalidated", "not_available"]
+    label: str
+    point_estimate: float | None
+    delta_from_chronological_age: float | None
+    ci_95: list[float] | None
+    interval: list[float] | None
+    interval_type: str | None
+    model_id: str | None
+    reference_panel_id: str | None
+    method: str
+    uncertainty_validated: bool
+    interpretation: str
+
+
+class CategoryReportResponse(WellnessResponseModel):
+    system: str
+    display_name: str
+    category: str
+    label: str
+    chronological_age_context: ChronologicalAgeContextResponse
+    status: Literal["complete", "partial", "not_available"]
+    reference_status: Literal["within_reference", "attention", "mixed", "not_available"]
+    measured_count: int
+    expected_count: int
+    measurements: list[CategoryMeasurementResponse]
+    measurement_profile: list[CategoryMeasurementResponse]
+    missing_measurements: list[str]
+    reference_interpretation: CategoryReferenceInterpretationResponse
+    age_report: CategoryAgeReportResponse
+    interpretation: str
+    next_step: str
+    action_effect_estimated: bool
+    clinical_or_lifespan_claim: bool
+
+
 class ProgressReadoutChangeResponse(WellnessResponseModel):
     metric: str
     previous: float
@@ -231,6 +299,7 @@ class ProgressSummaryResponse(WellnessResponseModel):
     current_focus_areas: int
     previous_missing_features: int
     current_missing_features: int
+    aggregate_readouts_comparable: bool
     interpretation: str
 
 
@@ -239,15 +308,30 @@ class ProgressModelBoundaryResponse(WellnessResponseModel):
     current_model_id: str
     previous_production_ready: bool
     current_production_ready: bool
+    previous_model_artifact_sha256: str | None
+    current_model_artifact_sha256: str | None
     previous_reference_panel_id: str
     current_reference_panel_id: str
     previous_reference_panel_sha256: str | None
     current_reference_panel_sha256: str | None
 
 
+class ComparisonEligibilityResponse(WellnessResponseModel):
+    status: Literal["eligible", "withheld"]
+    basis: Literal["aggregate_readouts", "matched_items_only"]
+    blockers: list[str]
+    previous_fi_features: list[str]
+    current_fi_features: list[str]
+    matched_fi_features: list[str]
+    added_fi_features: list[str]
+    removed_fi_features: list[str]
+    changed_units: list[str]
+    changed_protocols: list[str]
+
+
 class AssessmentComparisonResponse(WellnessResponseModel):
     format: Literal["wellness-progress-report-v1"]
-    comparison_basis: Literal["same_model_and_reference_panel"]
+    comparison_basis: Literal["same_model_and_reference_panel", "matched_items_only"]
     patient_id: str
     previous_assessed_at: str
     current_assessed_at: str
@@ -256,9 +340,26 @@ class AssessmentComparisonResponse(WellnessResponseModel):
     summary: ProgressSummaryResponse
     current_focus_areas: list[WellnessFocusAreaResponse]
     model_boundary: ProgressModelBoundaryResponse
+    comparison_eligibility: ComparisonEligibilityResponse
     action_effect_estimated: bool
     clinical_or_lifespan_claim: bool
     disclaimer: str
+
+
+class ComparisonContextResponse(WellnessResponseModel):
+    schema_version: str
+    feature_contract_version: str
+    measurement_protocol_version: str
+    measured_features: list[str]
+    fi_valid_features: list[str]
+    feature_units: dict[str, str]
+    feature_protocols: dict[str, str]
+    fi_coding_version: str
+    fi_cutoff_set_id: str
+    model_id: str
+    model_artifact_sha256: str | None
+    reference_panel_id: str
+    reference_panel_sha256: str | None
 
 
 class AssessmentResponse(BaseModel):
@@ -270,5 +371,7 @@ class AssessmentResponse(BaseModel):
     trajectory: TrajectoryResponse
     top_interventions: list[InterventionResponse]
     model_metadata: ModelMetadataResponse
+    comparison_context: ComparisonContextResponse
     wellness_report: WellnessReportResponse
+    category_reports: list[CategoryReportResponse]
     quality_notes: list[str]

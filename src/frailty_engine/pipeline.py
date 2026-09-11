@@ -5,6 +5,8 @@ from __future__ import annotations
 from typing import Any, Mapping
 
 from .calibration import ReferencePanel, default_development_panel, panel_readiness
+from .body_reports import build_category_reports
+from .comparison import build_comparison_context
 from .features import BIA_FEATURES, PatientData, parse_patient_data
 from .fi import calculate_fi
 from .model import (
@@ -92,6 +94,7 @@ def assess(
     z_scores = panel.z_scores(patient)
     fi = calculate_fi(patient, z_scores)
     wellness_report = build_wellness_report(patient, fi, z_scores, panel)
+    category_reports = build_category_reports(patient, wellness_report["ranges"])
     model = predictor or DevelopmentPredictor()
     chronological_age = float(patient.values["age"])
     vector = _model_feature_vector(patient, z_scores, fi.score)
@@ -197,10 +200,18 @@ def assess(
             wellness_ranges=wellness_report["ranges"],
         ),
         "wellness_report": wellness_report,
+        "category_reports": category_reports,
         "model_metadata": {
             "model_id": prediction.model_id,
             "production_ready": prediction.production_ready,
+            "artifact_sha256": getattr(model, "artifact_sha256", None),
         },
+        "comparison_context": build_comparison_context(
+            patient,
+            fi,
+            predictor=model,
+            panel=panel,
+        ),
         "quality_notes": [
             fi.caveat,
             "No missing value was fabricated; XGBoost may receive NaN for absent features.",

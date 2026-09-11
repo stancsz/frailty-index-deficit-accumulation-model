@@ -1,0 +1,120 @@
+{
+  "manifest_version": "1",
+  "status": "template",
+  "system": "musculoskeletal",
+  "display_name": "Muscle and structural health",
+  "chronological_age_context": {
+    "source": "date_of_birth_and_assessment_reference_date",
+    "precision": "completed_years_or_decimal_years",
+    "reference_date_rule": "RECORD_APPROVED_ASSESSMENT_DATE_RULE"
+  },
+  "construct": {
+    "label": "system_specific_age_equivalent",
+    "definition": "RECORD_WHAT_THIS_SYSTEM_AGE_MEANS_AND_WHAT_IT_DOES_NOT_MEAN",
+    "not_a_diagnosis": true,
+    "not_a_lifespan_or_treatment_effect_estimate": true
+  },
+  "target": {
+    "name": "RECORD_DOMAIN_TARGET_NOT_CHRONOLOGICAL_AGE",
+    "horizon": "RECORD_TARGET_HORIZON_OR_CROSS_SECTIONAL_REFERENCE_RULE",
+    "outcome_definition": "RECORD_PRESPECIFIED_OUTCOME_OR_MEASUREMENT_TARGET",
+    "incremental_value_question": "RECORD_WHETHER_THIS_ADDS_INFORMATION_BEYOND_AGE_AND_SIMPLE_CLINICAL_MEASURES"
+  },
+  "measurement_protocol": {
+    "protocol_id": "RECORD_APPROVED_PROTOCOL_ID",
+    "device_and_software": "RECORD_DEVICE_FIRMWARE_AND_ANALYSIS_VERSION",
+    "unit_rules": "RECORD_CANONICAL_UNITS_AND_CONVERSIONS",
+    "measurement_date_rule": "RECORD_ALLOWED_MEASUREMENT_WINDOW",
+    "repeatability_plan": "RECORD_TEST_RETEST_AND_MEASUREMENT_ERROR_PLAN",
+    "operator_training": "RECORD_OPERATOR_QUALIFICATION_AND_STANDARDIZATION"
+  },
+  "measurements": [
+    {
+      "name": "appendicular_lean_mass",
+      "unit": "kg",
+      "modality": "DEXA",
+      "required": true,
+      "source_and_license": "RECORD_PERMITTED_SOURCE_AND_LICENSE",
+      "quality_rule": "RECORD_ACCEPTANCE_AND_INVALIDITY_RULE"
+    },
+    {
+      "name": "bone_mineral_density",
+      "unit": "g/cm2",
+      "modality": "DEXA",
+      "required": true,
+      "source_and_license": "RECORD_PERMITTED_SOURCE_AND_LICENSE",
+      "quality_rule": "RECORD_ACCEPTANCE_AND_INVALIDITY_RULE"
+    },
+    {
+      "name": "grip_strength",
+      "unit": "kg",
+      "modality": "standardized_dynamometer",
+      "required": true,
+      "source_and_license": "RECORD_PERMITTED_SOURCE_AND_LICENSE",
+      "quality_rule": "RECORD_ACCEPTANCE_AND_INVALIDITY_RULE"
+    }
+  ],
+  "missingness": {
+    "policy": "RECORD_PRESPECIFIED_MISSINGNESS_AND_NO_IMPUTATION_RULE",
+    "minimum_complete_profile": "RECORD_DOMAIN_COMPLETENESS_RULE",
+    "sensitivity_analyses": [
+      "RECORD_NATIVE_MISSINGNESS_ANALYSIS",
+      "RECORD_COMPLETE_CASE_SENSITIVITY",
+      "RECORD_MEASUREMENT_ERROR_SENSITIVITY"
+    ]
+  },
+  "reference_panel": {
+    "panel_id": "RECORD_APPROVED_DOMAIN_REFERENCE_PANEL_ID",
+    "population": "RECORD_TARGET_POPULATION_AND_RECRUITMENT",
+    "age_sex_strata": "RECORD_SUPPORTED_AGE_SEX_STRATA",
+    "device_protocol_match": "RECORD_DEVICE_AND_PROTOCOL_TRANSPORT_RULE",
+    "source_and_license": "RECORD_PANEL_SOURCE_AND_LICENSE",
+    "sha256": "RECORD_AFTER_PANEL_IS_FROZEN"
+  },
+  "model": {
+    "model_id": "RECORD_DOMAIN_MODEL_ID",
+    "feature_names_and_order": [
+      "RECORD_FEATURE_1",
+      "RECORD_FEATURE_2"
+    ],
+    "algorithm_and_version": "RECORD_ALGORITHM_AND_DEPENDENCY_VERSIONS",
+    "training_cohort": "RECORD_COHORT_ID_AND_GOVERNANCE_BASIS",
+    "patient_level_split": "RECORD_LEAKAGE_CONTROL_AND_SPLIT_PROVENANCE",
+    "artifact_sha256": "RECORD_AFTER_ARTIFACT_IS_FROZEN"
+  },
+  "uncertainty": {
+    "method": "RECORD_PRESPECIFIED_UNCERTAINTY_METHOD",
+    "interval_type": "RECORD_INTERVAL_TYPE_AND_LEVEL",
+    "measurement_error_included": false,
+    "validated": false
+  },
+  "age_output": {
+    "label": "system_specific_age_equivalent",
+    "unit": "years",
+    "numeric_allowed": false,
+    "point_estimate": null,
+    "interval": null,
+    "withheld_reason": "Template only; numeric output requires complete domain evidence and human approval."
+  },
+  "validation": {
+    "internal": "RECORD_INTERNAL_VALIDATION_AND_CALIBRATION",
+    "held_out_external": "RECORD_INDEPENDENT_EXTERNAL_VALIDATION",
+    "calibration_and_predictive_validity": "RECORD_APPROPRIATE_METRICS_AND_DENOMINATORS",
+    "transportability": "RECORD_TARGET_POPULATION_TRANSPORT_REVIEW",
+    "clinical_utility": "RECORD_PRESPECIFIED_CLINICAL_UTILITY_REVIEW_OR_NOT_APPLICABLE"
+  },
+  "subgroup_support": {
+    "dimensions": ["sex", "age_band", "ethnicity"],
+    "support_definition": "RECORD_PRESPECIFIED_SUPPORT_RULES_AND_WARNINGS",
+    "missingness_sensitivity": "RECORD_SUBGROUP_MISSINGNESS_ANALYSIS"
+  },
+  "approval": {
+    "status": "not_submitted",
+    "approved_by": null,
+    "approved_at": null,
+    "evidence_refs": [],
+    "production_ready": false,
+    "clinical_or_lifespan_claim": false,
+    "note": "This template is a review aid. It does not authorize a numeric system age, clinical use, or production deployment."
+  }
+}

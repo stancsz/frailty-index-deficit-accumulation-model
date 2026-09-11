@@ -1,0 +1,15 @@
+{
+  "name": "Clinical Healthspan Engine",
+  "short_name": "CHE Docs",
+  "description": "Evidence-bounded documentation for the Clinical Healthspan Engine (deficit accumulation, FI, BIA transfer). Research-use-only.",
+  "start_url": "/frailty-index-deficit-accumulation-model/",
+  "scope": "/frailty-index-deficit-accumulation-model/",
+  "display": "standalone",
+  "background_color": "#faf6ef",
+  "theme_color": "#0f1620",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

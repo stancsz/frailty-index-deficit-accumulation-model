@@ -1,5 +1,7 @@
 # Agent instructions
 
+# Subagents needs to be prioritized, follow /C:/Users/stanc/.codex/AGENTS.md
+
 ## Planning and execution standard procedure
 
 For every substantive planning or implementation task in this repository:
@@ -13,7 +15,7 @@ For every substantive planning or implementation task in this repository:
    evidence, operations, safety, release guidance, or other user-facing
    documentation. Keep the Wiki consistent with `ROADMAP.md` and `GOAL.md`.
 4. Update the repository's authoritative GitHub Project issue board,
-   [Project #5](https://github.com/users/stancsz/projects/5), as part of the
+   [Project #4 — longevity](https://github.com/users/stancsz/projects/4/views/1), as part of the
    same procedure. Add or revise the corresponding work items, priorities, and
    statuses in the project's ordered workflow.
 5. Before reporting completion, check that `GOAL.md`, `ROADMAP.md`, the Wiki,

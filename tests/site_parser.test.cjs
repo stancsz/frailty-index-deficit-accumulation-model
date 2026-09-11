@@ -122,6 +122,23 @@ test("Pages keeps development and single-scan limits visible", () => {
   assert.match(pageSource, /outcome_metric_status/);
   assert.match(pageSource, /not_implemented_pending_sap/);
   assert.match(pageSource, /verify_project\.py/);
+  assert.match(pagesWorkflow, /uv run python -m pytest -q/);
+});
+
+test("Pages license metadata matches the proprietary distribution decision", () => {
+  assert.match(
+    pageSource,
+    /"license": "https:\/\/github\.com\/stancsz\/frailty-index-deficit-accumulation-model\/blob\/main\/LICENSE\.md"/,
+  );
+  assert.match(pageSource, /Proprietary distribution/);
+  assert.doesNotMatch(pageSource, /Apache-2\.0/);
+});
+
+test("Pages status tokens preserve readable light-theme contrast", () => {
+  assert.match(siteCss, /--muted:\s+#5b5146/);
+  assert.match(siteCss, /--accent:\s+#8f2f17/);
+  assert.match(siteCss, /--gold:\s+#6f5d19/);
+  assert.match(siteCss, /\.trust-chip-v\.ok\s*\{\s*color:\s*var\(--archive\);/);
 });
 
 test("Pages exposes the canonical SECA assessment overlay helper", () => {
@@ -464,6 +481,8 @@ test("Pages focus list agrees with the API list and uses a bounded visible displ
 test("Pages exposes a descriptive longitudinal progress comparison", () => {
   assert.match(pageSource, /data-demo-progress/);
   assert.match(pageSource, /data-demo-progress-changes/);
+  assert.match(pageSource, /data-demo-progress-eligibility/);
+  assert.match(pageSource, /data-demo-progress-coverage/);
   assert.match(siteSource, /renderProgress/);
   assert.match(siteSource, /progress_report/);
   assert.match(siteSource, /publicProgressReport/);
@@ -473,11 +492,19 @@ test("Pages exposes a descriptive longitudinal progress comparison", () => {
     assert.equal(example.progress.report.format, "wellness-progress-report-v1");
     assert.equal(example.progress.report.action_effect_estimated, false);
     assert.equal(example.progress.report.clinical_or_lifespan_claim, false);
+    assert.equal(example.progress.report.comparison_basis, "matched_items_only");
+    assert.equal(example.progress.report.comparison_eligibility.status, "withheld");
     assert.match(
       example.progress.report.summary.interpretation,
-      /Descriptive change between two assessments/,
+      /Aggregate readout change is withheld/,
+    );
+    assert.match(
+      example.progress.report.summary.interpretation,
+      /Matched measurement and reference-band changes are shown/,
     );
   }
+  assert.match(siteSource, /Aggregate readouts withheld/);
+  assert.match(siteSource, /A coverage change alone does not establish health improvement/);
 });
 
 test("Pages renders a visible placeholder and disabled report actions when demo-data is missing", () => {
@@ -616,6 +643,13 @@ test("Pages exposes a visible :focus-visible rule for copy buttons and a printab
   assert.match(siteCss, /\.demo-grid\s*\{[\s\S]*?grid-template-columns:\s*1fr/);
   assert.match(siteCss, /\.print-only\s*\{\s*display:\s*block/);
   assert.match(siteCss, /\.report-print-banner/);
+  assert.match(siteCss, /\.shell\s*\{[\s\S]*?overflow-x:\s*clip/);
+  assert.match(
+    siteCss,
+    /\.demo-controls, \.demo-result\s*\{[\s\S]*?min-width:\s*0/,
+  );
+  assert.match(siteCss, /\.demo-flag\s*\{[\s\S]*?overflow-wrap:\s*anywhere/);
+  assert.match(pageSource, /site\.css\?v=ir3-responsive-5/);
   // Reduced-motion handling must remain in place.
   assert.match(siteCss, /@media \(prefers-reduced-motion: reduce\)/);
 });
@@ -654,4 +688,11 @@ test("Pages fronts evidence with a five-line trust summary and collapsed registe
   assert.match(pageSource, /Open the full engineering evidence register/);
   assert.match(pageSource, /verified here/i);
   assert.match(pageSource, /Not verified/);
+});
+
+test("Pages exposes an explicit keyboard entry point for the skip link", () => {
+  assert.match(
+    pageSource,
+    /<a class="skip-link" href="#main" tabindex="0">Skip to main content<\/a>/,
+  );
 });
