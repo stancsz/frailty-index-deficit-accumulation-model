@@ -1006,7 +1006,7 @@ pre[data-copyable] { position: relative; padding-right: 5rem; }
   min-width: 0;
   padding: 0.6rem;
   background: var(--paper);
-  border: 1px solid color-mix(in srgb, var(--archive) 50%, var(--rule));
+  border: 1px solid var(--rule);
 }
 .measurement-ledger span,
 .measurement-ledger strong,
